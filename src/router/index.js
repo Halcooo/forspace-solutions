@@ -6,6 +6,8 @@ import ServicesView from "../views/ServicesView.vue";
 import ForspacePreview from "../views/ForspacePreview.vue";
 import ContactView from "../views/ContactView.vue";
 import PromoView from "../views/PromoView.vue";
+import AboutView from "../views/AboutView.vue";
+// import store from "@/store/index.js"; // to use store in router if needed 
 
 const routes = [
   {
@@ -16,11 +18,7 @@ const routes = [
   {
     path: "/about",
     name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    component: AboutView,
   },
   {
     path: "/news",

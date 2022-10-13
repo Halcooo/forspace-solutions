@@ -1,6 +1,10 @@
 <template>
   <div class="home">
-    <img alt="Forspace Solutions" src="../assets/svg/logo.svg" />
+    <div>
+      <router-link to="/"> </router-link>
+      <img alt="Forspace Solutions" src="../assets/svg/logo.svg" />
+    </div>
+
     <HelloWorld></HelloWorld>
   </div>
 </template>
