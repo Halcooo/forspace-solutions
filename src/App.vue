@@ -10,10 +10,22 @@
       <router-link to="/forspace-preview">{{ $t("preview") }}</router-link> |
       <router-link to="/contact">{{ $t("contact") }}</router-link> |
       <router-link to="/promo">{{ $t("promo") }}</router-link>
+      <DropBar/>
     </nav>
   </div>
   <router-view />
 </template>
+
+<script>
+import DropBar from "../src/components/DropBar.vue";
+
+export default {
+  components: {
+    DropBar,
+  }
+}
+</script>
+
 <style lang="scss">
 @import "./styles/variables.scss";
 
