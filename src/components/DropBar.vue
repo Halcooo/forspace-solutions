@@ -6,7 +6,7 @@
 			v-model="selected"
 			@change="translatePage"
 		>
-			<option
+			<option 
 				v-for="lang in fetchDropData"
 				:value="lang.abr"
 			>
@@ -18,9 +18,10 @@
 
 <script>
 	export default {
+		name:'DropBar',
 		data() {
 			return {
-				selected: '',
+				selected: 'bs',
 				languages: [
 					{ langauge: 'English', abr: 'en' },
 					{ langauge: 'Bosanski', abr: 'bs' },
