@@ -40,6 +40,7 @@ export default {
 }
 
 select {
+	
   outline: 0;
   border: 0;
   box-shadow: none;

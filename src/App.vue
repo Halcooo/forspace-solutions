@@ -1,10 +1,9 @@
 //@author Halid Lihovac
 <template>
-    <div class="nav-wrapper">
-      <NavigationBar></NavigationBar>
-    </div>
-    <router-view />
-
+  <div class="nav-wrapper">
+    <NavigationBar></NavigationBar>
+  </div>
+  <router-view />
 </template>
 <script>
 import NavigationBar from "@/components/NavigationBar.vue";
@@ -47,6 +46,7 @@ body {
   justify-content: space-between;
   margin-bottom: 15px;
   z-index: 10;
+  width: 95%;
 }
 h1 {
   color: $primary-color;
