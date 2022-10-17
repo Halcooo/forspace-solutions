@@ -1,12 +1,5 @@
 <template>
   <div class="nav-wrapper">
-    <img
-      @click="onHome"
-      class="logo"
-      alt="Forspace Solutions"
-      src="@/assets/svg/logo.svg"
-    />
-
     <NavigationBar></NavigationBar>
   </div>
   <router-view />
@@ -37,7 +30,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: $primary-blue;
+  color: $primary-color;
 }
 .logo {
   width: 15%;
@@ -46,14 +39,15 @@ body {
   }
 }
 .nav-wrapper {
+  padding-left: 25px;
   display: flex;
   text-align: center;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
+  justify-content: space-between;
   margin-bottom: 15px;
 }
 h1 {
-  color: $primary-blue;
+  color: $primary-color
+  ;
 }
 </style>

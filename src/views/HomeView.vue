@@ -2,21 +2,18 @@
   <div class="home">
     <div>
       <router-link to="/"> </router-link>
-      <img alt="Forspace Solutions" src="../assets/svg/logo.svg" />
     </div>
-
-    <HelloWorld></HelloWorld>
+    <HeaderHome></HeaderHome>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+import HeaderHome from "@/components/HomeView/HeaderHome.vue";
 
 export default {
   name: "HomeView",
   components: {
-    HelloWorld,
+    HeaderHome,
   },
 };
 </script>
