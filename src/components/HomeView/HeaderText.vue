@@ -17,6 +17,8 @@ export default {
   div {
     font-size: 2em;
     padding: 15px;
+    padding-left: 30px;
+    text-align: left;
   }
   .main-text {
     background-color: #f16822;

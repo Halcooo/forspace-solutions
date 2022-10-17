@@ -26,11 +26,19 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@keyframes appear {
+  0% {
+     opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
 nav {
   padding: 25px;
   display: flex;
   vertical-align: middle;
-
+  animation: appear ease-in 1s;
   a {
     font-weight: bold;
     color: rgb(202, 202, 202);
