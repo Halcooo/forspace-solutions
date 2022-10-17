@@ -1,22 +1,24 @@
+@author Halid Lihovac
 <template lang="">
-  <img
-    @click="onHome"
-    class="logo"
-    alt="Forspace Solutions"
-    src="@/assets/svg/logo.svg"
-  />
+   <div class="nav-wrapper">    <img
+      @click="onHome"
+      class="logo"
+      alt="Forspace Solutions"
+      src="@/assets/svg/logo.svg"
+    />
+    <nav>
+      <router-link to="/">{{ $t("home") }}</router-link>
+      <router-link to="/news">{{ $t("news") }}</router-link>
+      <router-link to="/about">{{ $t("about") }}</router-link>
+      <router-link to="/products">{{ $t("products") }}</router-link>
+      <router-link to="/services">{{ $t("services") }}</router-link>
+      <router-link to="/forspace-preview">{{ $t("preview") }}</router-link>
+      <router-link to="/contact">{{ $t("contact") }}</router-link>
+      <router-link to="/promo">{{ $t("promo") }}</router-link>
+      <DropBar></DropBar>
+    </nav>
+   </div>
 
-  <nav>
-    <router-link to="/">{{ $t("home") }}</router-link>
-    <router-link to="/news">{{ $t("news") }}</router-link>
-    <router-link to="/about">{{ $t("about") }}</router-link>
-    <router-link to="/products">{{ $t("products") }}</router-link>
-    <router-link to="/services">{{ $t("services") }}</router-link>
-    <router-link to="/forspace-preview">{{ $t("preview") }}</router-link>
-    <router-link to="/contact">{{ $t("contact") }}</router-link>
-    <router-link to="/promo">{{ $t("promo") }}</router-link>
-    <DropBar></DropBar>
-  </nav>
 </template>
 <script>
 import DropBar from "@/components/DropBar.vue";
@@ -26,12 +28,13 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+
 @keyframes appear {
   0% {
-     opacity:0;
+    opacity: 0;
   }
   100% {
-    opacity:1;
+    opacity: 1;
   }
 }
 nav {

@@ -10,6 +10,7 @@
 </template>
 <script>
 import HeaderText from "@/components/HomeView/HeaderText.vue";
+
 export default {
   name: "HeaderHome",
   components: {
@@ -24,7 +25,6 @@ export default {
   position: absolute;
   top: 0px;
   width: 100%;
-  z-index: -1;
   background-size: cover;
 }
 .header-text {
@@ -48,7 +48,6 @@ export default {
   }
 }
 .demo-full-container {
-  position: absolute;
   bottom: 30px;
   right: 30px;
   background-color: #f16822;
@@ -56,11 +55,15 @@ export default {
   border-radius: 5px;
   right: 5%;
   bottom: 15%;
-  position: fixed;
+  position: absolute;
   a {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
+  }
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
   }
 }
 </style>

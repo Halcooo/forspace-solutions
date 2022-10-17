@@ -1,8 +1,10 @@
+//@author Halid Lihovac
 <template>
-  <div class="nav-wrapper">
-    <NavigationBar></NavigationBar>
-  </div>
-  <router-view />
+    <div class="nav-wrapper">
+      <NavigationBar></NavigationBar>
+    </div>
+    <router-view />
+
 </template>
 <script>
 import NavigationBar from "@/components/NavigationBar.vue";
@@ -27,8 +29,7 @@ body {
 
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
   text-align: center;
   color: $primary-color;
 }
@@ -45,9 +46,9 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 15px;
+  z-index: 10;
 }
 h1 {
-  color: $primary-color
-  ;
+  color: $primary-color;
 }
 </style>
