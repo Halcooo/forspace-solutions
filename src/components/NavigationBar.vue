@@ -29,6 +29,7 @@ export default {
 nav {
   padding: 25px;
   display: flex;
+  vertical-align: middle;
 
   a {
     font-weight: bold;

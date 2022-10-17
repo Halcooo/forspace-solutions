@@ -1,5 +1,5 @@
 <template>
-	<div>
+
 		<select
 			name="Any"
 			id="any"
@@ -13,7 +13,7 @@
 				{{ lang.langauge }}
 			</option>
 		</select>
-	</div>
+
 </template>
 
 <script>
@@ -42,4 +42,9 @@
 	};
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+
+select{
+
+}
+</style>

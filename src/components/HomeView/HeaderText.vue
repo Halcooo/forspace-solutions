@@ -3,6 +3,7 @@
     <div class="main-text">Mi ne radimo za Vas.</div>
     <div class="secondary-text">Mi radimo sa Vama!</div>
   </div>
+
 </template>
 <script>
 export default {
@@ -19,10 +20,12 @@ export default {
   }
   .main-text {
     background-color: #f16822;
-    width: 400px;
+    width: 30vw;
   }
   .secondary-text {
     background-color: #162250;
+    width: 80%;
   }
 }
+
 </style>
