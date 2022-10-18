@@ -38,14 +38,17 @@
     </div>
     <img src="@/assets/images/kocka_.png" alt="cube" />
     <div class="dir-container">
-      <img
+      <div class="container">
+           <img
         class="direktorica"
         src="@/assets/images/Slika-direktorice-1.jpg"
         alt="direktorica"
       />
-      <div class="dir-secondary">
+      </div>
+   
+      <div class="dir-secondary d-flex ">
         <h1>Radimo sa Vama!</h1>
-        <p>
+        <p class="container">
           Svakom biznisu potrebna je jasna strategija. Sa Forspace rješenjem to
           znači obezbjeđenje potpune kontrole nad svim poslovnim procesima u
           Vašoj kompaniji kroz automatizaciju, digitalizaciju i inoviranje svih
@@ -63,6 +66,7 @@
         <p>Esada Karović, CEO</p>
       </div>
     </div>
+    <button class="btn btn-primary">radiii</button>
   </div>
 </template>
 <script>
@@ -93,15 +97,14 @@ export default {
     color: white;
   }
   color: white;
-  display: flex;
-  justify-content: center;
-  vertical-align: middle;
+  display: grid;
+  grid-template-columns: 50% 50%;
   width:80%;
   margin:auto;
 }
 .direktorica {
-  width: 480px;
   margin-top: 0px;
+  box-sizing: border-box;
 }
 img {
   margin: auto;

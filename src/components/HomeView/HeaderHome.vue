@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <div class="header-text">
+    <div class="header-text container">
       <HeaderText></HeaderText>
     </div>
     <div class="demo-full-container">
