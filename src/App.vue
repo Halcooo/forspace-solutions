@@ -20,14 +20,18 @@ export default {
 </script>
 <style lang="scss">
 @import "./styles/variables.scss";
-
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"),
+   url('@/assets/fonts/Raleway-Medium.ttf') format("truetype");
+}
 body {
   padding: 0px;
   margin: 0px;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: Raleway, Helvetica, Arial, sans-serif;
 
   text-align: center;
   color: $primary-color;

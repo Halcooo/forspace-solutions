@@ -60,10 +60,13 @@ export default {
     text-decoration: none;
     color: white;
     font-size: 1.5em;
+    &:hover {
+      color: #25435b;
+    }
   }
   &:hover {
     cursor: pointer;
-    opacity: 0.8;
+    color: #25435b;
   }
 }
 </style>

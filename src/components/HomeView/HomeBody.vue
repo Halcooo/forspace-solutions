@@ -43,23 +43,25 @@
         src="@/assets/images/Slika-direktorice-1.jpg"
         alt="direktorica"
       />
-      <h1>Radimo sa Vama!</h1>
-      <p>
-        Svakom biznisu potrebna je jasna strategija. Sa Forspace rješenjem to
-        znači obezbjeđenje potpune kontrole nad svim poslovnim procesima u Vašoj
-        kompaniji kroz automatizaciju, digitalizaciju i inoviranje svih
-        poslovnih procesa. Kao rezultat višegodišnjeg istraživanja, sticanja
-        znanja i prihvatanja svjetskih praksi, Forspace tim daje bezrezervnu
-        podršku u svim fazama korištenja, a posebno smo ponosni na našu
-        post-prodajnu uslugu, jer prihvatanjem ovog softvera možete računati na
-        naš stalni angažman i kontakt. Mi smo prvi domaći brend na tržištu ERP
-        softvera sa predznakom njemačke tehnologije koji omogućava smanjenje
-        korištenja pisane dokumentacije, uštedu vremena i novca, te predstavlja
-        potpuno prilagođeno i razumljivo softversko rješenje za krajnjeg
-        korisnika. Vođeni našom krilaticom, sigurni smo da unapređujemo način na
-        koji radite, jer MI RADIMO SA VAMA!"
-      </p>
-      <p>Esada Karović, CEO</p>
+      <div class="dir-secondary">
+        <h1>Radimo sa Vama!</h1>
+        <p>
+          Svakom biznisu potrebna je jasna strategija. Sa Forspace rješenjem to
+          znači obezbjeđenje potpune kontrole nad svim poslovnim procesima u
+          Vašoj kompaniji kroz automatizaciju, digitalizaciju i inoviranje svih
+          poslovnih procesa. Kao rezultat višegodišnjeg istraživanja, sticanja
+          znanja i prihvatanja svjetskih praksi, Forspace tim daje bezrezervnu
+          podršku u svim fazama korištenja, a posebno smo ponosni na našu
+          post-prodajnu uslugu, jer prihvatanjem ovog softvera možete računati
+          na naš stalni angažman i kontakt. Mi smo prvi domaći brend na tržištu
+          ERP softvera sa predznakom njemačke tehnologije koji omogućava
+          smanjenje korištenja pisane dokumentacije, uštedu vremena i novca, te
+          predstavlja potpuno prilagođeno i razumljivo softversko rješenje za
+          krajnjeg korisnika. Vođeni našom krilaticom, sigurni smo da
+          unapređujemo način na koji radite, jer MI RADIMO SA VAMA!"
+        </p>
+        <p>Esada Karović, CEO</p>
+      </div>
     </div>
   </div>
 </template>
@@ -69,6 +71,23 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@keyframes slideIn {
+  0% {
+    transform: translateY(-80%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.dir-secondary{
+  display:flex;
+  flex-direction: column;
+  vertical-align: middle;
+  justify-content: center;
+}
+.body {
+  animation: slideIn 1s ease-in;
+}
 .dir-container {
   h1 {
     color: white;
@@ -77,9 +96,11 @@ export default {
   display: flex;
   justify-content: center;
   vertical-align: middle;
+  width:80%;
+  margin:auto;
 }
 .direktorica {
-  scale: 0.5;
+  width: 480px;
   margin-top: 0px;
 }
 img {
@@ -110,8 +131,11 @@ img {
   .item {
     padding: 10px;
     margin-right: 10px;
+    &:hover {
+    }
   }
 }
+
 .body {
   margin-top: 85vh;
   margin-left: auto;
