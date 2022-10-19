@@ -44,7 +44,7 @@ nav {
   animation: appear ease-in 1s;
   a {
     font-weight: bold;
-    color: rgb(202, 202, 202);
+    color: #162250;
     font-size: 1.5em;
     text-decoration: none;
     margin-right: 12px;

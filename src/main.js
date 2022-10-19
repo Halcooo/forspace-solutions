@@ -6,6 +6,10 @@ import store from "./store";
 import i18n from "./i18n";
 
 
+
+import 'aos/dist/aos.css'
+
+
 createApp(App).use(i18n).use(store).use(router).mount("#app");
 
 import "bootstrap/dist/js/bootstrap.js";

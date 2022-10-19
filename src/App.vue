@@ -7,7 +7,11 @@
 </template>
 <script>
 import NavigationBar from "@/components/NavigationBar.vue";
+import AOS from 'aos'
 export default {
+  mounted() {
+    AOS.init()
+  },
   components: {
     NavigationBar,
   },
@@ -48,7 +52,6 @@ body {
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 15px;
   z-index: 10;
   width: 95%;
 }

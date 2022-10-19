@@ -20,11 +20,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrapper {
-  background: url(@/assets/images/cover.png) center right no-repeat;
+  background: url(@/assets/images/gradient-bg.png) center right no-repeat;
+  background-color: #263b53;
   height: 90vh;
-  position: absolute;
   top: 0px;
-  width: 100%;
   background-size: cover;
 }
 .header-text {
@@ -34,7 +33,6 @@ export default {
   align-items: center;
   justify-content: center;
   top: 50%;
-  left: 20%;
   animation: 1s ease-out 0s 1 slideInLeft;
 }
 @keyframes slideInLeft {
@@ -43,7 +41,7 @@ export default {
     opacity: 0;
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0%);
     opacity: 1;
   }
 }

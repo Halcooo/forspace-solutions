@@ -29,7 +29,13 @@
       </div>
     </div>
   </div>
-  <div class="cube-background">
+  <div
+    class="cube-background"
+    data-aos="slide-up"
+    data-aos-ease="ease"
+    data-aos-duration="1500"
+    data-aos-delay="500"
+  >
     <div class="erp-text">
       <h1 class="erp-main-text">Forspace ERP & Računovodstvo +</h1>
       <p class="erp-secondary-text">
@@ -37,36 +43,40 @@
       </p>
     </div>
     <img src="@/assets/images/kocka_.png" alt="cube" />
-    <div class="dir-container">
-      <div class="container">
-           <img
+  </div>
+  <div
+    class="dir-container"
+    data-aos="zoom-in"
+    data-aos-duration="1500"
+    data-aos-delay="500"
+  >
+    <div class="container">
+      <img
         class="direktorica"
         src="@/assets/images/Slika-direktorice-1.jpg"
         alt="direktorica"
       />
-      </div>
-   
-      <div class="dir-secondary d-flex ">
-        <h1>Radimo sa Vama!</h1>
-        <p class="container">
-          Svakom biznisu potrebna je jasna strategija. Sa Forspace rješenjem to
-          znači obezbjeđenje potpune kontrole nad svim poslovnim procesima u
-          Vašoj kompaniji kroz automatizaciju, digitalizaciju i inoviranje svih
-          poslovnih procesa. Kao rezultat višegodišnjeg istraživanja, sticanja
-          znanja i prihvatanja svjetskih praksi, Forspace tim daje bezrezervnu
-          podršku u svim fazama korištenja, a posebno smo ponosni na našu
-          post-prodajnu uslugu, jer prihvatanjem ovog softvera možete računati
-          na naš stalni angažman i kontakt. Mi smo prvi domaći brend na tržištu
-          ERP softvera sa predznakom njemačke tehnologije koji omogućava
-          smanjenje korištenja pisane dokumentacije, uštedu vremena i novca, te
-          predstavlja potpuno prilagođeno i razumljivo softversko rješenje za
-          krajnjeg korisnika. Vođeni našom krilaticom, sigurni smo da
-          unapređujemo način na koji radite, jer MI RADIMO SA VAMA!"
-        </p>
-        <p>Esada Karović, CEO</p>
-      </div>
     </div>
-    <button class="btn btn-primary">radiii</button>
+
+    <div class="dir-secondary d-flex">
+      <h1>Radimo sa Vama!</h1>
+      <p class="container">
+        Svakom biznisu potrebna je jasna strategija. Sa Forspace rješenjem to
+        znači obezbjeđenje potpune kontrole nad svim poslovnim procesima u Vašoj
+        kompaniji kroz automatizaciju, digitalizaciju i inoviranje svih
+        poslovnih procesa. Kao rezultat višegodišnjeg istraživanja, sticanja
+        znanja i prihvatanja svjetskih praksi, Forspace tim daje bezrezervnu
+        podršku u svim fazama korištenja, a posebno smo ponosni na našu
+        post-prodajnu uslugu, jer prihvatanjem ovog softvera možete računati na
+        naš stalni angažman i kontakt. Mi smo prvi domaći brend na tržištu ERP
+        softvera sa predznakom njemačke tehnologije koji omogućava smanjenje
+        korištenja pisane dokumentacije, uštedu vremena i novca, te predstavlja
+        potpuno prilagođeno i razumljivo softversko rješenje za krajnjeg
+        korisnika. Vođeni našom krilaticom, sigurni smo da unapređujemo način na
+        koji radite, jer MI RADIMO SA VAMA!"
+      </p>
+      <p>Esada Karović, CEO</p>
+    </div>
   </div>
 </template>
 <script>
@@ -77,34 +87,42 @@ export default {
 <style lang="scss" scoped>
 @keyframes slideIn {
   0% {
-    transform: translateY(-80%);
+    transform: translateY(-60%);
   }
   100% {
     transform: translateY(0%);
   }
 }
-.dir-secondary{
-  display:flex;
+.dir-secondary {
+  display: flex;
   flex-direction: column;
   vertical-align: middle;
   justify-content: center;
+  color: #162250;
+  margin-top: 50px;
+  h1 {
+    color: #162250 !important;
+  }
 }
 .body {
   animation: slideIn 1s ease-in;
 }
 .dir-container {
+  font-size: larger;
   h1 {
     color: white;
   }
   color: white;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width:80%;
-  margin:auto;
+  display: flex;
+  margin-top: 100px;
+  width: 80%;
+  margin: auto;
+  padding: 20px;
 }
 .direktorica {
-  margin-top: 0px;
+  margin-top: 40px;
   box-sizing: border-box;
+  max-width: 500px;
 }
 img {
   margin: auto;
@@ -119,6 +137,7 @@ img {
 }
 .erp-main-text {
   color: white;
+  margin-top: 70px;
 }
 
 .cube-background {
@@ -140,7 +159,7 @@ img {
 }
 
 .body {
-  margin-top: 85vh;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   width: 90%;
