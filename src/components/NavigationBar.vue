@@ -1,6 +1,12 @@
 @author Halid Lihovac
 <template lang="">
-   <div class="nav-wrapper">    <img
+  <div
+    class="nav-wrapper"
+    data-aos="fade-in"
+    data-aos-duration="1500"
+    data-aos-ease="ease"
+  >
+    <img
       @click="onHome"
       class="logo"
       alt="Forspace Solutions"
@@ -17,8 +23,7 @@
       <router-link to="/promo">{{ $t("promo") }}</router-link>
       <DropBar></DropBar>
     </nav>
-   </div>
-
+  </div>
 </template>
 <script>
 import DropBar from "@/components/DropBar.vue";
@@ -28,7 +33,6 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
 @keyframes appear {
   0% {
     opacity: 0;
@@ -37,13 +41,20 @@ export default {
     opacity: 1;
   }
 }
+@keyframes underline {
+  0% {
+  }
+  100% {
+    text-decoration: underline;
+  }
+}
+
 nav {
   padding: 25px;
   display: flex;
   vertical-align: middle;
   animation: appear ease-in 1s;
   a {
-    font-weight: bold;
     color: #162250;
     font-size: 1.5em;
     text-decoration: none;

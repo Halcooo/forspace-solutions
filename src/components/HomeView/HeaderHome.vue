@@ -20,7 +20,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrapper {
-  background: url(@/assets/images/gradient-bg.png) center right no-repeat;
+  background: url(@/assets/images/futuristic-smart-city-with-5g-global-network-technology.jpg) center right no-repeat;
   background-color: #263b53;
   height: 90vh;
   top: 0px;

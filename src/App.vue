@@ -4,9 +4,11 @@
     <NavigationBar></NavigationBar>
   </div>
   <router-view />
+<TheFooter></TheFooter>
 </template>
 <script>
 import NavigationBar from "@/components/NavigationBar.vue";
+import TheFooter from "@/components/TheFooter.vue"
 import AOS from 'aos'
 export default {
   mounted() {
@@ -14,6 +16,7 @@ export default {
   },
   components: {
     NavigationBar,
+    TheFooter,
   },
   methods: {
     onHome() {
