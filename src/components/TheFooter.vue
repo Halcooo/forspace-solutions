@@ -13,8 +13,8 @@
       ></a>
     </div>
     <div class="info">
-      <h4><a href="https://forspace.ba/products">FORSPACE Proizvodi</a></h4>
-      <br /><br />
+      <h4><a href="">FORSPACE Proizvodi</a></h4>
+
       <p>Računovodstvo</p>
       <p>Kontroling</p>
       <p>Ljudski resursi</p>
@@ -25,17 +25,14 @@
       <br /><br />
       <h4>FORSPACE Usluge</h4>
       <br />
-      <h4><a href="https://forspace.ba/contact">Kontaktirajte nas</a></h4>
-      <br /><br />
-      <br />
+      <h4><a href="">Kontaktirajte nas</a></h4>
       <p>
         Adresa: Bulevar Meše Selimovića 16, <br />71000 Sarajevo, Bosna i
         Hercegovina <br />
         Tel: +387 33 774 873 <br />info@forspace.ba
       </p>
-      <br /><br />
+
       <p><b>© 2021 Forspace - All Rights Reserved</b></p>
-      <br /><br /><br />
     </div>
   </div>
 </template>
@@ -45,21 +42,33 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.content {
+  text-align: left;
+  margin-left: 17vw;
+}
+p {
+  color: white;
+  text-align: left;
+}
+.info {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
 .footer {
-  background-image: url('../assets/images/footer2.png');
+  background-image: url("../assets/svg/login-background.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: -0.01vw;
-  height: 66vw;
   width: 100%;
+  box-sizing: border-box;
 }
 .icons {
-    margin-left: 17vw;
-    color: #fff;
-    margin-top: 5vw;
-    margin-bottom: 1vw;
-    display: inline-block;
-    font-size: 2vw;
+  margin-left: 17vw;
+  color: #fff;
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+  display: inline-block;
+  font-size: 2vw;
 }
 </style>

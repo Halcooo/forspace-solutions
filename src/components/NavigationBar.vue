@@ -21,8 +21,8 @@
       <router-link to="/forspace-preview">{{ $t("preview") }}</router-link>
       <router-link to="/contact">{{ $t("contact") }}</router-link>
       <router-link to="/promo">{{ $t("promo") }}</router-link>
-      <DropBar></DropBar>
-    </nav>
+     
+    </nav> <DropBar></DropBar>
   </div>
 </template>
 <script>
