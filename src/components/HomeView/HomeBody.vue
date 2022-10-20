@@ -5,6 +5,7 @@
     data-aos="slide-up"
     data-aos-duration="1500"
     data-aos-ease="ease"
+    data-aos-anchor-placement="center-bottom"
   >
     <h1>Posao iz jednog izvora</h1>
     <p>
@@ -40,6 +41,7 @@
     data-aos-ease="ease"
     data-aos-duration="1500"
     data-aos-delay="500"
+    data-aos-anchor-placement="center-bottom"
   >
     <div class="erp-text">
       <h1 class="erp-main-text">Forspace ERP & Računovodstvo +</h1>
@@ -47,14 +49,24 @@
         Odluke zasnovane na činjenicama, a ne na pretpostavkama!
       </p>
     </div>
-    <img src="@/assets/images/kocka_.png" alt="cube" />
+    <img
+      src="@/assets/images/kocka_.png"
+      alt="cube"
+      data-aos="fade"
+      data-aos-ease="ease"
+      data-aos-duration="1500"
+      data-aos-delay="500"
+      data-aos-anchor-placement="center-bottom"
+    />
   </div>
   <div
     class="dir-container"
     data-aos="zoom-in"
     data-aos-duration="1500"
     data-aos-delay="500"
+    data-aos-anchor-placement="center-bottom"
   >
+    >
     <div class="container">
       <img
         class="direktorica"
@@ -109,13 +121,14 @@
       obostrano zadovoljstvo. Ukoliko neki od naših klijenata nisu još uvijek
       dodani na listu, ne znači da ih manje cijenimo ili da su nam manje važni.
     </p>
-    <br>
+    <br />
   </div>
   <div
     class="last-item"
     data-aos="slide-up"
     data-aos-duration="1500"
     data-aos-delay="500"
+    data-aos-anchor-placement="bottom"
   >
     <img class="ap-image" src="@/assets/images/ApDigital-1.jpg" alt="" />
     <p>
@@ -136,8 +149,8 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.conatiner-sm{
-  p{
+.conatiner-sm {
+  p {
     margin-bottom: 15vh;
   }
 }
@@ -226,7 +239,7 @@ img {
 .items {
   display: flex;
   justify-content: center;
-  margin:50px;
+  margin: 50px;
   .item {
     padding: 10px;
     margin-right: 10px;

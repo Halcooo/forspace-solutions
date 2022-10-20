@@ -53,6 +53,7 @@ nav {
   display: flex;
   vertical-align: middle;
   a {
+    font-weight:lighter;
     color: #162250;
     font-size: 1.35em;
     text-decoration: none;
