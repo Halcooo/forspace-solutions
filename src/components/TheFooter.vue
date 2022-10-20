@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer" data-aos="fade" data-aos-duration="1000">
     <div class="icons">
       <p>PRATITE NAS</p>
       <a href="https://www.linkedin.com/company/forspace-solutions/"
@@ -43,6 +43,14 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+svg {
+  color: white;
+  padding: 5px;
+  margin: 3px;
+  &:hover {
+    color: #f16822;
+  }
+}
 .content {
   text-align: left;
   margin-left: 17vw;

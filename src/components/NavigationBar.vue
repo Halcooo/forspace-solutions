@@ -24,6 +24,11 @@ import DropBar from "@/components/DropBar.vue";
 export default {
   name: "NavigationBar",
   components: { DropBar },
+  methods: {
+    onHome(){
+     this.$router.push('/')
+    }
+  },
 };
 </script>
 <style lang="scss" scoped>

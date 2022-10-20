@@ -226,11 +226,10 @@ img {
 .items {
   display: flex;
   justify-content: center;
+  margin:50px;
   .item {
     padding: 10px;
     margin-right: 10px;
-    &:hover {
-    }
   }
 }
 
