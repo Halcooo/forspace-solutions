@@ -40,15 +40,13 @@ export default {
 }
 
 select {
-	
+  margin-right: 2vw;
   outline: 0;
   border: 0;
   box-shadow: none;
-  flex: 1;
   padding: 0 1em;
   color: #fff;
   background-color: #162250;
-  background-image: none;
   cursor: pointer;
   font-size: large;
 }

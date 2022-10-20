@@ -3,14 +3,14 @@
     <div class="icons">
       <p>PRATITE NAS</p>
       <a href="https://www.linkedin.com/company/forspace-solutions/"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
+        ><font-awesome-icon icon="fa-brands fa-linkedin" />
+      </a>
       <a href="https://www.facebook.com/Forspace-Solutions-104570971684748">
-        <i class="fab fa-facebook"> </i
-      ></a>
+        <font-awesome-icon icon="fa-brands fa-facebook"
+      /></a>
       <a href="https://www.instagram.com/forspace.ba/">
-        <i class="fab fa-instagram"> </i
-      ></a>
+        <font-awesome-icon icon="fa-brands fa-instagram"
+      /></a>
     </div>
     <div class="info">
       <h4><a href="">FORSPACE Proizvodi</a></h4>
@@ -39,6 +39,7 @@
 <script>
 export default {
   name: "TheFooter",
+  components: {},
 };
 </script>
 <style lang="scss" scoped>

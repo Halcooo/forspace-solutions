@@ -1,6 +1,9 @@
 //@author Halid Lihovac
 <template>
-  <div class="nav-wrapper">
+  <div class="nav-wrapper"
+  data-aos="fade-in"
+    data-aos-duration="1500"
+    data-aos-ease="ease">
     <NavigationBar></NavigationBar>
   </div>
   <router-view />
@@ -50,13 +53,13 @@ body {
   }
 }
 .nav-wrapper {
+  position:sticky;
   padding-left: 25px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: space-between;
   z-index: 10;
-  width: 95%;
 }
 h1 {
   color: $primary-color;

@@ -110,14 +110,23 @@
       dodani na listu, ne znači da ih manje cijenimo ili da su nam manje važni.
     </p>
   </div>
-  <div class="last-item">
-    <img class="ap-image" src="@/assets/images/ApDigital-1.jpg" alt="">
-    <p>"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions.
-Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.
-Omogućili su nam, trenirali nas i dali nam samopouzdanje da svoje resurse koristimo mudro,
-oslobađajući ih svakodnevnih rutina i optimizirajući njihove svakodnevne performanse.
-Njihov pristup je privlačan i relevantan za industriju.
-Sada imamo više mogućnosti i vremena za rad na postizanju novih poslovnih rezultata.“</p>
+  <div
+    class="last-item"
+    data-aos="slide-up"
+    data-aos-duration="1500"
+    data-aos-delay="500"
+  >
+    <img class="ap-image" src="@/assets/images/ApDigital-1.jpg" alt="" />
+    <p>
+      "Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje
+      našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov
+      konkurentski krajolik je strm, ali Forspace to čini ostvarivim. Omogućili
+      su nam, trenirali nas i dali nam samopouzdanje da svoje resurse koristimo
+      mudro, oslobađajući ih svakodnevnih rutina i optimizirajući njihove
+      svakodnevne performanse. Njihov pristup je privlačan i relevantan za
+      industriju. Sada imamo više mogućnosti i vremena za rad na postizanju
+      novih poslovnih rezultata.“
+    </p>
   </div>
 </template>
 <script>
@@ -126,11 +135,15 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.ap-image{
+.last-item{
+  margin:auto;
+  width:60%
+}
+.ap-image {
   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 .companies {
   box-sizing: border-box;

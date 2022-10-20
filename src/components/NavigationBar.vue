@@ -1,11 +1,6 @@
 @author Halid Lihovac
 <template lang="">
-  <div
-    class="nav-wrapper"
-    data-aos="fade-in"
-    data-aos-duration="1500"
-    data-aos-ease="ease"
-  >
+  
     <img
       @click="onHome"
       class="logo"
@@ -23,7 +18,6 @@
       <router-link to="/promo">{{ $t("promo") }}</router-link>
      
     </nav> <DropBar></DropBar>
-  </div>
 </template>
 <script>
 import DropBar from "@/components/DropBar.vue";
