@@ -1,5 +1,5 @@
 <template>
-  <select name="Any" id="any" v-model="selected" @change="translatePage">
+  <select class="decorated" v-model="selected" @change="translatePage">
     <option v-for="lang in fetchDropData" :value="lang.abr">
       {{ lang.langauge }}
     </option>
@@ -33,11 +33,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-:root {
-  --background-gradient: linear-gradient(30deg, #f39c12 30%, #f1c40f);
-  --gray: #34495e;
-  --darkgray: #2c3e50;
-}
 
 select {
   margin-right: 2vw;
@@ -45,10 +40,11 @@ select {
   border: 0;
   box-shadow: none;
   padding: 0 1em;
-  color: #fff;
-  background-color: #162250;
+  color:#25435b;
+  background-color: rgba(248, 248, 255, 0.75);
   cursor: pointer;
   font-size: large;
+  border-radius: 3px;
 }
 .select {
   position: relative;
@@ -57,15 +53,23 @@ select {
   height: 3em;
   border-radius: 0.25em;
   overflow: hidden;
+   &:focus{
+    border:none;
+   }
 }
 .select::after {
-  content: "\25BC";
   position: absolute;
   top: 0;
   right: 0;
   padding: 1em;
   background-color: #34495e;
-  transition: 0.25s all ease;
+  transition: 0.5s all ease;
   pointer-events: none;
 }
+select:hover {
+       background-color: rgba(248, 248, 255, 0.75);
+    }
+
+
+
 </style>

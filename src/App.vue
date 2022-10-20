@@ -36,8 +36,10 @@ export default {
    url('@/assets/fonts/Raleway-Medium.ttf') format("truetype");
 }
 body {
+  background-color: rgba(248, 248, 255, 0.75);
   padding: 0px;
   margin: 0px;
+  font-size: 1.3em;
 }
 
 #app {

@@ -47,12 +47,11 @@ nav {
   padding: 25px;
   display: flex;
   vertical-align: middle;
-  animation: appear ease-in 1s;
   a {
     color: #162250;
-    font-size: 1.5em;
+    font-size: 1.35em;
     text-decoration: none;
-    margin-right: 12px;
+    margin-right: 17px;
     &:hover {
       text-decoration: underline;
     }

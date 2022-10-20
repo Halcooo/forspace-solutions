@@ -109,6 +109,7 @@
       obostrano zadovoljstvo. Ukoliko neki od naših klijenata nisu još uvijek
       dodani na listu, ne znači da ih manje cijenimo ili da su nam manje važni.
     </p>
+    <br>
   </div>
   <div
     class="last-item"
@@ -135,21 +136,35 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.last-item{
-  margin:auto;
-  width:60%
+.conatiner-sm{
+  p{
+    margin-bottom: 15vh;
+  }
+}
+.last-item {
+  margin: auto;
+  width: 60%;
+  p {
+    margin-bottom: 5vh;
+  }
 }
 .ap-image {
   display: block;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  width: 20vw;
+  margin-bottom: 5vh;
 }
 .companies {
   box-sizing: border-box;
   padding-top: 4vw;
   margin: auto;
   max-width: 70vw;
+  margin-bottom: 5vh;
+  p {
+    margin-bottom: 15vh;
+  }
   img {
     padding: 0;
     max-width: 15vw;

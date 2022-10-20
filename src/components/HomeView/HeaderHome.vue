@@ -1,9 +1,11 @@
 <template>
-  <div class="wrapper">
+  <div class="wrapper" data-aos="fade-in"    data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
+  >
     <div class="header-text container">
       <HeaderText></HeaderText>
     </div>
-    <div class="demo-full-container">
+    <div class="demo-full-container"   data-aos="flip-right"    data-aos-duration="1500">
       <RouterLink to="/contact"> Želim prezentaciju</RouterLink>
     </div>
   </div>
