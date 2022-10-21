@@ -1,11 +1,19 @@
 <template>
-  <div class="wrapper" data-aos="fade-in"    data-aos-easing="ease-out-cubic"
-     data-aos-duration="1000">
+  <div
+    class="wrapper"
+    data-aos="fade-in"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="1000"
   >
+    >
     <div class="header-text container">
       <HeaderText></HeaderText>
     </div>
-    <div class="demo-full-container"   data-aos="flip-right"    data-aos-duration="1500">
+    <div
+      class="demo-full-container"
+      data-aos="flip-right"
+      data-aos-duration="1500"
+    >
       <RouterLink to="/contact"> Želim prezentaciju</RouterLink>
     </div>
   </div>
@@ -22,7 +30,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrapper {
-  background: url(@/assets/images/futuristic-smart-city-with-5g-global-network-technology.jpg) center right no-repeat;
+  background: url(@/assets/images/futuristic-smart-city-with-5g-global-network-technology.jpg)
+    center right no-repeat;
   background-color: #263b53;
   height: 90vh;
   top: 0px;

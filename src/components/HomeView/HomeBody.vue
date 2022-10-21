@@ -124,7 +124,7 @@
     <br />
   </div>
   <div
-    class="last-item"
+  class="last-item"
     data-aos="slide-up"
     data-aos-duration="1500"
     data-aos-delay="500"
