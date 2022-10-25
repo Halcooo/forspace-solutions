@@ -67,15 +67,15 @@
     data-aos-anchor-placement="center-bottom"
   >
     >
-    <div class="container">
+    <!-- <div class="container">
       <img
         class="direktorica"
         src="@/assets/images/Slika-direktorice-1.jpg"
         alt="direktorica"
       />
-    </div>
+    </div> -->
 
-    <div class="dir-secondary d-flex">
+    <!-- <div class="dir-secondary d-flex">
       <h1>Radimo sa Vama!</h1>
       <p class="container">
         Svakom biznisu potrebna je jasna strategija. Sa Forspace rješenjem to
@@ -93,7 +93,7 @@
         koji radite, jer MI RADIMO SA VAMA!"
       </p>
       <p>Esada Karović, CEO</p>
-    </div>
+    </div> -->
   </div>
   <div
     class="container-sm"
@@ -123,7 +123,7 @@
     </p>
     <br />
   </div>
-  <div
+  <!-- <div
   class="last-item"
     data-aos="slide-up"
     data-aos-duration="1500"
@@ -141,7 +141,7 @@
       industriju. Sada imamo više mogućnosti i vremena za rad na postizanju
       novih poslovnih rezultata.“
     </p>
-  </div>
+  </div> -->
 </template>
 <script>
 export default {
@@ -222,11 +222,11 @@ img {
 }
 .erp-text {
   padding: 10px;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 .erp-main-text {
   color: white;
-  margin-top: 70px;
+  margin-top: 90px;
 }
 
 .cube-background {
@@ -235,6 +235,7 @@ img {
   background-size: cover;
   display: flex;
   flex-direction: column;
+  height: 100vh;
 }
 .items {
   display: flex;

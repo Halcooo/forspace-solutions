@@ -6,7 +6,7 @@
     data-aos-duration="1000"
   >
     <div class="header-text container">
-     <!-- <HeaderText></HeaderText> -->
+      <!-- <HeaderText></HeaderText> -->
     </div>
     <div
       class="demo-full-container"
@@ -29,8 +29,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrapper {
-  background: url(@/assets/images/header-cover.jpg)
-    center right no-repeat;
+  background: url(@/assets/images/header-cover.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background-color: #263b53;
   height: 100vh;
   top: 0px;

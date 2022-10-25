@@ -2,14 +2,34 @@
   <div class="burger burger1" :class="openedMenu" @click="toogleMenu">
     <div></div>
   </div>
+
   <div :class="displaySideBar">
-    <div class="container-sm d-flex">
-      <ul>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-      </ul>
+    <div class="inner-sidebar">
+      <div class="side-logo d-flex">
+        <img width="60" src="@/assets/svg/logo-short.svg" alt="" />
+      </div>
+      <div class="container-sm d-flex side-links">
+        <ul @click="toogleMenu">
+          <li>
+            <router-link to="/">{{ $t("home") }}</router-link>
+          </li>
+          <li>
+            <router-link to="/news">{{ $t("news") }}</router-link>
+          </li>
+
+          <li>
+            <router-link to="/about">{{ $t("about") }}</router-link>
+          </li>
+          <li>
+            <router-link to="/forspace-preview">{{
+              $t("preview")
+            }}</router-link>
+          </li>
+          <li>
+            <router-link to="/promo">{{ $t("promo") }}</router-link>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>
@@ -36,6 +56,38 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.side-logo{
+  margin: 40px;
+}
+.inner-sidebar {
+  display: flex;
+  flex-direction: column;
+}
+.side-links {
+  margin-top: 135px;
+  ul {
+    list-style-type: none;
+    li {
+      text-align: left;
+    }
+    a {
+      text-align: left;
+      vertical-align: middle;
+      font-weight: lighter;
+      color: #162250;
+      font-size: 1.15em;
+      text-decoration: none;
+      margin-right: 17px;
+      margin-bottom: 15px;      &:hover {
+        text-decoration: underline;
+      }
+
+      &.router-link-exact-active {
+        color: #f16822;
+      }
+    }
+  }
+}
 .sidebar-close {
   display: none;
   animation: fadeOut 0.5s ease-out;
@@ -46,7 +98,7 @@ export default {
     transform: translateX(50px);
   }
   100% {
-    opacity: 0.7;
+    opacity: 0.85;
     transform: translateX(0);
   }
 }
@@ -60,7 +112,7 @@ export default {
   }
 }
 .sidebar-open {
-  opacity: 0.7;
+  opacity: 0.85;
   background-color: #fff;
   position: absolute;
   z-index: 10;
