@@ -5,9 +5,8 @@
     data-aos-easing="ease-out-cubic"
     data-aos-duration="1000"
   >
-    >
     <div class="header-text container">
-      <HeaderText></HeaderText>
+     <!-- <HeaderText></HeaderText> -->
     </div>
     <div
       class="demo-full-container"
@@ -30,10 +29,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrapper {
-  background: url(@/assets/images/futuristic-smart-city-with-5g-global-network-technology.jpg)
+  background: url(@/assets/images/header-cover.jpg)
     center right no-repeat;
   background-color: #263b53;
-  height: 90vh;
+  height: 100vh;
   top: 0px;
   background-size: cover;
 }
@@ -68,7 +67,7 @@ export default {
   a {
     text-decoration: none;
     color: white;
-    font-size: 1.5em;
+    font-size: 1.1em;
     &:hover {
       color: #25435b;
     }
