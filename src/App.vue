@@ -44,7 +44,6 @@ body {
 
 #app {
   font-family: Raleway, Helvetica, Arial, sans-serif;
-
   text-align: center;
   color: $primary-color;
 }

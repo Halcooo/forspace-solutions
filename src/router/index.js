@@ -7,7 +7,10 @@ import ForspacePreview from "../views/ForspacePreview.vue";
 import ContactView from "../views/ContactView.vue";
 import PromoView from "../views/PromoView.vue";
 import AboutView from "../views/AboutView.vue";
-// import store from "@/store/index.js"; // to use store in router if needed 
+import TheSales from "../components/NewsView/TheSales.vue";
+import ThePurchase from "../components/NewsView/ThePurchase.vue";
+
+// import store from "@/store/index.js"; // to use store in router if needed
 
 const routes = [
   {
@@ -24,6 +27,18 @@ const routes = [
     path: "/news",
     name: "news",
     component: NewsView,
+    children: [
+      {
+        path: "/sales",
+        name: "sales",
+        component: TheSales,
+      },
+      {
+        path: "/purchase",
+        name: "purchase",
+        component: ThePurchase,
+      },
+    ],
   },
   {
     path: "/products",
