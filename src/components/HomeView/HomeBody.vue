@@ -1,7 +1,7 @@
 @author Halid Lihovac
 <template>
   <div
-    class="body"
+    class="body container"
     data-aos="slide-up"
     data-aos-duration="1500"
     data-aos-ease="ease"
@@ -12,26 +12,28 @@
       Iskoristite Forspace potpuno integrisano all-in-one rješenje za <br />
       standardizaciju i digitalizaciju poslovnih procesa u Vašoj kompaniji.
     </p>
-    <div class="items">
-      <div class="item">
-        <img src="@/assets/images/companies.png" alt="companies" />
-        <h4>Vaša kompanija pod jednim krovom</h4>
-        <p>Centralno upravljanje procesima.</p>
-      </div>
-      <div class="item">
-        <img src="@/assets/images/cloud.png" alt="cloud" />
-        <h4>Vaša kompanija pod jednim krovom</h4>
-        <p>Centralno upravljanje procesima.</p>
-      </div>
-      <div class="item">
-        <img src="@/assets/images/config.png" alt="config" />
-        <h4>Vaša kompanija pod jednim krovom</h4>
-        <p>Centralno upravljanje procesima.</p>
-      </div>
-      <div class="item">
-        <img src="@/assets/images/circle.png" alt="circle" />
-        <h4>Vaša kompanija pod jednim krovom</h4>
-        <p>Centralno upravljanje procesima.</p>
+    <div class="items container">
+      <div class="row">
+        <div class="col-sm item">
+          <img src="@/assets/images/companies.png" alt="companies" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
+        <div class="item col-sm">
+          <img src="@/assets/images/cloud.png" alt="cloud" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
+        <div class="item col-sm">
+          <img src="@/assets/images/config.png" alt="config" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
+        <div class="item col-sm">
+          <img src="@/assets/images/circle.png" alt="circle" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -237,16 +239,14 @@ img {
   flex-direction: column;
   height: 100vh;
 }
-.items {
-  display: flex;
-  justify-content: center;
-  margin: 50px;
-  .item {
-    padding: 10px;
-    margin-right: 10px;
+
+.item{
+  margin-bottom: 5vh;
+  margin-top:4vh;
+  h4{
+    font-weight: bolder;
   }
 }
-
 .body {
   margin-top: 30px;
   margin-left: auto;

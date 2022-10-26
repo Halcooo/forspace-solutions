@@ -27,16 +27,87 @@
       procesa, razvoju i digitalnoj transformaciji. Iz naše ekspertize posebno
       izdvajamo:
     </p>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <div class="card" data-aos="fade" data-aos-duration="800"  data-aos-anchor-placement="center-bottom">
+            <h2>ERP Sistemi</h2>
+            <img src="@/assets/images/erp-sistemi.png" alt="" />
+            <p>
+              ERP (Enterprise Resource Planning) sistem je poslovni program koji
+              omogućava kompanijama da planiraju svoje resurse i upravljaju
+              cjelokupnim poslovanjem i pokriva sve procesne tokove uslužne,
+              prodajne ili proizvodne djelatnosti.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" data-aos="fade" data-aos-duration="800"  data-aos-anchor-placement="center-bottom">
+            <h2>DMS Sistemi</h2>
+            <img src="@/assets/images/dms.png" alt="" />
+            <p>
+              DMS (Document Management System) je poslovni program za praćenje,
+              upravljanje i digitalno arhiviranje dokumenata. Vodi evidenciju o
+              različitim vrstama dokumenata kreiranih i arhiviranih od strane
+              različitih korisnika (praćenje historije).
+            </p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" data-aos="fade" data-aos-duration="800"  data-aos-anchor-placement="center-bottom">
+            <h2>WMS Sistemi</h2>
+            <img src="@/assets/images/wms.png" alt="" />
+            <p>
+              WMS (Warehouse Management System) je poslovni program za
+              upravljanje skladištem koji ima za cilj da automatizuje,
+              pojednostavi i racionalizuje radne zadatke i aktivnosti unutar
+              skladišta, čime se povećava produktivnost i smanjuje mogućnost
+              greške na minimum.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" data-aos="fade" data-aos-duration="800"  data-aos-anchor-placement="center-bottom">
+            <h2>Sistemi plaćanja</h2>
+            <img src="@/assets/images/sistemiplacanja.png" alt="" />
+            <p>
+              Payment Provider aplikacije za platne sisteme u eCommerce sektoru
+              i integracija u cjelokupan lanac procesa.
+            </p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card" data-aos="fade" data-aos-duration="800"  data-aos-anchor-placement="center-bottom">
+            <h2>Riješenja po mjeri</h2>
+            <img src="@/assets/images/rijesenjapomjeri.jpg" alt="" />
+            <p>
+              Stručnjaci smo u pretvaranju različitih poslovnih potreba/ideja
+              naših klijenata u digitalne proizvode namijenjene unapređenju
+              njihovih poslovnih procesa, razvoju i digitalnoj transformaciji.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
 export default {};
 </script>
 <style lang="scss" scoped>
-h3{
-  margin:2vw;
+.card {
+  margin: 20px;
+  margin-bottom: 10px;
+  p {
+    padding: 15px;
+  }
+  h2{
+    padding: 5px;
+  }
+}
 
-  
+h3 {
+  margin: 2vw;
 }
 .wrapper {
   background-image: url(@/assets/images/services.jpg);
@@ -46,22 +117,22 @@ h3{
   padding-top: 200px;
 }
 .content {
-  h1{
+  padding: 20px;
+  h1 {
     text-align: center;
     margin: 2vw;
   }
-  ul{
+  ul {
     margin: 2vw;
   }
   text-align: left;
   h3 {
     margin-left: 2vw;
   }
-  
-    li {
-      margin-left: 5vw;
-      margin-bottom:1vw;
-    }
-  
+
+  li {
+    margin-left: 5vw;
+    margin-bottom: 1vw;
+  }
 }
 </style>
