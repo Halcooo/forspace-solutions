@@ -20,6 +20,7 @@
   background-image: url("@/assets/images/purchase-cover-image.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 50vh;
   z-index:1;
 }

@@ -9,7 +9,7 @@ export default {};
   background-image: url(@/assets/images/contact.jpg);
   height: 100vh;
   background-repeat: no-repeat;
-  background-position: 0 25cm 0 0;
+  background-position: center;
   padding-top: 200px;
 }
 </style>

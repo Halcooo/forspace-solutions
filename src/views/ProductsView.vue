@@ -34,6 +34,7 @@ export default {};
   background-image: url(@/assets/images/productscover.jpg);
   height: 100vh;
   background-repeat: no-repeat;
+  background-position: center;
   background-attachment: fixed;
   padding-top: 200px;
 }

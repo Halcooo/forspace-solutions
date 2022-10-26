@@ -28,6 +28,15 @@
           <li>
             <router-link to="/promo">{{ $t("promo") }}</router-link>
           </li>
+          <li>
+            <router-link to="/services">{{ $t("services") }}</router-link>
+          </li>
+          <li>
+            <router-link to="/products">{{ $t("products") }}</router-link>
+          </li>
+          <li>
+            <router-link to="/contact">{{ $t("contact") }}</router-link>
+          </li>
         </ul>
       </div>
     </div>
@@ -56,7 +65,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.side-logo{
+.side-logo {
   margin: 40px;
 }
 .inner-sidebar {
@@ -78,7 +87,8 @@ export default {
       font-size: 1.15em;
       text-decoration: none;
       margin-right: 17px;
-      margin-bottom: 15px;      &:hover {
+      margin-bottom: 15px;
+      &:hover {
         text-decoration: underline;
       }
 

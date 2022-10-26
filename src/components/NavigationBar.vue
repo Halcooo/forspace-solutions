@@ -9,11 +9,11 @@
   >
     <img
       @click="onHome"
-      class="logo"
+      class="logo d-none d-md-block"
       alt="Forspace Solutions"
       src="@/assets/svg/logo.svg"
     />
-    <nav>
+    <nav class="d-none d-lg-block">
 
       <!-- <router-link to="/news">{{ $t("news") }}</router-link> -->
       <router-link to="/products">{{ $t("products") }}</router-link>
