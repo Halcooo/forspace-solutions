@@ -45,6 +45,13 @@
 <script>
 export default {
   name: "TheSideBar",
+
+  data() {
+    return {
+      openedMenu: "unToggled",
+      displaySideBar: "sidebar-close",
+    };
+  },
   methods: {
     toogleMenu() {
       if (this.openedMenu == "unToggled") {
@@ -55,12 +62,6 @@ export default {
         this.displaySideBar = "sidebar-close";
       }
     },
-  },
-  data() {
-    return {
-      openedMenu: "unToggled",
-      displaySideBar: "sidebar-close",
-    };
   },
 };
 </script>
@@ -150,6 +151,7 @@ export default {
   }
   & > div {
     width: 4em;
+    justify-content: right;
     height: 0.5em;
     border-radius: var(--borderRadius);
     background: var(--color1);
