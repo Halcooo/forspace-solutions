@@ -15,10 +15,9 @@
     />
     <nav class="d-none d-lg-block">
 
-      <!-- <router-link to="/news">{{ $t("news") }}</router-link> -->
+      <!-- <router-link to="/news">{{ $t("news") }}</router-link>  ovo izbaciti ne koristiti vijesti više-->  
       <router-link to="/products">{{ $t("products") }}</router-link>
       <router-link to="/services">{{ $t("services") }}</router-link>
-
       <router-link to="/contact">{{ $t("contact") }}</router-link>
 
     </nav>
