@@ -1,10 +1,10 @@
 {
-    "home": "Start",
-    "news": "Novosti",
-    "about": "O nama",
-    "products": "Produkte",
-    "services": "Usluge",
-    "preview": "Pregled",
-    "contact": "Kontakt",
-    "promo" : "Promocije"
-  }
+  "home": "Start",
+  "news": "Novosti",
+  "about": "O nama",
+  "products": "Produkte",
+  "services": "Usluge",
+  "preview": "Pregled",
+  "contact": "Kontakt",
+  "promo" : "Promocije"
+}

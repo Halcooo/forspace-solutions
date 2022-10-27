@@ -1,113 +1,48 @@
 @author Halid Lihovac
-<template lang="" v-if="showFullNav">
-	<div
-		class="nav-wrapper"
-		:class="sticky"
-		data-aos="fade-in"
-		data-aos-easing="ease-in"
-		data-aos-duration="800"
-	>
-		<img
-			@click="onHome"
-			class="logo d-none d-md-block"
-			alt="Forspace Solutions"
-			src="@/assets/svg/logo.svg"
-		/>
-		<nav class="d-none d-lg-block">
-			p ovdje iymjena
-			<!-- <router-link to="/news">{{ $t("news") }}</router-link> -->
-			<router-link to="/products">{{ $t('products') }}</router-link>
-			<router-link to="/services">{{ $t('services') }}</router-link>
+<template>
+	<div class="nav-wrapper">
+		<div class="nav-wrapper-flex">
+			<div class="logo">
+				<img
+					alt="Forspace Solutions"
+					src="@/assets/svg/logo_white.svg"
+				/>
+			</div>
 
-			<router-link to="/contact">{{ $t('contact') }}</router-link>
-		</nav>
-		<!-- <DropBar></DropBar> -->
-
-		<TheSideBar></TheSideBar>
+			<ul class="nav-links">
+				<Links />
+			</ul>
+		</div>
 	</div>
 </template>
 <script>
-	import DropBar from '@/components/DropBar.vue';
-	import TheSideBar from '@/components/TheSideBar.vue';
+	import Links from '@/components/NavigationLinks.vue';
 	export default {
-		name: 'NavigationBar',
-		data() {
-			return { show: true, scrollPosition: 0, showFullNav: true };
-		},
-		created() {
-			window.addEventListener('scroll', this.handleScroll);
-		},
-		components: { DropBar, TheSideBar },
-		methods: {
-			onHome() {
-				this.$router.push('/');
-			},
-			handleScroll() {
-				var currentScrollPosition = window.scrollY;
-
-				if (currentScrollPosition < this.scrollPosition) {
-					console.log('Scrolling up');
-					this.showFullNav = true;
-				} else {
-					this.showFullNav = false;
-					console.log('Scrolling down');
-				}
-
-				this.scrollPosition = window.scrollY;
-			},
-		},
+		name: 'Nav',
+		components: { Links },
 	};
 </script>
 <style lang="scss" scoped>
-	@keyframes appear {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
-	@keyframes underline {
-		0% {
-		}
-		100% {
-			text-decoration: underline;
-		}
-	}
+	@import '../styles/variables.scss';
 
-	nav {
-		padding: 25px;
-		display: flex;
-		vertical-align: middle;
-		justify-content: center;
-		align-items: center;
-		a {
-			vertical-align: middle;
-			font-weight: lighter;
-			color: #162250;
-			font-size: 1.15em;
-			text-decoration: none;
-			margin-right: 17px;
-			&:hover {
-				text-decoration: underline;
-			}
-
-			&.router-link-exact-active {
-				color: #f16822;
-			}
-		}
-	}
-	.logo {
-		justify-self: flex-end;
-		margin-left: 15vw;
-		scale: 0.8;
-	}
 	.nav-wrapper {
-		box-sizing: border-box;
-		display: flex;
-		justify-content: space-between;
-		position: absolute;
-		z-index: 10;
+		position: fixed;
+		z-index: 0;
 		width: 100%;
+
+		.nav-wrapper-flex {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			align-items: center;
+			padding: 26px 200px 26px 36px;
+			position: relative;
+			box-sizing: border-box;
+		}
+	}
+
+	.nav-links {
+		display: flex;
+		gap: 30px;
 	}
 </style>
