@@ -2,17 +2,20 @@
 <template>
   <NavigationBar></NavigationBar>
   <router-view />
+  <BaseScrollToTop></BaseScrollToTop>
   <TheFooter></TheFooter>
 </template>
 <script>
 import NavigationBar from "@/components/NavigationBar.vue";
 import TheFooter from "@/components/TheFooter.vue";
+import BaseScrollToTop from "./components/BaseScrollToTop.vue";
 import AOS from "aos";
 export default {
   mounted() {
     AOS.init();
   },
   components: {
+    BaseScrollToTop,
     NavigationBar,
     TheFooter,
   },

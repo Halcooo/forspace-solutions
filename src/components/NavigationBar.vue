@@ -2,7 +2,6 @@
 <template lang="" v-if="showFullNav">
   <div
     class="nav-wrapper"
-    :class="sticky"
     data-aos="fade-in"
     data-aos-easing="ease-in"
     data-aos-duration="800"
@@ -32,29 +31,14 @@ import TheSideBar from "@/components/TheSideBar.vue";
 export default {
   name: "NavigationBar",
   data() {
-    return { show: true, scrollPosition: 0, showFullNav: true };
-  },
-  created() {
-    window.addEventListener("scroll", this.handleScroll);
+    return { show: true, };
   },
   components: { DropBar, TheSideBar },
   methods: {
     onHome() {
       this.$router.push("/");
     },
-    handleScroll() {
-      var currentScrollPosition = window.scrollY;
 
-      if (currentScrollPosition < this.scrollPosition) {
-        console.log("Scrolling up");
-        this.showFullNav = true;
-      } else {
-        this.showFullNav = false;
-        console.log("Scrolling down");
-      }
-
-      this.scrollPosition = window.scrollY;
-    },
   },
 };
 </script>
