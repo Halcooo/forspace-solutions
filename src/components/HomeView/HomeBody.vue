@@ -105,18 +105,7 @@
   >
     <h1>Kompanije koje su već optimizirale svoje procese sa Forspace</h1>
     <div class="companies">
-      <img src="@/assets/images/asa-group-logo.png" alt="" />
-      <img src="@/assets/images/prevent-logo.png" alt="" />
-      <img src="@/assets/images/interior-logo-2.png" alt="" />
-      <img src="@/assets/images/salona-logo.png" alt="" />
-      <img src="@/assets/images/dresscode-logo.png" alt="" />
-      <img src="@/assets/images/tkt-logo.png" alt="" />
-      <img src="@/assets/images/Savent.png" alt="" />
-      <img src="@/assets/images/Maxuz.png" alt="" />
-      <img src="@/assets/images/Itrade.png" alt="" />
-      <img src="@/assets/images/Gradiz.jpg" alt="" />
-      <img src="@/assets/images/Putovaobih.png" alt="" />
-      <img src="@/assets/images/ApDigital.jpg" alt="" />
+      <BaseSlider :images="images"></BaseSlider>
     </div>
     <p>
       Sve naše klijente ponosno ističemo i gradimo partnerske odnose na
@@ -146,8 +135,30 @@
   </div> -->
 </template>
 <script>
+import BaseSlider from '../BaseSlider.vue';
 export default {
+  components:{
+    BaseSlider,
+  },
   name: "HomeBody",
+  data() {
+    return {
+      images: [
+        { id: 1, url: require('@/assets/images/asa-group-logo.png')},
+        { id: 2, url: require("@/assets/images/prevent-logo.png" )},
+        { id: 3, url: require("@/assets/images/interior-logo-2.png" )},
+        { id: 4, url: require("@/assets/images/salona-logo.png") },
+        { id: 5, url: require("@/assets/images/dresscode-logo.png" )},
+        { id: 6, url: require("@/assets/images/tkt-logo.png") },
+        { id: 7, url: require("@/assets/images/Savent.png") },
+        { id: 9, url: require("@/assets/images/Maxuz.png" )},
+        { id: 10, url: require("@/assets/images/Itrade.png" )},
+        { id: 11, url: require("@/assets/images/Gradiz.jpg") },
+        { id: 12, url: require("@/assets/images/Putovaobih.png") },
+        { id: 13, url: require("@/assets/images/ApDigital.jpg" )},
+      ],
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -182,7 +193,7 @@ export default {
   }
   img {
     padding: 0;
-    max-width: 15vw;
+    max-width: 100px;
     height: auto;
     max-height: 100px;
     margin: 15px;
@@ -240,10 +251,10 @@ img {
   height: 100vh;
 }
 
-.item{
+.item {
   margin-bottom: 5vh;
-  margin-top:4vh;
-  h4{
+  margin-top: 4vh;
+  h4 {
     font-weight: bolder;
   }
 }

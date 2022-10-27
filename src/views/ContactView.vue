@@ -2,7 +2,11 @@
   <div class="wrapper"></div>
 </template>
 <script>
-export default {};
+
+
+export default {
+
+};
 </script>
 <style lang="scss">
 .wrapper {
@@ -12,4 +16,5 @@ export default {};
   background-position: center;
   padding-top: 200px;
 }
+
 </style>
