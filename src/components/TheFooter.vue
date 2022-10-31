@@ -13,29 +13,7 @@
         <div class="me-5 d-none d-md-block">
           <span>Get connected with us on social networks:</span>
         </div>
-        <div>
-          <a
-            href="https://www.facebook.com/Forspace-Solutions-104570971684748"
-            target="blank"
-            class="me-4 text-reset"
-          >
-            <font-awesome-icon icon="fa-brands fa-facebook" size="2x" />
-          </a>
-          <a
-            href="https://www.instagram.com/forspace.ba/"
-            target="blank"
-            class="me-4 text-reset"
-          >
-            <font-awesome-icon icon="fa-brands fa-instagram" size="2x" />
-          </a>
-          <a
-            href="https://www.linkedin.com/company/forspace-solutions/"
-            target="blank"
-            class="me-4 text-reset"
-          >
-            <font-awesome-icon icon="fa-brands fa-linkedin" size="2x" />
-          </a>
-        </div>
+        <TheSocialIcons></TheSocialIcons>
       </section>
       <section class="">
         <div class="container text-center text-md-start mt-5">
@@ -98,24 +76,19 @@
   </div>
 </template>
 <script>
+import TheSocialIcons from "./TheSocialIcons.vue";
 export default {
   name: "TheFooter",
-  components: {},
+  components: {
+    TheSocialIcons,
+  },
 };
 </script>
 <style lang="scss" scoped>
 * {
   color: #263b53;
 }
-a {
-  text-decoration: none;
-  svg {
-    width: 40px;
-    &:hover {
-      color: #f16822;
-    }
-  }
-}
+
 img {
   width: 170px;
 }

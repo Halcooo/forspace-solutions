@@ -20,13 +20,14 @@
 
     </nav>
     <!-- <DropBar></DropBar> -->
-
+    
     <TheSideBar></TheSideBar>
   </div>
 </template>
 <script>
 import DropBar from "@/components/DropBar.vue";
 import TheSideBar from "@/components/TheSideBar.vue";
+
 export default {
   name: "NavigationBar",
   data() {

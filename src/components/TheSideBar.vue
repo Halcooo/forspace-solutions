@@ -6,7 +6,7 @@
 
   <div :class="displaySideBar">
     <div class="inner-sidebar">
-      <div class="side-logo d-flex">
+      <div class="side-logo d-flex flex-row">
         <img width="60" src="@/assets/svg/logo-short.svg" alt="" />
       </div>
       <div class="container-sm d-flex side-links">
@@ -41,12 +41,19 @@
         </ul>
       </div>
     </div>
+    <div class="icons">
+       <TheSocialIcons></TheSocialIcons>
+    </div>
+   
   </div>
 </template>
 <script>
+import TheSocialIcons from "./TheSocialIcons.vue";
 export default {
   name: "TheSideBar",
-
+  components: {
+    TheSocialIcons,
+  },
   data() {
     return {
       openedMenu: "unToggled",
@@ -198,5 +205,10 @@ export default {
       transform: rotate(-45deg) translate(1.1em, -1em);
     }
   }
+}
+.icons{
+  position: absolute;
+  bottom:20px;
+  right:10px;
 }
 </style>

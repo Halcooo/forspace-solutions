@@ -47,7 +47,7 @@
         <!--  button srediti kao na početnoj što će biti!!!!!!!!!!! to uraditi nakon što je navbar mergan u development!!!! -->
         <button
           data-aos="fade-up"
-          data-aos-delay="500"
+          data-aos-delay="45,0"
           type="submit"
           @click.prevent="submitForm"
           class="btn btn-primary mb-2"

@@ -2,9 +2,9 @@
   <div class="cover row">
     <div class="navigation">
       <nav>
-      <router-link to="/purchase">Nabava</router-link>
-      <router-link to="/sales">Prodaja</router-link>
-      <router-link to="/production">Proizvodnja</router-link>
+      <router-link @mouseover="display('/purchase')" to="/purchase">Nabava</router-link>
+      <router-link @mouseover="display('/sales')" to="/sales">Prodaja</router-link>
+      <router-link @mouseover="display('/production')" to="/production">Proizvodnja</router-link>
       <router-link to="/warehouse">Skladište</router-link>
       <router-link to="/dms">DMS</router-link>
       <router-link to="/finance">Finansije & računovodstvo</router-link>
@@ -15,6 +15,16 @@
   </div>
   <router-view></router-view>
 </template>
+<script>
+export default {
+  methods:{
+    display(param){
+      console.log('ide hover');
+      this.$router.push(param)
+    }
+  }
+}
+</script>
 <style lang="scss" scoped>
 .cover {
   background-image: url("@/assets/images/purchase-cover-image.png");
