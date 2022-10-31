@@ -46,6 +46,8 @@
       <div class="col-auto">
         <!--  button srediti kao na početnoj što će biti!!!!!!!!!!! to uraditi nakon što je navbar mergan u development!!!! -->
         <button
+          data-aos="fade-up"
+          data-aos-delay="500"
           type="submit"
           @click.prevent="submitForm"
           class="btn btn-primary mb-2"
