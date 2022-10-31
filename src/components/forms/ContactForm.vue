@@ -2,7 +2,7 @@
 <template lang="">
   <div class="container col-6">
     <form>
-      <h3 class="mt-4" data-aos="fade" >Pošaljite nam poruku</h3>
+      <h3 class="mt-4" data-aos="fade">Pošaljite nam poruku</h3>
       <div class="form-group m-4" data-aos="fade-up" data-aos-delay="200">
         <label for="name">Your name:</label>
         <input
@@ -37,6 +37,7 @@
         <div class="warning" v-if="messageInvalid">Molimo unesite poruku.</div>
       </div>
       <div class="col-auto">
+        <!--  button srediti kao na početnoj što će biti!!!!!!!!!!! to uraditi nakon što je navbar mergan u development!!!! -->
         <button
           type="submit"
           @click.prevent="submitForm"
@@ -96,9 +97,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @media only screen and (max-width: 1050px) {
-.col-6{
-  width:95%;
-}
+  .col-6 {
+    width: 95%;
+  }
 }
 .warning {
   color: red;
