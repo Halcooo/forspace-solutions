@@ -1,11 +1,7 @@
 <template>
   <div class="home">
-    <div>
-      <router-link to="/"> </router-link>
-    </div>
     <HeaderHome></HeaderHome>
-    <HomeBody></HomeBody>
-  
+    <HomeBody></HomeBody> 
   </div>
 </template>
 

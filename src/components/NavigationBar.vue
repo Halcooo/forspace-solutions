@@ -1,4 +1,3 @@
-@author Halid Lihovac
 <template lang="" v-if="showFullNav">
   <div
     class="nav-wrapper"

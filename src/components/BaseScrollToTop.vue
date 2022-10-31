@@ -1,3 +1,4 @@
+@author Halid Lihovac
 <template lang="">
   <div class="arrow-wrap">
     <font-awesome-icon

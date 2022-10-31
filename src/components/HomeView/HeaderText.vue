@@ -1,3 +1,4 @@
+@author Halid Lihovac
 <template>
   <div class="main-text-wrapper">
     <div class="main-text">Mi ne radimo za Vas.</div>

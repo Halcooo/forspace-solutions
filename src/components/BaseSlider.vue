@@ -1,3 +1,4 @@
+@author Halid Lihovac
 <template>
   <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="2.5">
     <Slide v-for="slide in images" :key="slide">

@@ -1,3 +1,4 @@
+@author Halid Lihovac
 <template lang="">
   <div class="burger burger1" :class="openedMenu" @click="toogleMenu">
     <div></div>
