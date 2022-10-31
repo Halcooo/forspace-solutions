@@ -21,18 +21,18 @@
         </div>
         <div class="item col-sm">
           <img src="@/assets/images/cloud.png" alt="cloud" />
-          <h4>Vaša kompanija pod jednim krovom</h4>
-          <p>Centralno upravljanje procesima.</p>
+          <h4>ERP sistem baziran na web-u</h4>
+          <p>Java, WEB based, MySQL.</p>
         </div>
         <div class="item col-sm">
           <img src="@/assets/images/config.png" alt="config" />
-          <h4>Vaša kompanija pod jednim krovom</h4>
-          <p>Centralno upravljanje procesima.</p>
+          <h4>Svi procesi u jednom toku</h4>
+          <p>Mapiranje stvarnih procesa u digitalne.</p>
         </div>
         <div class="item col-sm">
           <img src="@/assets/images/circle.png" alt="circle" />
-          <h4>Vaša kompanija pod jednim krovom</h4>
-          <p>Centralno upravljanje procesima.</p>
+          <h4>Moderan koncept, jednostavan dizajn</h4>
+          <p>Podržava jednostavnu integraciju s drugim rješenjima.</p>
         </div>
       </div>
     </div>
@@ -135,27 +135,27 @@
   </div> -->
 </template>
 <script>
-import BaseSlider from '../BaseSlider.vue';
+import BaseSlider from "../BaseSlider.vue";
 export default {
-  components:{
+  components: {
     BaseSlider,
   },
   name: "HomeBody",
   data() {
     return {
       images: [
-        { id: 1, url: require('@/assets/images/asa-group-logo.png')},
-        { id: 2, url: require("@/assets/images/prevent-logo.png" )},
-        { id: 3, url: require("@/assets/images/interior-logo-2.png" )},
+        { id: 1, url: require("@/assets/images/asa-group-logo.png") },
+        { id: 2, url: require("@/assets/images/prevent-logo.png") },
+        { id: 3, url: require("@/assets/images/interior-logo-2.png") },
         { id: 4, url: require("@/assets/images/salona-logo.png") },
-        { id: 5, url: require("@/assets/images/dresscode-logo.png" )},
+        { id: 5, url: require("@/assets/images/dresscode-logo.png") },
         { id: 6, url: require("@/assets/images/tkt-logo.png") },
         { id: 7, url: require("@/assets/images/Savent.png") },
-        { id: 9, url: require("@/assets/images/Maxuz.png" )},
-        { id: 10, url: require("@/assets/images/Itrade.png" )},
+        { id: 9, url: require("@/assets/images/Maxuz.png") },
+        { id: 10, url: require("@/assets/images/Itrade.png") },
         { id: 11, url: require("@/assets/images/Gradiz.jpg") },
         { id: 12, url: require("@/assets/images/Putovaobih.png") },
-        { id: 13, url: require("@/assets/images/ApDigital.jpg" )},
+        { id: 13, url: require("@/assets/images/ApDigital.jpg") },
       ],
     };
   },

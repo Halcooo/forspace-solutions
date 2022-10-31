@@ -30,7 +30,12 @@
     <div class="container">
       <div class="row">
         <div class="col-sm">
-          <div class="card" data-aos="fade" data-aos-duration="800"  data-aos-anchor-placement="center-bottom">
+          <div
+            class="card"
+            data-aos="fade"
+            data-aos-duration="800"
+            data-aos-anchor-placement="center-bottom"
+          >
             <h2>ERP Sistemi</h2>
             <img src="@/assets/images/erp-sistemi.png" alt="" />
             <p>
@@ -42,7 +47,12 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="card" data-aos="fade" data-aos-duration="800"  data-aos-anchor-placement="center-bottom">
+          <div
+            class="card"
+            data-aos="fade"
+            data-aos-duration="800"
+            data-aos-anchor-placement="center-bottom"
+          >
             <h2>DMS Sistemi</h2>
             <img src="@/assets/images/dms.png" alt="" />
             <p>
@@ -54,7 +64,12 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="card" data-aos="fade" data-aos-duration="800"  data-aos-anchor-placement="center-bottom">
+          <div
+            class="card"
+            data-aos="fade"
+            data-aos-duration="800"
+            data-aos-anchor-placement="center-bottom"
+          >
             <h2>WMS Sistemi</h2>
             <img src="@/assets/images/wms.png" alt="" />
             <p>
@@ -67,7 +82,12 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="card" data-aos="fade" data-aos-duration="800"  data-aos-anchor-placement="center-bottom">
+          <div
+            class="card"
+            data-aos="fade"
+            data-aos-duration="800"
+            data-aos-anchor-placement="center-bottom"
+          >
             <h2>Sistemi plaćanja</h2>
             <img src="@/assets/images/sistemiplacanja.png" alt="" />
             <p>
@@ -77,7 +97,12 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="card" data-aos="fade" data-aos-duration="800"  data-aos-anchor-placement="center-bottom">
+          <div
+            class="card"
+            data-aos="fade"
+            data-aos-duration="800"
+            data-aos-anchor-placement="center-bottom"
+          >
             <h2>Riješenja po mjeri</h2>
             <img src="@/assets/images/rijesenjapomjeri.jpg" alt="" />
             <p>
@@ -101,7 +126,7 @@ export default {};
   p {
     padding: 15px;
   }
-  h2{
+  h2 {
     padding: 5px;
   }
 }
@@ -122,16 +147,15 @@ h3 {
     text-align: center;
     margin: 2vw;
   }
-  ul {
-    margin: 2vw;
-  }
   text-align: left;
   h3 {
     margin-left: 2vw;
   }
-
+  ul {
+    padding-left: 0px;
+  }
   li {
-    margin-left: 5vw;
+    margin-left: 7px;
     margin-bottom: 1vw;
   }
 }
