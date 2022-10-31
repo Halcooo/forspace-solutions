@@ -1,11 +1,15 @@
 <template lang="">
-  <div class="wrapper"></div>
+  <div class="wrapper">
+    <h1>{{ $t("contact") }}</h1>
+  </div>
+  <ContactForm></ContactForm>
 </template>
 <script>
-
-
+import ContactForm from '@/components/forms/ContactForm.vue';
 export default {
-
+  components:{
+    ContactForm
+  }
 };
 </script>
 <style lang="scss">
@@ -16,5 +20,4 @@ export default {
   background-position: center;
   padding-top: 200px;
 }
-
 </style>
