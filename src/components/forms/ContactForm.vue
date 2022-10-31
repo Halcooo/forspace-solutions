@@ -2,8 +2,8 @@
 <template lang="">
   <div class="container col-6">
     <form>
-      <h3 class="mt-4">Pošaljite nam poruku</h3>
-      <div class="form-group m-4">
+      <h3 class="mt-4" data-aos="fade" >Pošaljite nam poruku</h3>
+      <div class="form-group m-4" data-aos="fade-up" data-aos-delay="200">
         <label for="name">Your name:</label>
         <input
           @change="validateName"
@@ -13,7 +13,7 @@
         />
         <div class="warning" v-if="nameInvalid">Molimo unesite vaše ime.</div>
       </div>
-      <div class="form-group m-4">
+      <div class="form-group m-4" data-aos="fade-up" data-aos-delay="350">
         <label>Your e-mail:</label>
         <input
           @change="validateEmail"
@@ -26,7 +26,7 @@
           Molimo unesite validan email.
         </div>
       </div>
-      <div class="form-group m-4">
+      <div class="form-group m-4" data-aos="fade-up" data-aos-delay="450">
         <label for="">Your Message:</label>
         <textarea
           @change="validateMessage"
@@ -95,6 +95,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@media only screen and (max-width: 1050px) {
+.col-6{
+  width:95%;
+}
+}
 .warning {
   color: red;
 }
