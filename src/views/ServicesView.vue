@@ -1,5 +1,8 @@
 <template lang="">
-  <div class="wrapper"></div>
+  <div class="wrapper">
+    <ServicesSlider :images="images"></ServicesSlider>
+  </div>
+
   <div class="container-sm content" data-aos="slide-up" data-aos-duration="800">
     <h1>Programerske usluge</h1>
     <h3>RAZVOJ</h3>
@@ -117,7 +120,22 @@
   </div>
 </template>
 <script>
-export default {};
+import ServicesSlider from "@/components/services/ServicesSlider.vue";
+export default {
+  data() {
+    return {
+      images: [
+        {
+          id: 1, url: require("@/assets/images/services.jpg"),
+        },
+        { id: 2, url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80" },
+      ],
+    };
+  },
+  components: {
+    ServicesSlider,
+  },
+};
 </script>
 <style lang="scss" scoped>
 .card {
@@ -135,11 +153,7 @@ h3 {
   margin: 2vw;
 }
 .wrapper {
-  background-image: url(@/assets/images/services.jpg);
-  background-position: center;
-  height: 100vh;
-  background-repeat: no-repeat;
-  padding-top: 200px;
+  // background-image: url(@/assets/images/services.jpg);
 }
 .content {
   padding: 20px;

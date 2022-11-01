@@ -1,9 +1,9 @@
 @author Halid Lihovac
 <template>
-  <Carousel :autoplay="2000" :wrap-around="true" :items-to-show="2.5">
-    <Slide v-for="slide in images" :key="slide">
+  <Carousel :wrap-around="true" :items-to-show="1">
+    <Slide v-for="slide in images" :key="slide.id">
       <div class="carousel__item">
-        <img :src="slide.url" alt="logo" />
+        <img @mousemove="setCurrentSlide(slide.id)" :src="slide.url" alt="logo" :id="slide.id"/>
       </div>
     </Slide>
     <template #addons>
@@ -19,23 +19,42 @@ import "vue3-carousel/dist/carousel.css";
 
 export default {
   props: ["images"],
-  name: "BaseSlider",
+  name: "ServicesSlider",
   components: {
     Carousel,
     Slide,
     Pagination,
   },
+  data(){
+  return {
+    currentSlide:1,
+  }},
+  methods:{
+    setCurrentSlide(id){
+        this.$store.commit('setCurrentSlide', id)
+    }
+  }
 };
 </script>
 <style lang="scss" scoped>
+
+.carousel__pagination {
+  z-index: 21;
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  border-radius: 50%;
+  li {
+    button {
+      border-radius: 50%;
+    }
+  }
+}
 .wrapper {
   height: 100vh;
-  background-repeat: no-repeat;
-  background-position: center;
-  padding-top: 200px;
 }
 .carousel__item {
-  min-height: 200px;
+  height: 100vh;
   width: 100%;
   color: white;
   font-size: 20px;
@@ -47,21 +66,15 @@ export default {
     cursor: pointer;
   }
   img {
-    max-width: 200px;
+    background-size: contain;
+    object-fit: cover;
+   width: 100%;
+    height: 100vh;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  .carousel__item {
-    img {
-      max-width: 100px;
-    }
-  }
-}
 
-.carousel__slide {
-  padding: 10px;
-}
+
 
 .carousel__prev,
 .carousel__next {

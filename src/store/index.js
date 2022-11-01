@@ -1,19 +1,10 @@
 import { createStore } from "vuex";
+import servicesModule from "./modules/services.js";
 
 export default createStore({
-  state: {
-    test:false,
-  },
-  getters: {
-    getTest(state){
-      return state.test
-    }
-  },
-  mutations: {
-    setTestToTrue(state ,payload){
-      state.test=payload
-    }
-  },
+  state: {},
+  getters: {},
+  mutations: {},
   actions: {},
-  modules: {},
+  modules: { servicesModule },
 });

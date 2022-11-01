@@ -12,7 +12,7 @@ export default {
   }
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .wrapper {
   background-image: url(@/assets/images/contact.jpg);
   height: 100vh;
