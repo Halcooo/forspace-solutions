@@ -131,6 +131,7 @@
 		left: 0;
 		width: 0%;
 		height: 100vh;
+		transition: 0.5s;
 	}
 	.grid_a {
 		background-color: white;

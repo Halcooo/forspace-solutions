@@ -53,6 +53,7 @@
 	body {
 		margin: 0;
 		padding: 0;
+		text-align: center;
 		box-sizing: border-box;
 	}
 	#app {
@@ -69,25 +70,7 @@
 		}
 	}
 
-	.nav-wrapper {
-		position: sticky;
-		padding-left: 25px;
-		display: flex;
-		text-align: center;
-		align-items: center;
-		justify-content: space-between;
-		z-index: 10;
-	}
 	h1 {
 		color: $primary-color;
-	}
-
-	@keyframes sideShow {
-		from {
-			right: -40%;
-		}
-		to {
-			right: 0%;
-		}
 	}
 </style>
