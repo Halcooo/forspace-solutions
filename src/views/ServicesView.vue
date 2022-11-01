@@ -126,9 +126,20 @@ export default {
     return {
       images: [
         {
-          id: 1, url: require("@/assets/images/services.jpg"),
+          id: 1,
+          url: require("@/assets/images/services.jpg"),
+          name: "services",
         },
-        { id: 2, url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80" },
+
+        {
+          id: 2,
+         
+         url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80",
+        
+         name:'erp'
+        },
+        { id: 3, url: require("@/assets/images/dms-header.jpg"), name: "dms" },
+        { id: 4, url: require("@/assets/images/wms-header.jpg"), name: "wms" },
       ],
     };
   },
