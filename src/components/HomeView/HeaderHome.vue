@@ -1,20 +1,22 @@
 <template>
 	<div class="landing-page">
 		<div class="div">
-			<div class="head-1">
-				<h1>Mi ne radimo za Vas.</h1>
-			</div>
-			<div class="head-2">
-				<h1>Mi radimo sa Vama!</h1>
-			</div>
-			<div class="head-3">
-				<router-link
-					to="/"
-					class="landing-button"
-				>
-					<div class="anim"></div>
-					<div class="text">{{ $t('presentation') }}</div>
-				</router-link>
+			<div>
+				<div class="head-1">
+					<h1>Mi ne radimo za Vas.</h1>
+				</div>
+				<div class="head-2">
+					<h1>Mi radimo sa Vama!</h1>
+				</div>
+				<div class="head-3">
+					<router-link
+						to="/"
+						class="landing-button"
+					>
+						<div class="anim"></div>
+						<div class="text">{{ $t('presentation') }}</div>
+					</router-link>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -30,6 +32,7 @@
 	};
 </script>
 <style lang="scss" scoped>
+	@import '@/styles/variables.scss';
 	@keyframes backgroundFade {
 		from {
 			opacity: 0;
@@ -41,18 +44,20 @@
 
 	.landing-page {
 		width: 100%;
-		height: 100vh;
+		height: 80vh;
 		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
 			url('@/assets/images/header-cover.jpg') no-repeat center center/cover;
 		background-attachment: fixed;
 		animation: backgroundFade 0.5s ease-in;
 		.div {
 			// padding-left: 10%;
-			display: inline-block;
-			margin-right: auto;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100%;
 
-			padding: 120px 60px;
-			margin: 10% 0% 0% 10%;
+			// padding: 120px 60px;
+			// margin: 10% 0% 0% 10%;
 			h1 {
 				font-size: 60px;
 				color: white;
@@ -65,11 +70,15 @@
 				.landing-button {
 					display: flex;
 					justify-content: center;
+					margin: auto;
 					position: relative;
-					padding: 25px 65px;
+					padding: 30px 70px;
 					width: 220px;
 					color: white;
-					border: 2px solid white;
+					border: 3px solid rgb(255, 255, 255);
+					// border-radius: 10px;
+					// background-color: rgb(231, 92, 0);
+
 					// margin-top: 25%;
 					transform: translate(0%, 100%);
 
@@ -77,10 +86,12 @@
 						display: block;
 						position: absolute;
 						top: 0;
-						left: 0;
-						background-color: rgb(231, 93, 0);
+						left: 0%;
+						// border-radius: 10px;
+						background-color: rgb(255, 102, 0);
+						width: 0%;
 						height: 100%;
-						transition: 0.4s;
+						transition: 0.5s;
 					}
 					.text {
 						display: flex;
@@ -95,9 +106,10 @@
 					}
 					&:hover {
 						.anim {
-							animation: fillButton 0.4s forwards;
+							width: 100%;
+							transition: width 0.5s;
 						}
-						border: 2px solid rgb(231, 93, 0);
+						border: 3px solid rgb(255, 102, 0);
 					}
 				}
 			}
@@ -142,7 +154,7 @@
 						position: absolute;
 						top: 0;
 						left: 0;
-						background-color: rgb(231, 93, 0);
+						background-color: red;
 						height: 100%;
 						transition: 0.4s;
 					}

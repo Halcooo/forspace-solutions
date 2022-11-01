@@ -2,20 +2,18 @@
 <template>
 	<NavigationBar />
 	<router-view />
-	<CloseBtn @click="getState" />
-	<Sidenav />
+
 	<TheFooter />
 </template>
 <script>
-	import NavigationBar from '@/components/NavigationBar.vue';
+	import NavigationBar from '@/components/NavigationTrack/NavigationBar.vue';
 	import TheFooter from '@/components/TheFooter.vue';
-	import Sidenav from '@/components/Sidenav.vue';
-	import CloseBtn from '@/components/CloseButton.vue';
+	import Sidenav from '@/components/NavigationTrack/Sidenav.vue';
 
 	export default {
 		components: {
 			NavigationBar,
-			CloseBtn,
+
 			TheFooter,
 			Sidenav,
 		},
@@ -28,14 +26,7 @@
 			onHome() {
 				this.$router.push({ path: '/' });
 			},
-			getState(currentState) {
-				if (this.sideState.length > 1) {
-					this.sideState.splice(0, this.sideState.length);
-					this.sideState.push(currentState);
-				} else {
-					this.sideState.push(currentState);
-				}
-			},
+
 			mounted() {},
 		},
 	};
@@ -71,23 +62,13 @@
 	}
 	a {
 		text-decoration: none;
-		font-size: 20px;
-
-		&:hover {
-			color: white;
-		}
 	}
 	ul {
 		li {
 			list-style: none;
 		}
 	}
-	.logo {
-		width: 15%;
-		&:hover {
-			cursor: pointer;
-		}
-	}
+
 	.nav-wrapper {
 		position: sticky;
 		padding-left: 25px;

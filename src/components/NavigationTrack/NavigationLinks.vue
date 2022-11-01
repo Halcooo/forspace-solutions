@@ -2,17 +2,17 @@
 	<li
 		v-for="(navItem, index) in routes"
 		:key="navItem"
-		@click="toggleActive(index)"
 	>
 		<router-link
 			:to="navItem.to"
-			:class="{ active: navItem.isActive }"
+			:class="[{ active: navItem.isActive }, navItem.class]"
+			@click="toggleActive(index)"
 		>
 			{{ $t(navItem.name) }}
 		</router-link>
 	</li>
-	<li class="drop-nav ul-li">
-		<div class="drop-bar">
+	<!-- <li class="drop-nav ul-li"> -->
+	<!-- <div class="drop-bar">
 			<div class="select">
 				<div class="d-flex ul-li-a">
 					<div class="language">
@@ -37,8 +37,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
-	</li>
+		</div> -->
+	<!-- </li> -->
 </template>
 
 <script>
@@ -47,11 +47,11 @@
 		data() {
 			return {
 				routes: [
-					{ to: '/', name: 'home', isActive: true, id: 0 },
-					{ to: '/', name: 'about', isActive: false, id: 1 },
-					{ to: '/', name: 'products', isActive: false, id: 2 },
-					{ to: '/', name: 'services', isActive: false, id: 3 },
-					{ to: '/', name: 'contact', isActive: false, id: 4 },
+					{ to: '/', name: 'home', isActive: true, id: 0, class: 'grid-a' },
+					{ to: '/', name: 'about', isActive: false, id: 1, class: 'grid-b' },
+					{ to: '/', name: 'products', isActive: false, id: 2, class: 'grid-c' },
+					{ to: '/', name: 'services', isActive: false, id: 3, class: 'grid-d' },
+					{ to: '/', name: 'contact', isActive: false, id: 4, class: 'grid-e' },
 				],
 				language: 'Language',
 				selected: 'bs',
@@ -83,15 +83,15 @@
 </script>
 
 <style lang="scss" scoped>
-	@import '../styles/variables.scss';
+	@import '../../styles/variables.scss';
 
 	li {
 		list-style: none;
+		text-align: left;
+
 		a {
-			color: white;
-			&:hover {
-				border-bottom: 3px solid $links-color;
-			}
+			color: gray;
+			font-size: 23px;
 		}
 		.active {
 			color: $links-color;
@@ -103,15 +103,6 @@
 		a {
 			color: $links-color;
 		}
-	}
-
-	.logo {
-		width: 11%;
-	}
-	.navigation {
-		// background-color: white;
-		padding-top: 10px;
-		color: black;
 	}
 
 	.drop-bar {
@@ -140,9 +131,7 @@
 
 			.dropdown {
 				position: absolute;
-
 				background-color: rgba($color: #fff, $alpha: 1);
-
 				border-radius: 1px;
 				width: 200px;
 				bottom: 1;

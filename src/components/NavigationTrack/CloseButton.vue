@@ -1,25 +1,29 @@
 <template>
-	<div
-		class="times-head"
-		@click="showSideNav"
-	>
-		<p
-			class="times-line"
-			:class="{ top: top }"
-		></p>
-		<p
-			class="times-line middle"
-			:class="{ middle_none: middle_none }"
-		></p>
-		<p
-			class="times-line"
-			:class="{ bottom: bottom }"
-		></p>
+	<div>
+		<div
+			class="times-head"
+			@click="showSideNav"
+		>
+			<p
+				class="times-line"
+				:class="{ top: top }"
+			></p>
+			<p
+				class="times-line middle"
+				:class="{ middle_none: middle_none }"
+			></p>
+			<p
+				class="times-line"
+				:class="{ bottom: bottom }"
+			></p>
+		</div>
+		<Sidenav />
 	</div>
 </template>
 
 <script>
 	import { mapMutations, mapGetters } from 'vuex';
+	import Sidenav from './Sidenav.vue';
 	export default {
 		name: 'CloseBtn',
 		data() {
@@ -27,15 +31,22 @@
 				top: false,
 				middle_none: false,
 				bottom: false,
+				contentState: false,
 			};
 		},
-
+		components: { Sidenav },
 		methods: {
 			...mapMutations(['setSideNav']),
 			...mapGetters(['getSideNav']),
-
+			...mapMutations(['setSideContent']),
+			...mapGetters(['getSideContent']),
 			showSideNav() {
 				if (this.getSideNav()) {
+					this.$store.state.grid_a = false;
+					this.$store.state.grid_b = false;
+					this.$store.state.grid_c = false;
+					this.$store.state.grid_d = false;
+					this.$store.state.grid_e = false;
 					this.setSideNav(false);
 				} else {
 					this.setSideNav(true);
@@ -46,6 +57,8 @@
 					: ((this.top = true), (this.middle_none = true), (this.bottom = true));
 			},
 		},
+
+		computed: {},
 	};
 </script>
 
@@ -56,13 +69,8 @@
 		height: 50px;
 		display: flex;
 		flex-direction: column;
-		position: fixed;
-		top: 2.5%;
-		z-index: 5;
-
-		right: 2%;
-		margin: -8px;
-		margin-left: 180px;
+		position: relative;
+		z-index: 4;
 		justify-content: center;
 		align-items: center;
 		&:hover {
@@ -73,8 +81,9 @@
 			width: 80%;
 			margin: 4px auto;
 
-			background-color: white;
+			background-color: gray;
 			padding: 1px 4px;
+			transition: all 0.5s;
 		}
 		.top {
 			transform: translate(0%, 220%) rotate(45deg);
