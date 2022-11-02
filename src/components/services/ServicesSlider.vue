@@ -3,7 +3,13 @@
   <Carousel :wrap-around="true" :items-to-show="1">
     <Slide v-for="slide in images" :key="slide.id">
       <div class="carousel__item">
-        <img @mousemove="setCurrentSlide(slide.id)" :src="slide.url" alt="logo" :id="slide.id"/>
+        <h1>{{slide.name}}</h1>
+        <img
+          @mousemove="setCurrentSlide(slide.id)"
+          :src="slide.url"
+          alt="logo"
+          :id="slide.id"
+        />
       </div>
     </Slide>
     <template #addons>
@@ -25,19 +31,27 @@ export default {
     Slide,
     Pagination,
   },
-  data(){
-  return {
-    currentSlide:1,
-  }},
-  methods:{
-    setCurrentSlide(id){
-        this.$store.commit('setCurrentSlide', id)
-    }
-  }
+  data() {
+    return {
+      currentSlide: 1,
+    };
+  },
+  methods: {
+    setCurrentSlide(id) {
+      this.$store.commit("setCurrentSlide", id);
+    },
+  },
 };
 </script>
 <style lang="scss" scoped>
-
+h1{
+    padding:7px;
+    position: absolute;
+    left:20%;
+    top:20%;
+    background-color: rgba(255, 253, 253, 0.5);
+    
+}
 .carousel__pagination {
   z-index: 21;
   position: absolute;
@@ -68,13 +82,10 @@ export default {
   img {
     background-size: contain;
     object-fit: cover;
-   width: 100%;
+    width: 100%;
     height: 100vh;
   }
 }
-
-
-
 
 .carousel__prev,
 .carousel__next {

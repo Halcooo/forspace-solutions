@@ -1,23 +1,8 @@
 <template lang="">
   <div class="wrapper">
-    <ServicesSlider :images="images"></ServicesSlider>
+    <ServicesSlider :images="images"> </ServicesSlider>
   </div>
-
   <div class="container-sm content" data-aos="slide-up" data-aos-duration="800">
-    <h1>Programerske usluge</h1>
-    <h3>RAZVOJ</h3>
-    <ul>
-      Našim klijentima je na raspolaganju stručnost našeg tima u razvoju:
-    </ul>
-    <li>
-      web i desktop aplikacija podržanih na OS platformama Linux, Unix, macOS,
-      Windows
-    </li>
-    <li>
-      mobilnih aplikacija podržanih na Android i iOS operativnim sistemima
-    </li>
-    <li>API integracija</li>
-
     <p>
       Naš tim za razvoj softvera čine iskusni inžinjeri i profesionalci koji
       koristeći napredne alate, jezike i tehnologije, osiguravaju uspješnu
@@ -32,11 +17,11 @@
     </p>
     <div class="container">
       <div class="row">
-        <div class="col-sm">
+        <div v-if="currentSlide == 1" class="col-sm">
           <div
             class="card"
             data-aos="fade"
-            data-aos-duration="800"
+            data-aos-duration=""
             data-aos-anchor-placement="center-bottom"
           >
             <h2>ERP Sistemi</h2>
@@ -128,19 +113,32 @@ export default {
         {
           id: 1,
           url: require("@/assets/images/services.jpg"),
-          name: "services",
+          name: "Usluge",
         },
 
         {
           id: 2,
-         
-         url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80",
-        
-         name:'erp'
+          url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80",
+          name: "ERP",
         },
-        { id: 3, url: require("@/assets/images/dms-header.jpg"), name: "dms" },
-        { id: 4, url: require("@/assets/images/wms-header.jpg"), name: "wms" },
+        { id: 3, url: require("@/assets/images/dms-header.jpg"), name: "DMS" },
+        { id: 4, url: require("@/assets/images/wms-header.jpg"), name: "WMS" },
+        {
+          id: 5,
+          url: require("@/assets/images/sistemi-placanja.jpg"),
+          name: "Sistemi plaćanja",
+        },
+        {
+          id: 6,
+          url: require("@/assets/images/rijesenja-po-mjeri.jpg"),
+          name: "Riješenja po mjeri",
+        },
       ],
+      computed: {
+        currentSLide() {
+          return this.$store.getters.getCurrentSlide;
+        },
+      },
     };
   },
   components: {
