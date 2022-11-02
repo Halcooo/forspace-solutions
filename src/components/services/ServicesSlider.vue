@@ -65,7 +65,7 @@ h1{
   }
 }
 .wrapper {
-  height: 100vh;
+  height: 90vh;
 }
 .carousel__item {
   height: 100vh;
@@ -74,8 +74,6 @@ h1{
   font-size: 20px;
   border-radius: 8px;
   display: flex;
-  justify-content: center;
-  align-items: center;
   &:hover {
     cursor: pointer;
   }
@@ -83,7 +81,7 @@ h1{
     background-size: contain;
     object-fit: cover;
     width: 100%;
-    height: 100vh;
+    height: 90vh;
   }
 }
 

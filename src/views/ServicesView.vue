@@ -3,27 +3,24 @@
     <ServicesSlider :images="images"> </ServicesSlider>
   </div>
   <div class="container-sm content" data-aos="slide-up" data-aos-duration="800">
-    <p>
-      Naš tim za razvoj softvera čine iskusni inžinjeri i profesionalci koji
-      koristeći napredne alate, jezike i tehnologije, osiguravaju uspješnu
-      realizaciju projekata u dogovorenim rokovima.
-    </p>
-    <h3>NAŠA EKSPERTIZA</h3>
-    <p>
-      Naš tim je stručan da različite poslovne potrebe/ideje našeg klijenta
-      pretvori u digitalni proizvod namijenjen unapređenju njegovih poslovnih
-      procesa, razvoju i digitalnoj transformaciji. Iz naše ekspertize posebno
-      izdvajamo:
-    </p>
+    <div v-if="currentSlide == 1">
+      <p>
+        Naš tim za razvoj softvera čine iskusni inžinjeri i profesionalci koji
+        koristeći napredne alate, jezike i tehnologije, osiguravaju uspješnu
+        realizaciju projekata u dogovorenim rokovima.
+      </p>
+      <h3>NAŠA EKSPERTIZA</h3>
+      <p>
+        Naš tim je stručan da različite poslovne potrebe/ideje našeg klijenta
+        pretvori u digitalni proizvod namijenjen unapređenju njegovih poslovnih
+        procesa, razvoju i digitalnoj transformaciji. Iz naše ekspertize posebno
+        izdvajamo:
+      </p>
+    </div>
     <div class="container">
       <div class="row">
-        <div v-if="currentSlide == 1" class="col-sm">
-          <div
-            class="card"
-            data-aos="fade"
-            data-aos-duration=""
-            data-aos-anchor-placement="center-bottom"
-          >
+        <div v-if="currentSlide == 2" class="col-sm">
+          <div class="card" data-aos="fade" data-aos-anchor-placement="top">
             <h2>ERP Sistemi</h2>
             <img src="@/assets/images/erp-sistemi.png" alt="" />
             <p>
@@ -34,13 +31,8 @@
             </p>
           </div>
         </div>
-        <div class="col-sm">
-          <div
-            class="card"
-            data-aos="fade"
-            data-aos-duration="800"
-            data-aos-anchor-placement="center-bottom"
-          >
+        <div class="col-sm" v-if="currentSlide == 3">
+          <div class="card" data-aos="fade" data-aos-anchor-placement="top">
             <h2>DMS Sistemi</h2>
             <img src="@/assets/images/dms.png" alt="" />
             <p>
@@ -51,13 +43,8 @@
             </p>
           </div>
         </div>
-        <div class="col-sm">
-          <div
-            class="card"
-            data-aos="fade"
-            data-aos-duration="800"
-            data-aos-anchor-placement="center-bottom"
-          >
+        <div class="col-sm" v-if="currentSlide == 4">
+          <div class="card" data-aos="fade" data-aos-anchor-placement="top">
             <h2>WMS Sistemi</h2>
             <img src="@/assets/images/wms.png" alt="" />
             <p>
@@ -69,13 +56,8 @@
             </p>
           </div>
         </div>
-        <div class="col-sm">
-          <div
-            class="card"
-            data-aos="fade"
-            data-aos-duration="800"
-            data-aos-anchor-placement="center-bottom"
-          >
+        <div class="col-sm" v-if="currentSlide == 5">
+          <div class="card" data-aos="fade" data-aos-anchor-placement="top">
             <h2>Sistemi plaćanja</h2>
             <img src="@/assets/images/sistemiplacanja.png" alt="" />
             <p>
@@ -84,13 +66,8 @@
             </p>
           </div>
         </div>
-        <div class="col-sm">
-          <div
-            class="card"
-            data-aos="fade"
-            data-aos-duration="800"
-            data-aos-anchor-placement="center-bottom"
-          >
+        <div class="col-sm" v-if="currentSlide == 6">
+          <div class="card" data-aos="fade" data-aos-anchor-placement="top">
             <h2>Riješenja po mjeri</h2>
             <img src="@/assets/images/rijesenjapomjeri.jpg" alt="" />
             <p>
@@ -131,18 +108,19 @@ export default {
         {
           id: 6,
           url: require("@/assets/images/rijesenja-po-mjeri.jpg"),
-          name: "Riješenja po mjeri",
+          name: "Rješenja po mjeri",
         },
       ],
-      computed: {
-        currentSLide() {
-          return this.$store.getters.getCurrentSlide;
-        },
-      },
     };
   },
   components: {
     ServicesSlider,
+  },
+  computed: {
+    currentSlide() {
+      console.log(this.$store.getters.getCurrentSlide);
+      return this.$store.getters.getCurrentSlide;
+    },
   },
 };
 </script>
