@@ -10,7 +10,7 @@
 			</div>
 			<div class="navigation">
 				<ul class="nav-links">
-					<Links />
+					<Links :routes="routes_nav" />
 				</ul>
 
 				<CloseBtn />
@@ -24,6 +24,52 @@
 	export default {
 		name: 'Nav',
 		components: { Links, CloseBtn },
+		data() {
+			return {
+				routes_nav: [
+					{
+						to: '/',
+						name: 'home',
+						isActive: true,
+						id: 0,
+
+						classname: 'nav',
+					},
+					{
+						to: '/',
+						name: 'about',
+						isActive: false,
+						id: 1,
+
+						classname: 'nav',
+					},
+					{
+						to: '/',
+						name: 'products',
+						isActive: false,
+						id: 2,
+
+						classname: 'nav',
+					},
+					{
+						to: '/',
+						name: 'services',
+						isActive: false,
+						id: 3,
+
+						classname: 'nav',
+					},
+					{
+						to: '/',
+						name: 'contact',
+						isActive: false,
+						id: 4,
+
+						classname: 'nav',
+					},
+				],
+			};
+		},
 	};
 </script>
 <style lang="scss">

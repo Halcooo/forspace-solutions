@@ -44,14 +44,7 @@
 			</div>
 		</div>
 	</div>
-	<div
-		class="cube-background"
-		data-aos="slide-up"
-		data-aos-ease="ease"
-		data-aos-duration="1500"
-		data-aos-delay="500"
-		data-aos-anchor-placement="center-bottom"
-	>
+	<div class="cube-background">
 		<div class="erp-text">
 			<h1 class="erp-main-text">Forspace ERP & Računovodstvo +</h1>
 			<p class="erp-secondary-text">
@@ -61,20 +54,9 @@
 		<img
 			src="@/assets/images/kocka_.png"
 			alt="cube"
-			data-aos="fade"
-			data-aos-ease="ease"
-			data-aos-duration="1500"
-			data-aos-delay="500"
-			data-aos-anchor-placement="center-bottom"
 		/>
 	</div>
-	<div
-		class="dir-container"
-		data-aos="zoom-in"
-		data-aos-duration="1500"
-		data-aos-delay="500"
-		data-aos-anchor-placement="center-bottom"
-	>
+	<div class="dir-container">
 		>
 		<!-- <div class="container">
       <img
@@ -104,12 +86,7 @@
       <p>Esada Karović, CEO</p>
     </div> -->
 	</div>
-	<div
-		class="container-sm"
-		data-aos="slide-up"
-		data-aos-duration="1500"
-		data-aos-delay="500"
-	>
+	<div class="container-sm">
 		<h1>Kompanije koje su već optimizirale svoje procese sa Forspace</h1>
 		<div class="companies">
 			<img
@@ -168,25 +145,6 @@
 		</p>
 		<br />
 	</div>
-	<!-- <div
-  class="last-item"
-    data-aos="slide-up"
-    data-aos-duration="1500"
-    data-aos-delay="500"
-    data-aos-anchor-placement="bottom"
-  >
-    <img class="ap-image" src="@/assets/images/ApDigital-1.jpg" alt="" />
-    <p>
-      "Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje
-      našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov
-      konkurentski krajolik je strm, ali Forspace to čini ostvarivim. Omogućili
-      su nam, trenirali nas i dali nam samopouzdanje da svoje resurse koristimo
-      mudro, oslobađajući ih svakodnevnih rutina i optimizirajući njihove
-      svakodnevne performanse. Njihov pristup je privlačan i relevantan za
-      industriju. Sada imamo više mogućnosti i vremena za rad na postizanju
-      novih poslovnih rezultata.“
-    </p>
-  </div> -->
 </template>
 <script>
 	export default {

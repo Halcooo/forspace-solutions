@@ -1,16 +1,34 @@
 <template>
 	<li
+		v-if="routes"
 		v-for="(navItem, index) in routes"
 		:key="navItem"
 	>
 		<router-link
 			:to="navItem.to"
-			:class="[{ active: navItem.isActive }, navItem.class]"
-			@click="toggleActive(index)"
+			class="nav"
+			:class="{ active: navItem.isActive }"
+			@click="toggleActive(index, true)"
 		>
 			{{ $t(navItem.name) }}
 		</router-link>
 	</li>
+	<li
+		v-if="sidenavRoutes"
+		v-for="(navItem, index) in sidenavRoutes"
+		:key="navItem"
+		@mouseover="displayContent(index)"
+	>
+		<router-link
+			:to="navItem.to"
+			class="sidenav"
+			:class="{ active: navItem.isActive }"
+			@click="toggleActive(index, false)"
+		>
+			{{ $t(navItem.name) }}
+		</router-link>
+	</li>
+
 	<!-- <li class="drop-nav ul-li"> -->
 	<!-- <div class="drop-bar">
 			<div class="select">
@@ -44,15 +62,9 @@
 <script>
 	export default {
 		name: 'Links',
+		props: ['routes', 'sidenavRoutes', 'contents'],
 		data() {
 			return {
-				routes: [
-					{ to: '/', name: 'home', isActive: true, id: 0, class: 'grid-a' },
-					{ to: '/', name: 'about', isActive: false, id: 1, class: 'grid-b' },
-					{ to: '/', name: 'products', isActive: false, id: 2, class: 'grid-c' },
-					{ to: '/', name: 'services', isActive: false, id: 3, class: 'grid-d' },
-					{ to: '/', name: 'contact', isActive: false, id: 4, class: 'grid-e' },
-				],
 				language: 'Language',
 				selected: 'bs',
 				languages: [
@@ -73,9 +85,20 @@
 				this.language = lang.language;
 				return (this.$i18n.locale = this.selected);
 			},
-			toggleActive(index) {
-				this.routes.forEach((item) => {
-					item.isActive = index == item.id ? true : false;
+			toggleActive(index, bin) {
+				if (bin) {
+					this.routes.forEach((item) => {
+						item.isActive = index == item.id ? true : false;
+					});
+				} else {
+					this.sidenavRoutes.forEach((item) => {
+						item.isActive = index == item.id ? true : false;
+					});
+				}
+			},
+			displayContent(index) {
+				this.contents.forEach((item) => {
+					item.state = index == item.id ? true : false;
 				});
 			},
 		},
@@ -89,8 +112,12 @@
 		list-style: none;
 		text-align: left;
 
-		a {
+		.nav {
 			color: white;
+			font-size: 23px;
+		}
+		.sidenav {
+			color: gray;
 			font-size: 23px;
 		}
 		.active {
