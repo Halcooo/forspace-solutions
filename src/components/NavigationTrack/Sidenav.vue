@@ -3,33 +3,74 @@
 		<div
 			class="sidenav-content"
 			:class="{ sidenav_content_visible: getSideNav }"
-			@mouseover="displayContent"
 		>
 			<ul class="nav-links-vertical">
-				<Links />
+				<!-- <Links /> -->
+				<li
+					v-for="(route, index) in routes"
+					:key="route"
+				>
+					<router-link
+						to=""
+						:class="route.class"
+						@mouseover="displayContent(index)"
+					>
+						{{ $t(route.text) }}
+					</router-link>
+				</li>
 			</ul>
 		</div>
-		<div>
+		<!-- -->
+		<div
+			v-for="content in contents"
+			:key="content"
+			:class="[{ active: content.state }, content.class]"
+			v-if="this.$store.state.sidecontent"
+		>
 			<div
-				class="grid_a"
-				:class="{ active: this.$store.state.grid_a }"
-			></div>
+				class="flex_column"
+				v-if="content.id == 0"
+			>
+				<div class="row_1">
+					<div class="row_1_home">
+						<h1>
+							{{ $t('home') }}
+						</h1>
+					</div>
+				</div>
+				<div class="row_2">
+					<div
+						class="row_nav"
+						v-for="nav in navs"
+						:key="nav"
+					>
+						<div class="row_nav_icon">
+							<div
+								class="icon"
+								:class="nav.icon"
+							></div>
+
+							<h1>{{ $t(nav.row_heading) }}</h1>
+							<p>{{ $t(nav.row_text) }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div
-				class="grid_b"
-				:class="{ active: this.$store.state.grid_b }"
-			></div>
-			<div
-				class="grid_c"
-				:class="{ active: this.$store.state.grid_c }"
-			></div>
-			<div
-				class="grid_d"
-				:class="{ active: this.$store.state.grid_d }"
-			></div>
-			<div
-				class="grid_e"
-				:class="{ active: this.$store.state.grid_e }"
-			></div>
+				class="onama"
+				v-if="content.id == 1"
+			>
+				<div class="onama-heading">
+					<h1>
+						{{ $t('about') }}
+					</h1>
+				</div>
+				<div class="onama-text">
+					<p>
+						{{ $t('about_text') }}
+					</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -42,44 +83,45 @@
 	export default {
 		name: 'Sidenav',
 		components: { Links },
-
+		props: ['contents'],
 		data() {
-			return {};
+			return {
+				routes: [
+					{ class: 'grid-a', text: 'home' },
+					{ class: 'grid-b', text: 'about' },
+					{ class: 'grid-c', text: 'products' },
+					{ class: 'grid-d', text: 'services' },
+					{ class: 'grid-e', text: 'contact' },
+				],
+				navs: [
+					{
+						row_heading: 'home_icon_companies',
+						row_text: 'home_icon_companies_p',
+						icon: 'icon-companies',
+					},
+					{
+						row_heading: 'home_icon_cloud',
+						row_text: 'home_icon_cloud_p',
+						icon: 'icon-cloud',
+					},
+					{
+						row_heading: 'home_icon_config',
+						row_text: 'home_icon_config_p',
+						icon: 'icon-config',
+					},
+					{
+						row_heading: 'home_icon_circle',
+						row_text: 'home_icon_circle_p',
+						icon: 'icon-circle',
+					},
+				],
+			};
 		},
 		methods: {
-			displayContent(e) {
-				let active = e.target.classList;
-				if (active.contains('grid-a')) {
-					this.$store.state.grid_a = true;
-					this.$store.state.grid_b = false;
-					this.$store.state.grid_c = false;
-					this.$store.state.grid_d = false;
-					this.$store.state.grid_e = false;
-				} else if (active.contains('grid-b')) {
-					this.$store.state.grid_a = false;
-					this.$store.state.grid_b = true;
-					this.$store.state.grid_c = false;
-					this.$store.state.grid_d = false;
-					this.$store.state.grid_e = false;
-				} else if (active.contains('grid-c')) {
-					this.$store.state.grid_a = false;
-					this.$store.state.grid_b = false;
-					this.$store.state.grid_c = true;
-					this.$store.state.grid_d = false;
-					this.$store.state.grid_e = false;
-				} else if (active.contains('grid-d')) {
-					this.$store.state.grid_a = false;
-					this.$store.state.grid_b = false;
-					this.$store.state.grid_c = false;
-					this.$store.state.grid_d = true;
-					this.$store.state.grid_e = false;
-				} else if (active.contains('grid-e')) {
-					this.$store.state.grid_a = false;
-					this.$store.state.grid_b = false;
-					this.$store.state.grid_c = false;
-					this.$store.state.grid_d = false;
-					this.$store.state.grid_e = true;
-				}
+			displayContent(index) {
+				this.contents.forEach((item) => {
+					item.state = index == item.id ? true : false;
+				});
 			},
 		},
 
@@ -90,7 +132,7 @@
 	};
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 	.sidenav {
 		position: fixed;
 
@@ -100,6 +142,7 @@
 
 		.sidenav-content {
 			position: fixed;
+
 			display: flex;
 			justify-content: left;
 			align-items: center;
@@ -111,6 +154,7 @@
 			background-color: rgb(255, 255, 255);
 			transition: all 0.4s;
 			a {
+				color: gray;
 				&:hover {
 					border-bottom: none;
 					color: gray;
@@ -127,31 +171,15 @@
 	.grid_d,
 	.grid_e {
 		position: fixed;
-		top: 0;
-		left: 0;
-		width: 0%;
-		height: 100vh;
-		transition: 0.5s;
-	}
-	.grid_a {
 		background-color: white;
-	}
-	.grid_b {
-		background-color: red;
-	}
-	.grid_c {
-		background-color: cornflowerblue;
-	}
-	.grid_d {
-		background-color: orange;
-	}
-	.grid_e {
-		background-color: aqua;
+		top: 0;
+		left: -83%;
+		width: 83%;
+		height: 100vh;
 	}
 
 	.active {
-		width: 83%;
-		transition: width 0.5s;
+		animation: toLeft 0.2s forwards;
 	}
 	.nav-links-vertical {
 		display: flex;
@@ -162,6 +190,126 @@
 			a {
 				color: gray;
 				font-size: 23px;
+			}
+		}
+	}
+	@keyframes toLeft {
+		from {
+			left: -83%;
+		}
+		to {
+			left: 0%;
+		}
+	}
+	.flex_column {
+		width: 100%;
+		height: 100%;
+		display: flex;
+
+		flex-direction: column;
+
+		.row_1 {
+			width: 100%;
+			height: 50vh;
+			position: relative;
+
+			background: linear-gradient(
+					to right,
+					rgba(31, 46, 255, 0.473),
+					#1e7ebe86,
+					#003e9bc2
+				),
+				url('@/assets/images/cityscape.webp') no-repeat center center/cover;
+
+			.row_1_home {
+				border-radius: 5px;
+
+				text-align: left;
+				position: absolute;
+				left: 15%;
+				bottom: 5%;
+				h1 {
+					color: white;
+				}
+			}
+		}
+		.row_2 {
+			width: 100%;
+			height: 50vh;
+			display: flex;
+
+			.row_nav {
+				width: 100%;
+
+				.row_nav_icon {
+					width: 100%;
+					height: 100%;
+					padding-top: 30%;
+					text-align: center;
+					transition: 0.5s;
+					.icon {
+						display: flex;
+						justify-content: center;
+						margin: auto;
+					}
+					h1 {
+						font-size: 25px;
+						margin-top: 2%;
+					}
+					&:hover {
+						background-color: cornflowerblue;
+						cursor: pointer;
+
+						h1,
+						p {
+							color: #fff;
+						}
+					}
+				}
+				.icon {
+					width: 100px;
+					height: 100px;
+				}
+				.icon-companies {
+					background: url('@/assets/images/companies.png') no-repeat center
+						center/cover;
+				}
+				.icon-cloud {
+					background: url('@/assets/images/cloud.png') no-repeat center center/cover;
+				}
+				.icon-config {
+					background: url('@/assets/images/config.png') no-repeat center center/cover;
+				}
+				.icon-circle {
+					background: url('@/assets/images/circle.png') no-repeat center center/cover;
+				}
+			}
+		}
+	}
+	.onama {
+		width: 100%;
+		height: 100%;
+
+		.onama-heading {
+			height: 50vh;
+
+			font-size: 40px;
+			background: linear-gradient(to right, #0051ff50, #1e7ebe86, #003e9bc2),
+				url('@/assets/images/purchase-cover-image.png') no-repeat center
+					center/cover;
+			position: relative;
+			h1 {
+				position: absolute;
+				color: white;
+				bottom: 5%;
+				left: 15%;
+			}
+		}
+		.onama-text {
+			padding: 30px 50px;
+			p {
+				color: gray;
+				font-size: 22px;
 			}
 		}
 	}

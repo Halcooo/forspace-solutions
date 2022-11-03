@@ -53,7 +53,6 @@
 	body {
 		margin: 0;
 		padding: 0;
-		text-align: center;
 		box-sizing: border-box;
 	}
 	#app {

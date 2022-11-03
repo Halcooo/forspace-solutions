@@ -17,7 +17,7 @@
 				:class="{ bottom: bottom }"
 			></p>
 		</div>
-		<Sidenav />
+		<Sidenav :contents="contents" />
 	</div>
 </template>
 
@@ -31,24 +31,30 @@
 				top: false,
 				middle_none: false,
 				bottom: false,
-				contentState: false,
+				contents: [
+					{ class: 'grid_a', id: 0, state: false },
+					{ class: 'grid_b', id: 1, state: false },
+					{ class: 'grid_c', id: 2, state: false },
+					{ class: 'grid_d', id: 3, state: false },
+					{ class: 'grid_e', id: 4, state: false },
+				],
 			};
 		},
 		components: { Sidenav },
 		methods: {
 			...mapMutations(['setSideNav']),
 			...mapGetters(['getSideNav']),
-			...mapMutations(['setSideContent']),
-			...mapGetters(['getSideContent']),
+
 			showSideNav() {
 				if (this.getSideNav()) {
-					this.$store.state.grid_a = false;
-					this.$store.state.grid_b = false;
-					this.$store.state.grid_c = false;
-					this.$store.state.grid_d = false;
-					this.$store.state.grid_e = false;
+					this.$store.state.sidecontent = false;
 					this.setSideNav(false);
+					this.contents.forEach((item) => {
+						item.state = false;
+					});
 				} else {
+					this.$store.state.sidecontent = true;
+
 					this.setSideNav(true);
 				}
 
@@ -81,7 +87,7 @@
 			width: 80%;
 			margin: 4px auto;
 
-			background-color: gray;
+			background-color: white;
 			padding: 1px 4px;
 			transition: all 0.5s;
 		}

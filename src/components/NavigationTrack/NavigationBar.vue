@@ -5,7 +5,7 @@
 			<div class="logo">
 				<img
 					alt="Forspace Solutions"
-					src="@/assets/svg/logo.svg"
+					src="@/assets/svg/logo_white.svg"
 				/>
 			</div>
 			<div class="navigation">
@@ -26,7 +26,7 @@
 		components: { Links, CloseBtn },
 	};
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
 	@import '../../styles/variables.scss';
 
 	.nav-wrapper {
@@ -34,7 +34,7 @@
 		margin: 0;
 		padding: 20px;
 		width: 100%;
-		background-color: rgba(255, 255, 255, 0.788);
+		background-color: rgba(255, 255, 255, 0);
 
 		.nav-wrapper-flex {
 			display: flex;

@@ -90,18 +90,18 @@
 		text-align: left;
 
 		a {
-			color: gray;
+			color: white;
 			font-size: 23px;
 		}
 		.active {
-			color: $links-color;
+			color: $cornflowerblue;
 		}
 	}
 	.drop-nav {
 		width: 110px;
 
 		a {
-			color: $links-color;
+			color: $cornflowerblue;
 		}
 	}
 

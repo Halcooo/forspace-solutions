@@ -4,11 +4,7 @@ export default createStore({
 	state() {
 		return {
 			none: true,
-			grid_a: false,
-			grid_b: false,
-			grid_c: false,
-			grid_d: false,
-			grid_e: false,
+
 			sidenav: false,
 			sidecontent: false,
 		};
