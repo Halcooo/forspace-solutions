@@ -38,9 +38,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 .arrow-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
   border-radius: 50%;
   background-color: white;
-  width: 30px;
+  width: 35px;
+  height: 35px;
 }
 div {
   position: fixed;
