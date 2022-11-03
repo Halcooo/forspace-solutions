@@ -5,22 +5,13 @@
 			:class="{ sidenav_content_visible: getSideNav }"
 		>
 			<ul class="nav-links-vertical">
-				<!-- <Links /> -->
-				<li
-					v-for="(route, index) in routes"
-					:key="route"
-				>
-					<router-link
-						to=""
-						:class="route.class"
-						@mouseover="displayContent(index)"
-					>
-						{{ $t(route.text) }}
-					</router-link>
-				</li>
+				<Links
+					:sidenavRoutes="sidenav_routes"
+					:contents="contents"
+				/>
 			</ul>
 		</div>
-		<!-- -->
+
 		<div
 			v-for="content in contents"
 			:key="content"
@@ -71,6 +62,35 @@
 					</p>
 				</div>
 			</div>
+			<div
+				class="flex_column"
+				v-if="content.id == 2"
+			>
+				<div class="row_1">
+					<div class="row_1_home">
+						<h1>
+							{{ $t('home') }}
+						</h1>
+					</div>
+				</div>
+				<div class="row_2">
+					<div
+						class="row_nav"
+						v-for="nav in navs"
+						:key="nav"
+					>
+						<div class="row_nav_icon">
+							<div
+								class="icon"
+								:class="nav.icon"
+							></div>
+
+							<h1>{{ $t(nav.row_heading) }}</h1>
+							<p>{{ $t(nav.row_text) }}</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </template>
@@ -115,15 +135,51 @@
 						icon: 'icon-circle',
 					},
 				],
+				sidenav_routes: [
+					{
+						to: '/',
+						name: 'home',
+						isActive: true,
+						id: 0,
+
+						classname: 'sidenav',
+					},
+					{
+						to: '/',
+						name: 'about',
+						isActive: false,
+						id: 1,
+
+						classname: 'sidenav',
+					},
+					{
+						to: '/',
+						name: 'products',
+						isActive: false,
+						id: 2,
+
+						classname: 'sidenav',
+					},
+					{
+						to: '/',
+						name: 'services',
+						isActive: false,
+						id: 3,
+
+						classname: 'sidenav',
+					},
+					{
+						to: '/',
+						name: 'contact',
+						isActive: false,
+						id: 4,
+
+						classname: 'sidenav',
+					},
+				],
 			};
 		},
-		methods: {
-			displayContent(index) {
-				this.contents.forEach((item) => {
-					item.state = index == item.id ? true : false;
-				});
-			},
-		},
+		methods: {},
 
 		computed: {
 			...mapGetters(['getSideNav']),
@@ -151,7 +207,7 @@
 			right: 0%;
 			width: 0%;
 			height: 100vh;
-			background-color: rgb(255, 255, 255);
+			background-color: white;
 			transition: all 0.4s;
 			a {
 				color: gray;
@@ -212,7 +268,7 @@
 			width: 100%;
 			height: 50vh;
 			position: relative;
-
+			z-index: 1;
 			background: linear-gradient(
 					to right,
 					rgba(31, 46, 255, 0.473),
@@ -226,6 +282,7 @@
 
 				text-align: left;
 				position: absolute;
+				z-index: 1;
 				left: 15%;
 				bottom: 5%;
 				h1 {
