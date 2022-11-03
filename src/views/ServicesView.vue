@@ -4,8 +4,6 @@
 	</div>
 	<div
 		class="container-sm content"
-		data-aos="slide-up"
-		data-aos-duration="800"
 	>
 		<div v-if="currentSlide == 1">
 			<p>
@@ -29,8 +27,6 @@
 				>
 					<div
 						class="card"
-						data-aos="fade"
-						data-aos-anchor-placement="top"
 					>
 						<h2>ERP Sistemi</h2>
 						<img
@@ -51,8 +47,6 @@
 				>
 					<div
 						class="card"
-						data-aos="fade"
-						data-aos-anchor-placement="top"
 					>
 						<h2>DMS Sistemi</h2>
 						<img
@@ -73,8 +67,7 @@
 				>
 					<div
 						class="card"
-						data-aos="fade"
-						data-aos-anchor-placement="top"
+
 					>
 						<h2>WMS Sistemi</h2>
 						<img
@@ -95,8 +88,7 @@
 				>
 					<div
 						class="card"
-						data-aos="fade"
-						data-aos-anchor-placement="top"
+
 					>
 						<h2>Sistemi plaćanja</h2>
 						<img
@@ -115,8 +107,7 @@
 				>
 					<div
 						class="card"
-						data-aos="fade"
-						data-aos-anchor-placement="top"
+
 					>
 						<h2>Riješenja po mjeri</h2>
 						<img
