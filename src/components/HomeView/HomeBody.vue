@@ -1,150 +1,57 @@
 @author Halid Lihovac
 <template>
-	<div class="body container">
-		<h1>Posao iz jednog izvora</h1>
-		<p>
-			Iskoristite Forspace potpuno integrisano all-in-one rješenje za
-			<br />
-			standardizaciju i digitalizaciju poslovnih procesa u Vašoj kompaniji.
-		</p>
-		<div class="items container">
-			<div class="row">
-				<div class="col-sm item">
-					<img
-						src="@/assets/images/companies.png"
-						alt="companies"
-					/>
-					<h4>Vaša kompanija pod jednim krovom</h4>
-					<p>Centralno upravljanje procesima.</p>
-				</div>
-				<div class="item col-sm">
-					<img
-						src="@/assets/images/cloud.png"
-						alt="cloud"
-					/>
-					<h4>Vaša kompanija pod jednim krovom</h4>
-					<p>Centralno upravljanje procesima.</p>
-				</div>
-				<div class="item col-sm">
-					<img
-						src="@/assets/images/config.png"
-						alt="config"
-					/>
-					<h4>Vaša kompanija pod jednim krovom</h4>
-					<p>Centralno upravljanje procesima.</p>
-				</div>
-				<div class="item col-sm">
-					<img
-						src="@/assets/images/circle.png"
-						alt="circle"
-					/>
-					<h4>Vaša kompanija pod jednim krovom</h4>
-					<p>Centralno upravljanje procesima.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="cube-background">
-		<div class="erp-text">
-			<h1 class="erp-main-text">Forspace ERP & Računovodstvo +</h1>
-			<p class="erp-secondary-text">
-				Odluke zasnovane na činjenicama, a ne na pretpostavkama!
-			</p>
-		</div>
-		<img
-			src="@/assets/images/kocka_.png"
-			alt="cube"
-		/>
-	</div>
-	<div class="dir-container">
-		>
-		<!-- <div class="container">
-      <img
-        class="direktorica"
-        src="@/assets/images/Slika-direktorice-1.jpg"
-        alt="direktorica"
-      />
-    </div> -->
-
-		<!-- <div class="dir-secondary d-flex">
-      <h1>Radimo sa Vama!</h1>
-      <p class="container">
-        Svakom biznisu potrebna je jasna strategija. Sa Forspace rješenjem to
-        znači obezbjeđenje potpune kontrole nad svim poslovnim procesima u Vašoj
-        kompaniji kroz automatizaciju, digitalizaciju i inoviranje svih
-        poslovnih procesa. Kao rezultat višegodišnjeg istraživanja, sticanja
-        znanja i prihvatanja svjetskih praksi, Forspace tim daje bezrezervnu
-        podršku u svim fazama korištenja, a posebno smo ponosni na našu
-        post-prodajnu uslugu, jer prihvatanjem ovog softvera možete računati na
-        naš stalni angažman i kontakt. Mi smo prvi domaći brend na tržištu ERP
-        softvera sa predznakom njemačke tehnologije koji omogućava smanjenje
-        korištenja pisane dokumentacije, uštedu vremena i novca, te predstavlja
-        potpuno prilagođeno i razumljivo softversko rješenje za krajnjeg
-        korisnika. Vođeni našom krilaticom, sigurni smo da unapređujemo način na
-        koji radite, jer MI RADIMO SA VAMA!"
+  <div class="body container">
+    <h1>Posao iz jednog izvora</h1>
+    <p>
+      Iskoristite Forspace potpuno integrisano all-in-one rješenje za
+      <br />
+      standardizaciju i digitalizaciju poslovnih procesa u Vašoj kompaniji.
+    </p>
+    <div class="items container">
+      <div class="row">
+        <div class="col-sm item">
+          <img src="@/assets/images/companies.png" alt="companies" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
+        <div class="item col-sm">
+          <img src="@/assets/images/cloud.png" alt="cloud" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
+        <div class="item col-sm">
+          <img src="@/assets/images/config.png" alt="config" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
+        <div class="item col-sm">
+          <img src="@/assets/images/circle.png" alt="circle" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cube-background">
+    <div class="erp-text">
+      <h1 class="erp-main-text">Forspace ERP & Računovodstvo +</h1>
+      <p class="erp-secondary-text">
+        Odluke zasnovane na činjenicama, a ne na pretpostavkama!
       </p>
-      <p>Esada Karović, CEO</p>
-    </div> -->
-	</div>
-	<div class="container-sm">
-		<h1>Kompanije koje su već optimizirale svoje procese sa Forspace</h1>
-		<div class="companies">
-			<img
-				src="@/assets/images/asa-group-logo.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/prevent-logo.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/interior-logo-2.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/salona-logo.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/dresscode-logo.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/tkt-logo.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/Savent.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/Maxuz.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/Itrade.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/Gradiz.jpg"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/Putovaobih.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/ApDigital.jpg"
-				alt=""
-			/>
-		</div>
-		<p>
-			Sve naše klijente ponosno ističemo i gradimo partnerske odnose na obostrano
-			zadovoljstvo. Ukoliko neki od naših klijenata nisu još uvijek dodani na
-			listu, ne znači da ih manje cijenimo ili da su nam manje važni.
-		</p>
-		<br />
-	</div>
+    </div>
+    <img src="@/assets/images/kocka_.png" alt="cube" />
+  </div>
+  <div class="dir-container">></div>
+  <div class="container">
+    <h1>Kompanije koje su već optimizirale svoje procese sa Forspace</h1>
+    <BaseSlider :images="images" />
+    <p>
+      Sve naše klijente ponosno ističemo i gradimo partnerske odnose na
+      obostrano zadovoljstvo. Ukoliko neki od naših klijenata nisu još uvijek
+      dodani na listu, ne znači da ih manje cijenimo ili da su nam manje važni.
+    </p>
+    <br />
+  </div>
 </template>
 <script>
 import BaseSlider from "../BaseSlider.vue";
@@ -253,7 +160,6 @@ img {
   color: white;
   margin-top: 90px;
 }
-
 .cube-background {
   background-image: url("@/assets/images/kocka-blank_sjena.png");
   background-repeat: no-repeat;
@@ -262,7 +168,6 @@ img {
   flex-direction: column;
   height: 100vh;
 }
-
 .item {
   margin-bottom: 5vh;
   margin-top: 4vh;
