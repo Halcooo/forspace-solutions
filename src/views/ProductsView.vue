@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="wrapper" data-aos="fade-in" data-aos-duration="800">
+  <div class="wrapper" >
     <div class="container items">
       <div class="row">
         <div class="col-sm">

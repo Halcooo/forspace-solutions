@@ -2,8 +2,8 @@
 <template lang="">
   <div class="container col-6">
     <form>
-      <h3 class="mt-4" data-aos="fade">Pošaljite nam poruku</h3>
-      <div class="form-group m-4" data-aos="fade-up" data-aos-delay="200">
+      <h3 class="mt-4" >Pošaljite nam poruku</h3>
+      <div class="form-group m-4">
         <label for="name">Your name:</label>
         <input
           @input="validateName"
@@ -16,7 +16,7 @@
           <div class="sec"></div>
         </div>
       </div>
-      <div class="form-group m-4" data-aos="fade-up" data-aos-delay="350">
+      <div class="form-group m-4" >
         <label>Your e-mail:</label>
         <input
           @input="validateEmail"
@@ -30,7 +30,7 @@
           <div class="sec"></div>
         </div>
       </div>
-      <div class="form-group m-4" data-aos="fade-up" data-aos-delay="450">
+      <div class="form-group m-4" >
         <label for="">Your Message:</label>
         <textarea
           @input="validateMessage"
@@ -46,8 +46,7 @@
       <div class="col-auto">
         <!--  button srediti kao na početnoj što će biti!!!!!!!!!!! to uraditi nakon što je navbar mergan u development!!!! -->
         <button
-          data-aos="fade-up"
-          data-aos-delay="45,0"
+       
           type="submit"
           @click.prevent="submitForm"
           class="btn btn-primary mb-2"

@@ -26,7 +26,7 @@
 				this.$router.push({ path: '/' });
 			},
 
-			mounted() {},
+			mounted() { },
 		},
 	};
 </script>

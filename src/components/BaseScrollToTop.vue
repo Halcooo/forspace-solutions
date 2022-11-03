@@ -3,7 +3,6 @@
   <div class="arrow-wrap">
     <font-awesome-icon
       v-if="show"
-      data-aos="fade"
       @click="handleScroll"
       icon="fa-solid fa-arrow-up"
     />

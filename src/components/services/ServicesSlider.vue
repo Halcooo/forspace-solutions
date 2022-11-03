@@ -12,7 +12,7 @@
           :src="slide.url"
           alt="logo"
           :id="slide.id"
-        /><Navigation data-aos="fade" data-aos-delay="800"></Navigation>
+        /><Navigation ></Navigation>
       </div>
     </Slide>
     <template #addons>
