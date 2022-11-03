@@ -3,9 +3,6 @@
     <ServicesSlider :images="images"> </ServicesSlider>
   </div>
   <div
-      class="container-sm content"
-      data-aos="slide-up"
-      data-aos-duration="800"
     >
       <div v-if="currentSlide == 1">
         <p>
@@ -24,7 +21,7 @@
       <div class="container">
         <div class="row">
           <div v-if="currentSlide == 2" class="col-sm">
-            <div class="card" data-aos="fade" data-aos-anchor-placement="top">
+            <div >
               <h2>ERP Sistemi</h2>
               <img src="@/assets/images/erp-sistemi.png" alt="" />
               <p>
@@ -36,7 +33,7 @@
             </div>
           </div>
           <div class="col-sm" v-if="currentSlide == 3">
-            <div class="card" data-aos="fade" data-aos-anchor-placement="top">
+            <div class="card" >
               <h2>DMS Sistemi</h2>
               <img src="@/assets/images/dms.png" alt="" />
               <p>
@@ -48,7 +45,7 @@
             </div>
           </div>
           <div class="col-sm" v-if="currentSlide == 4">
-            <div class="card" data-aos="fade" data-aos-anchor-placement="top">
+            <div class="card" >
               <h2>WMS Sistemi</h2>
               <img src="@/assets/images/wms.png" alt="" />
               <p>
@@ -61,7 +58,7 @@
             </div>
           </div>
           <div class="col-sm" v-if="currentSlide == 5">
-            <div class="card" data-aos="fade" data-aos-anchor-placement="top">
+            <div class="card" >
               <h2>Sistemi plaćanja</h2>
               <img src="@/assets/images/sistemiplacanja.png" alt="" />
               <p>
@@ -71,7 +68,7 @@
             </div>
           </div>
           <div class="col-sm" v-if="currentSlide == 6">
-            <div class="card" data-aos="fade" data-aos-anchor-placement="top">
+            <div class="card" >
               <h2>Riješenja po mjeri</h2>
               <img src="@/assets/images/rijesenjapomjeri.jpg" alt="" />
               <p>

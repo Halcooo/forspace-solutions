@@ -46,11 +46,7 @@
 	</div>
 	<div
 		class="cube-background"
-		data-aos="slide-up"
-		data-aos-ease="ease"
-		data-aos-duration="1500"
-		data-aos-delay="500"
-		data-aos-anchor-placement="center-bottom"
+
 	>
 		<div class="erp-text">
 			<h1 class="erp-main-text">Forspace ERP & Računovodstvo +</h1>
@@ -61,106 +57,18 @@
 		<img
 			src="@/assets/images/kocka_.png"
 			alt="cube"
-			data-aos="fade"
-			data-aos-ease="ease"
-			data-aos-duration="1500"
-			data-aos-delay="500"
-			data-aos-anchor-placement="center-bottom"
+			
 		/>
 	</div>
 	<div
 		class="dir-container"
-		data-aos="zoom-in"
-		data-aos-duration="1500"
-		data-aos-delay="500"
-		data-aos-anchor-placement="center-bottom"
+		
 	>
 		>
-		<!-- <div class="container">
-      <img
-        class="direktorica"
-        src="@/assets/images/Slika-direktorice-1.jpg"
-        alt="direktorica"
-      />
-    </div> -->
-
-		<!-- <div class="dir-secondary d-flex">
-      <h1>Radimo sa Vama!</h1>
-      <p class="container">
-        Svakom biznisu potrebna je jasna strategija. Sa Forspace rješenjem to
-        znači obezbjeđenje potpune kontrole nad svim poslovnim procesima u Vašoj
-        kompaniji kroz automatizaciju, digitalizaciju i inoviranje svih
-        poslovnih procesa. Kao rezultat višegodišnjeg istraživanja, sticanja
-        znanja i prihvatanja svjetskih praksi, Forspace tim daje bezrezervnu
-        podršku u svim fazama korištenja, a posebno smo ponosni na našu
-        post-prodajnu uslugu, jer prihvatanjem ovog softvera možete računati na
-        naš stalni angažman i kontakt. Mi smo prvi domaći brend na tržištu ERP
-        softvera sa predznakom njemačke tehnologije koji omogućava smanjenje
-        korištenja pisane dokumentacije, uštedu vremena i novca, te predstavlja
-        potpuno prilagođeno i razumljivo softversko rješenje za krajnjeg
-        korisnika. Vođeni našom krilaticom, sigurni smo da unapređujemo način na
-        koji radite, jer MI RADIMO SA VAMA!"
-      </p>
-      <p>Esada Karović, CEO</p>
-    </div> -->
 	</div>
-	<div
-		class="container-sm"
-		data-aos="slide-up"
-		data-aos-duration="1500"
-		data-aos-delay="500"
-	>
+	<div>
 		<h1>Kompanije koje su već optimizirale svoje procese sa Forspace</h1>
-		<div class="companies">
-			<img
-				src="@/assets/images/asa-group-logo.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/prevent-logo.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/interior-logo-2.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/salona-logo.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/dresscode-logo.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/tkt-logo.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/Savent.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/Maxuz.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/Itrade.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/Gradiz.jpg"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/Putovaobih.png"
-				alt=""
-			/>
-			<img
-				src="@/assets/images/ApDigital.jpg"
-				alt=""
-			/>
-		</div>
+		<BaseSlider/>
 		<p>
 			Sve naše klijente ponosno ističemo i gradimo partnerske odnose na obostrano
 			zadovoljstvo. Ukoliko neki od naših klijenata nisu još uvijek dodani na
@@ -168,29 +76,15 @@
 		</p>
 		<br />
 	</div>
-	<!-- <div
-  class="last-item"
-    data-aos="slide-up"
-    data-aos-duration="1500"
-    data-aos-delay="500"
-    data-aos-anchor-placement="bottom"
-  >
-    <img class="ap-image" src="@/assets/images/ApDigital-1.jpg" alt="" />
-    <p>
-      "Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje
-      našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov
-      konkurentski krajolik je strm, ali Forspace to čini ostvarivim. Omogućili
-      su nam, trenirali nas i dali nam samopouzdanje da svoje resurse koristimo
-      mudro, oslobađajući ih svakodnevnih rutina i optimizirajući njihove
-      svakodnevne performanse. Njihov pristup je privlačan i relevantan za
-      industriju. Sada imamo više mogućnosti i vremena za rad na postizanju
-      novih poslovnih rezultata.“
-    </p>
-  </div> -->
+	
 </template>
 <script>
+import BaseSlider from '../BaseSlider.vue';
 	export default {
 		name: 'HomeBody',
+		components:{
+			BaseSlider
+		}
 	};
 </script>
 <style lang="scss" scoped>

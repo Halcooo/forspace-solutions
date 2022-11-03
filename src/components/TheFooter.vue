@@ -2,9 +2,7 @@
 <template>
   <div
     class="footer"
-    data-aos="fade"
-    data-aos-duration="1000"
-    data-aos-anchor-placement="center-bottom"
+    
   >
     <footer class="text-center text-lg-start bg-light text-muted">
       <section
