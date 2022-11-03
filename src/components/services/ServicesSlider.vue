@@ -59,7 +59,7 @@ h1 {
 .carousel__pagination {
   z-index: 21;
   position: absolute;
-  bottom: 15%;
+  bottom: 5%;
   width: 100%;
   border-radius: 50%;
   li {
@@ -70,13 +70,13 @@ h1 {
   }
 }
 .wrapper {
-  height: 80vh;
+  height: 70vh;
 }
 .grabbed {
   cursor: grabbing !important;
 }
 .carousel__item {
-  height: 100vh;
+  height: 70vh;
   width: 100%;
   color: white;
   font-size: 20px;
@@ -87,7 +87,7 @@ h1 {
     background-size: contain;
     object-fit: cover;
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     cursor: grab;
   }
 }
