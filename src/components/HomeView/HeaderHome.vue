@@ -1,82 +1,88 @@
 @author Halid Lihovac
 <template>
-  <div
-    class="wrapper"
-    data-aos="fade-in"
-    data-aos-easing="ease-out-cubic"
-    data-aos-duration="1000"
-  >
-    <div class="header-text container">
-      <!-- <HeaderText></HeaderText> -->
-    </div>
-    <div
-      class="demo-full-container"
-      data-aos="flip-right"
-      data-aos-duration="1500"
-    >
-      <RouterLink to="/contact"> Želim prezentaciju</RouterLink>
-    </div>
-  </div>
+	<div class="landing-page">
+		<div class="div">
+			<div>
+				<div class="head-1">
+					<h1>Mi ne radimo za Vas.</h1>
+				</div>
+				<div class="head-2">
+					<h1>Mi radimo sa Vama!</h1>
+				</div>
+				<div class="head-3">
+					<router-link
+						to="/"
+						class="landing-button"
+					>
+						{{ $t('presentation') }}
+					</router-link>
+				</div>
+			</div>
+		</div>
+	</div>
 </template>
 <script>
-import HeaderText from "@/components/HomeView/HeaderText.vue";
+	import HeaderText from '@/components/HomeView/HeaderText.vue';
 
-export default {
-  name: "HeaderHome",
-  components: {
-    HeaderText,
-  },
-};
+	export default {
+		name: 'HeaderHome',
+		components: {
+			HeaderText,
+		},
+	};
 </script>
 <style lang="scss" scoped>
-.wrapper {
-  background: url(@/assets/images/header-cover.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-color: #263b53;
-  height: 100vh;
-  top: 0px;
-  background-size: cover;
-}
-.header-text {
-  display: flex;
-  position: absolute;
-  color: white;
-  align-items: center;
-  justify-content: center;
-  top: 50%;
-  animation: 1s ease-out 0s 1 slideInLeft;
-}
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-.demo-full-container {
-  bottom: 30px;
-  right: 30px;
-  background-color: #f16822;
-  padding: 7px;
-  border-radius: 5px;
-  right: 5%;
-  bottom: 15%;
-  position: absolute;
-  a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.1em;
-    &:hover {
-      color: #25435b;
-    }
-  }
-  &:hover {
-    cursor: pointer;
-    color: #25435b;
-  }
-}
+	@import '@/styles/variables.scss';
+	@keyframes backgroundFade {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	.landing-page {
+		width: 100%;
+		height: 80vh;
+		background: linear-gradient(
+				to right,
+				rgba(0, 0, 0, 0.3),
+				#21445b86,
+				#143463c2
+			),
+			url('@/assets/images/header-cover.jpg') no-repeat center center/cover;
+		background-attachment: fixed;
+		animation: backgroundFade 0.5s ease-in;
+		.div {
+			display: flex;
+			justify-content: left;
+			align-items: center;
+			height: 100%;
+			margin-right: auto;
+			margin-left: 10%;
+			h1 {
+				font-size: 60px;
+				color: white;
+				margin: 0;
+				padding: 0;
+				font-family: 'Oswald', sans-serif;
+			}
+
+			.head-3 {
+				margin-top: 10%;
+				.landing-button {
+					color: white;
+					border: 2px solid rgb(255, 255, 255);
+					padding: 20px 40px;
+					transition: 0.3s ease-out;
+
+					&:hover {
+						background: rgb(255, 102, 0);
+						border: 2px solid rgb(255, 102, 0);
+					}
+				}
+			}
+		}
+	}
 </style>

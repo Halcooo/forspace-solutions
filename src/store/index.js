@@ -1,10 +1,22 @@
-import { createStore } from "vuex";
-import servicesModule from "./modules/services.js";
+import { createStore } from 'vuex';
+import servicesModule from './modules/services.js';
 
 export default createStore({
-  state: {},
-  getters: {},
-  mutations: {},
-  actions: {},
-  modules: { servicesModule },
+	state: {
+		none: true,
+		sidenav: false,
+		sidecontent: false,
+	},
+	getters: {
+		getSideNav(state) {
+			return state.sidenav;
+		},
+	},
+	mutations: {
+		setSideNav(state, payload) {
+			state.sidenav = payload;
+		},
+	},
+	actions: {},
+	modules: { servicesModule },
 });
