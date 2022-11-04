@@ -1,9 +1,9 @@
 @author Halid Lihovac
 <template lang="">
-  <div class="arrow-wrap">
+  <div class="arrow-wrap" v-if="show"      @click="handleScroll">
     <font-awesome-icon
-      v-if="show"
-      @click="handleScroll"
+      
+
       icon="fa-solid fa-arrow-up"
     />
   </div>

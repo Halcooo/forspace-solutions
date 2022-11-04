@@ -78,7 +78,7 @@ export default {
       ],
     };
   },
-};
+};6+
 </script>
 <style lang="scss" scoped>
 .conatiner-sm {
