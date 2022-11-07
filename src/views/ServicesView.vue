@@ -2,13 +2,7 @@
 	<div class="wrapper">
 		<ServicesSlider :images="images"></ServicesSlider>
 	</div>
-<<<<<<< HEAD
 	<div class="container-sm content">
-=======
-	<div
-		class="container-sm content"
-	>
->>>>>>> master
 		<div v-if="currentSlide == 1">
 			<p>
 				Naš tim za razvoj softvera čine iskusni inžinjeri i profesionalci koji
@@ -29,13 +23,7 @@
 					v-if="currentSlide == 2"
 					class="col-sm"
 				>
-<<<<<<< HEAD
 					<div class="card">
-=======
-					<div
-						class="card"
-					>
->>>>>>> master
 						<h2>ERP Sistemi</h2>
 						<img
 							src="@/assets/images/erp-sistemi.png"
@@ -53,13 +41,7 @@
 					class="col-sm"
 					v-if="currentSlide == 3"
 				>
-<<<<<<< HEAD
 					<div class="card">
-=======
-					<div
-						class="card"
-					>
->>>>>>> master
 						<h2>DMS Sistemi</h2>
 						<img
 							src="@/assets/images/dms.png"
@@ -111,14 +93,7 @@
 					class="col-sm"
 					v-if="currentSlide == 6"
 				>
-<<<<<<< HEAD
 					<div class="card">
-=======
-					<div
-						class="card"
-
-					>
->>>>>>> master
 						<h2>Riješenja po mjeri</h2>
 						<img
 							src="@/assets/images/rijesenjapomjeri.jpg"
