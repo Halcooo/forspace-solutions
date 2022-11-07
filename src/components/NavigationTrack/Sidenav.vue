@@ -18,78 +18,14 @@
 			:class="[{ active: content.state }, content.class]"
 			v-if="this.$store.state.sidecontent"
 		>
-			<div
-				class="flex_column"
-				v-if="content.id == 0"
-			>
-				<div class="row_1">
-					<div class="row_1_home">
-						<h1>
-							{{ $t('home') }}
-						</h1>
-					</div>
-				</div>
-				<div class="row_2">
-					<div
-						class="row_nav"
-						v-for="nav in navs"
-						:key="nav"
-					>
-						<div class="row_nav_icon">
-							<div
-								class="icon"
-								:class="nav.icon"
-							></div>
-
-							<h1>{{ $t(nav.row_heading) }}</h1>
-							<p>{{ $t(nav.row_text) }}</p>
-						</div>
-					</div>
-				</div>
+			<div v-if="content.id == 0">
+				<HomeContent :navs="navs" />
 			</div>
-			<div
-				class="onama"
-				v-if="content.id == 1"
-			>
-				<div class="onama-heading">
-					<h1>
-						{{ $t('about') }}
-					</h1>
-				</div>
-				<div class="onama-text">
-					<p>
-						{{ $t('about_text') }}
-					</p>
-				</div>
+			<div v-if="content.id == 1">
+				<AboutContent />
 			</div>
-			<div
-				class="flex_column"
-				v-if="content.id == 2"
-			>
-				<div class="row_1">
-					<div class="row_1_home">
-						<h1>
-							{{ $t('home') }}
-						</h1>
-					</div>
-				</div>
-				<div class="row_2">
-					<div
-						class="row_nav"
-						v-for="nav in navs"
-						:key="nav"
-					>
-						<div class="row_nav_icon">
-							<div
-								class="icon"
-								:class="nav.icon"
-							></div>
-
-							<h1>{{ $t(nav.row_heading) }}</h1>
-							<p>{{ $t(nav.row_text) }}</p>
-						</div>
-					</div>
-				</div>
+			<div v-if="content.id == 2">
+				<ProductContent />
 			</div>
 		</div>
 	</div>
@@ -97,15 +33,19 @@
 
 <script>
 	import Links from './NavigationLinks.vue';
-
+	import HomeContent from './SidenavCompContent/HomeContent.vue';
+	import AboutContent from './SidenavCompContent/AboutContent.vue';
+	import ProductContent from './SidenavCompContent/ProductContent.vue';
 	import { mapGetters, mapMutations } from 'vuex';
+	import BaseButton from '../forms/buttons/BaseButton.vue';
 
 	export default {
 		name: 'Sidenav',
-		components: { Links },
+		components: { Links, BaseButton, HomeContent, AboutContent, ProductContent },
 		props: ['contents'],
 		data() {
 			return {
+				presentation: true,
 				routes: [
 					{ class: 'grid-a', text: 'home' },
 					{ class: 'grid-b', text: 'about' },
@@ -191,7 +131,8 @@
 <style lang="scss" scoped>
 	.sidenav {
 		position: fixed;
-
+		top: 0;
+		right: -100%;
 		width: 100%;
 		height: 100vh;
 		display: flex;
@@ -255,119 +196,6 @@
 		}
 		to {
 			left: 0%;
-		}
-	}
-	.flex_column {
-		width: 100%;
-		height: 100%;
-		display: flex;
-
-		flex-direction: column;
-
-		.row_1 {
-			width: 100%;
-			height: 50vh;
-			position: relative;
-			z-index: 1;
-			background: linear-gradient(
-					to right,
-					rgba(31, 46, 255, 0.473),
-					#1e7ebe86,
-					#003e9bc2
-				),
-				url('@/assets/images/cityscape.webp') no-repeat center center/cover;
-
-			.row_1_home {
-				border-radius: 5px;
-
-				text-align: left;
-				position: absolute;
-				z-index: 1;
-				left: 15%;
-				bottom: 5%;
-				h1 {
-					color: white;
-				}
-			}
-		}
-		.row_2 {
-			width: 100%;
-			height: 50vh;
-			display: flex;
-
-			.row_nav {
-				width: 100%;
-
-				.row_nav_icon {
-					width: 100%;
-					height: 100%;
-					padding-top: 30%;
-					text-align: center;
-					transition: 0.5s;
-					.icon {
-						display: flex;
-						justify-content: center;
-						margin: auto;
-					}
-					h1 {
-						font-size: 25px;
-						margin-top: 2%;
-					}
-					&:hover {
-						background-color: cornflowerblue;
-						cursor: pointer;
-
-						h1,
-						p {
-							color: #fff;
-						}
-					}
-				}
-				.icon {
-					width: 100px;
-					height: 100px;
-				}
-				.icon-companies {
-					background: url('@/assets/images/companies.png') no-repeat center
-						center/cover;
-				}
-				.icon-cloud {
-					background: url('@/assets/images/cloud.png') no-repeat center center/cover;
-				}
-				.icon-config {
-					background: url('@/assets/images/config.png') no-repeat center center/cover;
-				}
-				.icon-circle {
-					background: url('@/assets/images/circle.png') no-repeat center center/cover;
-				}
-			}
-		}
-	}
-	.onama {
-		width: 100%;
-		height: 100%;
-
-		.onama-heading {
-			height: 50vh;
-
-			font-size: 40px;
-			background: linear-gradient(to right, #0051ff50, #1e7ebe86, #003e9bc2),
-				url('@/assets/images/purchase-cover-image.png') no-repeat center
-					center/cover;
-			position: relative;
-			h1 {
-				position: absolute;
-				color: white;
-				bottom: 5%;
-				left: 15%;
-			}
-		}
-		.onama-text {
-			padding: 30px 50px;
-			p {
-				color: gray;
-				font-size: 22px;
-			}
 		}
 	}
 </style>

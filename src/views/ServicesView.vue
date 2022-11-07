@@ -2,11 +2,7 @@
 	<div class="wrapper">
 		<ServicesSlider :images="images"></ServicesSlider>
 	</div>
-	<div
-		class="container-sm content"
-		data-aos="slide-up"
-		data-aos-duration="800"
-	>
+	<div class="container-sm content">
 		<div v-if="currentSlide == 1">
 			<p>
 				Naš tim za razvoj softvera čine iskusni inžinjeri i profesionalci koji
@@ -27,11 +23,7 @@
 					v-if="currentSlide == 2"
 					class="col-sm"
 				>
-					<div
-						class="card"
-						data-aos="fade"
-						data-aos-anchor-placement="top"
-					>
+					<div class="card">
 						<h2>ERP Sistemi</h2>
 						<img
 							src="@/assets/images/erp-sistemi.png"
@@ -49,11 +41,7 @@
 					class="col-sm"
 					v-if="currentSlide == 3"
 				>
-					<div
-						class="card"
-						data-aos="fade"
-						data-aos-anchor-placement="top"
-					>
+					<div class="card">
 						<h2>DMS Sistemi</h2>
 						<img
 							src="@/assets/images/dms.png"
@@ -71,11 +59,7 @@
 					class="col-sm"
 					v-if="currentSlide == 4"
 				>
-					<div
-						class="card"
-						data-aos="fade"
-						data-aos-anchor-placement="top"
-					>
+					<div class="card">
 						<h2>WMS Sistemi</h2>
 						<img
 							src="@/assets/images/wms.png"
@@ -93,11 +77,7 @@
 					class="col-sm"
 					v-if="currentSlide == 5"
 				>
-					<div
-						class="card"
-						data-aos="fade"
-						data-aos-anchor-placement="top"
-					>
+					<div class="card">
 						<h2>Sistemi plaćanja</h2>
 						<img
 							src="@/assets/images/sistemiplacanja.png"
@@ -113,11 +93,7 @@
 					class="col-sm"
 					v-if="currentSlide == 6"
 				>
-					<div
-						class="card"
-						data-aos="fade"
-						data-aos-anchor-placement="top"
-					>
+					<div class="card">
 						<h2>Riješenja po mjeri</h2>
 						<img
 							src="@/assets/images/rijesenjapomjeri.jpg"
@@ -171,7 +147,6 @@
 		},
 		computed: {
 			currentSlide() {
-				console.log(this.$store.getters.getCurrentSlide);
 				return this.$store.getters.getCurrentSlide;
 			},
 		},

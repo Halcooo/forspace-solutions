@@ -10,24 +10,27 @@
 					<h1>Mi radimo sa Vama!</h1>
 				</div>
 				<div class="head-3">
-					<router-link
-						to="/"
-						class="landing-button"
-					>
-						{{ $t('presentation') }}
-					</router-link>
+					<BaseButton
+						:to="routes.route"
+						:name="routes.name"
+					/>
 				</div>
 			</div>
 		</div>
 	</div>
 </template>
 <script>
-	import HeaderText from '@/components/HomeView/HeaderText.vue';
-
+	import BaseButton from '@/components/forms/buttons/BaseButton.vue';
 	export default {
 		name: 'HeaderHome',
+		data() {
+			return {
+				routes: { route: '/presentation', name: 'presentation' },
+			};
+		},
+
 		components: {
-			HeaderText,
+			BaseButton,
 		},
 	};
 </script>
@@ -71,17 +74,6 @@
 
 			.head-3 {
 				margin-top: 10%;
-				.landing-button {
-					color: white;
-					border: 2px solid rgb(255, 255, 255);
-					padding: 20px 40px;
-					transition: 0.3s ease-out;
-
-					&:hover {
-						background: rgb(255, 102, 0);
-						border: 2px solid rgb(255, 102, 0);
-					}
-				}
 			}
 		}
 	}

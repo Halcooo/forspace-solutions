@@ -36,7 +36,7 @@
 						classname: 'nav',
 					},
 					{
-						to: '/',
+						to: '/about',
 						name: 'about',
 						isActive: false,
 						id: 1,
@@ -44,7 +44,7 @@
 						classname: 'nav',
 					},
 					{
-						to: '/',
+						to: '/products',
 						name: 'products',
 						isActive: false,
 						id: 2,
@@ -52,7 +52,7 @@
 						classname: 'nav',
 					},
 					{
-						to: '/',
+						to: '/services',
 						name: 'services',
 						isActive: false,
 						id: 3,
@@ -60,7 +60,7 @@
 						classname: 'nav',
 					},
 					{
-						to: '/',
+						to: '/contact',
 						name: 'contact',
 						isActive: false,
 						id: 4,
@@ -77,6 +77,7 @@
 
 	.nav-wrapper {
 		position: fixed;
+		z-index: 1;
 		margin: 0;
 		padding: 20px;
 		width: 100%;
