@@ -10,10 +10,16 @@
     </div>
     <div v-if="currentSlide == 0">
       <div class="container">
-        <h1>Programerske usluge i razvoj:</h1>
-        <h2> <b>Web i desktop aplikacija</b>  podržanih na OS platformama Linux, Unix, macOS, Windows</h2>
-        <h2> <b>Mobilnih aplikacija</b> podržanih na Android i iOS operativnim sistemima</h2>
-        <h2><b>API integracija</b></h2>
+        <h1 class="mb-5">Programerske usluge i razvoj:</h1>
+        <h2 class="mb-2">
+          <b>Web i desktop aplikacija</b> podržanih na OS platformama Linux,
+          Unix, macOS, Windows
+        </h2>
+        <h2 class="mb-2">
+          <b>Mobilnih aplikacija</b> podržanih na Android i iOS operativnim
+          sistemima
+        </h2>
+        <h2 class="mb-2"><b>API integracija</b></h2>
         <p>
           Naš tim za razvoj softvera čine iskusni inžinjeri i profesionalci koji
           koristeći napredne alate, jezike i tehnologije, osiguravaju uspješnu
@@ -132,24 +138,20 @@ export default {
   position: absolute;
   z-index: 5;
   top: 23%;
-  background-color: rgba(255, 253, 253, .6);
-  box-shadow: rgba(255, 253, 253, .8) 0px 40px 100px 4px;
-  padding:15px;
+  background-color: rgba(255, 253, 253, 0.6);
+  box-shadow: rgba(255, 253, 253, 0.8) 0px 40px 100px 4px;
+  padding: 15px;
   max-width: 390px;
   border-radius: 15px;
 }
-
 
 .card {
   margin: 20px;
   margin-bottom: 10px;
 }
+
 .content {
   padding: 20px;
-  h1 {
-    text-align: center;
-    margin: 2vw;
-  }
   text-align: left;
   h3 {
     margin-left: 2vw;

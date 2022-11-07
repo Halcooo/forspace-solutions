@@ -104,8 +104,17 @@
 	};
 </script>
 <style lang="scss" scoped>
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
 	* {
 		color: #263b53;
+		animation: fadeInAnimation 1s;
 	}
 
 	img {
