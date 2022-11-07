@@ -1,10 +1,7 @@
 @author Halid Lihovac
 <template lang="">
-  <div class="arrow-wrap">
+  <div class="arrow-wrap" v-if="show"      @click="handleScroll">
     <font-awesome-icon
-      v-if="show"
-      data-aos="fade"
-      @click="handleScroll"
       icon="fa-solid fa-arrow-up"
     />
   </div>
@@ -39,9 +36,14 @@ export default {
 </script>
 <style lang="scss" scoped>
 .arrow-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
   border-radius: 50%;
   background-color: white;
-  width: 30px;
+  width: 35px;
+  height: 35px;
 }
 div {
   position: fixed;

@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container-sm" data-aos="fade" data-aos-duration="1000">
+  <div class="container-sm" >
     <h1>Nabava</h1>
     <p>
       Forspace modul nabave vam omogućava jednostavnu narudžbu svega što vam

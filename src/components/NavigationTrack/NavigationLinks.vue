@@ -28,7 +28,6 @@
 			{{ $t(navItem.name) }}
 		</router-link>
 	</li>
-
 	<!-- <li class="drop-nav ul-li"> -->
 	<!-- <div class="drop-bar">
 			<div class="select">
