@@ -25,6 +25,13 @@
           koristeći napredne alate, jezike i tehnologije, osiguravaju uspješnu
           realizaciju projekata u dogovorenim rokovima.
         </p>
+        <h3>NAŠA EKSPERTIZA</h3>
+        <p>
+          Naš tim je stručan da različite poslovne potrebe/ideje našeg klijenta
+          pretvori u digitalni proizvod namijenjen unapređenju njegovih
+          poslovnih procesa, razvoju i digitalnoj transformaciji. Iz naše
+          ekspertize posebno izdvajamo:
+        </p>
       </div>
     </div>
     <div class="container">
