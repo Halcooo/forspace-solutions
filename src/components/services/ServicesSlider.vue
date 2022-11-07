@@ -1,6 +1,6 @@
 @author Halid Lihovac
 <template>
-  <Carousel :wrap-around="true" :items-to-show="1">
+  <Carousel :wrap-around="true" :items-to-show="1" v-model="currentSlide">
     <Slide v-for="slide in images" :key="slide.id">
       <div class="carousel__item">
         <h1>{{ slide.name }}</h1>
@@ -8,11 +8,10 @@
           @mousedown="pressedMouse = true"
           @mouseup="pressedMouse = false"
           :class="{ grabbed: pressedMouse }"
-          @mousemove="setCurrentSlide(slide.id)"
           :src="slide.url"
           alt="logo"
           :id="slide.id"
-        /><Navigation ></Navigation>
+        />
       </div>
     </Slide>
     <template #addons>
@@ -33,19 +32,29 @@ export default {
     Carousel,
     Slide,
     Pagination,
-    Navigation
+    Navigation,
   },
   data() {
     return {
-      currentSlide: 1,
       pressedMouse: false,
+      currentSlide: 0,
     };
   },
+  watch: {
+    currentSlide:function (val) {
+     this.setCurrentSlide(val)
+    },
+
+    },
   methods: {
     setCurrentSlide(id) {
+      console.log('zoveee');
       this.$store.commit("setCurrentSlide", id);
     },
   },
+  mounted(){
+    this. setCurrentSlide(this.currentSlide)
+  }
 };
 </script>
 <style lang="scss" scoped>
@@ -54,7 +63,9 @@ h1 {
   position: absolute;
   left: 20%;
   top: 20%;
-  background-color: rgba(255, 253, 253, 0.5);
+  background-color: rgba(255, 253, 253, 0.8);
+  border-radius: 5px;
+  box-shadow: rgba(255, 253, 253, 1) 0px 40px 100px 4px;
 }
 .carousel__pagination {
   z-index: 21;
@@ -63,7 +74,7 @@ h1 {
   width: 100%;
   border-radius: 50%;
   li {
-    background-color: white!important;
+    background-color: white !important;
     button {
       border-radius: 50%;
     }
@@ -86,7 +97,7 @@ h1 {
   img {
     background-size: contain;
     object-fit: cover;
-    width: 100%;
+    width: 100% !important;
     height: 70vh;
     cursor: grab;
   }
