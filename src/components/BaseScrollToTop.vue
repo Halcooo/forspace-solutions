@@ -2,8 +2,6 @@
 <template lang="">
   <div class="arrow-wrap" v-if="show"      @click="handleScroll">
     <font-awesome-icon
-      
-
       icon="fa-solid fa-arrow-up"
     />
   </div>
