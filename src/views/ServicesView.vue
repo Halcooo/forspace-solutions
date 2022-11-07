@@ -92,16 +92,16 @@
   </div>
 </template>
 <script>
-import ServicesSlider from "@/components/services/ServicesSlider.vue";
-export default {
-  data() {
-    return {
-      images: [
-        {
-          id: 1,
-          url: require("@/assets/images/services.jpg"),
-          name: "Usluge",
-        },
+	import ServicesSlider from '@/components/services/ServicesSlider.vue';
+	export default {
+		data() {
+			return {
+				images: [
+					{
+						id: 1,
+						url: require('@/assets/images/services.jpg'),
+						name: 'Usluge',
+					},
 
         {
           id: 2,
