@@ -180,12 +180,9 @@ export default {
   margin: 20px;
   margin-bottom: 10px;
 }
+
 .content {
   padding: 20px;
-  h1 {
-    text-align: center;
-    margin: 2vw;
-  }
   text-align: left;
   h3 {
     margin-left: 2vw;
