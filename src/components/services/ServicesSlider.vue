@@ -48,6 +48,7 @@ export default {
     },
   methods: {
     setCurrentSlide(id) {
+      console.log('zoveee');
       this.$store.commit("setCurrentSlide", id);
     },
   },

@@ -92,46 +92,46 @@
   </div>
 </template>
 <script>
-	import ServicesSlider from '@/components/services/ServicesSlider.vue';
-	export default {
-		data() {
-			return {
-				images: [
-					{
-						id: 1,
-						url: require('@/assets/images/services.jpg'),
-						name: 'Usluge',
-					},
+import ServicesSlider from "@/components/services/ServicesSlider.vue";
+export default {
+  data() {
+    return {
+      images: [
+        {
+          id: 1,
+          url: require("@/assets/images/services.jpg"),
+          name: "Usluge",
+        },
 
-					{
-						id: 2,
-						url: 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80',
-						name: 'ERP',
-					},
-					{ id: 3, url: require('@/assets/images/dms-header.jpg'), name: 'DMS' },
-					{ id: 4, url: require('@/assets/images/wms-header.jpg'), name: 'WMS' },
-					{
-						id: 5,
-						url: require('@/assets/images/sistemi-placanja.jpg'),
-						name: 'Sistemi plaćanja',
-					},
-					{
-						id: 6,
-						url: require('@/assets/images/rijesenja-po-mjeri.jpg'),
-						name: 'Rješenja po mjeri',
-					},
-				],
-			};
-		},
-		components: {
-			ServicesSlider,
-		},
-		computed: {
-			currentSlide() {
-				return this.$store.getters.getCurrentSlide;
-			},
-		},
-	};
+        {
+          id: 2,
+          url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80",
+          name: "ERP",
+        },
+        { id: 3, url: require("@/assets/images/dms-header.jpg"), name: "DMS" },
+        { id: 4, url: require("@/assets/images/wms-header.jpg"), name: "WMS" },
+        {
+          id: 5,
+          url: require("@/assets/images/sistemi-placanja.jpg"),
+          name: "Sistemi plaćanja",
+        },
+        {
+          id: 6,
+          url: require("@/assets/images/rijesenja-po-mjeri.jpg"),
+          name: "Rješenja po mjeri",
+        },
+      ],
+    };
+  },
+  components: {
+    ServicesSlider,
+  },
+  computed: {
+    currentSlide() {
+      return this.$store.getters.getCurrentSlide;
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
 .nav-text {
@@ -175,28 +175,27 @@
 		}
 	}
 
-	h3 {
-		margin: 2vw;
-	}
-	.wrapper {
-		// background-image: url(@/assets/images/services.jpg);
-	}
-	.content {
-		padding: 20px;
-		h1 {
-			text-align: center;
-			margin: 2vw;
-		}
-		text-align: left;
-		h3 {
-			margin-left: 2vw;
-		}
-		ul {
-			padding-left: 0px;
-		}
-		li {
-			margin-left: 7px;
-			margin-bottom: 1vw;
-		}
-	}
+
+.card {
+  margin: 20px;
+  margin-bottom: 10px;
+}
+.content {
+  padding: 20px;
+  h1 {
+    text-align: center;
+    margin: 2vw;
+  }
+  text-align: left;
+  h3 {
+    margin-left: 2vw;
+  }
+  ul {
+    padding-left: 0px;
+  }
+  li {
+    margin-left: 7px;
+    margin-bottom: 1vw;
+  }
+}
 </style>
