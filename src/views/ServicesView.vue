@@ -10,17 +10,14 @@
     </div>
     <div v-if="currentSlide == 0">
       <div class="container">
+        <h1>Programerske usluge i razvoj:</h1>
+        <h2> <b>Web i desktop aplikacija</b>  podržanih na OS platformama Linux, Unix, macOS, Windows</h2>
+        <h2> <b>Mobilnih aplikacija</b> podržanih na Android i iOS operativnim sistemima</h2>
+        <h2><b>API integracija</b></h2>
         <p>
           Naš tim za razvoj softvera čine iskusni inžinjeri i profesionalci koji
           koristeći napredne alate, jezike i tehnologije, osiguravaju uspješnu
           realizaciju projekata u dogovorenim rokovima.
-        </p>
-        <h3>NAŠA EKSPERTIZA</h3>
-        <p>
-          Naš tim je stručan da različite poslovne potrebe/ideje našeg klijenta
-          pretvori u digitalni proizvod namijenjen unapređenju njegovih
-          poslovnih procesa, razvoju i digitalnoj transformaciji. Iz naše
-          ekspertize posebno izdvajamo:
         </p>
       </div>
     </div>
