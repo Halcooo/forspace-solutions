@@ -153,13 +153,13 @@
 
 		.sidenav-content {
 			position: fixed;
-
+			z-index: 200;
 			display: flex;
 			justify-content: left;
 			align-items: center;
 			margin: auto;
-			top: 0%;
-			right: 0%;
+			top: 0;
+			right: 0;
 			width: 0%;
 			height: 100vh;
 			background-color: white;
@@ -175,7 +175,7 @@
 
 		.grid {
 			position: fixed;
-
+			z-index: 1;
 			background-color: white;
 			top: 0;
 			left: -83%;

@@ -1,5 +1,5 @@
 <template>
-	<div>
+	<div class="grid_service">
 		<div class="row_1">
 			<ClosingButton @click="showSideNav" />
 			<h1>Usluge</h1>
@@ -123,18 +123,16 @@
 	import '@/styles/variables.scss';
 	import BaseButton from '@/components/forms/buttons/BaseButton.vue';
 	import ClosingButton from '@/components/forms/buttons/ClosingButton.vue';
-
-	// import ClosingButton from '@/components/forms/buttons/ClosingButton.vue';
-
 	export default {
 		name: 'ServicesContent',
 		props: { showSideNav: { type: Function } },
-		components: { BaseButton, ClosingButton },
+
 		data() {
 			return {
 				routes: { route: '/erp', name: 'erp' },
 			};
 		},
+		components: { BaseButton, ClosingButton },
 	};
 </script>
 
@@ -142,7 +140,6 @@
 	.row_1 {
 		width: 100%;
 		height: 50vh;
-
 		background: linear-gradient(
 				to bottom,
 				rgba(0, 0, 0, 0.4),
@@ -159,39 +156,45 @@
 			font-size: 55px;
 		}
 	}
+	.grid_service {
+		display: grid;
+		width: 100%;
+		height: 100vh;
+		grid-template-columns: repeat(1, 1fr);
 
-	.flex {
-		display: flex;
-		height: 50vh;
-		gap: 10px;
-		// padding: 20px;
-		> div {
-			width: 100%;
-			height: 100%;
+		.flex {
 			display: flex;
-			justify-content: left;
-			padding: 5% 0 0 3%;
-			// align-items: center;
-			transition: 0.8s;
-			h1 {
-				color: #ccc;
-			}
+			height: 50vh;
+			gap: 10px;
+			// padding: 20px;
+			> div {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: left;
+				padding: 5% 0 0 3%;
+				// align-items: center;
+				transition: 0.8s;
+				h1 {
+					color: #ccc;
+				}
 
-			&:hover {
-				opacity: 0.8;
-				cursor: pointer;
+				&:hover {
+					opacity: 0.8;
+					cursor: pointer;
+				}
 			}
 		}
-	}
-	.grid_item {
-		ul {
-			li {
-				list-style: square;
-				margin-bottom: 10%;
+		.grid_item {
+			ul {
+				li {
+					list-style: square;
+					margin-bottom: 10%;
+				}
 			}
-		}
-		a {
-			margin-left: 10%;
+			a {
+				margin-left: 10%;
+			}
 		}
 	}
 </style>

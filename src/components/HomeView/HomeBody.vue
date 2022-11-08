@@ -176,7 +176,8 @@ export default {
 		margin-top: 90px;
 	}
 	.cube-background {
-		background-image: url('@/assets/images/kocka-blank_sjena.png');
+		// background-image: url('@/assets/images/kocka-blank_sjena.png');
+		background-color: #ccc;
 		background-repeat: no-repeat;
 		background-size: cover;
 		display: flex;

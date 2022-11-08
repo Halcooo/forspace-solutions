@@ -31,11 +31,13 @@
 </script>
 <style lang="scss" scoped>
 	.wrapper {
-		background-image: url('@/assets/images/productscover.jpg');
+		background: url('@/assets/images/productscover.jpg') no-repeat center
+			center/cover;
 		height: 100vh;
-		background-repeat: no-repeat;
-		background-position: center;
+		z-index: 0;
 		background-attachment: fixed;
-		padding-top: 200px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 </style>
