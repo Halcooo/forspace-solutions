@@ -68,4 +68,6 @@
 	h1 {
 		color: $primary-color;
 	}
+	@media screen and (max-width: 560px) {
+	}
 </style>

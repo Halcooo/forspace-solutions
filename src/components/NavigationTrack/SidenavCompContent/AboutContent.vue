@@ -138,6 +138,9 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			@media screen and (max-width: 567px) {
+				flex-direction: column;
+			}
 			.left-text,
 			.right-text {
 				width: 560px;

@@ -157,6 +157,7 @@
 <style lang="scss" scoped>
 	.sidenav {
 		position: fixed;
+
 		top: 0;
 		left: 100%;
 		width: 100%;

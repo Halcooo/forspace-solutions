@@ -51,7 +51,6 @@
 				Odluke zasnovane na činjenicama, a ne na pretpostavkama!
 			</p>
 		</div>
-
 		<img
 			src="@/assets/images/kocka_.png"
 			alt="cube"
