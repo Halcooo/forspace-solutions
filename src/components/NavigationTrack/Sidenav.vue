@@ -1,4 +1,5 @@
 <template>
+	<h1>Amir</h1>
 	<div class="sidenav">
 		<div
 			class="sidenav-content"
