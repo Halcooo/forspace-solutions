@@ -1,33 +1,21 @@
 <template lang="">
-	<div class="wrapper">
-		<div class="container items">
-			<div class="row">
-				<div class="">
-					<div class="nabava">nabava</div>
-				</div>
-				<div class="">
-					<div class="prodaja">prodaja</div>
-				</div>
-				<div class="">
-					<div class="proizvodnja">proizvodnja</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="">
-					<div class="skladište">skladište</div>
-				</div>
-				<div class="">
-					<div class=" dms">dms</div>
-				</div>
-				<div class="">
-					<div class="finansije">finansije</div>
-				</div>
-			</div>
-		</div>
-	</div>
+  <div class="wrapper">
+    <div class="container items">
+      <router-link to="/products/purchase">Nabava</router-link>
+      <router-link to="/products/sales">Prodaja</router-link>
+      <router-link to="/products/production">Proizvodnja</router-link>
+      <router-link to="/products/warehouse">Skladište</router-link>
+      <router-link to="/products/dms">DMS</router-link>
+      <router-link to="/products/finance">Finansije & računovodstvo</router-link>
+      <router-link to="/products/human-resources">HR & plaće</router-link>
+    </div>
+  </div>
+  <div class="content">
+	<router-view></router-view>
+  </div>
 </template>
 <script>
-	export default {};
+export default {};
 </script>
 <style lang="scss" scoped>
 	.wrapper {
