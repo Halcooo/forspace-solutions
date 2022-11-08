@@ -26,6 +26,8 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+@import '../styles/variables.scss';
+
 .cover {
   background-image: url("@/assets/images/purchase-cover-image.png");
   background-repeat: no-repeat;
@@ -54,7 +56,7 @@ nav {
     }
 
     &.router-link-exact-active {
-      color: #f16822;
+      color: $secondary-color;
     }
   }
 }
