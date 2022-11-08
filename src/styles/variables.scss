@@ -3,25 +3,25 @@ $secondary-color: #f16822;
 $links-color: #6de0d7;
 $cornflowerblue: cornflowerblue;
 $lightgreen:rgb(0, 156, 161);
-::-webkit-scrollbar {
-    width: 6px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
 
-    // border: #72b2e6 1px solid;
-    border-radius: 5px;
-    opacity: .5;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background:#3d3d3d; 
-    border-radius: 5px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    opacity: .8;
-  }
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  // border: #72b2e6 1px solid;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3d3d3d;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  opacity: 0.8;
+}

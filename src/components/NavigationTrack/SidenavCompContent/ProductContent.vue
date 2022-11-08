@@ -1,7 +1,28 @@
 <template>
 	<div class="grid-container">
 		<div class="product">
-			<ClosingButton @click="showSideNav" />
+			<div
+				class="product_div"
+				style="
+					position: absolute;
+
+					justify-content: center;
+					align-items: center;
+					margin: auto;
+					top: 2.1%;
+					right: 3.7%;
+					width: 20px;
+					height: 20px;
+
+					border-radius: 50%;
+					padding: 2px;
+				"
+			>
+				<ClosingButton
+					@click="removeSideNav(contentId)"
+					:btn="true"
+				/>
+			</div>
 
 			<h1>Proizvodi</h1>
 		</div>
@@ -61,7 +82,7 @@
 
 	export default {
 		name: 'ProductContent',
-		props: { showSideNav: { type: Function } },
+		props: { contentId: { type: Number }, removeSideNav: { type: Function } },
 
 		components: { BaseButton, ClosingButton },
 		data() {
@@ -112,6 +133,12 @@
 					#003e9b2f
 				),
 				url('@/assets/images/product.png') no-repeat center center/cover;
+			.product_div {
+				display: none;
+				@media screen and (max-width: 567px) {
+					display: flex;
+				}
+			}
 		}
 
 		.flex-container {
@@ -137,6 +164,9 @@
 					opacity: 0.8;
 					cursor: pointer;
 				}
+				@media screen and (max-width: 567px) {
+					width: 100%;
+				}
 			}
 			.flex-background-item-1 {
 				background: linear-gradient(
@@ -159,10 +189,10 @@
 		}
 
 		@media screen and (max-width: 567px) {
-			display: block;
 			.flex-container {
 				flex-direction: column;
 				height: 100%;
+				padding: 10px;
 			}
 		}
 	}

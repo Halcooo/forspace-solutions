@@ -1,8 +1,14 @@
 <template>
 	<div class="button_device">
 		<div>
-			<p class="x-one"></p>
-			<p class="x-two"></p>
+			<p
+				class="x-one"
+				:class="{ btn: btn }"
+			></p>
+			<p
+				class="x-two"
+				:class="{ btn: btn }"
+			></p>
 		</div>
 	</div>
 </template>
@@ -10,16 +16,15 @@
 <script>
 	export default {
 		name: 'ClosingButton',
+		props: ['btn'],
 	};
 </script>
 
 <style lang="scss" scoped>
 	.button_device {
 		position: absolute;
-		top: 2.5%;
-		left: 80%;
-		width: 40px;
-		height: 40px;
+		width: 100%;
+		height: 100%;
 		display: block;
 		&:hover {
 			cursor: pointer;
@@ -55,6 +60,11 @@
 					left: 88%;
 				}
 			}
+		}
+
+		.btn {
+			background-color: rgb(255, 255, 255);
+			border-radius: 50px;
 		}
 	}
 </style>

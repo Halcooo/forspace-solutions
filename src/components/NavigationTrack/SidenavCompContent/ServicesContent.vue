@@ -1,7 +1,28 @@
 <template>
 	<div class="grid_service">
 		<div class="row_1">
-			<ClosingButton @click="showSideNav" />
+			<div
+				class="services_div"
+				style="
+					position: absolute;
+
+					justify-content: center;
+					align-items: center;
+					margin: auto;
+					top: 2.1%;
+					right: 3.7%;
+					width: 20px;
+					height: 20px;
+
+					border-radius: 50%;
+					padding: 2px;
+				"
+			>
+				<ClosingButton
+					@click="removeSideNav(contentId)"
+					:btn="true"
+				/>
+			</div>
 			<h1>Usluge</h1>
 		</div>
 		<div class="flex">
@@ -125,7 +146,7 @@
 	import ClosingButton from '@/components/forms/buttons/ClosingButton.vue';
 	export default {
 		name: 'ServicesContent',
-		props: { showSideNav: { type: Function } },
+		props: { contentId: { type: Number }, removeSideNav: { type: Function } },
 
 		data() {
 			return {
@@ -154,6 +175,12 @@
 		h1 {
 			color: white;
 			font-size: 55px;
+		}
+		.services_div {
+			display: none;
+			@media screen and (max-width: 567px) {
+				display: flex;
+			}
 		}
 	}
 	.grid_service {
@@ -184,16 +211,36 @@
 					cursor: pointer;
 				}
 			}
+			@media screen and (max-width: 567px) {
+				padding: 10px;
+				height: 100%;
+				flex-direction: column;
+
+				> div {
+					background-color: rgb(241, 241, 241);
+					padding: 10px;
+					border-radius: 5px;
+					color: gray;
+					h1 {
+						color: rgb(0, 136, 129);
+					}
+				}
+			}
 		}
 		.grid_item {
 			ul {
+				margin: 0;
+				padding: 0;
 				li {
-					list-style: square;
+					list-style: none;
 					margin-bottom: 10%;
+					@media screen and (max-width: 567px) {
+						margin-bottom: 7%;
+					}
 				}
 			}
 			a {
-				margin-left: 10%;
+				margin-left: 0%;
 			}
 		}
 	}

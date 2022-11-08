@@ -1,7 +1,28 @@
 <template>
 	<div class="flex_column">
 		<div class="row_1">
-			<ClosingButton @click="showSideNav" />
+			<div
+				class="home_div"
+				style="
+					position: absolute;
+
+					justify-content: center;
+					align-items: center;
+					margin: auto;
+					top: 2.1%;
+					right: 3.7%;
+					width: 20px;
+					height: 20px;
+
+					/* border-radius: 50%; */
+					padding: 2px;
+				"
+			>
+				<ClosingButton
+					@click="removeSideNav(contentId)"
+					:btn="true"
+				/>
+			</div>
 			<h1>
 				{{ $t('home') }}
 			</h1>
@@ -28,10 +49,14 @@
 
 <script>
 	import ClosingButton from '@/components/forms/buttons/ClosingButton.vue';
-	// import { type } from 'os';
+
 	export default {
 		name: 'HomeContent',
-		props: { navs: { type: Array }, showSideNav: { type: Function } },
+		props: {
+			navs: { type: Array },
+			contentId: { type: Number },
+			removeSideNav: { type: Function },
+		},
 		components: { ClosingButton },
 	};
 </script>
@@ -50,9 +75,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding: 30px;
-			position: relative;
-			z-index: 1;
+
 			background: linear-gradient(
 					to right,
 					rgba(0, 10, 153, 0),
@@ -65,6 +88,12 @@
 				color: white;
 				font-size: 55px;
 			}
+			.home_div {
+				display: none;
+				@media screen and (max-width: 567px) {
+					display: flex;
+				}
+			}
 		}
 		.row_2 {
 			width: 100%;
@@ -76,13 +105,23 @@
 			}
 			.row_nav {
 				width: 100%;
+				height: 100%;
+				@media screen and (max-width: 567px) {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
 
 				.row_nav_icon {
 					width: 100%;
 					height: 100%;
-					padding-top: 30%;
+					padding-top: 25%;
 					text-align: center;
 					transition: 0.5s;
+					@media screen and (max-width: 567px) {
+						height: 50vh;
+						padding-top: 20%;
+					}
 					.icon {
 						display: flex;
 						justify-content: center;
@@ -93,7 +132,7 @@
 						margin-top: 2%;
 					}
 					&:hover {
-						background-color: #ccc;
+						background-color: rgb(50, 74, 117);
 						cursor: pointer;
 
 						h1,

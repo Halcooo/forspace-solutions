@@ -17,6 +17,7 @@
 				<Sidenav
 					:contents="contents"
 					:showSideNav="showSideNav"
+					:removeSideNav="removeSideNav"
 				/>
 			</div>
 		</div>
@@ -100,12 +101,14 @@
 
 					this.setSideNav(true);
 				}
-
-				this.top && this.middle_none && this.bottom
-					? ((this.top = false), (this.middle_none = false), (this.bottom = false))
-					: ((this.top = true), (this.middle_none = true), (this.bottom = true));
+			},
+			removeSideNav(index) {
+				this.contents.forEach((item) => {
+					item.state = index == item.id ? false : '';
+				});
 			},
 		},
+		mounted() {},
 	};
 </script>
 <style lang="scss">

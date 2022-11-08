@@ -1,7 +1,28 @@
 <template>
 	<div class="onama">
 		<div class="onama-heading">
-			<ClosingButton @click="showSideNav" />
+			<div
+				class="about_div"
+				style="
+					position: absolute;
+
+					justify-content: center;
+					align-items: center;
+					margin: auto;
+					top: 2.1%;
+					right: 3.7%;
+					width: 20px;
+					height: 20px;
+
+					border-radius: 50%;
+					padding: 2px;
+				"
+			>
+				<ClosingButton
+					@click="removeSideNav(contentId)"
+					:btn="true"
+				/>
+			</div>
 			<h1>
 				{{ $t('about') }}
 			</h1>
@@ -52,7 +73,7 @@
 	import ClosingButton from '@/components/forms/buttons/ClosingButton.vue';
 	export default {
 		name: 'AboutContent',
-		props: { showSideNav: { type: Function } },
+		props: { contentId: { type: Number }, removeSideNav: { type: Function } },
 		components: { BaseButton, ClosingButton },
 		data() {
 			return {
@@ -89,7 +110,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-			padding: 30px;
+
 			font-size: 40px;
 			background: linear-gradient(
 					to right,
@@ -112,15 +133,18 @@
 				color: white;
 				font-size: 55px;
 			}
+			.about_div {
+				display: none;
+				@media screen and (max-width: 567px) {
+					display: flex;
+				}
+			}
 		}
 		.onama-text {
 			padding: 30px 150px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			@media screen and (max-width: 567px) {
-				flex-direction: column;
-			}
 			.left-text,
 			.right-text {
 				width: 560px;
@@ -128,7 +152,6 @@
 
 				padding: 20px 0px;
 			}
-
 			.left-text {
 				color: gray;
 				display: flex;
@@ -198,6 +221,22 @@
 
 					span {
 						display: block;
+					}
+				}
+			}
+			@media screen and (max-width: 567px) {
+				flex-direction: column;
+
+				padding: 10px;
+
+				.left-text,
+				.right-text {
+					width: 100%;
+					height: 100%;
+				}
+				.left-text {
+					> div {
+						width: 100%;
 					}
 				}
 			}

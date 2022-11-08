@@ -40,4 +40,9 @@
 		justify-content: center;
 		align-items: center;
 	}
+	.row {
+		.col-sm {
+			z-index: 0;
+		}
+	}
 </style>

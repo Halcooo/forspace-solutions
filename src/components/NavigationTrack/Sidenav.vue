@@ -10,7 +10,19 @@
 					:contents="contents"
 				/>
 			</ul>
-			<ClosingButton @click="showSideNav" />
+			<div
+				style="
+					position: absolute;
+
+					top: 2.5%;
+					left: 80%;
+
+					width: 40px;
+					height: 40px;
+				"
+			>
+				<ClosingButton @click="showSideNav" />
+			</div>
 		</div>
 
 		<div
@@ -23,17 +35,27 @@
 			<div v-if="content.id == 0">
 				<HomeContent
 					:navs="navs"
-					:showSideNav="showSideNav"
+					:contentId="content.id"
+					:removeSideNav="removeSideNav"
 				/>
 			</div>
 			<div v-if="content.id == 1">
-				<AboutContent :showSideNav="showSideNav" />
+				<AboutContent
+					:contentId="content.id"
+					:removeSideNav="removeSideNav"
+				/>
 			</div>
 			<div v-if="content.id == 2">
-				<ProductContent :showSideNav="showSideNav" />
+				<ProductContent
+					:contentId="content.id"
+					:removeSideNav="removeSideNav"
+				/>
 			</div>
 			<div v-if="content.id == 3">
-				<ServicesContent :showSideNav="showSideNav" />
+				<ServicesContent
+					:contentId="content.id"
+					:removeSideNav="removeSideNav"
+				/>
 			</div>
 		</div>
 	</div>
@@ -61,7 +83,11 @@
 			ServicesContent,
 			ClosingButton,
 		},
-		props: { contents: { type: Array }, showSideNav: { type: Function } },
+		props: {
+			contents: { type: Array },
+			showSideNav: { type: Function },
+			removeSideNav: { type: Function },
+		},
 		data() {
 			return {
 				presentation: true,
@@ -153,7 +179,7 @@
 
 		.sidenav-content {
 			position: fixed;
-			z-index: 200;
+
 			display: flex;
 			justify-content: left;
 			align-items: center;
@@ -162,7 +188,7 @@
 			right: 0;
 			width: 0%;
 			height: 100vh;
-			background-color: white;
+			background: whitesmoke;
 			transition: all 0.4s;
 			a {
 				color: gray;
@@ -252,11 +278,6 @@
 				.button_device {
 					left: 88%;
 				}
-			}
-		}
-		@media (max-width: 480px) {
-			.sidenav_content_visible {
-				width: 50.5%;
 			}
 		}
 	}
