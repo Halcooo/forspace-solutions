@@ -19,7 +19,8 @@
 		display: inline-block;
 	}
 	.about,
-	.presentation {
+	.presentation,
+	.product_btn {
 		color: white;
 		border: 2px solid rgb(255, 255, 255);
 		padding: 20px 40px;
@@ -31,6 +32,7 @@
 		}
 	}
 
+	.erp,
 	.contact {
 		color: black;
 		border: 2px solid black;

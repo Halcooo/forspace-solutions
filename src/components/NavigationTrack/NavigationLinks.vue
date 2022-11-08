@@ -17,13 +17,12 @@
 		v-if="sidenavRoutes"
 		v-for="(navItem, index) in sidenavRoutes"
 		:key="navItem"
-		@mouseover="displayContent(index)"
 	>
 		<router-link
 			:to="navItem.to"
 			class="sidenav"
 			:class="{ active: navItem.isActive }"
-			@click="toggleActive(index, false)"
+			@mouseover="displayContent(index)"
 		>
 			{{ $t(navItem.name) }}
 		</router-link>
@@ -99,6 +98,8 @@
 				this.contents.forEach((item) => {
 					item.state = index == item.id ? true : false;
 				});
+
+				this.toggleActive(index, false);
 			},
 		},
 	};
@@ -112,7 +113,7 @@
 		text-align: left;
 
 		.nav {
-			color: white;
+			color: gray;
 			font-size: 23px;
 		}
 		.sidenav {
@@ -120,7 +121,7 @@
 			font-size: 23px;
 		}
 		.active {
-			color: $cornflowerblue;
+			color: $lightgreen;
 		}
 	}
 	.drop-nav {

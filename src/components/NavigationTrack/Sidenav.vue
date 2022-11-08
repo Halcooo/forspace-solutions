@@ -10,22 +10,30 @@
 					:contents="contents"
 				/>
 			</ul>
+			<ClosingButton @click="showSideNav" />
 		</div>
 
 		<div
 			v-for="content in contents"
 			:key="content"
-			:class="[{ active: content.state }, content.class]"
+			class="grid"
+			:class="{ active: content.state }"
 			v-if="this.$store.state.sidecontent"
 		>
 			<div v-if="content.id == 0">
-				<HomeContent :navs="navs" />
+				<HomeContent
+					:navs="navs"
+					:showSideNav="showSideNav"
+				/>
 			</div>
 			<div v-if="content.id == 1">
-				<AboutContent />
+				<AboutContent :showSideNav="showSideNav" />
 			</div>
 			<div v-if="content.id == 2">
-				<ProductContent />
+				<ProductContent :showSideNav="showSideNav" />
+			</div>
+			<div v-if="content.id == 3">
+				<ServicesContent :showSideNav="showSideNav" />
 			</div>
 		</div>
 	</div>
@@ -36,23 +44,28 @@
 	import HomeContent from './SidenavCompContent/HomeContent.vue';
 	import AboutContent from './SidenavCompContent/AboutContent.vue';
 	import ProductContent from './SidenavCompContent/ProductContent.vue';
+
 	import { mapGetters, mapMutations } from 'vuex';
 	import BaseButton from '../forms/buttons/BaseButton.vue';
+	import ServicesContent from './SidenavCompContent/ServicesContent.vue';
+	import ClosingButton from '../forms/buttons/ClosingButton.vue';
 
 	export default {
 		name: 'Sidenav',
-		components: { Links, BaseButton, HomeContent, AboutContent, ProductContent },
-		props: ['contents'],
+		components: {
+			Links,
+			BaseButton,
+			HomeContent,
+			AboutContent,
+			ProductContent,
+			ServicesContent,
+			ClosingButton,
+		},
+		props: { contents: { type: Array }, showSideNav: { type: Function } },
 		data() {
 			return {
 				presentation: true,
-				routes: [
-					{ class: 'grid-a', text: 'home' },
-					{ class: 'grid-b', text: 'about' },
-					{ class: 'grid-c', text: 'products' },
-					{ class: 'grid-d', text: 'services' },
-					{ class: 'grid-e', text: 'contact' },
-				],
+
 				navs: [
 					{
 						row_heading: 'home_icon_companies',
@@ -131,8 +144,9 @@
 <style lang="scss" scoped>
 	.sidenav {
 		position: fixed;
+
 		top: 0;
-		right: -100%;
+		left: 100%;
 		width: 100%;
 		height: 100vh;
 		display: flex;
@@ -158,41 +172,98 @@
 				}
 			}
 		}
-		.sidenav_content_visible {
-			width: 17%;
-		}
-	}
-	.grid_a,
-	.grid_b,
-	.grid_c,
-	.grid_d,
-	.grid_e {
-		position: fixed;
-		background-color: white;
-		top: 0;
-		left: -83%;
-		width: 83%;
-		height: 100vh;
-	}
 
-	.active {
-		animation: toLeft 0.2s forwards;
-	}
-	.nav-links-vertical {
-		display: flex;
-		flex-direction: column;
-		line-height: 4rem;
-		li {
-			text-align: left;
-			a {
-				color: gray;
-				font-size: 23px;
+		.grid {
+			position: fixed;
+
+			background-color: white;
+			top: 0;
+			left: -83%;
+			width: 83%;
+			height: 100vh;
+		}
+
+		.active {
+			animation: toLeft 0.2s forwards;
+		}
+		.nav-links-vertical {
+			display: flex;
+			flex-direction: column;
+			line-height: 4rem;
+			li {
+				text-align: left;
+				a {
+					color: gray;
+					font-size: 23px;
+				}
+			}
+		}
+		@media screen and (min-width: 1500px) {
+			.sidenav_content_visible {
+				width: 17.5%;
+			}
+		}
+		@media screen and (max-width: 1450px) {
+			.sidenav_content_visible {
+				width: 22.5%;
+			}
+		}
+		@media screen and (max-width: 1400px) {
+			.sidenav_content_visible {
+				width: 27.5%;
+			}
+		}
+		@media screen and (max-width: 1024px) {
+			.sidenav_content_visible {
+				width: 32.5%;
+			}
+		}
+		@media screen and (max-width: 900px) {
+			.sidenav_content_visible {
+				width: 35.5%;
+			}
+		}
+		@media screen and (max-width: 768px) {
+			.sidenav_content_visible {
+				width: 40.5%;
+			}
+		}
+		@media screen and (max-width: 600px) {
+			.sidenav_content_visible {
+				width: 50.5%;
+			}
+		}
+
+		@media screen and (max-width: 560px) {
+			.grid {
+				z-index: 3;
+				left: -210%;
+				width: 100%;
+				height: 100vh;
+				overflow-y: scroll;
+			}
+
+			.sidenav_content_visible {
+				width: 100%;
+			}
+
+			z-index: 3;
+			.sidenav-content {
+				.button_device {
+					left: 88%;
+				}
+			}
+		}
+		@media (max-width: 480px) {
+			.sidenav_content_visible {
+				width: 50.5%;
 			}
 		}
 	}
+
 	@keyframes toLeft {
 		from {
-			left: -83%;
+			left: -210%;
 		}
 		to {
 			left: 0%;

@@ -1,6 +1,7 @@
 <template>
 	<div class="flex_column">
 		<div class="row_1">
+			<ClosingButton @click="showSideNav" />
 			<h1>
 				{{ $t('home') }}
 			</h1>
@@ -26,9 +27,12 @@
 </template>
 
 <script>
+	import ClosingButton from '@/components/forms/buttons/ClosingButton.vue';
+	// import { type } from 'os';
 	export default {
 		name: 'HomeContent',
-		props: ['navs'],
+		props: { navs: { type: Array }, showSideNav: { type: Function } },
+		components: { ClosingButton },
 	};
 </script>
 
@@ -37,35 +41,39 @@
 		width: 100%;
 		height: 100%;
 		display: flex;
-
+		justify-content: center;
 		flex-direction: column;
 
 		.row_1 {
 			width: 100%;
 			height: 50vh;
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
 			align-items: center;
 			padding: 30px;
 			position: relative;
 			z-index: 1;
 			background: linear-gradient(
 					to right,
-					rgba(31, 46, 255, 0.473),
-					#1e7ebe86,
-					#003e9bc2
+					rgba(0, 10, 153, 0),
+					#1e7ebe2c,
+					#003e9b2f
 				),
-				url('@/assets/images/cityscape.webp') no-repeat center center/cover;
+				url('@/assets/images/product.png') no-repeat center center/cover;
 
 			h1 {
 				color: white;
+				font-size: 55px;
 			}
 		}
 		.row_2 {
 			width: 100%;
 			height: 50vh;
 			display: flex;
-
+			@media screen and (max-width: 567px) {
+				flex-direction: column;
+				height: 60vh;
+			}
 			.row_nav {
 				width: 100%;
 
@@ -85,7 +93,7 @@
 						margin-top: 2%;
 					}
 					&:hover {
-						background-color: cornflowerblue;
+						background-color: #ccc;
 						cursor: pointer;
 
 						h1,
