@@ -1,6 +1,7 @@
 <template>
 	<div class="onama">
 		<div class="onama-heading">
+			<ClosingButton @click="showSideNav" />
 			<h1>
 				{{ $t('about') }}
 			</h1>
@@ -48,9 +49,11 @@
 
 <script>
 	import BaseButton from '@/components/forms/buttons/BaseButton.vue';
+	import ClosingButton from '@/components/forms/buttons/ClosingButton.vue';
 	export default {
 		name: 'AboutContent',
-		components: { BaseButton },
+		props: { showSideNav: { type: Function } },
+		components: { BaseButton, ClosingButton },
 		data() {
 			return {
 				routes: { route: '/about', name: 'about' },
@@ -84,11 +87,16 @@
 		.onama-heading {
 			height: 50vh;
 			display: flex;
-			justify-content: space-between;
+			justify-content: center;
 			align-items: center;
 			padding: 30px;
 			font-size: 40px;
-			background: linear-gradient(to right, #00000050, #00000086, #000000c2),
+			background: linear-gradient(
+					to right,
+					rgba(0, 10, 153, 0),
+					#1e7ebe2c,
+					#003e9b2f
+				),
 				url('@/assets/images/purchase-cover-image.png') no-repeat center
 					center/cover;
 			// position: relative;
@@ -102,6 +110,7 @@
 			// }
 			h1 {
 				color: white;
+				font-size: 55px;
 			}
 		}
 		.onama-text {
@@ -109,6 +118,9 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			@media screen and (max-width: 567px) {
+				flex-direction: column;
+			}
 			.left-text,
 			.right-text {
 				width: 560px;
@@ -118,7 +130,7 @@
 			}
 
 			.left-text {
-				color: black;
+				color: gray;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -130,24 +142,30 @@
 				.top {
 					width: 80px;
 					padding: 2px;
-					background-color: cornflowerblue;
+					background-color: rgb(0, 156, 161);
 					border-radius: 50px;
 				}
 				.middle {
 					width: 50px;
 					padding: 2px;
-					background-color: cornflowerblue;
+					background-color: rgb(0, 156, 161);
 					border-radius: 50px;
 				}
 				.bottom {
 					width: 60px;
 					padding: 2px;
-					background-color: cornflowerblue;
+					background-color: rgb(0, 156, 161);
 					border-radius: 50px;
 				}
 			}
 			.right-text {
-				background-color: cornflowerblue;
+				background: linear-gradient(
+						to bottom,
+						rgba(0, 0, 0, 0.6),
+						rgba(0, 0, 0, 0.5),
+						rgba(0, 0, 0, 0.5)
+					),
+					url('@/assets/images/product_item_1.jpg') no-repeat center center/cover;
 				color: white;
 				display: flex;
 				justify-content: left;
