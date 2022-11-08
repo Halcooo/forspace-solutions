@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container-sm" >
+  <div class="container" >
     <h1>Nabava</h1>
     <p>
       Forspace modul nabave vam omogućava jednostavnu narudžbu svega što vam
@@ -19,16 +19,5 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-div{
-    padding: 20px;
-    margin-top:10vh;
-    font-size: 1.5em;
-    h1{
-        font-size: 2em;
-    }
-}
-img{
- margin-top:4vh;
- margin-bottom: 4vh;
-}
+
 </style>

@@ -2,9 +2,9 @@
   <div class="cover row">
     <div class="navigation">
       <nav>
-      <router-link @mouseover="display('/purchase')" to="/purchase">Nabava</router-link>
-      <router-link @mouseover="display('/sales')" to="/sales">Prodaja</router-link>
-      <router-link @mouseover="display('/production')" to="/production">Proizvodnja</router-link>
+      <router-link  to="/purchase">Nabava</router-link>
+      <router-link  to="/sales">Prodaja</router-link>
+      <router-link  to="/production">Proizvodnja</router-link>
       <router-link to="/warehouse">Skladište</router-link>
       <router-link to="/dms">DMS</router-link>
       <router-link to="/finance">Finansije & računovodstvo</router-link>
