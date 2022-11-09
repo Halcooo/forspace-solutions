@@ -20,19 +20,29 @@
 export default {};
 </script>
 <style lang="scss" scoped>
-	.wrapper {
-		background: url('@/assets/images/productscover.jpg') no-repeat center
-			center/cover;
-		height: 100vh;
-		z-index: 0;
-		background-attachment: fixed;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.row {
-		.col-sm {
-			z-index: 0;
-		}
-	}
+.wrapper {
+  background: url("@/assets/images/productscover.jpg") no-repeat center
+    center/cover;
+  height: 80vh;
+  z-index: 0;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  .col-sm {
+    z-index: 0;
+  }
+}
+
+.router-link-active {
+  color: #f16822;
+}
+
+a {
+  color: #25435b;
+  padding: 7px;
+}
 </style>
