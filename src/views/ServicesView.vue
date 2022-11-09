@@ -175,7 +175,6 @@
 		}
 	}
 
-<<<<<<< HEAD
 .card {
   margin: 20px;
   margin-bottom: 10px;
@@ -226,30 +225,4 @@
     margin-bottom: 1vw;
   }
 }
-=======
-	h3 {
-		margin: 2vw;
-	}
-	.wrapper {
-		// background-image: url(@/assets/images/services.jpg);
-	}
-	.content {
-		padding: 20px;
-		h1 {
-			text-align: center;
-			margin: 2vw;
-		}
-		text-align: left;
-		h3 {
-			margin-left: 2vw;
-		}
-		ul {
-			padding-left: 0px;
-		}
-		li {
-			margin-left: 7px;
-			margin-bottom: 1vw;
-		}
-	}
->>>>>>> 9a0f467 (updated slide to bie mobile responice and wrok smothly)
 </style>
