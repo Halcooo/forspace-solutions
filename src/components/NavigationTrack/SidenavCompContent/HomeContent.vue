@@ -108,7 +108,7 @@
 				.row_nav_icon {
 					width: 100%;
 					height: 100%;
-					padding-top: 25%;
+					padding-top: 40%;
 					text-align: center;
 					transition: 0.5s;
 					@media screen and (max-width: 567px) {
