@@ -11,13 +11,13 @@ import ForspacePreview from "../views/ForspacePreview.vue";
 import ContactView from "../views/ContactView.vue";
 import PromoView from "../views/PromoView.vue";
 import AboutView from "../views/AboutView.vue";
-import TheSales from "../components/NewsView/TheSales.vue";
-import ThePurchase from "../components/NewsView/ThePurchase.vue";
-import TheProduction from "../components/NewsView/TheProduction.vue";
-import TheWarehouse from "../components/NewsView/TheWarehouse.vue";
-import TheFinance from "../components/NewsView/TheFinance.vue";
-import TheHumanRescources from "../components/NewsView/TheHumanRescources.vue";
-import TheDms from "../components/NewsView/TheDms.vue";
+import TheSales from "../components/ProductsViews/TheSales.vue";
+import ThePurchase from "../components/ProductsViews/ThePurchase.vue";
+import TheProduction from "../components/ProductsViews/TheProduction.vue";
+import TheWarehouse from "../components/ProductsViews/TheWarehouse.vue";
+import TheFinance from "../components/ProductsViews/TheFinance.vue";
+import TheHumanRescources from "../components/ProductsViews/TheHumanRescources.vue";
+import TheDms from "../components/ProductsViews/TheDms.vue";
 
 // import store from "@/store/index.js"; // to use store in router if needed
 

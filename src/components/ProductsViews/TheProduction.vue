@@ -1,8 +1,8 @@
 <template lang="">
   <div class="container">
-    <h1>Proizvodnja</h1>
+    <h1 class="mt-4">Proizvodnja</h1>
     <h3>Kako proizvodnju staviti pod kontrolu?</h3>
-    <p>
+    <p class="mt-4">
       Proizvodni modul je najveći izazov u implementaciji ERP sistema. Sa tim
       dolazi potreba kulturološke promjene unutar organizacije. Uposlenici treba
       da se prilagode različitim promjenama i optimizacijama procesa koje
