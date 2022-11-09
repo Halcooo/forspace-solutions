@@ -13,15 +13,13 @@
       koji su bitni (kupci, dobavljači, iznosi, brojevi dokumenta i slično)
       unosimo u sistem i dalje ih koristimo za knjiženje i izvještavanje.
     </p>
-    <div class="container ">
+    <div class="container">
       <img src="@/assets/images/DOCUMENT-MANAGEMENT.png" alt="image" />
       <img src="@/assets/images/dms-pic.png" alt="img" />
-    </div>   
+    </div>
     <div class="row white-text dms">
       <div class="col-12">
-        <div style="height: 10vw; overflow: hidden">
-      
-        </div>
+        <div style="height: 10vw; overflow: hidden"></div>
         <div class="dms-in-out">
           <div class="dms-text white-text-main">
             <h1>Ulazni i izlazni dokumenti</h1>
@@ -35,7 +33,7 @@
                     <td class="d-flex justify-content-end">
                       <img
                         width="50vw"
-                        src="@/assets/images/icons8-ok.png"
+                        src="@/assets/images/check.png"
                         alt=""
                       />
                     </td>
@@ -48,10 +46,7 @@
                   </tr>
                   <tr>
                     <td class="d-flex justify-content-end">
-                      <img
-                        width="50vw"
-                        src="@/assets/images/icons8-ok.png"
-                      />
+                      <img width="50vw" src="@/assets/images/check.png" />
                     </td>
                     <td>
                       <h4>
@@ -62,10 +57,7 @@
                   </tr>
                   <tr>
                     <td class="d-flex justify-content-end">
-                      <img
-                        width="50vw"
-                        src="@/assets/images/icons8-ok.png"
-                      />
+                      <img width="50vw" src="@/assets/images/check.png" />
                     </td>
                     <td>
                       <h4>
@@ -75,10 +67,7 @@
                   </tr>
                   <tr>
                     <td class="d-flex justify-content-end align-middle">
-                      <img
-                        width="50vw"
-                        src="@/assets/images/icons8-ok.png"
-                      />
+                      <img width="50vw" src="@/assets/images/check.png" />
                     </td>
                     <td>
                       <h4 style="margin-bottom: 2px">
@@ -89,10 +78,7 @@
                   </tr>
                   <tr>
                     <td class="d-flex justify-content-end">
-                      <img
-                        width="50vw"
-                        src="@/assets/images/icons8-ok.png"
-                      />
+                      <img width="50vw" src="@/assets/images/check.png" />
                     </td>
                     <td>
                       <h4 style="margin-bottom: 2px">
@@ -102,10 +88,7 @@
                   </tr>
                   <tr>
                     <td class="d-flex justify-content-end">
-                      <img
-                        width="50vw"
-                        src="@/assets/images/icons8-ok.png"
-                      />
+                      <img width="50vw" src="@/assets/images/check.png" />
                     </td>
                     <td>
                       <h4 style="margin-bottom: 2px">
@@ -115,10 +98,7 @@
                   </tr>
                   <tr>
                     <td class="d-flex justify-content-end">
-                      <img
-                        width="50vw"
-                        src="@/assets/images/icons8-ok.png"
-                      />
+                      <img width="50vw" src="@/assets/images/check.png" />
                     </td>
                     <td>
                       <h4 style="margin-bottom: 2px">
@@ -129,10 +109,7 @@
                   </tr>
                   <tr>
                     <td class="d-flex justify-content-end">
-                      <img
-                        width="50vw"
-                        src="@/assets/images/icons8-ok.png"
-                      />
+                      <img width="50vw" src="@/assets/images/check.png" />
                     </td>
                     <td>
                       <h4 style="margin-bottom: 2px">
@@ -143,10 +120,7 @@
                   </tr>
                   <tr>
                     <td class="d-flex justify-content-end">
-                      <img
-                        width="50vw"
-                        src="@/assets/images/icons8-ok.png"
-                      />
+                      <img width="50vw" src="@/assets/images/check.png" />
                     </td>
                     <td>
                       <h4 style="margin-bottom: 2px">
@@ -170,7 +144,7 @@ export default {
 };
 </script>
 <style lang="scss" scooped>
-.dms{
-  color:white;
-    background-color: #f16822;
-}</style>
+img {
+  margin-right: 8px;
+}
+</style>

@@ -34,6 +34,9 @@ export default {
   background-position: center;
   padding-top: 200px;
 }
+.carousel__pagination-item{
+  background-color: blue !important;
+}
 .carousel__item {
   min-height: 200px;
   width: 100%;

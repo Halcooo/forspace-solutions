@@ -12,7 +12,7 @@
       <router-link to="/products/human-resources">HR & plaće</router-link>
     </div>
   </div>
-  <div class="content">
+  <div class="content container">
     <router-view></router-view>
   </div>
 </template>
@@ -44,5 +44,20 @@ export default {};
 a {
   color: #25435b;
   padding: 7px;
+  &:hover{
+    color:black;
+  }
+}
+.items{
+  background-color:rgba($color: #d7d7d7, $alpha: .6);
+  height: 30px;
+  vertical-align: middle;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 30%;
+}
+.content{
+  overflow: hidden;
 }
 </style>
