@@ -6,12 +6,14 @@
       <router-link to="/products/production">Proizvodnja</router-link>
       <router-link to="/products/warehouse">Skladište</router-link>
       <router-link to="/products/dms">DMS</router-link>
-      <router-link to="/products/finance">Finansije & računovodstvo</router-link>
+      <router-link to="/products/finance"
+        >Finansije & računovodstvo</router-link
+      >
       <router-link to="/products/human-resources">HR & plaće</router-link>
     </div>
   </div>
   <div class="content">
-	<router-view></router-view>
+    <router-view></router-view>
   </div>
 </template>
 <script>
@@ -26,8 +28,16 @@ export default {};
   background-attachment: fixed;
   padding-top: 200px;
 }
-.items{
-	display:flex;
-	flex-direction: column;
+.router-link-active {
+  color: #f16822 !important;
+}
+.items {
+  display: flex;
+
+  a {
+    text-decoration: none;
+    color: #25435b;
+    padding: 7px;
+  }
 }
 </style>
