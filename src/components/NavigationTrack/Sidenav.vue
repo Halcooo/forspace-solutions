@@ -10,17 +10,7 @@
 					:contents="contents"
 				/>
 			</ul>
-			<div
-				style="
-					position: absolute;
-
-					top: 2.5%;
-					left: 80%;
-
-					width: 40px;
-					height: 40px;
-				"
-			>
+			<div class="sidenav_times">
 				<ClosingButton @click="showSideNav" />
 			</div>
 		</div>
@@ -62,13 +52,11 @@
 </template>
 
 <script>
+	import { mapGetters, mapMutations } from 'vuex';
 	import Links from './NavigationLinks.vue';
 	import HomeContent from './SidenavCompContent/HomeContent.vue';
 	import AboutContent from './SidenavCompContent/AboutContent.vue';
 	import ProductContent from './SidenavCompContent/ProductContent.vue';
-
-	import { mapGetters, mapMutations } from 'vuex';
-	import BaseButton from '../forms/buttons/BaseButton.vue';
 	import ServicesContent from './SidenavCompContent/ServicesContent.vue';
 	import ClosingButton from '../forms/buttons/ClosingButton.vue';
 
@@ -76,7 +64,6 @@
 		name: 'Sidenav',
 		components: {
 			Links,
-			BaseButton,
 			HomeContent,
 			AboutContent,
 			ProductContent,
@@ -170,7 +157,6 @@
 <style lang="scss" scoped>
 	.sidenav {
 		position: fixed;
-
 		top: 0;
 		left: 100%;
 		width: 100%;
@@ -179,7 +165,6 @@
 
 		.sidenav-content {
 			position: fixed;
-
 			display: flex;
 			justify-content: left;
 			align-items: center;
@@ -188,7 +173,7 @@
 			right: 0;
 			width: 0%;
 			height: 100vh;
-			background: whitesmoke;
+			background: rgb(4, 34, 116);
 			transition: all 0.4s;
 			a {
 				color: gray;
@@ -223,6 +208,14 @@
 					font-size: 23px;
 				}
 			}
+		}
+
+		.sidenav_times {
+			position: absolute;
+			top: 2.5%;
+			left: 80%;
+			width: 35px;
+			height: 35px;
 		}
 		@media screen and (min-width: 1500px) {
 			.sidenav_content_visible {

@@ -120,7 +120,7 @@
 		margin: 0;
 		padding: 20px;
 		width: 100%;
-		background-color: rgb(255, 255, 255);
+		background-color: white;
 
 		.nav-wrapper-flex {
 			display: flex;
@@ -131,7 +131,7 @@
 	}
 
 	.logo {
-		width: 15%;
+		width: 12%;
 		&:hover {
 			cursor: pointer;
 		}

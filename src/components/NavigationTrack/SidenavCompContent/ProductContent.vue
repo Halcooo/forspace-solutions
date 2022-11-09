@@ -1,23 +1,7 @@
 <template>
 	<div class="grid-container">
 		<div class="product">
-			<div
-				class="product_div"
-				style="
-					position: absolute;
-
-					justify-content: center;
-					align-items: center;
-					margin: auto;
-					top: 2.1%;
-					right: 3.7%;
-					width: 20px;
-					height: 20px;
-
-					border-radius: 50%;
-					padding: 2px;
-				"
-			>
+			<div class="product_div">
 				<ClosingButton
 					@click="removeSideNav(contentId)"
 					:btn="true"
@@ -27,7 +11,22 @@
 			<h1>Proizvodi</h1>
 		</div>
 		<div class="flex-container">
-			<div class="flex-background-item-1">
+			<div
+				class="flex-background-item-1"
+				style="position: relative"
+			>
+				<div
+					style="
+						position: absolute;
+						top: -4%;
+						right: 2%;
+						padding: 5px 20px;
+						color: white;
+						background-color: rgb(255, 98, 0);
+					"
+				>
+					Forspace
+				</div>
 				<div>
 					<h3>Forspace Accounting</h3>
 					<p
@@ -50,7 +49,22 @@
 				</div>
 			</div>
 
-			<div class="flex-background-item-2">
+			<div
+				class="flex-background-item-2"
+				style="position: relative"
+			>
+				<div
+					style="
+						position: absolute;
+						top: -4%;
+						right: 2%;
+						padding: 5px 20px;
+						color: white;
+						background-color: rgb(255, 98, 0);
+					"
+				>
+					Forspace
+				</div>
 				<div>
 					<h3>Forspace DMS</h3>
 					<p
@@ -135,6 +149,15 @@
 				url('@/assets/images/product.png') no-repeat center center/cover;
 			.product_div {
 				display: none;
+				position: absolute;
+				justify-content: center;
+				align-items: center;
+				margin: auto;
+				top: 2.1%;
+				right: 3.7%;
+				width: 20px;
+				height: 20px;
+				padding: 2px;
 				@media screen and (max-width: 567px) {
 					display: flex;
 				}
@@ -192,7 +215,7 @@
 			.flex-container {
 				flex-direction: column;
 				height: 100%;
-				padding: 10px;
+				padding: 20px 10px;
 			}
 		}
 	}

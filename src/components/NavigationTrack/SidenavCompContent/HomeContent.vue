@@ -1,23 +1,7 @@
 <template>
 	<div class="flex_column">
 		<div class="row_1">
-			<div
-				class="home_div"
-				style="
-					position: absolute;
-
-					justify-content: center;
-					align-items: center;
-					margin: auto;
-					top: 2.1%;
-					right: 3.7%;
-					width: 20px;
-					height: 20px;
-
-					/* border-radius: 50%; */
-					padding: 2px;
-				"
-			>
+			<div class="home_div">
 				<ClosingButton
 					@click="removeSideNav(contentId)"
 					:btn="true"
@@ -90,6 +74,15 @@
 			}
 			.home_div {
 				display: none;
+				position: absolute;
+				justify-content: center;
+				align-items: center;
+				margin: auto;
+				top: 2.1%;
+				right: 3.7%;
+				width: 20px;
+				height: 20px;
+				padding: 2px;
 				@media screen and (max-width: 567px) {
 					display: flex;
 				}

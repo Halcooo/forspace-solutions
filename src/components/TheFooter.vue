@@ -6,7 +6,7 @@
 				class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
 			>
 				<div class="me-5 d-none d-md-block">
-					<span>Get connected with us on social networks:</span>
+					<span>Get connected with us on social networks</span>
 				</div>
 				<TheSocialIcons></TheSocialIcons>
 			</section>
@@ -104,14 +104,14 @@
 	};
 </script>
 <style lang="scss" scoped>
-@keyframes fadeInAnimation {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-     }
-}
+	@keyframes fadeInAnimation {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 	* {
 		color: #263b53;
 		animation: fadeInAnimation 1s;

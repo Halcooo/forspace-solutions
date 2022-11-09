@@ -30,8 +30,8 @@
 </script>
 <style lang="scss">
 	@import './styles/variables.scss';
-	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
-
+	// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 	// @font-face {
 	// 	font-family: 'Raleway';
 	// 	src: local('Raleway'),
@@ -50,10 +50,9 @@
 	body {
 		margin: 0;
 		padding: 0;
-		box-sizing: border-box;
 	}
 	#app {
-		font-family: Raleway, Helvetica, Arial, sans-serif;
+		font-family: 'Oswald', sans-serif;
 
 		color: $primary-color;
 	}
