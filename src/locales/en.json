@@ -23,6 +23,10 @@
   "homeServices_1_paragraph_3": "Mapping Real Processes into digital ones.",
   "homeServices_1_heading_4": "Modern concept, simple design",
   "homeServices_1_paragraph_4": "Supports Easy Integration with other solutions.",
+
+
+
+  
   "erp_header_heading": "Forspace ERP & Accounting +",
   "erp_header_paragraph": "Decissions based on facts, not assumptions",
   "ceo_heading": "Working With You!",
@@ -34,6 +38,41 @@
   "recension_apDigital_text_3": "resources wisely, freeing them from daily routines and optimizing their day to day performance.",
   "recension_apDigital_text_4": "Their approach is engaging and industry relevant.",
   "recension_apDigital_text_5": "We now have more opportunity and time to work on achieving new business results.",
+  
+  
+  
+  "about_us_heading": "About",
+  "about_us_additional_paragraph":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, atque amet architecto vitae sapiente explicabo.",
+
+  "about_us_news_heading": "In the news",
+  "about_us_news_link_one": "Forspace ERP is a unique all-in-one software solution for product standardization and digitization",
+
+  "about_us_news_link_heading_two": "Why companies need DMS?",
+  "about_us_news_link_two": "Running a business can be stressful in many ways, and a special challenge in this regard is the way the company manages documents.",
+
+  "about_us_news_link_heading_three":"Why bussines program based on web is the best choice ?",
+  
+  "about_us_next_heading": "The Next",
+  "about_us_next_additional_paragraph": "Forspace Preview",
+  
+  "about_us_next_overlay_left_heading": "Advantages of digital transformation",
+  "about_us_next_overlay_left_paragraph" : "The acceleration of the digital world requires adaptation of organizations, which is why most companies in the world are working on digital transformation...",
+
+  "about_us_next_overlay_right_heading": "What is an API?",
+  "about_us_next_overlay_right_paragraph" : "The term \"API\" is often used in web development. Updates to the operating system, web browsers, and applications often announce new APIs for developers. Therefore, what is an API and how to develop it.",
+  
+  "about_us_team": "Our team",
+  "about_us_clients": "What our clients say",
+
+  "about_us_client_one": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
+  "about_us_client_two": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
+  "about_us_client_three": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
+  
+  "about_us_reserve_heading": "Book an appointment",
+  "about_us_reserve_p":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nostrum illo id adipisci mollitia commodi eligendi maiores nesciunt quas voluptates iusto assumenda, voluptatibus accusantium et esse ipsum nobis, vel nulla.",
+  
+  
+  
   "footer_follow_us": "Follow us",
   "footer_forspace_products": "FORSPACE Products",
   "footer_accounting":"accounting",

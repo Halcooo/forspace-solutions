@@ -23,41 +23,16 @@ export default {};
 .wrapper {
   background: url("@/assets/images/productscover.jpg") no-repeat center
     center/cover;
-  height: 80vh;
+  height: 100vh;
   z-index: 0;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .row {
   .col-sm {
     z-index: 0;
   }
-}
-
-.router-link-active {
-  color: #f16822;
-}
-
-a {
-  color: #25435b;
-  padding: 7px;
-  &:hover{
-    color:black;
-  }
-}
-.items{
-  background-color:rgba($color: #d7d7d7, $alpha: .6);
-  height: 30px;
-  vertical-align: middle;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  margin-bottom: 30%;
-}
-.content{
-  overflow: hidden;
 }
 </style>

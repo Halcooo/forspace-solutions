@@ -1,0 +1,98 @@
+<template>
+  <div class="the_next">
+    <div class="the_next_heading">
+      <h1>{{ $t("about_us_next_heading") }}</h1>
+      <h3>{{ $t("about_us_next_additional_paragraph") }}</h3>
+      <!-- <small>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+					consequatur veniam amet voluptatum totam beatae.
+				</small> -->
+    </div>
+
+    <div class="the_next_content">
+      <div class="item_one">
+        <div class="overlay">
+          <h3>{{ $t("about_us_next_overlay_left_heading") }}</h3>
+          <p>
+            {{ $t("about_us_next_overlay_left_paragraph") }}
+          </p>
+          <div class="read-more">
+            <router-link to="/">Saznaj Vise</router-link>
+          </div>
+        </div>
+      </div>
+      <div class="item_two">
+        <div class="overlay">
+          <h3>{{ $t("about_us_next_overlay_right_heading") }}</h3>
+          <p>
+            {{ $t("about_us_next_overlay_right_paragraph") }}
+          </p>
+          <div class="read-more">
+            <router-link to="/">Saznaj Vise</router-link>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  name: "AboutUsNext",
+};
+</script>
+<style lang="scss" scoped>
+.the_next {
+  width: 100%;
+
+  .the_next_heading {
+    text-align: center;
+  }
+
+  .the_next_content {
+    width: 55%;
+    margin: 7% auto;
+
+    height: 370px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .item_one {
+      width: 100%;
+      height: 100%;
+      background: url("@/assets/images/product_item_1.jpg") no-repeat center
+        center/cover;
+      position: relative;
+    }
+    .item_two {
+      width: 100%;
+      height: 100%;
+      background: url("@/assets/images/product_item_2.jpg") no-repeat center
+        center/cover;
+      position: relative;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 90%;
+      margin: auto;
+      height: 18vh;
+      background-color: rgba(134, 134, 134, 0.74);
+      transform: translate(6%, 50%);
+      padding: 20px;
+      h3,
+      p {
+        color: white;
+      }
+      .read-more {
+        padding: 10px 20px;
+        background-color: gray;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+  }
+}
+</style>

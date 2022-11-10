@@ -14,13 +14,16 @@ import {
   faEnvelope,
   faHome,
   faGem,
-  faArrowUp
+  faArrowUp,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
   faInstagram,
   faLinkedin,
   faTwitter,
+  faJava,
+  faVuejs,
+  faReact,
 } from "@fortawesome/free-brands-svg-icons";
 
 library.add(
@@ -33,7 +36,10 @@ library.add(
   faEnvelope,
   faHome,
   faGem,
-  faArrowUp
+  faArrowUp,
+  faJava,
+  faVuejs,
+  faReact
 );
 
 createApp(App)

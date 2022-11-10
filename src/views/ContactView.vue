@@ -5,11 +5,11 @@
   <ContactForm></ContactForm>
 </template>
 <script>
-import ContactForm from '@/components/forms/ContactForm.vue';
+import ContactForm from "@/components/Forms/ContactForm.vue";
 export default {
-  components:{
-    ContactForm
-  }
+  components: {
+    ContactForm,
+  },
 };
 </script>
 <style lang="scss" scoped>

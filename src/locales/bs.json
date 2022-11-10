@@ -37,6 +37,40 @@
   "forspace_clients_desc": "Sve naše klijente ponosno ističemo i gradimo partnerske odnose na obostrano zadovoljstvo. Ukoliko neki od naših klijenata nisu još uvijek dodani na listu, ne znači da ih manje cijenimo ili da su nam manje važni.",
   "homeServices_1_heading_1": "Posao iz jednog izvora",
   "homeServices_1_paragraph_1": "Iskoristite Forspace potpuno integrisano all-in-one rješenje za standardizaciju i digitalizaciju poslovnih procesa u Vašoj kompaniji.",
+  
+  "about_us_heading": "Dobrodošli",
+  "about_us_additional_paragraph":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, atque amet architecto vitae sapiente explicabo.",
+
+  "about_us_news_heading": "Novosti",
+  "about_us_news_link_one": "Forspace ERP jedinstveno all-in-one cloud softversko rješenje za standardizaciju i digitalizaciju poslovnih procesa",
+
+  "about_us_news_link_heading_two": "Zašto kompanije trebaju DMS?",
+  "about_us_news_link_two": "Vođenje biznisa može biti stresno na mnogo načina a poseban izazov u ovom pogledu je i način na koji kompanija upravlja dokumentima.",
+
+  "about_us_news_link_heading_three":"Zašto je poslovni program baziran na web-u pravi izbor?",
+  
+  "about_us_next_heading": "Slijedeće",
+  "about_us_next_additional_paragraph": "Forspace Preview",
+  
+  "about_us_next_overlay_left_heading": "Prednosti digitalne transformacije",
+  "about_us_next_overlay_left_paragraph" : "Ubrzanje digitalnog svijeta zahtijeva prilagođavanje organizacija, zbog čega većina kompanija u svijetu radi na digitalnoj transform...",
+
+  "about_us_next_overlay_right_heading": "Šta je API?",
+  "about_us_next_overlay_right_paragraph" : "Izraz “API” je često korišten u web razvoju. Ažuriranja operativnog sistema, web pretraživača i aplikacija često najavljuju nove API-je za programere. Stoga, šta je API i kako ga programeri..",
+  
+  "about_us_team": "Naš tim",
+  "about_us_clients": "Šta kažu naši klijenti",
+
+  "about_us_client_one": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
+  "about_us_client_two": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
+  "about_us_client_three": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
+  
+  "about_us_reserve_heading": "Rezervišite termin",
+  "about_us_reserve_p":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nostrum illo id adipisci mollitia commodi eligendi maiores nesciunt quas voluptates iusto assumenda, voluptatibus accusantium et esse ipsum nobis, vel nulla.",
+  
+  
+  
+  
   "footer_forspace_products": "FORSPACE Proizvodi",
   "footer_accounting":"računovodstvo",
     "footer_controlling": "kontroling",
