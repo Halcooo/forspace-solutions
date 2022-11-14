@@ -5,41 +5,15 @@
       :class="{ sidenav_content_visible: getSideNav }"
     >
       <ul class="nav-links-vertical">
-        <Links :sidenavRoutes="sidenav_routes" :contents="contents" />
+        <Links
+          :routes="routes"
+          :sidenav_class="true"
+          :showSideNav="showSideNav"
+          :drop_class="true"
+        />
       </ul>
       <div class="sidenav_times">
         <ClosingButton @click="showSideNav" />
-      </div>
-    </div>
-
-    <div
-      v-for="content in contents"
-      :key="content"
-      class="grid"
-      :class="{ active: content.state }"
-      v-if="this.$store.state.sidecontent"
-    >
-      <div v-if="content.id == 0">
-        <HomeContent
-          :navs="navs"
-          :contentId="content.id"
-          :removeSideNav="removeSideNav"
-        />
-      </div>
-      <div v-if="content.id == 1">
-        <AboutContent :contentId="content.id" :removeSideNav="removeSideNav" />
-      </div>
-      <div v-if="content.id == 2">
-        <ProductContent
-          :contentId="content.id"
-          :removeSideNav="removeSideNav"
-        />
-      </div>
-      <div v-if="content.id == 3">
-        <ServicesContent
-          :contentId="content.id"
-          :removeSideNav="removeSideNav"
-        />
       </div>
     </div>
   </div>
@@ -48,53 +22,25 @@
 <script>
 import { mapGetters, mapMutations } from "vuex";
 import Links from "./NavigationLinks.vue";
-import HomeContent from "./SidenavCompContent/HomeContent.vue";
-import AboutContent from "./SidenavCompContent/AboutContent.vue";
-import ProductContent from "./SidenavCompContent/ProductContent.vue";
-import ServicesContent from "./SidenavCompContent/ServicesContent.vue";
+
 import ClosingButton from "../Forms/buttons/ClosingButton.vue";
 
 export default {
   name: "Sidenav",
+
   components: {
     Links,
-    HomeContent,
-    AboutContent,
-    ProductContent,
-    ServicesContent,
     ClosingButton,
   },
   props: {
-    contents: { type: Array },
+    routes: { type: Array },
+
     showSideNav: { type: Function },
-    removeSideNav: { type: Function },
   },
   data() {
     return {
       presentation: true,
 
-      navs: [
-        {
-          row_heading: "home_icon_companies",
-          row_text: "home_icon_companies_p",
-          icon: "icon-companies",
-        },
-        {
-          row_heading: "home_icon_cloud",
-          row_text: "home_icon_cloud_p",
-          icon: "icon-cloud",
-        },
-        {
-          row_heading: "home_icon_config",
-          row_text: "home_icon_config_p",
-          icon: "icon-config",
-        },
-        {
-          row_heading: "home_icon_circle",
-          row_text: "home_icon_circle_p",
-          icon: "icon-circle",
-        },
-      ],
       sidenav_routes: [
         {
           to: "/",
@@ -194,6 +140,7 @@ export default {
     animation: toLeft 0.2s forwards;
   }
   .nav-links-vertical {
+    width: 100%;
     display: flex;
     flex-direction: column;
     line-height: 4rem;

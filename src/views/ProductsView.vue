@@ -13,11 +13,15 @@
     </div>
   </div>
   <div class="content">
+    <<<<<<< HEAD
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
+    =======
+    <router-view></router-view>
+    >>>>>>> 5c35d5c (faswffdsfaf)
   </div>
 </template>
 <script>
