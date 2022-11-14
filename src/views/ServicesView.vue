@@ -30,62 +30,19 @@
     <div class="container">
       <div class="row">
         <div v-if="currentSlide == 1" class="col-sm">
-          <div class="card">
-            <h2>ERP Sistemi</h2>
-            <img src="@/assets/images/erp-sistemi.png" alt="" />
-            <p>
-              ERP (Enterprise Resource Planning) sistem je poslovni program koji
-              omogućava kompanijama da planiraju svoje resurse i upravljaju
-              cjelokupnim poslovanjem i pokriva sve procesne tokove uslužne,
-              prodajne ili proizvodne djelatnosti.
-            </p>
-          </div>
+          <Erp></Erp>
         </div>
         <div class="col-sm" v-if="currentSlide == 2">
-          <div class="card">
-            <h2>DMS Sistemi</h2>
-            <img src="@/assets/images/dms.png" alt="" />
-            <p>
-              DMS (Document Management System) je poslovni program za praćenje,
-              upravljanje i digitalno arhiviranje dokumenata. Vodi evidenciju o
-              različitim vrstama dokumenata kreiranih i arhiviranih od strane
-              različitih korisnika (praćenje historije).
-            </p>
-          </div>
+          <Dms></Dms>
         </div>
         <div class="col-sm" v-if="currentSlide == 3">
-          <div class="card">
-            <h2>WMS Sistemi</h2>
-            <img src="@/assets/images/wms.png" alt="" />
-            <p>
-              WMS (Warehouse Management System) je poslovni program za
-              upravljanje skladištem koji ima za cilj da automatizuje,
-              pojednostavi i racionalizuje radne zadatke i aktivnosti unutar
-              skladišta, čime se povećava produktivnost i smanjuje mogućnost
-              greške na minimum.
-            </p>
-          </div>
+          <Wms></Wms>
         </div>
         <div class="col-sm" v-if="currentSlide == 4">
-          <div class="card">
-            <h2>Sistemi plaćanja</h2>
-            <img src="@/assets/images/sistemiplacanja.png" alt="" />
-            <p>
-              Payment Provider aplikacije za platne sisteme u eCommerce sektoru
-              i integracija u cjelokupan lanac procesa.
-            </p>
-          </div>
+          <PaymentProvider></PaymentProvider>
         </div>
         <div class="col-sm" v-if="currentSlide == 5">
-          <div class="card">
-            <h2>Riješenja po mjeri</h2>
-            <img src="@/assets/images/rijesenjapomjeri.jpg" alt="" />
-            <p>
-              Stručnjaci smo u pretvaranju različitih poslovnih potreba/ideja
-              naših klijenata u digitalne proizvode namijenjene unapređenju
-              njihovih poslovnih procesa, razvoju i digitalnoj transformaciji.
-            </p>
-          </div>
+          <CustomSolutions></CustomSolutions>
         </div>
       </div>
     </div>
@@ -93,6 +50,11 @@
 </template>
 <script>
 import ServicesSlider from "@/components/Sliders/ServicesSlider.vue";
+import Erp from "@/components/ServicesView/Erp.vue";
+import Dms from "@/components/ServicesView/Dms.vue";
+import Wms from "@/components/ServicesView/Wms.vue";
+import PaymentProvider from "@/components/ServicesView/PaymentProvider.vue";
+import CustomSolutions from "@/components/ServicesView/CustomSolutions.vue";
 export default {
   data() {
     return {
@@ -125,6 +87,11 @@ export default {
   },
   components: {
     ServicesSlider,
+    Erp,
+    Dms,
+    Wms,
+    PaymentProvider,
+    CustomSolutions,
   },
   computed: {
     currentSlide() {
