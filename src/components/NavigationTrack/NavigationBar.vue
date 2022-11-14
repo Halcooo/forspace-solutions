@@ -56,7 +56,7 @@ export default {
           classname: "nav",
         },
         {
-          to: "/products",
+          to: "/products/purchase",
           name: "products",
           isActive: false,
           id: 2,

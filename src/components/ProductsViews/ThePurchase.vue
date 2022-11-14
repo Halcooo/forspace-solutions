@@ -28,6 +28,5 @@ export default {
   background-color: azure;
   border-radius: 2px;
   margin-bottom: 2rem;
-  box-shadow: rgba(63, 73, 73 ,.45) 0px 5px 15px;
  }
 </style>
