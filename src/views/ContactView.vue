@@ -21,8 +21,13 @@ export default {
       rgba(0, 0, 0, 0.507)
     ),
     url("@/assets/images/contact.jpg") no-repeat center center/cover;
-  height: 40vh;
+  height: 45vh;
 
   padding-top: 200px;
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+  }
 }
 </style>

@@ -105,53 +105,6 @@
       </div>
     </form>
   </div>
-  <!-- <div class="top">
-    <form>
-      <h3 class="">Pošaljite nam poruku</h3>
-      <div class="form-group">
-        <label for="name">Your name:</label>
-        <input
-          @input="validateName"
-          class="form-control"
-          type="text"
-          v-model="name"
-        />
-        <div class="warning" v-if="nameInvalid">
-          Molimo unesite vaše ime.
-          <div class="sec"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <label>Your e-mail:</label>
-        <input
-          @input="validateEmail"
-          class="form-control"
-          type="email"
-          v-model="email"
-          reqired
-        />
-        <div class="warning" v-if="emailInvalid">
-          Molimo unesite validan email.
-          <div class="sec"></div>
-        </div>
-      </div>
-      <div class="form-group">
-        <label for="">Your Message:</label>
-        <textarea
-          @input="validateMessage"
-          class="form-control"
-          v-model="message"
-        ></textarea>
-      </div>
-      <div class="warning" v-if="messageInvalid">
-        Molimo unesite poruku.
-        <div class="sec"></div>
-      </div>
-      <div class="col-auto">
-        <BaseButton :to="routes.route" :name="routes.name" />
-      </div>
-    </form>
-  </div> -->
 </template>
 <script>
 import BaseButton from "./buttons/BaseButton.vue";
@@ -210,6 +163,7 @@ export default {
 @import "../../styles/variables.scss";
 .form-div {
   width: 50%;
+  height: 60vh;
   margin: auto;
   padding: 25px;
   label {
@@ -263,65 +217,10 @@ export default {
       transition: transform 0.2s ease-out, color 0.2s ease-out;
     }
   }
+
+  @media screen and (max-width: 567px) {
+    width: 100%;
+    height: 100%;
+  }
 }
-// @keyframes sec {
-//   from {
-//     width: 0;
-//   }
-
-//   to {
-//     width: 100%;
-//   }
-// }
-
-// .top {
-//   position: relative;
-//   width: 100%;
-//   height: 100%;
-//   margin: 0;
-//   padding: 0;
-// }
-
-// form {
-//   width: 50%;
-
-//   margin: auto;
-//   padding: 20px;
-// }
-// .sec::after {
-//   position: absolute;
-//   top: 10%;
-//   left: 50%;
-//   transform: translateX(-50%);
-//   height: 2px;
-//   width: 0px;
-//   content: "";
-//   background: #f16822;
-//   animation: sec 1500ms 1;
-// }
-
-// .form-control {
-//   box-shadow: none;
-// }
-// // @media only screen and (max-width: 1050px) {
-// //   .col-6 {
-// //     width: 95%;
-// //   }
-// // }
-// .warning {
-//   color: #f16822;
-//   font-size: small;
-// }
-// input {
-//   &:focus {
-//     border: none;
-//     border: 1px solid #f16822;
-//   }
-// }
-// textarea:focus {
-//   border: 1px solid #f16822;
-// }
-// label {
-//   float: left;
-// }
 </style>
