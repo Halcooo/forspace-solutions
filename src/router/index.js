@@ -46,6 +46,7 @@ const routes = [
         path: "/products/sales",
         name: "sales",
         component: TheSales,
+        meta: { transition: 'slide-left' },
       },
       {
         path: "/products/purchase",

@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container mt-5 purchase">
+  <div class="container  purchase">
     <div class="row purchase orange-text-main">
       <div class="col-6">
         <h1>Transparentno i tačno</h1>

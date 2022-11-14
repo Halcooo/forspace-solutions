@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container mt-5 purchase">
+  <div class="container  purchase">
     <h1 class="mt-4">Proizvodnja</h1>
     <h3>Kako proizvodnju staviti pod kontrolu?</h3>
     <p class="mt-4">
