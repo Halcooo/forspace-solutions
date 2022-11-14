@@ -1,6 +1,6 @@
 <template lang="">
   <div class="wrapper">
-    <div class="container items">
+    <div class="items">
       <router-link to="/products/purchase">Nabava</router-link>
       <router-link to="/products/sales">Prodaja</router-link>
       <router-link to="/products/production">Proizvodnja</router-link>
@@ -12,7 +12,7 @@
       <router-link to="/products/human-resources">HR & plaće</router-link>
     </div>
   </div>
-  <div class="content container">
+  <div class="content ">
     <router-view></router-view>
   </div>
 </template>
@@ -21,18 +21,66 @@ export default {};
 </script>
 <style lang="scss" scoped>
 .wrapper {
-  background: url("@/assets/images/productscover.jpg") no-repeat center
+  background: url("@/assets/images/productscover.jpg") no-repeat 
     center/cover;
-  height: 100vh;
+  height: 40vh;
   z-index: 0;
   background-attachment: fixed;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
+  vertical-align: bottom;
 }
+.purchase{
+  background: url("@/assets/images/gradient-bg.png") no-repeat center
+    center/cover;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: azure;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+  box-shadow: rgba(63, 73, 73 ,.45) 0px 5px 15px;
+ }
 .row {
   .col-sm {
     z-index: 0;
   }
 }
+a {
+  color: #25435b;
+  &:hover {
+    color: black;
+  }
+}
+.router-link-active {
+  color: #f16822;
+}
+.items {
+  width: 90%;
+  background: url("@/assets/images/gradient-bg.png") no-repeat center
+    center/cover;
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  background-color: azure;
+  border-radius: 2px;
+  transform: translate(0%, 70%);
+  margin-bottom: 2rem;
+  box-shadow: rgba(63, 73, 73 ,.45) 0px 5px 15px;
+}
+@media only screen and (max-width: 600px) {
+.items{
+  flex-direction: column;  width: 100%;
+  transform: translate(0px,0px);
+  background: azure;
+}
+a{
+  text-align: center;
+  border-bottom:1px solid #25435b;
+  padding:2px;
+
+}
+}
+
 </style>

@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container">
+  <div class="container mt-5 purchase">
     <div class="col-12">
       <h1>Ljudski resursi i obračun plaća</h1>
       <h4></h4>
@@ -21,7 +21,7 @@
               <img
                 class="p-b-2"
                 width="65vw"
-                src="@/assets/images/icon-orange.png"
+                src="@/assets/images/check.png"
               />
             </td>
 
@@ -39,7 +39,7 @@
               <img
                 class="p-b-2"
                 width="65vw"
-                src="@/assets/images/icon-orange.png"
+                src="@/assets/images/check.png"
               />
             </td>
 
@@ -54,7 +54,7 @@
               <img
                 class="p-b-2"
                 width="65vw"
-                src="@/assets/images/icon-orange.png"
+                src="@/assets/images/check.png"
               />
             </td>
             <td>
@@ -68,18 +68,6 @@
     </div>
     <div class="row white-text-main">
       <div class="col-12">
-        <div style="height: 10vw; overflow: hidden">
-          <svg
-            viewBox="0 0 500 150"
-            preserveAspectRatio="none"
-            style="height: 100%; width: 100%"
-          >
-            <path
-              d="M-68.29,88.12 C72.23,46.67 237.02,-34.25 522.57,80.22 L500.00,150.00 L2.82,155.22 Z"
-              style="stroke: none; fill: #f16822"
-            ></path>
-          </svg>
-        </div>
         <div class="hr orange-bg">
           <div class="row">
             <div class="col-12">
@@ -90,7 +78,7 @@
                       <img
                         class="p-t-2"
                         width="65vw"
-                        src="@/assets/images//icon.png"
+                        src="@/assets/images/check.png"
                       />
                     </td>
 
@@ -113,7 +101,7 @@
                       <img
                         class="p-t-2"
                         width="65vw"
-                        src="@/assets/images//icon.png"
+                        src="@/assets/images/check.png"
                       />
                     </td>
                     <td>
@@ -133,7 +121,7 @@
                       <img
                         class="p-t-2"
                         width="65vw"
-                        src="@/assets/images//icon.png"
+                        src="@/assets/images/check.png"
                       />
                     </td>
                     <td>
@@ -155,7 +143,7 @@
                       <img
                         class="p-t-2"
                         width="65vw"
-                        src="@/assets/images//icon.png"
+                        src="@/assets/images/check.png"
                       />
                     </td>
                     <td>
@@ -202,5 +190,4 @@ export default {
   name: "TheHumanRescources",
 };
 </script>
-<style lang="scss" scooped>
-</style>
+<style lang="scss" scooped></style>
