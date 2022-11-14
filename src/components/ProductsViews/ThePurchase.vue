@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container-xl mt-5 d-flex purchase" >
+  <div class="container-xl  d-flex purchase" >
     <h1>Nabava</h1>
     <p>
       Forspace modul nabave vam omogućava jednostavnu narudžbu svega što vam

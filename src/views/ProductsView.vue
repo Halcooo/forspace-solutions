@@ -12,8 +12,12 @@
       <router-link to="/products/human-resources">HR & plaće</router-link>
     </div>
   </div>
-  <div class="content ">
-    <router-view></router-view>
+  <div class="content">
+    <router-view v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
   </div>
 </template>
 <script>
@@ -21,8 +25,7 @@ export default {};
 </script>
 <style lang="scss" scoped>
 .wrapper {
-  background: url("@/assets/images/productscover.jpg") no-repeat 
-    center/cover;
+  background: url("@/assets/images/productscover.jpg") no-repeat center/cover;
   height: 40vh;
   z-index: 0;
   background-attachment: fixed;
@@ -31,7 +34,7 @@ export default {};
   align-items: flex-end;
   vertical-align: bottom;
 }
-.purchase{
+.purchase {
   background: url("@/assets/images/gradient-bg.png") no-repeat center
     center/cover;
   display: flex;
@@ -40,7 +43,8 @@ export default {};
   background-color: azure;
   border-radius: 2px;
   margin-bottom: 2rem;
- }
+  margin-top: 10vh;
+}
 .row {
   .col-sm {
     z-index: 0;
@@ -66,20 +70,27 @@ a {
   border-radius: 2px;
   transform: translate(0%, 70%);
   margin-bottom: 2rem;
-  box-shadow: rgba(63, 73, 73 ,.45) 0px 5px 15px;
+  box-shadow: rgba(63, 73, 73, 0.45) 0px 5px 15px;
 }
 @media only screen and (max-width: 600px) {
-.items{
-  flex-direction: column;  width: 100%;
-  transform: translate(0px,0px);
-  background: azure;
+  .items {
+    flex-direction: column;
+    width: 100%;
+    transform: translate(0px, 0px);
+    background: azure;
+  }
+  a {
+    text-align: center;
+    border-bottom: 1px solid #25435b;
+    padding: 2px;
+  }
 }
-a{
-  text-align: center;
-  border-bottom:1px solid #25435b;
-  padding:2px;
-
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.35s ease;
 }
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
-
 </style>
