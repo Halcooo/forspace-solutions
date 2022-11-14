@@ -54,13 +54,16 @@
     </p>
     <br />
   </div>
+  <TheLocationMap></TheLocationMap>
 </template>
 <script>
 import BaseSlider from "../Sliders/BaseSlider.vue";
+import TheLocationMap from "@/components/TheLocationMap.vue";
 export default {
   name: "HomeBody",
   components: {
     BaseSlider,
+    TheLocationMap,
   },
   data() {
     return {
