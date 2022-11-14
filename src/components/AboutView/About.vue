@@ -75,11 +75,11 @@ export default {
     text-align: center;
   }
   .about-flex-grid {
-    width: 55%;
+    width: 60%;
     margin: auto;
-    height: 60vh;
+    height: 70vh;
     display: flex;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 5%;
     border-radius: 5px;
     .flex-first {
@@ -94,6 +94,7 @@ export default {
       .div-4 {
         width: 80%;
         margin: auto;
+        margin-bottom: 5%;
         padding: 15px 0px;
       }
 
