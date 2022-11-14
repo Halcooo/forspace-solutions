@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container mt-5">
+  <div class="container mt-5 purchase">
     <h1>Dokument Manadžment Sistem (DMS)</h1>
     <h3>Dostupan i praktičan</h3>
     <p>

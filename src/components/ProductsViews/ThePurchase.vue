@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container mt-5" >
+  <div class="container-xl mt-5 d-flex purchase" >
     <h1>Nabava</h1>
     <p>
       Forspace modul nabave vam omogućava jednostavnu narudžbu svega što vam
@@ -19,5 +19,15 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
+ .purchase{
+  background: url("@/assets/images/gradient-bg.png") no-repeat center
+    center/cover;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  background-color: azure;
+  border-radius: 2px;
+  margin-bottom: 2rem;
+  box-shadow: rgba(63, 73, 73 ,.45) 0px 5px 15px;
+ }
 </style>
