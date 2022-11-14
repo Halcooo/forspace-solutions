@@ -2,6 +2,15 @@
 <template>
   <div class="form-div">
     <h3>Pošaljite nam poruku</h3>
+    <p
+      style="
+        width: 70px;
+        padding: 1.5px;
+        background-color: rgb(0, 156, 161);
+        border-radius: 50px;
+        transform: translate(0px, -15px) rotate(-2deg);
+      "
+    ></p>
     <form>
       <div class="form-group">
         <div class="form-group-flex">
@@ -177,7 +186,11 @@ export default {
     transition: transform 0.2s ease-out, color 0.2s ease-out;
   }
   h3 {
-    margin-bottom: 5%;
+    // margin-bottom: 5%;
+    // padding: 10px;
+
+    color: $navy;
+    border-radius: 5px;
   }
   .form-group {
     width: 100%;
@@ -195,11 +208,13 @@ export default {
       }
     }
     .form-control-custom {
-      background: rgba(247, 247, 247, 0.552);
+      background: rgba(236, 236, 236, 0.552);
       width: 100%;
       margin: 10px 0px 20px 0px;
       padding: 10px 2px;
       border: none;
+      border-top-left-radius: 10px;
+
       border-bottom: 2px solid rgb(189, 189, 189);
     }
 
@@ -207,6 +222,7 @@ export default {
     textarea {
       &:focus {
         outline: none;
+
         border-bottom: 2px solid $lightgreen;
       }
     }
@@ -221,6 +237,18 @@ export default {
   @media screen and (max-width: 567px) {
     width: 100%;
     height: 100%;
+    .form-group-flex {
+      flex-direction: column;
+    }
+    .form-group {
+      margin: 0;
+      .form-control-custom {
+        margin: 5px 0px 10px 0px;
+      }
+    }
+    label {
+      transform: translate(6px, 16px);
+    }
   }
 }
 </style>
