@@ -1,7 +1,7 @@
 @author Halid Lihovac
 <template>
   <div class="form-div">
-    <h3 class="">Pošaljite nam poruku</h3>
+    <h3>Pošaljite nam poruku</h3>
     <form>
       <div class="form-group">
         <div class="form-group-flex">
@@ -82,7 +82,11 @@
           "
           @focusout="
             () => {
-              this.active_text = false;
+              if (this.message.length > 0) {
+                this.active_text = true;
+              } else {
+                this.active_text = false;
+              }
             }
           "
           name=""
