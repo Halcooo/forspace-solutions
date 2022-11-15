@@ -3,7 +3,9 @@
   <div class="nav-wrapper">
     <div class="nav-wrapper-flex">
       <div class="logo">
-        <img alt="Forspace Solutions" src="@/assets/svg/logo.svg" />
+        <router-link to="/">
+          <img alt="Forspace Solutions" src="@/assets/svg/logo.svg"
+        /></router-link>
       </div>
       <div class="navigation">
         <ul class="nav-links">

@@ -54,8 +54,8 @@ export default {
       language: "Language",
       selected: "bs",
       languages: [
-        { language: "Engleski", abr: "en" },
         { language: "Bosanski", abr: "bs" },
+        { language: "Engleski", abr: "en" },
         { language: "Njemački", abr: "de" },
       ],
     };

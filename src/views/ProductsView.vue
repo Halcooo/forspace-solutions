@@ -1,15 +1,15 @@
 <template lang="">
   <div class="wrapper">
     <div class="items">
-      <router-link to="/products/purchase">Nabava</router-link>
-      <router-link to="/products/sales">Prodaja</router-link>
-      <router-link to="/products/production">Proizvodnja</router-link>
-      <router-link to="/products/warehouse">Skladište</router-link>
-      <router-link to="/products/dms">DMS</router-link>
-      <router-link to="/products/finance"
-        >Finansije & računovodstvo</router-link
-      >
-      <router-link to="/products/human-resources">HR & plaće</router-link>
+      <router-link to="/products/purchase">{{ $t("purchase") }}</router-link>
+      <router-link to="/products/sales">{{ $t("sales") }}</router-link>
+      <router-link to="/products/production">{{
+        $t("production")
+      }}</router-link>
+      <router-link to="/products/warehouse">{{ $t("warehouse") }}</router-link>
+      <router-link to="/products/dms">{{ $t("dms") }}</router-link>
+      <router-link to="/products/finance">{{ $t("finance") }}</router-link>
+      <router-link to="/products/human-resources">{{ $t("hr") }}</router-link>
     </div>
   </div>
   <div class="content">

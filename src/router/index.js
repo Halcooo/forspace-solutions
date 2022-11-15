@@ -46,7 +46,7 @@ const routes = [
         path: "/products/sales",
         name: "sales",
         component: TheSales,
-        meta: { transition: 'slide-left' },
+        meta: { transition: "slide-left" },
       },
       {
         path: "/products/purchase",
@@ -105,6 +105,9 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(),
   routes,
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0, behavior: "smooth" };
+  },
 });
 
 export default router;
