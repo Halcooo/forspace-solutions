@@ -1,5 +1,5 @@
 <template lang="">
-   <div class="container d-flex justify-content-center">
+   <div class="container d-flex justify-content-center map">
     <iframe
       width="1080"
       height="490"
@@ -17,6 +17,9 @@ export default {
     name:'TheLocationMap'
 }
 </script>
-<style lang="">
-    
+<style lang="scss">
+    .map{
+        padding: 15px;
+        background-color: azure;
+    }
 </style>
