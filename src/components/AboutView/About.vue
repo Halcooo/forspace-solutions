@@ -91,9 +91,6 @@ export default {
   h3 {
     color: white;
   }
-  .about-heading {
-    // text-align: center;
-  }
   .about-flex-grid {
     width: 60%;
     margin: auto;
