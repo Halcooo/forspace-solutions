@@ -9,7 +9,7 @@
       </div>
       <div class="navigation">
         <ul class="nav-links">
-          <Links :routes="routes" />
+          <Links :routes="routes" @index="currentEmit" />
         </ul>
 
         <CloseBtn :showSideNav="showSideNav" />
@@ -26,6 +26,7 @@ import CloseBtn from "./CloseButton.vue";
 import Sidenav from "../../components/NavigationTrack/Sidenav.vue";
 export default {
   name: "Nav",
+  emits: ["index"],
   components: { Links, CloseBtn, Sidenav },
   data() {
     return {
@@ -84,6 +85,9 @@ export default {
         this.setSideNav(true);
       }
     },
+    currentEmit(index) {
+      console.log(index);
+    },
   },
   mounted() {},
 };
@@ -123,7 +127,7 @@ export default {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: 50px;
+  gap: 32px;
   padding: 0;
   margin: 0;
 }
