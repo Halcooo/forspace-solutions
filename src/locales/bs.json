@@ -6,40 +6,39 @@
   "services": "Usluge",
   "preview": "Pregled",
   "contact": "Kontakt",
-  "promo" : "Promocije",
+  "promo": "Promocije",
   "presentation": "Želim prezentaciju",
-  "home_icon_companies":"Vaša kompanija pod jednim krovom",
+  "home_icon_companies": "Vaša kompanija pod jednim krovom",
   "home_icon_companies_p": "Centralno upravljanje procesima.",
-  "home_icon_cloud":"ERP sistem baziran na web-u",
+  "home_icon_cloud": "ERP sistem baziran na web-u",
   "home_icon_cloud_p": "Java, WEB based, MySQL.",
-  "home_icon_config":"Svi procesi u jednom toku",
+  "home_icon_config": "Svi procesi u jednom toku",
   "home_icon_config_p": "Mapiranje stvarnih procesa u digitalne.",
-  "home_icon_circle":"Moderan koncept, jednostavan dizajn",
+  "home_icon_circle": "Moderan koncept, jednostavan dizajn",
   "home_icon_circle_p": "Podržava jednostavnu integraciju s drugim rješenjima.",
-  
+
   "about_experience": "Iskustvo",
   "about_experience_paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro impedi temporibus ",
   "about_creativity": "Kreativnost",
   "about_creativity_paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro impedi temporibus ",
   "about_inovation": "Inovacije",
   "about_inovation_paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro impedi temporibus ",
-  
-  
-  "product_heading_one":"Lorem ipsum dolor sit amet ?",
-  "product_text_one":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro impedi temporibus fugit nobis voluptas.Lorem ipsum dolor sit amet consectetur adipisicing eli",
-  "product_heading_two":"Zašto kompanije trebaju ERP ?",
-  "product_text_two":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro impedi temporibus fugit nobis voluptas.Lorem ipsum dolor sit amet consectetur adipisicing eli",
-  "product_heading_three":"Lorem ipsum dolor sit amet ?",
-  "product_text_three":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro impedi temporibus fugit nobis voluptas.Lorem ipsum dolor sit amet consectetur adipisicing eli",
 
-  "about_text":" \"Mi ne radimo za Vas. Mi radimo sa Vama!” krilatica je kojom su uposlenici naše kompanije vođeni svakim danom i u svakom momentu rada sa Vama, našim klijentima. Vaše zadovoljstvo uslugama i proizvodima koje nudimo naš je prvobitni cilj. Digitalizacijom Vaših poslovnih procesa uz Forspace-ov ERP program želimo omogućiti da efikasnije vodite kompaniju, te kontinuirano pratite, planirate i kontrolišete poslovne aktivnosti u svakom momentu, i s tim u vezi preventivno spriječite greške koje bi, u suprotnom, dovele do komplikacija. Sve to, u cilju donošenja pravovremenih i kvalitetnih odluka i ostvarivanja što boljih poslovnih rezultata. ERP sistemom koji Vam nudimo poboljšat ćete operativne i strateške odluke, uz uvijek precizne i tačne podatke. Uz sve to, troškovi Vašeg poslovanja znatno će biti smanjeni jer će digitalizacijom poslovnih procesa za izvršavanje svih poslovnih aktivnosti biti utrošeno znatno manje vremena. Time predviđene resurse možete alocirati na druga poslovna polja. Danas, opće je poznato da se konkurentska prednost kompanije može ostvariti primjenom adekvatne informatičke platforme. Pojam “kreativnost” može se zamijeniti pojmom “inovacija”, odnosno, iznalaženje novijih načina vođenja i obavljanja poslovnih aktivnosti. Osnova takvim inovacijama jeste primjena informatičkih tehnologija koje idu u korak sa vremenom, kakav je Forspace ERP sistem. Naš cilj je Vaš bolji poslovni rezultat uz što niže troškove poslovanja i inovativna rješenja koja bi Vas diferencirala od drugih. Dugoročno gledano, nastojimo pokriti i digitalizovati čitavo tržište i na taj način doprinijeti rastu i razvoju industrije, ekonomije i društva globalno, te sačuvati okoliš. Naš brend identitet je “everyman” i mi smo blizu Vas, uz naše iskustvo, odličnu podršku i poznavanje procesa.",
+  "product_heading_one": "Lorem ipsum dolor sit amet ?",
+  "product_text_one": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro impedi temporibus fugit nobis voluptas.Lorem ipsum dolor sit amet consectetur adipisicing eli",
+  "product_heading_two": "Zašto kompanije trebaju ERP ?",
+  "product_text_two": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro impedi temporibus fugit nobis voluptas.Lorem ipsum dolor sit amet consectetur adipisicing eli",
+  "product_heading_three": "Lorem ipsum dolor sit amet ?",
+  "product_text_three": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia porro impedi temporibus fugit nobis voluptas.Lorem ipsum dolor sit amet consectetur adipisicing eli",
+
+  "about_text": " \"Mi ne radimo za Vas. Mi radimo sa Vama!” krilatica je kojom su uposlenici naše kompanije vođeni svakim danom i u svakom momentu rada sa Vama, našim klijentima. Vaše zadovoljstvo uslugama i proizvodima koje nudimo naš je prvobitni cilj. Digitalizacijom Vaših poslovnih procesa uz Forspace-ov ERP program želimo omogućiti da efikasnije vodite kompaniju, te kontinuirano pratite, planirate i kontrolišete poslovne aktivnosti u svakom momentu, i s tim u vezi preventivno spriječite greške koje bi, u suprotnom, dovele do komplikacija. Sve to, u cilju donošenja pravovremenih i kvalitetnih odluka i ostvarivanja što boljih poslovnih rezultata. ERP sistemom koji Vam nudimo poboljšat ćete operativne i strateške odluke, uz uvijek precizne i tačne podatke. Uz sve to, troškovi Vašeg poslovanja znatno će biti smanjeni jer će digitalizacijom poslovnih procesa za izvršavanje svih poslovnih aktivnosti biti utrošeno znatno manje vremena. Time predviđene resurse možete alocirati na druga poslovna polja. Danas, opće je poznato da se konkurentska prednost kompanije može ostvariti primjenom adekvatne informatičke platforme. Pojam “kreativnost” može se zamijeniti pojmom “inovacija”, odnosno, iznalaženje novijih načina vođenja i obavljanja poslovnih aktivnosti. Osnova takvim inovacijama jeste primjena informatičkih tehnologija koje idu u korak sa vremenom, kakav je Forspace ERP sistem. Naš cilj je Vaš bolji poslovni rezultat uz što niže troškove poslovanja i inovativna rješenja koja bi Vas diferencirala od drugih. Dugoročno gledano, nastojimo pokriti i digitalizovati čitavo tržište i na taj način doprinijeti rastu i razvoju industrije, ekonomije i društva globalno, te sačuvati okoliš. Naš brend identitet je “everyman” i mi smo blizu Vas, uz naše iskustvo, odličnu podršku i poznavanje procesa.",
   "forspace_clients": "Kompanije koje su već optimizirale svoje procese sa Forspace",
   "forspace_clients_desc": "Sve naše klijente ponosno ističemo i gradimo partnerske odnose na obostrano zadovoljstvo. Ukoliko neki od naših klijenata nisu još uvijek dodani na listu, ne znači da ih manje cijenimo ili da su nam manje važni.",
   "homeServices_1_heading_1": "Posao iz jednog izvora",
   "homeServices_1_paragraph_1": "Iskoristite Forspace potpuno integrisano all-in-one rješenje za standardizaciju i digitalizaciju poslovnih procesa u Vašoj kompaniji.",
-  
+
   "about_us_heading": "Dobrodošli",
-  "about_us_additional_paragraph":"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, atque amet architecto vitae sapiente explicabo.",
+  "about_us_additional_paragraph": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti, atque amet architecto vitae sapiente explicabo.",
 
   "about_us_news_heading": "Novosti",
   "about_us_news_link_one": "Forspace ERP jedinstveno all-in-one cloud softversko rješenje za standardizaciju i digitalizaciju poslovnih procesa",
@@ -47,44 +46,49 @@
   "about_us_news_link_heading_two": "Zašto kompanije trebaju DMS?",
   "about_us_news_link_two": "Vođenje biznisa može biti stresno na mnogo načina a poseban izazov u ovom pogledu je i način na koji kompanija upravlja dokumentima.",
 
-  "about_us_news_link_heading_three":"Zašto je poslovni program baziran na web-u pravi izbor?",
-  
+  "about_us_news_link_heading_three": "Zašto je poslovni program baziran na web-u pravi izbor?",
+
   "about_us_next_heading": "Slijedeće",
   "about_us_next_additional_paragraph": "Forspace Preview",
-  
+
   "about_us_next_overlay_left_heading": "Prednosti digitalne transformacije",
-  "about_us_next_overlay_left_paragraph" : "Ubrzanje digitalnog svijeta zahtijeva prilagođavanje organizacija, zbog čega većina kompanija u svijetu radi na digitalnoj transform...",
+  "about_us_next_overlay_left_paragraph": "Ubrzanje digitalnog svijeta zahtijeva prilagođavanje organizacija, zbog čega većina kompanija u svijetu radi na digitalnoj transform...",
 
   "about_us_next_overlay_right_heading": "Šta je API?",
-  "about_us_next_overlay_right_paragraph" : "Izraz “API” je često korišten u web razvoju. Ažuriranja operativnog sistema, web pretraživača i aplikacija često najavljuju nove API-je za programere. Stoga, šta je API i kako ga programeri..",
-  
+  "about_us_next_overlay_right_paragraph": "Izraz “API” je često korišten u web razvoju. Ažuriranja operativnog sistema, web pretraživača i aplikacija često najavljuju nove API-je za programere. Stoga, šta je API i kako ga programeri..",
+
   "about_us_team": "Naš tim",
   "about_us_clients": "Šta kažu naši klijenti",
 
   "about_us_client_one": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
   "about_us_client_two": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
   "about_us_client_three": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
-  
-  "about_us_reserve_heading": "Rezervišite termin",
-  "about_us_reserve_p":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nostrum illo id adipisci mollitia commodi eligendi maiores nesciunt quas voluptates iusto assumenda, voluptatibus accusantium et esse ipsum nobis, vel nulla.",
-  
-  
-  
-  
-  "footer_forspace_products": "FORSPACE Proizvodi",
-  "footer_accounting":"računovodstvo",
-    "footer_controlling": "kontroling",
-    "footer_human_resources": "ljudski resursi",
-    "footer_all_in_one": "all-in-one erp rješenje",
-    "footer_sales_menagment": "upravljenje prodajom",
-    "footer_mobile_app": "mobilne aplikacije",
-    "footer_gdpr": "zakon o zaštiti",
-    "footer_services": "FORSPACE Usluge",
-    "footer_contact": "Kontaktirajte nas",
-    "footer_address": "Bulevar Meše Selimovića 16",
-    "footer_address2": "Bosna i Hercegovina",
-    "footer_address_telephone": "+387 33/770-949",
-    "footer_copy": "2022 Forspace - All Rights Reserved",
 
-    "form": "Pošalji poruku"
+  "about_us_reserve_heading": "Rezervišite termin",
+  "about_us_reserve_p": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nostrum illo id adipisci mollitia commodi eligendi maiores nesciunt quas voluptates iusto assumenda, voluptatibus accusantium et esse ipsum nobis, vel nulla.",
+
+  "footer_forspace_products": "FORSPACE Proizvodi",
+  "footer_accounting": "računovodstvo",
+  "footer_controlling": "kontroling",
+  "footer_human_resources": "ljudski resursi",
+  "footer_all_in_one": "all-in-one erp rješenje",
+  "footer_sales_menagment": "upravljenje prodajom",
+  "footer_mobile_app": "mobilne aplikacije",
+  "footer_gdpr": "zakon o zaštiti",
+  "footer_services": "FORSPACE Usluge",
+  "footer_contact": "Kontaktirajte nas",
+  "footer_address": "Bulevar Meše Selimovića 16",
+  "footer_address2": "Bosna i Hercegovina",
+  "footer_address_telephone": "+387 33/770-949",
+  "footer_copy": "2022 Forspace - All Rights Reserved",
+
+  "form": "Pošalji poruku",
+
+  "purchase":"Nabava",
+  "sales":"Prodaja",
+  "production":"Proizvodnja",
+  "warehouse":"Skladište",
+  "dms":"DMS",
+  "finance":"Finansije i računovodstvo",
+  "hr":"HR & plaće"
 }

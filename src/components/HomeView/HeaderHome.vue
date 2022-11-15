@@ -25,7 +25,7 @@ export default {
   },
   data() {
     return {
-      routes: { route: "/presentation", name: "presentation" },
+      routes: { route: "/contact", name: "presentation" },
     };
   },
 };
