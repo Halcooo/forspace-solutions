@@ -1,6 +1,20 @@
 <template lang="">
   <div class="wrapper">
-    <h1>{{ $t("contact") }}</h1>
+    <div class="wrapper-div">
+      <h1>{{ $t("contact") }}</h1>
+      <p
+        style="
+          width: 100%;
+          margin: auto;
+          padding: 2.5px;
+          background-color: rgb(0, 156, 161);
+          border-radius: 50px;
+          transform: translate(0px, -20px) rotate(-2deg);
+          position: absolute;
+          z-index: -1;
+        "
+      ></p>
+    </div>
   </div>
   <ContactForm></ContactForm>
 </template>
@@ -23,9 +37,15 @@ export default {
     url("@/assets/images/contact.jpg") no-repeat center center/cover;
   height: 45vh;
 
-  padding-top: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .wrapper-div {
+    position: relative;
+    z-index: 1;
+  }
   h1 {
-    text-align: center;
+    // text-align: center;
     color: white;
     font-size: 50px;
   }

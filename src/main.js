@@ -14,7 +14,9 @@ import {
   faEnvelope,
   faHome,
   faGem,
+  faChevronDown,
   faArrowUp,
+  faArrowDown,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
@@ -37,6 +39,7 @@ library.add(
   faHome,
   faGem,
   faArrowUp,
+  faChevronDown,
   faJava,
   faVuejs,
   faReact

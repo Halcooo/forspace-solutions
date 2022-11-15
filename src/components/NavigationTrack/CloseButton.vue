@@ -9,19 +9,11 @@
 </template>
 
 <script>
-import Sidenav from "./Sidenav.vue";
 export default {
   name: "CloseBtn",
   props: {
     showSideNav: { type: Function },
   },
-  data() {
-    return {};
-  },
-  components: { Sidenav },
-  methods: {},
-
-  computed: {},
 };
 </script>
 

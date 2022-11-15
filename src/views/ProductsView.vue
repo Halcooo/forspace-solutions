@@ -71,6 +71,7 @@ a {
   transform: translate(0%, 70%);
   margin-bottom: 2rem;
   box-shadow: rgba(63, 73, 73, 0.45) 0px 5px 15px;
+  box-shadow: rgba(199, 199, 199, 0.45) 0px 5px 15px;
 }
 @media only screen and (max-width: 600px) {
   .items {

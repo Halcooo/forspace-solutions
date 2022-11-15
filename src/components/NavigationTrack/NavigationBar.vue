@@ -7,15 +7,11 @@
       </div>
       <div class="navigation">
         <ul class="nav-links">
-          <Links :routes="routes_nav" />
+          <Links :routes="routes" />
         </ul>
 
         <CloseBtn :showSideNav="showSideNav" />
-        <Sidenav
-          :contents="contents"
-          :showSideNav="showSideNav"
-          :removeSideNav="removeSideNav"
-        />
+        <Sidenav :showSideNav="showSideNav" :routes="routes" />
       </div>
     </div>
   </div>
@@ -31,14 +27,7 @@ export default {
   components: { Links, CloseBtn, Sidenav },
   data() {
     return {
-      contents: [
-        { id: 0, state: false },
-        { id: 1, state: false },
-        { id: 2, state: false },
-        { id: 3, state: false },
-        { id: 4, state: false },
-      ],
-      routes_nav: [
+      routes: [
         {
           to: "/",
           name: "home",
@@ -88,21 +77,10 @@ export default {
 
     showSideNav() {
       if (this.getSideNav()) {
-        this.$store.state.sidecontent = false;
         this.setSideNav(false);
-        this.contents.forEach((item) => {
-          item.state = false;
-        });
       } else {
-        this.$store.state.sidecontent = true;
-
         this.setSideNav(true);
       }
-    },
-    removeSideNav(index) {
-      this.contents.forEach((item) => {
-        item.state = index == item.id ? false : "";
-      });
     },
   },
   mounted() {},
@@ -141,11 +119,10 @@ export default {
 }
 .nav-links {
   display: flex;
-
-  justify-content: space-around;
+  width: 100%;
+  justify-content: space-between;
   gap: 50px;
   padding: 0;
-
   margin: 0;
 }
 

@@ -4,11 +4,13 @@
     <h3>Pošaljite nam poruku</h3>
     <p
       style="
-        width: 70px;
-        padding: 1.5px;
+        width: 75px;
+        padding: 1.7px;
         background-color: rgb(0, 156, 161);
         border-radius: 50px;
         transform: translate(0px, -15px) rotate(-2deg);
+        position: absolute;
+        z-index: -1;
       "
     ></p>
     <form>
@@ -175,13 +177,16 @@ export default {
   height: 60vh;
   margin: auto;
   padding: 25px;
+  form {
+    margin-top: 5%;
+  }
   label {
     position: absolute;
     top: 0;
     left: 0;
     transform-origin: 0% 100%;
-    color: #9e9e9e;
-    transform: translate(5px, 22px);
+    color: #ffffff;
+    transform: translate(7px, 24px);
 
     transition: transform 0.2s ease-out, color 0.2s ease-out;
   }
@@ -195,7 +200,7 @@ export default {
   .form-group {
     width: 100%;
     position: relative;
-    margin-top: 16px;
+    margin-top: 10px;
     .form-group-flex {
       display: flex;
       justify-content: center;
@@ -208,18 +213,19 @@ export default {
       }
     }
     .form-control-custom {
-      background: rgba(236, 236, 236, 0.552);
+      background: rgba(153, 153, 153, 0.552);
       width: 100%;
       margin: 10px 0px 20px 0px;
-      padding: 10px 2px;
+      padding: 15px 2px 22px 2px;
       border: none;
-      border-top-left-radius: 10px;
+      border-radius: 2px;
 
       border-bottom: 2px solid rgb(189, 189, 189);
     }
 
     input,
     textarea {
+      color: #fff;
       &:focus {
         outline: none;
 

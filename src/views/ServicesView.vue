@@ -3,11 +3,11 @@
     <ServicesSlider :images="images"></ServicesSlider>
   </div>
   <div class="container-sm content">
-    <div class="nav-text d-flex flex-column container" v-if="currentSlide == 0">
+    <!-- <div class="nav-text d-flex flex-column container" v-if="currentSlide == 0">
       <h2>Web i desktop aplikacije</h2>
       <h2>Mobilne aplikacije</h2>
       <h2>API integracija</h2>
-    </div>
+    </div> -->
     <div v-if="currentSlide == 0">
       <div class="container">
         <h1 class="mb-5">Programerske usluge i razvoj:</h1>
