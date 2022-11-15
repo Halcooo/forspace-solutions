@@ -1,5 +1,5 @@
 <template>
-  <div class="the_next">
+  <div class="the_next" id="2">
     <div class="the_next_heading">
       <h1>{{ $t("about_us_next_heading") }}</h1>
       <h3>{{ $t("about_us_next_additional_paragraph") }}</h3>

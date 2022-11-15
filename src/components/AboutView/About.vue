@@ -1,5 +1,5 @@
 <template>
-  <div class="about-nav">
+  <div class="about-nav" id="1">
     <div class="about-heading">
       <div style="display: flex; justify-content: center; align-items: center">
         <div>

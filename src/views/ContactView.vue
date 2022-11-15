@@ -16,13 +16,16 @@
       ></p>
     </div>
   </div>
-  <ContactForm></ContactForm>
+  <ContactForm />
+  <AboutMap />
 </template>
 <script>
-import ContactForm from "@/components/Forms/ContactForm.vue";
+import ContactForm from "@/components/ContactView/ContactForm.vue";
+import AboutMap from "@/components/AboutView/AboutMap.vue";
 export default {
   components: {
     ContactForm,
+    AboutMap,
   },
 };
 </script>

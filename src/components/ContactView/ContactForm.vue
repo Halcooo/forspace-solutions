@@ -118,7 +118,7 @@
   </div>
 </template>
 <script>
-import BaseButton from "./buttons/BaseButton.vue";
+import BaseButton from "../Forms/buttons/BaseButton.vue";
 export default {
   name: "ContactForm",
   components: { BaseButton },

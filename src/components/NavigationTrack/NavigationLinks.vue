@@ -10,13 +10,15 @@
       <div>
         {{ $t(navItem.name) }}
 
-        <font-awesome-icon icon="fa-solid fa-chevron-down" />
+        <font-awesome-icon
+          icon="fa-solid fa-chevron-down"
+          v-if="index == 1 || index == 2"
+        />
       </div>
       <div class="underline"></div>
     </router-link>
-  </li>
 
-  <!-- <li style="display: inline-block">
+    <!-- <li style="display: inline-block">
     <div
       class="sidenav"
       @mouseover="
@@ -42,6 +44,7 @@
       </div>
     </div>
   </li> -->
+  </li>
 </template>
 
 <script>
@@ -54,8 +57,6 @@ export default {
   },
   data() {
     return {
-      active: false,
-      drop: false,
       language: "Language",
       selected: "bs",
       languages: [
@@ -116,14 +117,15 @@ export default {
 
 li {
   list-style: none;
-
+  position: relative;
   svg {
     width: 17px;
   }
 
   .nav {
     color: $navy;
-    font-size: 23px;
+    font-size: 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,6 +154,11 @@ li {
     }
   }
 
+  .second {
+    width: 300px;
+    height: 360px;
+    transform: translate(0%, 10%);
+  }
   .dropdown {
     position: absolute;
     display: inline-block;
