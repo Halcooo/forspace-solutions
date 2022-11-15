@@ -70,4 +70,17 @@ h1 {
 }
 @media screen and (max-width: 560px) {
 }
+.carousel__pagination-button::after {
+  display: block;
+  content: "";
+  border: 1px solid #0b4383 !important;
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50% !important;
+  background-color: #ffffff00 !important;
+}
+.carousel__pagination-button:hover::after,
+.carousel__pagination-button--active::after {
+  background-color: #0b4383!important;
+}
 </style>
