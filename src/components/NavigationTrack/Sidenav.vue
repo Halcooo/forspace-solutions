@@ -9,7 +9,6 @@
           :routes="routes"
           :sidenav_class="true"
           :showSideNav="showSideNav"
-          :drop_class="true"
         />
       </ul>
       <div class="sidenav_times">
@@ -109,6 +108,7 @@ export default {
     position: fixed;
     display: flex;
     justify-content: left;
+    text-align: left;
     align-items: center;
     margin: auto;
     top: 0;
@@ -144,6 +144,8 @@ export default {
     display: flex;
     flex-direction: column;
     line-height: 4rem;
+    padding-left: 4%;
+
     li {
       text-align: left;
       a {

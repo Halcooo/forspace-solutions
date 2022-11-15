@@ -99,6 +99,7 @@ export default {
     margin: auto;
     height: 70vh;
     display: flex;
+    gap: 10px;
     margin-top: 2%;
     margin-bottom: 5%;
     border-radius: 5px;
@@ -139,7 +140,7 @@ export default {
       width: 60%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-
+      gap: 10px;
       .card-1,
       .card-2,
       .card-3,

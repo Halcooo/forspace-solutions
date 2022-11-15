@@ -1,16 +1,22 @@
 <template>
-  <li v-for="navItem in routes" :key="navItem">
+  <li v-for="(navItem, index) in routes" :key="navItem">
     <router-link
       :to="navItem.to"
       class="nav"
       :class="{ sidenav_r: sidenav_class }"
       @click="showSideNav"
+      @mouseover="giveindex(index)"
     >
-      {{ $t(navItem.name) }}
+      <div>
+        {{ $t(navItem.name) }}
+
+        <font-awesome-icon icon="fa-solid fa-chevron-down" />
+      </div>
+      <div class="underline"></div>
     </router-link>
   </li>
 
-  <li style="display: inline-block">
+  <!-- <li style="display: inline-block">
     <div
       class="sidenav"
       @mouseover="
@@ -35,7 +41,7 @@
         </div>
       </div>
     </div>
-  </li>
+  </li> -->
 </template>
 
 <script>
@@ -45,7 +51,6 @@ export default {
     routes: { type: Array },
     sidenav_class: { type: Boolean },
     showSideNav: { type: Function },
-    drop_class: { type: Boolean },
   },
   data() {
     return {
@@ -72,6 +77,9 @@ export default {
       } else {
         this.drop = true;
       }
+    },
+    giveindex(index) {
+      this.$emit("index", index);
     },
     translatePage(lang) {
       this.selected = lang.abr;
@@ -108,7 +116,6 @@ export default {
 
 li {
   list-style: none;
-  text-align: left;
 
   svg {
     width: 17px;
@@ -117,6 +124,25 @@ li {
   .nav {
     color: $navy;
     font-size: 23px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // align-items: center;
+    // gap: 5px;
+
+    .underline {
+      background-color: red;
+      width: 0%;
+      height: 2px;
+    }
+    &:hover {
+      color: $lightgreen;
+      .underline {
+        background-color: $lightgreen;
+        width: 100%;
+        transition: width 0.3s ease-out;
+      }
+    }
   }
 
   .sidenav {
@@ -156,6 +182,9 @@ li {
 
   .router-link-active {
     color: $lightgreen;
+  }
+  .router-link {
+    text-align: left;
   }
 }
 </style>

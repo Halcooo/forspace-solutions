@@ -12,12 +12,13 @@
               position: absolute;
               bottom: 0;
               z-index: -1;
+              border-radius: 50px;
               transform: rotate(-0.5deg);
             "
           ></p>
         </div>
         <button type="button" class="button" @click="showMap()">
-          Google Map
+          Google Maps
         </button>
       </div>
     </div>
