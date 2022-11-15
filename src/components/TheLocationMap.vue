@@ -4,7 +4,7 @@
       width="1080"
       height="490"
       id="gmap_canvas"
-      src="https://maps.google.com/maps?q=FrospaceSolutions&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      src="https://maps.google.com/maps?q=ForspaceSolutions&t=&z=13&ie=UTF8&iwloc=&output=embed"
       frameborder="0"
       scrolling="yes"
       marginheight="0"
