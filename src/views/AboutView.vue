@@ -5,6 +5,7 @@
   <AboutReserv />
   <SideIcons />
   <AboutNums />
+  <AboutMap />
 </template>
 <script>
 import AboutVue from "@/components/AboutView/About.vue";
@@ -13,6 +14,7 @@ import AboutReserv from "@/components/AboutView/AboutReserv.vue";
 import AboutTeam from "@/components/AboutView/AboutTeam.vue";
 import SideIcons from "@/components/AboutView/SideIcons.vue";
 import AboutNums from "@/components/AboutView/AboutNums.vue";
+import AboutMap from "@/components/AboutView/AboutMap.vue";
 
 export default {
   components: {
@@ -22,6 +24,7 @@ export default {
     AboutReserv,
     SideIcons,
     AboutNums,
+    AboutMap,
   },
 };
 </script>
