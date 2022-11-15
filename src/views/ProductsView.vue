@@ -13,15 +13,11 @@
     </div>
   </div>
   <div class="content">
-    <<<<<<< HEAD
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
     </router-view>
-    =======
-    <router-view></router-view>
-    >>>>>>> 5c35d5c (faswffdsfaf)
   </div>
 </template>
 <script>
@@ -75,6 +71,7 @@ a {
   transform: translate(0%, 70%);
   margin-bottom: 2rem;
   box-shadow: rgba(63, 73, 73, 0.45) 0px 5px 15px;
+  box-shadow: rgba(199, 199, 199, 0.45) 0px 5px 15px;
 }
 @media only screen and (max-width: 600px) {
   .items {

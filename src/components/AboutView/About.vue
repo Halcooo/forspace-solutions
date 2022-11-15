@@ -1,11 +1,31 @@
 <template>
   <div class="about-nav">
     <div class="about-heading">
-      <div>
-        <h1>{{ $t("about_us_heading") }}</h1>
-        <small>
-          {{ $t("about_us_additional_paragraph") }}
-        </small>
+      <div style="display: flex; justify-content: center; align-items: center">
+        <div>
+          <div
+            style="display: flex; justify-content: center; align-items: center"
+          >
+            <div style="position: relative">
+              <h1>{{ $t("about_us_heading") }}</h1>
+              <p
+                style="
+                  width: 100%;
+                  padding: 2px;
+                  border-radius: 50px;
+                  background-color: rgb(0, 156, 161);
+                  position: absolute;
+                  bottom: 0;
+                  z-index: -1;
+                  transform: translate(0px, 2px) rotate(-2deg);
+                "
+              ></p>
+            </div>
+          </div>
+          <small>
+            {{ $t("about_us_additional_paragraph") }}
+          </small>
+        </div>
       </div>
     </div>
     <div class="about-flex-grid">
@@ -72,7 +92,7 @@ export default {
     color: white;
   }
   .about-heading {
-    text-align: center;
+    // text-align: center;
   }
   .about-flex-grid {
     width: 60%;

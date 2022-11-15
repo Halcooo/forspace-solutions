@@ -10,7 +10,7 @@
     </router-link>
   </li>
 
-  <li>
+  <li style="display: inline-block">
     <div
       class="sidenav"
       @mouseover="

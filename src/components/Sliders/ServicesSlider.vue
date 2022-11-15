@@ -3,7 +3,12 @@
   <Carousel :wrap-around="true" :items-to-show="1" v-model="currentSlide">
     <Slide v-for="slide in images" :key="slide.id">
       <div class="carousel__item">
-        <h1>{{ slide.name }}</h1>
+        <div>
+          <h1>{{ slide.name }}</h1>
+          <p>
+            Našim klijentima je na raspolaganju stručnost našeg tima u razvoju
+          </p>
+        </div>
         <img
           @mousedown="pressedMouse = true"
           @mouseup="pressedMouse = false"
@@ -41,30 +46,29 @@ export default {
     };
   },
   watch: {
-    currentSlide:function (val) {
-     this.setCurrentSlide(val)
+    currentSlide: function (val) {
+      this.setCurrentSlide(val);
     },
-
-    },
+  },
   methods: {
     setCurrentSlide(id) {
       this.$store.commit("setCurrentSlide", id);
     },
   },
-  mounted(){
-    this. setCurrentSlide(this.currentSlide)
-  }
+  mounted() {
+    this.setCurrentSlide(this.currentSlide);
+  },
 };
 </script>
 <style lang="scss" scoped>
 h1 {
-  padding: 7px;
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  background-color: rgba(255, 253, 253, 0.8);
-  border-radius: 5px;
-  box-shadow: rgba(255, 253, 253, 1) 0px 40px 100px 4px;
+  // padding: 7px;
+  font-size: 100px;
+  color: white;
+  margin-bottom: 5%;
+  // background-color: rgba(255, 253, 253, 0.8);
+  // border-radius: 5px;
+  // box-shadow: rgba(255, 253, 253, 1) 0px 40px 100px 4px;
 }
 .carousel__pagination {
   z-index: 21;
@@ -72,6 +76,7 @@ h1 {
   bottom: 5%;
   width: 100%;
   border-radius: 50%;
+
   li {
     background-color: white !important;
     button {
@@ -80,7 +85,7 @@ h1 {
   }
 }
 .wrapper {
-  height: 70vh;
+  height: 50vh;
 }
 .grabbed {
   cursor: grabbing !important;
@@ -91,8 +96,16 @@ h1 {
   color: white;
   font-size: 20px;
   border-radius: 8px;
-  display: flex;
 
+  div {
+    width: 40%;
+    position: absolute;
+    text-align: left;
+    transform: translate(20%, 70%);
+    top: 0;
+    left: 0;
+    font-size: 55px;
+  }
   img {
     background-size: contain;
     object-fit: cover;

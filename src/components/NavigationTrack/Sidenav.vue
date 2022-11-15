@@ -140,7 +140,7 @@ export default {
     animation: toLeft 0.2s forwards;
   }
   .nav-links-vertical {
-    width: 100%;
+    // width: 100%;
     display: flex;
     flex-direction: column;
     line-height: 4rem;
