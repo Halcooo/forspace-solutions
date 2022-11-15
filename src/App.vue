@@ -81,6 +81,6 @@ h1 {
 }
 .carousel__pagination-button:hover::after,
 .carousel__pagination-button--active::after {
-  background-color: #0b4383!important;
+  background-color: #0b4383 !important;
 }
 </style>
