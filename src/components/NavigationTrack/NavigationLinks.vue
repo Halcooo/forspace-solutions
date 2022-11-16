@@ -46,13 +46,6 @@ export default {
     },
   },
   methods: {
-    show() {
-      if (this.drop) {
-        this.drop = false;
-      } else {
-        this.drop = true;
-      }
-    },
     giveindex(index) {
       this.$emit("index", index);
     },
@@ -132,6 +125,9 @@ li {
     &:hover {
       cursor: pointer;
     }
+  }
+  .sidenav_r {
+    color: white;
   }
 
   .router-link-active {

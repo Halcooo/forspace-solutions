@@ -38,12 +38,11 @@ export default {
 @import "@/styles/variables.scss";
 .about_map {
   width: 100%;
-  //   height: 30vh;
   background-color: rgb(43, 43, 43);
-  //   background: url("@/assets/images/pins.jpg") no-repeat center center/cover;
   display: flex;
   padding: 50px 50px;
   justify-content: center;
+
   align-items: center;
   margin-top: 5%;
 
@@ -77,6 +76,18 @@ export default {
     font-size: 25px;
     &:hover {
       border: 2px solid rgb(255, 97, 0);
+    }
+  }
+  @media screen and (max-width: 567px) {
+    .inner {
+      h1 {
+        font-size: 40px;
+      }
+      width: 90%;
+      flex-direction: column;
+    }
+    .button {
+      margin-top: 5%;
     }
   }
 }

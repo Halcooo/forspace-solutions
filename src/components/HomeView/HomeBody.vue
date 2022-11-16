@@ -1,30 +1,30 @@
 @author Halid Lihovac
 <template>
-  <div class="body container text-center">
+  <div class="body text-center mt-5 pt-5">
     <h1>Posao iz jednog izvora</h1>
     <p>
       Iskoristite Forspace potpuno integrisano all-in-one rješenje za
       <br />
       standardizaciju i digitalizaciju poslovnih procesa u Vašoj kompaniji.
     </p>
-    <div class="items container text-center m-5">
-      <div class="row">
-        <div class="col-sm item">
+    <div class="items container text-center m-auto mb-5 mt-5">
+      <div class="row gap-2">
+        <div class="col-sm item bg-light p-5">
           <img src="@/assets/images/companies.png" alt="companies" />
           <h4>Vaša kompanija pod jednim krovom</h4>
           <p>Centralno upravljanje procesima.</p>
         </div>
-        <div class="item col-sm">
+        <div class="item col-sm bg-light p-5">
           <img src="@/assets/images/cloud.png" alt="cloud" />
           <h4>Vaša kompanija pod jednim krovom</h4>
           <p>Centralno upravljanje procesima.</p>
         </div>
-        <div class="item col-sm">
+        <div class="item col-sm bg-light p-5">
           <img src="@/assets/images/config.png" alt="config" />
           <h4>Vaša kompanija pod jednim krovom</h4>
           <p>Centralno upravljanje procesima.</p>
         </div>
-        <div class="item col-sm">
+        <div class="item col-sm bg-light p-5">
           <img src="@/assets/images/circle.png" alt="circle" />
           <h4>Vaša kompanija pod jednim krovom</h4>
           <p>Centralno upravljanje procesima.</p>
@@ -32,8 +32,8 @@
       </div>
     </div>
   </div>
-  <div class="cube-background">
-    <svg
+  <div class="cube-background mb-5 pb-5">
+    <!-- <svg
       id="wave"
       class="svg2"
       style="transform: rotate(0deg); transition: 0.3s"
@@ -55,8 +55,8 @@
         fill="url(#sw-gradient-0)"
         d="M0,54L80,81C160,108,320,162,480,166.5C640,171,800,126,960,99C1120,72,1280,63,1440,85.5C1600,108,1760,162,1920,171C2080,180,2240,144,2400,135C2560,126,2720,144,2880,162C3040,180,3200,198,3360,207C3520,216,3680,216,3840,207C4000,198,4160,180,4320,153C4480,126,4640,90,4800,76.5C4960,63,5120,72,5280,63C5440,54,5600,27,5760,13.5C5920,0,6080,0,6240,40.5C6400,81,6560,162,6720,184.5C6880,207,7040,171,7200,144C7360,117,7520,99,7680,117C7840,135,8000,189,8160,202.5C8320,216,8480,189,8640,148.5C8800,108,8960,54,9120,58.5C9280,63,9440,126,9600,162C9760,198,9920,207,10080,189C10240,171,10400,126,10560,117C10720,108,10880,135,11040,121.5C11200,108,11360,54,11440,27L11520,0L11520,270L11440,270C11360,270,11200,270,11040,270C10880,270,10720,270,10560,270C10400,270,10240,270,10080,270C9920,270,9760,270,9600,270C9440,270,9280,270,9120,270C8960,270,8800,270,8640,270C8480,270,8320,270,8160,270C8000,270,7840,270,7680,270C7520,270,7360,270,7200,270C7040,270,6880,270,6720,270C6560,270,6400,270,6240,270C6080,270,5920,270,5760,270C5600,270,5440,270,5280,270C5120,270,4960,270,4800,270C4640,270,4480,270,4320,270C4160,270,4000,270,3840,270C3680,270,3520,270,3360,270C3200,270,3040,270,2880,270C2720,270,2560,270,2400,270C2240,270,2080,270,1920,270C1760,270,1600,270,1440,270C1280,270,1120,270,960,270C800,270,640,270,480,270C320,270,160,270,80,270L0,270Z"
       ></path>
-    </svg>
-    <div class="erp-text text-center mt-5">
+    </svg> -->
+    <div class="erp-text text-center">
       <h1 class="erp-main-text mt-5">Forspace ERP & Računovodstvo +</h1>
       <p class="erp-secondary-text">
         Odluke zasnovane na činjenicama, a ne na pretpostavkama!
@@ -65,7 +65,7 @@
     <img src="@/assets/images/kocka_.png" alt="cube" />
   </div>
   <!-- <div class="dir-container m-5"></div> -->
-  <div class="container text-center mt-5 mb-5">
+  <div class="container text-center mt-5 mb-5 pt-5">
     <h1>Kompanije koje su već optimizirale svoje procese sa Forspace</h1>
 
     <BaseSlider :images="images" />
@@ -193,18 +193,15 @@ img {
   // margin-top: 90px;
 }
 .cube-background {
-  // background-image: url("@/assets/images/bg-pattern-1.png");
   background-color: $navy;
-  // padding: 20px;
   display: flex;
   flex-direction: column;
-  height: 60vh;
   position: relative;
   z-index: 1;
   padding: 20px;
   img {
-    width: 400px;
-    height: 400px;
+    width: 550px;
+    height: 550px;
   }
 
   svg {
@@ -223,10 +220,10 @@ img {
   }
 }
 .body {
-  margin-top: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  padding: 20px;
+  // margin-top: 30px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // width: 90%;
+  // padding: 20px;
 }
 </style>

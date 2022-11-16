@@ -82,7 +82,7 @@ h1 {
 .carousel__pagination-button::after {
   display: block;
   content: "";
-  border: 1px solid $navy !important;
+  border: 1px solid white !important;
   width: 12px !important;
   height: 12px !important;
   border-radius: 50% !important;
@@ -90,11 +90,7 @@ h1 {
 }
 .carousel__pagination-button:hover::after,
 .carousel__pagination-button--active::after {
-  background-color: $navy !important;
-  // width: 20px !important;
-  // height: 8px !important;
-  // border-radius: 50px !important;
-  // transform: translate(0%, 20%);
+  background-color: white !important;
 }
 
 .cookie {

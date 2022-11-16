@@ -1,9 +1,7 @@
 @author Halid Lihovac
 <template lang="">
-  <div class="arrow-wrap" v-if="show"      @click="handleScroll">
-    <font-awesome-icon
-      icon="fa-solid fa-arrow-up"
-    />
+  <div class="arrow-wrap" v-if="show" @click="handleScroll">
+    <font-awesome-icon icon="fa-solid fa-arrow-up" />
   </div>
 </template>
 <script>
@@ -19,7 +17,6 @@ export default {
     window.onscroll = this.followScroll;
   },
   methods: {
-
     followScroll() {
       let currentScrollPosition = window.scrollY;
       if (currentScrollPosition > this.scrollPosition) {
@@ -48,7 +45,7 @@ export default {
 div {
   position: fixed;
   right: 30px;
-  bottom: 30px;
+  bottom: 100px;
   z-index: 20;
   &:hover {
     cursor: pointer;

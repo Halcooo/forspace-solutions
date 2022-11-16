@@ -1,5 +1,5 @@
 <template>
-  <div class="the_next" id="2">
+  <div class="the_next">
     <div class="the_next_heading">
       <h1>{{ $t("about_us_next_heading") }}</h1>
       <h3>{{ $t("about_us_next_additional_paragraph") }}</h3>
@@ -51,16 +51,18 @@ export default {
 
   .the_next_content {
     width: 55%;
-    margin: 7% auto;
+    margin: 10% auto;
 
     height: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+
     .item_one {
       width: 100%;
       height: 100%;
+      margin-bottom: 20%;
       background: url("@/assets/images/product_item_1.jpg") no-repeat center
         center/cover;
       position: relative;
@@ -93,6 +95,22 @@ export default {
         bottom: 0;
         right: 0;
       }
+    }
+  }
+  @media screen and (max-width: 567px) {
+    height: 100%;
+
+    .the_next_content {
+      width: 90%;
+      flex-direction: column;
+      height: 550px;
+      .overlay {
+        height: 23vh;
+      }
+    }
+    .item_one,
+    .item_two {
+      width: 90%;
     }
   }
 }

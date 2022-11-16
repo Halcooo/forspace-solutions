@@ -47,13 +47,13 @@ export default {
   height: 80vh;
   background: linear-gradient(
       to top,
-      rgba(60, 138, 255, 0.9),
+      #3c8affe6,
       rgba(31, 165, 255, 0.9),
       hwb(216 63% 0% / 0.9)
     ),
     url("@/assets/images/forspace_info_2.jpg") no-repeat center center/cover;
 
-  border-bottom: 6px solid $lightgreen;
+  // border-bottom: 6px solid $lightgreen;
   animation: backgroundFade 0.5s ease-in;
   .background {
     width: 700px;

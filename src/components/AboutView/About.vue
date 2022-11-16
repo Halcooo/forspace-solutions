@@ -100,6 +100,7 @@ export default {
     margin-top: 2%;
     margin-bottom: 5%;
     border-radius: 5px;
+
     .flex-first {
       width: 45%;
       height: 100%;
@@ -133,6 +134,7 @@ export default {
         color: white;
       }
     }
+
     .flex-second {
       width: 60%;
       display: grid;
@@ -154,6 +156,7 @@ export default {
         justify-content: center;
         align-items: center;
       }
+
       .card-1 {
         background: linear-gradient(
             to right,
@@ -191,6 +194,26 @@ export default {
           ),
           url("@/assets/images/forspace_info_2.jpg") no-repeat center
             center/cover;
+      }
+    }
+    @media screen and (max-width: 567px) {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      .flex-first {
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+      }
+      .flex-second {
+        width: 90%;
+        margin: auto;
+        .card-1,
+        .card-2,
+        .card-3,
+        .card-4 {
+          height: 200px;
+        }
       }
     }
   }

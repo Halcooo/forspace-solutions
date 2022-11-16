@@ -51,7 +51,9 @@ export default {
 <style lang="scss" scoped>
 .recension {
   width: 100%;
+  // height: 100vh;
   padding-top: 6%;
+
   .recension_background {
     width: 55%;
     margin: 5% auto;
@@ -71,6 +73,22 @@ export default {
   h6 {
     text-align: center;
     color: white;
+  }
+  @media screen and (max-width: 567px) {
+    padding-top: 20%;
+    margin-bottom: 5%;
+    height: 100vh;
+
+    .recension_background {
+      width: 90%;
+      // height: 100%;
+      .recension_overlay {
+        width: 95%;
+        height: 180px;
+        margin: auto;
+        transform: translate(0%, 210%);
+      }
+    }
   }
 }
 </style>
