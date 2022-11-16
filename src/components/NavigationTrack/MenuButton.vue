@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="times-head" @click="showSideNav">
+    <div class="times-head" @click="showSideNav" :class="{ navy: navy }">
       <p class="times-line"></p>
       <p class="times-line middle"></p>
       <p class="times-line"></p>
@@ -10,9 +10,23 @@
 
 <script>
 export default {
-  name: "CloseBtn",
+  name: "MenuBtn",
   props: {
     showSideNav: { type: Function },
+  },
+  data() {
+    return {
+      navy: false,
+    };
+  },
+  mounted() {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        this.navy = true;
+      } else {
+        this.navy = false;
+      }
+    });
   },
 };
 </script>
@@ -28,16 +42,18 @@ export default {
 
   justify-content: center;
   align-items: center;
+
   &:hover {
     cursor: pointer;
   }
   border-radius: 50%;
+
   .times-line {
     width: 80%;
 
     margin: 4px auto;
 
-    background-color: $navy;
+    background-color: white;
     padding: 1px 4px;
     transition: all 0.5s;
   }
@@ -48,5 +64,12 @@ export default {
     margin-left: auto;
     margin-right: 5px;
   }
+}
+.navy {
+  .times-line {
+    // background-color: $navy;
+  }
+  border: 1px solid $navy;
+  // background-color: $navy;
 }
 </style>

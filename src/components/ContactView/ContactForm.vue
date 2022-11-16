@@ -186,7 +186,7 @@ export default {
     left: 0;
     transform-origin: 0% 100%;
     color: #ffffff;
-    transform: translate(7px, 24px);
+    transform: translate(7px, 20px);
 
     transition: transform 0.2s ease-out, color 0.2s ease-out;
   }
@@ -216,7 +216,7 @@ export default {
       background: rgba(153, 153, 153, 0.552);
       width: 100%;
       margin: 10px 0px 20px 0px;
-      padding: 15px 2px 22px 2px;
+      padding: 10px 2px 10px 2px;
       border: none;
       border-radius: 2px;
 

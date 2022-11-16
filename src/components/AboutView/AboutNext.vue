@@ -41,6 +41,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 .the_next {
   width: 100%;
 
@@ -78,7 +79,7 @@ export default {
       width: 90%;
       margin: auto;
       height: 18vh;
-      background-color: rgba(134, 134, 134, 0.74);
+      background-color: rgb(51, 51, 51);
       transform: translate(6%, 50%);
       padding: 20px;
       h3,
@@ -87,7 +88,7 @@ export default {
       }
       .read-more {
         padding: 10px 20px;
-        background-color: gray;
+        background-color: rgb(255, 255, 255);
         position: absolute;
         bottom: 0;
         right: 0;

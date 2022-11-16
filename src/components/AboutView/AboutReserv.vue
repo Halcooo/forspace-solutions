@@ -52,7 +52,7 @@ export default {};
       align-items: center;
       width: 300px;
       height: 70px;
-      border-radius: 2px;
+      border-radius: 50px;
       margin-left: auto;
       margin-right: 10%;
       font-size: 30px;

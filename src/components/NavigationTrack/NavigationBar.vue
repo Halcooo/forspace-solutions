@@ -1,6 +1,6 @@
 @author Halid Lihovac
 <template>
-  <div class="nav-wrapper">
+  <div class="nav-wrapper" :class="{ white_wrapper: white_wrapper }">
     <div class="nav-wrapper-flex">
       <div class="logo">
         <router-link to="/">
@@ -48,9 +48,10 @@
             </div>
           </div>
         </ul>
-
-        <CloseBtn :showSideNav="showSideNav" />
-        <Sidenav :showSideNav="showSideNav" :routes="routes" />
+        <div class="group">
+          <MenuButton :showSideNav="showSideNav" />
+          <Sidenav :showSideNav="showSideNav" :routes="routes" />
+        </div>
       </div>
     </div>
   </div>
@@ -59,14 +60,17 @@
 import Links from "@/components/NavigationTrack/NavigationLinks.vue";
 import { mapMutations, mapGetters } from "vuex";
 
-import CloseBtn from "./CloseButton.vue";
 import Sidenav from "../../components/NavigationTrack/Sidenav.vue";
+import BaseButton from "../Forms/buttons/BaseButton.vue";
+import MenuButton from "./MenuButton.vue";
 export default {
   name: "Nav",
 
-  components: { Links, CloseBtn, Sidenav },
+  components: { Links, Sidenav, BaseButton, MenuButton },
   data() {
     return {
+      white_wrapper: false,
+      mobile: false,
       routes: [
         {
           to: "/",
@@ -134,7 +138,16 @@ export default {
       });
     },
   },
-  mounted() {},
+  mounted() {
+    window.addEventListener("scroll", (e) => {
+      console.log(window.scrollY);
+      if (window.scrollY > 200) {
+        this.white_wrapper = true;
+      } else {
+        this.white_wrapper = false;
+      }
+    });
+  },
 };
 </script>
 <style lang="scss">
@@ -142,26 +155,48 @@ export default {
 
 .nav-wrapper {
   position: fixed;
+
   z-index: 2;
   margin: 0;
-  padding: 20px;
-  width: 100%;
-  background-color: white;
+  // padding: 20px;
 
+  width: 100%;
+  .logo {
+    width: 20%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
   .nav-wrapper-flex {
     display: flex;
-    width: 100%;
+    width: 70%;
+    margin: auto;
     justify-content: space-between;
     align-items: center;
+    padding: 30px 20px 20px 20px;
   }
+  @media screen and (max-width: 567px) {
+    .nav-wrapper {
+      background-color: rgba(255, 255, 255, 0.349);
+    }
+
+    .nav-links {
+      display: none;
+    }
+    .nav-wrapper-flex {
+      padding: 10px;
+      width: 100%;
+    }
+    .logo {
+      width: 30%;
+    }
+  }
+}
+.white_wrapper {
+  background-color: white;
+  top: 0%;
 }
 
-.logo {
-  width: 12%;
-  &:hover {
-    cursor: pointer;
-  }
-}
 .navigation {
   display: flex;
   justify-content: center;
@@ -177,7 +212,8 @@ export default {
 
       a {
         padding: 10px 20px;
-        color: rgb(54, 54, 54);
+        color: white;
+
         &:hover {
           background-color: rgb(230, 230, 230);
         }
@@ -191,8 +227,8 @@ export default {
       grid-template-columns: repeat(1, 1fr);
       width: 200px;
       transform: translate(45%, 33%);
-      background-color: rgb(255, 255, 255);
-      border: 1px solid rgb(145, 145, 145);
+      background-color: rgb(204, 204, 204);
+
       border-radius: 2px;
     }
     .second {
@@ -200,9 +236,15 @@ export default {
       grid-template-columns: repeat(2, 1fr);
 
       transform: translate(80%, 33%);
-      background-color: rgb(255, 255, 255);
-      border: 1px solid rgb(145, 145, 145);
+      background-color: rgb(204, 204, 204);
+
       border-radius: 2px;
+    }
+  }
+  .group {
+    display: none;
+    @media screen and (max-width: 567px) {
+      display: block;
     }
   }
 }
@@ -215,12 +257,31 @@ export default {
   margin: 0;
 }
 
-@media screen and (max-width: 567px) {
-  .logo {
-    width: 40%;
+.button {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 10px 20px;
+  border-radius: 2px;
+  color: white;
+  font-size: 25px;
+  &:hover {
+    border: 2px solid rgb(0, 0, 0);
   }
-  .nav-links {
-    display: none;
+}
+
+.cookie {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: green;
+  text-align: center;
+  color: white;
+
+  @media screen and (max-width: 567px) {
+    font-size: 12px;
+    // padding: 0px 5px;
+    height: 50px;
   }
 }
 </style>

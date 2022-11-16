@@ -7,7 +7,7 @@
           position: absolute;
           bottom: 2%;
           left: 10%;
-          color: white;
+          color: rgba(255, 255, 255, 0.6);
           font-size: 40px;
         "
       >
@@ -60,7 +60,7 @@ export default {
     background: url("@/assets/images/product_item_2.jpg") no-repeat center
       center/cover;
     .recension_overlay {
-      background-color: gray;
+      background-color: rgb(48, 48, 48);
       width: 450px;
       height: 170px;
       transform: translate(125%, 180%);

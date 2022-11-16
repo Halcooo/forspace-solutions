@@ -20,7 +20,9 @@ a {
 .product_btn {
   color: white;
   border: 2px solid rgb(255, 255, 255);
-  padding: 20px 40px;
+
+  border-radius: 50px;
+  padding: 20px 50px;
   transition: 0.3s ease-out;
 
   &:hover {

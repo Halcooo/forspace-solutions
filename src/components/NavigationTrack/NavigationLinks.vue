@@ -3,7 +3,7 @@
     <router-link
       :to="navItem.to"
       class="nav"
-      :class="{ sidenav_r: sidenav_class }"
+      :class="[{ sidenav_r: sidenav_class }, { navy: navy }]"
       @click="showSideNav"
       @mouseover="giveindex(index)"
     >
@@ -17,33 +17,6 @@
       </div>
       <div class="underline"></div>
     </router-link>
-
-    <!-- <li style="display: inline-block">
-    <div
-      class="sidenav"
-      @mouseover="
-        () => {
-          if (drop) {
-            drop = false;
-            active = false;
-          } else {
-            drop = true;
-            active = true;
-          }
-        }
-      "
-      :class="{ sidelang: sidenav_class }"
-    >
-      {{ language }} <font-awesome-icon icon="fa-solid fa-chevron-down" />
-    </div>
-    <div v-if="drop" class="dropdown">
-      <div v-for="lang in languages" @click="translatePage(lang)">
-        <div class="lang">
-          {{ lang.language }}
-        </div>
-      </div>
-    </div>
-  </li> -->
   </li>
 </template>
 
@@ -64,6 +37,7 @@ export default {
         { language: "Engleski", abr: "en" },
         { language: "Njemački", abr: "de" },
       ],
+      navy: false,
     };
   },
   computed: {
@@ -107,7 +81,13 @@ export default {
     },
   },
   mounted() {
-    console.log(this.$props);
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        this.navy = true;
+      } else {
+        this.navy = false;
+      }
+    });
   },
 };
 </script>
@@ -129,11 +109,8 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
-    // gap: 5px;
 
     .underline {
-      background-color: red;
       width: 0%;
       height: 2px;
     }
@@ -146,45 +123,15 @@ li {
       }
     }
   }
+  .navy {
+    color: $navy;
+  }
 
   .sidenav {
     font-size: 23px;
     &:hover {
       cursor: pointer;
     }
-  }
-
-  .second {
-    width: 300px;
-    height: 360px;
-    transform: translate(0%, 10%);
-  }
-  .dropdown {
-    position: absolute;
-    display: inline-block;
-    width: 200px;
-    padding: 5px;
-    transform: translate(0%, 24%);
-
-    background-color: white;
-
-    .lang {
-      width: 100%;
-      height: 100%;
-      padding: 10px 5px;
-
-      cursor: pointer;
-      // background-color: white;
-      &:hover {
-        background-color: #ccc;
-      }
-    }
-  }
-  .sidelang {
-    color: white;
-  }
-  .sidenav_r {
-    color: white;
   }
 
   .router-link-active {
