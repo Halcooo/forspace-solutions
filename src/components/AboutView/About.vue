@@ -76,6 +76,10 @@
 <script>
 export default {
   name: "AboutUs",
+  about: false,
+  mounted() {
+    console.log(window.location.pathname);
+  },
 };
 </script>
 <style lang="scss" scoped>
