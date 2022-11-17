@@ -3,18 +3,18 @@
     <div class="col-12">
       <div class="paydesk">
         <div class="paydesk white-text-main">
-          <div class="paydesk-header">
+          <div class="paydesk-header text-center">
             <h1>Blagajna</h1>
             <h4>Prijem i isplata</h4>
-            <br />
+
             <p>
               Sve što treba da upravljate vašom blagajnom tačno, transparentno i
               u skladu sa odobrenjima i budžetom.
             </p>
           </div>
-          <div class="row paydesk-items">
-            <div class="col-12">
-              <table>
+          <div class="d-flex justify-content-center paydesk-items">
+            <div class="container col-12 p-5">
+              <table class="m-auto w-100">
                 <tbody>
                   <tr>
                     <td>
@@ -85,7 +85,7 @@
 </template>
 <script>
 export default {
-    name:'TheFinancePaydesk'
+  name: "TheFinancePaydesk",
 };
 </script>
 <style lang=""></style>

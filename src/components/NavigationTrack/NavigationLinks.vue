@@ -96,7 +96,7 @@ li {
   }
 
   .nav {
-    color: $navy;
+    color: rgb(70, 70, 70);
     font-size: 20px;
 
     display: flex;
@@ -108,9 +108,9 @@ li {
       height: 2px;
     }
     &:hover {
-      color: $lightgreen;
+      color: white;
       .underline {
-        background-color: $lightgreen;
+        background-color: white;
         width: 100%;
         transition: width 0.3s ease-out;
       }

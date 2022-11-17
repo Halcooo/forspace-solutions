@@ -96,5 +96,6 @@ img {
 }
 .footer {
   background-image: url("@/assets/images/bg-pattern-2.png");
+  // background: url("@/assets/images/leaf.jpg") no-repeat center center/cover;
 }
 </style>

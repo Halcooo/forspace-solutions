@@ -1,7 +1,7 @@
 <template lang="">
-  <div class="container  purchase">
-    <div class="row purchase orange-text-main">
-      <div class="col-6">
+  <div class="container purchase">
+    <div class="purchase d-flex justify-content-center orange-text-main">
+      <div class="">
         <h1>Transparentno i tačno</h1>
         <h4>Zahtjev za budžet</h4>
         <p>
@@ -21,43 +21,34 @@
         </div>
         <img class="image-box" src="@/assets/images/planned-BH.png" alt="" />
       </div>
-      <div class="col">
+      <div class="w-100 d-flex justify-content-center">
         <img
-          width="460vw"
-          style="margin-top:4vw;-"
+          style="width: 50%"
           src="@/assets/images/COMPARISON-WITH-PREVIOUS-YEAR.png"
           alt=""
         />
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <div class="workflow-cover d-flex justify-center align-center column">
-          <div class="workflow white-text-main">
-            <h1>Raditi sa protokom ili Raditi u skladu sa tokom procesa</h1>
-            <p>Ulazni dokumenti - Koraci u toku servisiranja fakture</p>
-          </div>
-          <img
-            class="infografika"
-            src="@/assets/images/infografika-bh.png"
-            alt=""
-          />
-          <div>
-            <svg
-              viewBox="0 0 500 150"
-              preserveAspectRatio="none"
-              style="height: 100%; width: 100%"
-            >
-              <path
-                d="M-23.98,151.47 C257.62,69.56 345.08,84.38 631.20,172.20 L501.97,167.27 L-16.64,168.25 Z"
-                style="stroke: none; fill: white"
-              ></path>
-            </svg>
-          </div>
-        </div>
+
+    <div
+      class="workflow-cover d-flex justify-content-center align-items-center gap-5 p-5 mt-5 mb-5"
+    >
+      <div class="workflow text-light w-100">
+        <h1 class="text-light">
+          Raditi sa protokom ili Raditi u skladu sa tokom procesa
+        </h1>
+        <p>Ulazni dokumenti - Koraci u toku servisiranja fakture</p>
+      </div>
+      <div class="w-100">
+        <img
+          class="infografika"
+          src="@/assets/images/infografika-bh.png"
+          alt=""
+        />
       </div>
     </div>
-    <div class="fixed-assets">
+
+    <div class="fixed-assets text-center">
       <div class="fixed-assets-header orange-text-main">
         <h1>Stalna sredstva</h1>
         <p>Nabava, upotreba i amortizacija stalnih sredstava</p>
@@ -85,8 +76,15 @@ export default {
 };
 </script>
 <style lang="scss" scooped>
+@import "@/styles/variables.scss";
 .workflow-cover {
-  background-color: rgb(0, 0, 56);
-  color: white;
+  width: 100%;
+  background-color: $navy;
+  border-radius: 20px;
+}
+
+.infografika {
+  width: 100%;
+  height: 100%;
 }
 </style>

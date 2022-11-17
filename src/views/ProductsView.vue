@@ -24,8 +24,16 @@
 export default {};
 </script>
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 .wrapper {
-  background: url("@/assets/images/productscover.jpg") no-repeat center/cover;
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.295),
+      rgba(0, 0, 0, 0.274),
+      rgba(0, 0, 0, 0.247)
+    ),
+    url("@/assets/images/productscover.jpg") no-repeat center/cover;
+
   height: 40vh;
   z-index: 0;
   background-attachment: fixed;
@@ -37,6 +45,7 @@ export default {};
 .purchase {
   background: url("@/assets/images/gradient-bg.png") no-repeat center
     center/cover;
+
   display: flex;
   flex-direction: column;
   padding: 30px;
@@ -51,9 +60,9 @@ export default {};
   }
 }
 a {
-  color: #25435b;
+  color: white;
   &:hover {
-    color: black;
+    color: $lightgreen;
   }
 }
 .router-link-active {
@@ -61,12 +70,13 @@ a {
 }
 .items {
   width: 90%;
-  background: url("@/assets/images/gradient-bg.png") no-repeat center
-    center/cover;
+  // background: url("@/assets/images/gradient-bg.png") no-repeat center
+  //   center/cover;
+  background-color: $navy;
   display: flex;
   padding: 30px;
   justify-content: space-between;
-  background-color: azure;
+
   border-radius: 2px;
   transform: translate(0%, 70%);
   margin-bottom: 2rem;
@@ -78,11 +88,10 @@ a {
     flex-direction: column;
     width: 100%;
     transform: translate(0px, 0px);
-    background: azure;
   }
   a {
     text-align: center;
-    border-bottom: 1px solid #25435b;
+    border-bottom: 1px solid white;
     padding: 2px;
   }
 }

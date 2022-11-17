@@ -1,11 +1,11 @@
 <template lang="">
-  <div class="col-12">
-    <div class="bank-statment orange-text-main">
+  <div class="col-12 mt-5">
+    <div class="bank-statment orange-text-main mt-5">
       <h1 class="text-center">Bankovni izvodi</h1>
       <h4 class="text-center">Automatska obrada i knjiženje</h4>
     </div>
     <div class="row bank-statment-items orange-text-main">
-      <div class="col-lg-12 col-sm-12">
+      <div class="col-lg-12 col-sm-12 mt-5">
         <table>
           <tbody>
             <tr>
@@ -107,7 +107,7 @@
 </template>
 <script>
 export default {
-    name:'TheFinanceBankStatement'
+  name: "TheFinanceBankStatement",
 };
 </script>
 <style lang="scss"></style>

@@ -38,7 +38,8 @@ export default {
 @import "@/styles/variables.scss";
 .about_map {
   width: 100%;
-  background-color: rgb(43, 43, 43);
+  // background-color: rgb(43, 43, 43);
+  background: url("@/assets/images/leaf.jpg") no-repeat center center/cover;
   display: flex;
   padding: 50px 50px;
   justify-content: center;
