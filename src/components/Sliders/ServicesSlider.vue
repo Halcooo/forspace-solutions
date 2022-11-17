@@ -6,9 +6,7 @@
         <div class="overlay">
           <div>
             <h1>{{ slide.name }}</h1>
-            <p>
-              Našim klijentima je na raspolaganju stručnost našeg tima u razvoju
-            </p>
+            <p>{{ slide.text }}</p>
           </div>
         </div>
 
@@ -109,13 +107,18 @@ h1 {
     top: 0;
     left: 0;
     div {
-      width: 40%;
+      width: 100%;
+      margin: auto;
       position: absolute;
-      text-align: left;
-      transform: translate(20%, 70%);
-      top: 0;
-      left: 0;
+      text-align: center;
+      // transform: translate(20%, 20%);
+      top: 20%;
       font-size: 55px;
+      p {
+        font-size: 30px;
+        width: 50%;
+        margin: auto;
+      }
     }
   }
   img {

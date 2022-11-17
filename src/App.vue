@@ -1,13 +1,13 @@
 //@author Halid Lihovac
 <template>
-  <div class="cookie">
+  <!-- <div class="cookie">
     <div class="cookie-flex">
       <a href="" style="color: white; width: 100%; text-decoration: underline"
         >Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum
         dolor sit amet. Lorem ipsum dolor sit.
       </a>
     </div>
-  </div>
+  </div> -->
   <NavigationBar />
   <router-view />
   <BaseScrollToTop />

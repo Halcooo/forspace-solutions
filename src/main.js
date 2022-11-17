@@ -17,6 +17,9 @@ import {
   faChevronDown,
   faArrowUp,
   faArrowDown,
+  faDesktop,
+  faMobile,
+  faServer,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
@@ -42,7 +45,10 @@ library.add(
   faChevronDown,
   faJava,
   faVuejs,
-  faReact
+  faReact,
+  faDesktop,
+  faMobile,
+  faServer
 );
 
 createApp(App)

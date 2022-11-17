@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container-xl  d-flex purchase" >
+  <div class="container-xl d-flex purchase">
     <h1>Nabava</h1>
     <p>
       Forspace modul nabave vam omogućava jednostavnu narudžbu svega što vam
@@ -10,7 +10,7 @@
       strane odgovorne osobe, kako proces ne bi bio u zastoju). Dozvoljava
       višestuko odobravanje predefinisanih osoba.
     </p>
-    <img src="@/assets/images/nabava_animacija.gif" alt=""/>
+    <img src="@/assets/images/nabava_animacija.gif" alt="" />
   </div>
 </template>
 <script>
@@ -19,7 +19,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
- .purchase{
+.purchase {
   background: url("@/assets/images/gradient-bg.png") no-repeat center
     center/cover;
   display: flex;
@@ -28,5 +28,5 @@ export default {
   background-color: azure;
   border-radius: 2px;
   margin-bottom: 2rem;
- }
+}
 </style>
