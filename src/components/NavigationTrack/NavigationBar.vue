@@ -1,8 +1,18 @@
 @author Halid Lihovac
 <template>
   <div class="nav-wrapper" :class="{ white_wrapper: white_wrapper }">
-    <div class="nav-wrapper-flex">
-      <div class="logo">
+    <div class="nav-wrapper-flex" style="position: relative">
+      <div class="logo" :class="{ none: none }">
+        <router-link to="/">
+          <!-- <img
+            src="../../assets/images/logo-background.png"
+            class="logo-back"
+            alt=""
+            style="" /> -->
+          <img alt="Forspace Solutions" src="@/assets/svg/logo_white.svg"
+        /></router-link>
+      </div>
+      <div class="logo" v-if="white_wrapper" :class="{ mobile: white_wrapper }">
         <router-link to="/">
           <img alt="Forspace Solutions" src="@/assets/svg/logo.svg"
         /></router-link>
@@ -17,34 +27,56 @@
               class="dropnav"
               :class="{ first: drop.active }"
             >
-              <router-link to="/about">Novosti</router-link>
-
-              <router-link to="/about">Pregled</router-link>
-
-              <router-link to="/about">Nas tim</router-link>
-
-              <router-link to="/about">Rezervisi</router-link>
+              <div>
+                <h4>Trenutno aktuelno</h4>
+                <div v-for="link in nav_one">
+                  <NavLink :to="link.route" :name="link.name" />
+                </div>
+              </div>
+              <div>
+                <h4>Teme i Vijesti</h4>
+                <div v-for="link in nav_two">
+                  <NavLink :to="link.route" :name="link.name" />
+                </div>
+              </div>
+              <div class="third">
+                <div class="nav-img mb-4"></div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Dolores animi molestiae consequatur doloremque, aspernatur
+                  commodi.
+                </p>
+                <div class="nav_btn mt-3">
+                  <BaseButton :to="route.route" :name="route.name" />
+                </div>
+                <!-- <BaseButton :to="true" :name="true" /> -->
+              </div>
             </div>
             <div
               v-if="drop.id == 2"
               class="dropnav"
               :class="{ second: drop.active }"
             >
-              <router-link to="/products/purchase">Nabava</router-link>
-
-              <router-link to="/products/sales">Prodaja</router-link>
-
-              <router-link to="/products/production">Proizvodnja</router-link>
-
-              <router-link to="/products/warehouse">Skladiste</router-link>
-
-              <router-link to="/products/dms">DMS</router-link>
-
-              <router-link to="/products/finance">Finansije</router-link>
-
-              <router-link to="/products/human-resources"
-                >HR i place</router-link
-              >
+              <div class="grid">
+                <div v-for="product in products" class="dropnav_item">
+                  <div
+                    style="
+                      width: 40px;
+                      padding: 2px;
+                      border: 1px solid rgb(255, 98, 0);
+                    "
+                  ></div>
+                  <!-- <img src="../../assets/images/icon-orange.png" alt="" /> -->
+                  <router-link :to="product.to">
+                    <div>
+                      <h4>
+                        {{ product.heading }}
+                      </h4>
+                      <small>{{ product.p }}</small>
+                    </div>
+                  </router-link>
+                </div>
+              </div>
             </div>
           </div>
         </ul>
@@ -63,14 +95,75 @@ import { mapMutations, mapGetters } from "vuex";
 import Sidenav from "../../components/NavigationTrack/Sidenav.vue";
 import BaseButton from "../Forms/buttons/BaseButton.vue";
 import MenuButton from "./MenuButton.vue";
+import NavLink from "./NavLinks/NavLink.vue";
 export default {
   name: "Nav",
 
-  components: { Links, Sidenav, BaseButton, MenuButton },
+  components: { Links, Sidenav, BaseButton, MenuButton, NavLink },
   data() {
     return {
+      route: { route: "/contact", name: "about_presentation" },
       white_wrapper: false,
       mobile: false,
+      none: false,
+      navy: false,
+      nav_one: [
+        { route: "/about", name: "Novosti" },
+        { route: "/preview", name: "Pregled" },
+        { route: "/team", name: "Nas tim" },
+        { route: "/reserve", name: "Rezervisi" },
+      ],
+      nav_two: [
+        { route: "/dms", name: "Zašto kompanije trebaju DMS?" },
+        { route: "/preview", name: "ERP sistem baziran na web-u" },
+        { route: "/team", name: "API integracija" },
+        { route: "/reserve", name: "Digitalizacija" },
+        {
+          route: "/reserve",
+          name: "Kako ERP sistem moze pomoci malom biznisu da raste ?",
+        },
+        {
+          route: "/reserve",
+          name: "Znakovi da je Vašem poslovanju potrebno naprednije softversko rješenje",
+        },
+      ],
+      products: [
+        {
+          to: "/products/purchase",
+          heading: "Nabava",
+          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          to: "/products/sales",
+          heading: "Prodaja",
+          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          to: "/products/production",
+          heading: "Proizvodnja",
+          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          to: "/products/warehouse",
+          heading: "Skladiste",
+          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          to: "/products/dms",
+          heading: "DMS",
+          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          to: "/products/finance",
+          heading: "Finansije",
+          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+        {
+          to: "/products/human-resources",
+          heading: "HR i place",
+          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+        },
+      ],
       routes: [
         {
           to: "/",
@@ -141,10 +234,16 @@ export default {
   mounted() {
     window.addEventListener("scroll", (e) => {
       console.log(window.scrollY);
-      if (window.scrollY > 200) {
+      if (window.scrollY > 30) {
         this.white_wrapper = true;
+        this.mobile = true;
+        this.none = true;
+        this.navy = true;
       } else {
         this.white_wrapper = false;
+        this.mobile = false;
+        this.none = false;
+        this.navy = false;
       }
     });
   },
@@ -162,6 +261,13 @@ export default {
 
   width: 100%;
   .logo {
+    // position: absolute;
+    .logo-back {
+      position: absolute;
+      top: 0%;
+      left: -5%;
+      z-index: -1;
+    }
     width: 20%;
     &:hover {
       cursor: pointer;
@@ -173,7 +279,7 @@ export default {
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 20px 20px 20px;
+    padding: 40px 20px 20px 20px;
   }
   @media screen and (max-width: 567px) {
     .nav-wrapper {
@@ -184,7 +290,7 @@ export default {
       display: none;
     }
     .nav-wrapper-flex {
-      padding: 10px;
+      padding: 0px 10px;
       width: 100%;
     }
     .logo {
@@ -192,9 +298,23 @@ export default {
     }
   }
 }
-.white_wrapper {
-  background-color: white;
-  top: 0%;
+.third {
+  background-color: rgb(240, 240, 240);
+  border-radius: 10px;
+}
+.nav-img {
+  width: 100%;
+  height: 45%;
+  border-radius: 10px;
+  background: url("@/assets/images/forspace_info_2.jpg") no-repeat center
+    center/cover;
+}
+.nav-img_2 {
+  width: 100%;
+  height: 45%;
+  border-radius: 10px;
+  background: url("@/assets/images/product_item_2.jpg") no-repeat center
+    center/cover;
 }
 
 .navigation {
@@ -212,33 +332,82 @@ export default {
 
       a {
         padding: 10px 20px;
-        color: white;
-
-        &:hover {
-          background-color: rgb(230, 230, 230);
-        }
-      }
-      .router-link-active {
-        color: $lightgreen;
+        color: black;
       }
     }
     .first {
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      width: 200px;
-      transform: translate(45%, 33%);
-      background-color: rgb(204, 204, 204);
+      display: flex;
+      // grid-template-columns: repeat(1, 1fr);
+      width: 900px;
+      height: 400px;
+      transform: translate(-20%, 10%);
+      background-color: rgb(255, 255, 255);
 
       border-radius: 2px;
+      h4 {
+        padding-left: 20px;
+      }
+      a {
+        display: block;
+        color: rgb(95, 95, 95);
+      }
+      > div {
+        padding: 5px;
+
+        width: 100%;
+      }
+
+      .nav_btn {
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        width: 100%;
+
+        a {
+          padding: 20px 40px;
+          color: white;
+        }
+      }
     }
     .second {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-
-      transform: translate(80%, 33%);
-      background-color: rgb(204, 204, 204);
-
+      display: flex;
+      justify-content: center;
+      width: 900px;
+      // height: 400px;
+      transform: translate(-20%, 10%);
+      background-color: rgb(255, 255, 255);
       border-radius: 2px;
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+      }
+
+      .dropnav_item {
+        border-radius: 5px;
+
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s ease-out;
+        // padding: 5px;
+        small {
+          display: block;
+          width: 100%;
+          word-break: break-all;
+        }
+        &:hover {
+          background-color: rgb(236, 236, 236);
+          cursor: pointer;
+        }
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 5px;
+        }
+      }
     }
   }
   .group {
@@ -248,6 +417,7 @@ export default {
     }
   }
 }
+
 .nav-links {
   display: flex;
   width: 100%;
@@ -283,5 +453,22 @@ export default {
     // padding: 0px 5px;
     height: 50px;
   }
+}
+
+.none {
+  display: none;
+}
+.mobile {
+  a {
+  }
+  display: block;
+}
+
+.white_wrapper {
+  background-color: white;
+  .router-link {
+    color: $navy;
+  }
+  top: 0%;
 }
 </style>

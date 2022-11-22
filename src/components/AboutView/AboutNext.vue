@@ -51,7 +51,7 @@ export default {
 
   .the_next_content {
     width: 55%;
-    margin: 10% auto;
+    margin: 5% auto;
 
     height: 370px;
     display: flex;
@@ -62,7 +62,7 @@ export default {
     .item_one {
       width: 100%;
       height: 100%;
-      margin-bottom: 20%;
+
       background: url("@/assets/images/product_item_1.jpg") no-repeat center
         center/cover;
       position: relative;

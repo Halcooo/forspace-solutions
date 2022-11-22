@@ -1,5 +1,5 @@
 <template>
-  <div class="about-nav" id="1">
+  <div class="about-nav">
     <div class="about-heading">
       <div style="display: flex; justify-content: center; align-items: center">
         <div>
@@ -7,22 +7,10 @@
             style="display: flex; justify-content: center; align-items: center"
           >
             <div style="position: relative">
-              <h1>{{ $t("about_us_heading") }}</h1>
-              <p
-                style="
-                  width: 100%;
-                  padding: 2px;
-                  border-radius: 50px;
-                  background-color: rgb(0, 156, 161);
-                  position: absolute;
-                  bottom: 0;
-                  z-index: -1;
-                  transform: translate(0px, 2px) rotate(-2deg);
-                "
-              ></p>
+              <h1 class="text-light">{{ $t("about_us_heading") }}</h1>
             </div>
           </div>
-          <small>
+          <small class="text-light">
             {{ $t("about_us_additional_paragraph") }}
           </small>
         </div>
@@ -87,7 +75,10 @@ export default {
 
 .about-nav {
   width: 100%;
-  padding-top: 8%;
+  padding-top: 7%;
+  padding-bottom: 5%;
+  margin-bottom: 2%;
+  background-color: rgb(39, 39, 109);
 
   p {
     color: white;

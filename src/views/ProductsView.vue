@@ -1,6 +1,9 @@
 <template lang="">
   <div class="wrapper">
-    <div class="items">
+    <h1>Products</h1>
+  </div>
+  <div class="content">
+    <!-- <div class="items">
       <router-link to="/products/purchase">{{ $t("purchase") }}</router-link>
       <router-link to="/products/sales">{{ $t("sales") }}</router-link>
       <router-link to="/products/production">{{
@@ -10,9 +13,7 @@
       <router-link to="/products/dms">{{ $t("dms") }}</router-link>
       <router-link to="/products/finance">{{ $t("finance") }}</router-link>
       <router-link to="/products/human-resources">{{ $t("hr") }}</router-link>
-    </div>
-  </div>
-  <div class="content">
+    </div> -->
     <router-view v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
@@ -26,21 +27,14 @@ export default {};
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
 .wrapper {
-  background: linear-gradient(
-      to top,
-      rgba(0, 0, 0, 0.295),
-      rgba(0, 0, 0, 0.329),
-      rgba(0, 0, 0, 0.253)
-    ),
-    url("@/assets/images/productscover.jpg") no-repeat center/cover;
+  height: 40vh;
 
-  height: 60vh;
-  z-index: 0;
-  background-attachment: fixed;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
-  vertical-align: bottom;
+  align-items: center;
+  h1 {
+    color: white;
+  }
 }
 .purchase {
   // background: url("@/assets/images/gradient-bg.png") no-repeat center
@@ -57,29 +51,18 @@ export default {};
     z-index: 0;
   }
 }
-a {
-  color: white;
-  &:hover {
-    color: black;
-  }
-}
-.router-link-active {
-  color: gray;
-}
-.items {
-  width: 90%;
-  // background: url("@/assets/images/gradient-bg.png") no-repeat center
-  //   center/cover;
-  background-color: #f16822;
-  display: flex;
-  padding: 30px;
-  justify-content: space-between;
 
-  border-radius: 2px;
-  transform: translate(0%, 70%);
+.items {
+  width: 70%;
+  margin: auto;
+  margin-top: 0%;
+
+  display: flex;
+  padding: 20px 30px;
+  justify-content: space-between;
   margin-bottom: 2rem;
-  box-shadow: rgba(63, 73, 73, 0.45) 0px 5px 15px;
-  box-shadow: rgba(199, 199, 199, 0.45) 0px 5px 15px;
+
+  border-radius: 5px;
 }
 @media only screen and (max-width: 600px) {
   .items {

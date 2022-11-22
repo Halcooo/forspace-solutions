@@ -54,19 +54,19 @@
           class="d-flex gap-5 col-12 justify-content-center align-items-center m-auto"
         >
           <div class="bg-light text-center card-body w-100 p-2">
+            <font-awesome-icon icon="fa-solid fa-desktop " />
             <h3>Web i desktop aplikacije</h3>
             <p>Lorem ipsum dolor sit amet.</p>
-            <font-awesome-icon icon="fa-solid fa-desktop " />
           </div>
           <div class="bg-light text-center card-body w-100 p-2">
+            <font-awesome-icon icon="fa-solid fa-mobile" />
             <h3>Mobilne aplikacije</h3>
             <p>Lorem ipsum dolor sit amet.</p>
-            <font-awesome-icon icon="fa-solid fa-mobile" />
           </div>
           <div class="bg-light text-center card-body w-100 p-2">
+            <font-awesome-icon icon="fa-solid fa-server" />
             <h3>API Integracija</h3>
             <p>Lorem ipsum dolor sit amet.</p>
-            <font-awesome-icon icon="fa-solid fa-server" />
           </div>
         </div>
       </div>

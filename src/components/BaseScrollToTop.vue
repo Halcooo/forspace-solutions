@@ -38,7 +38,8 @@ export default {
   align-items: center;
   vertical-align: middle;
   border-radius: 50%;
-  background-color: white;
+  background-color: rgb(59, 173, 103);
+  color: white;
   width: 35px;
   height: 35px;
 }

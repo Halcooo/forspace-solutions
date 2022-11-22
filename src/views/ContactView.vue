@@ -31,13 +31,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrapper {
-  background: linear-gradient(
-      to right,
-      rgba(255, 255, 255, 0.227),
-      rgba(255, 255, 255, 0.392),
-      rgba(255, 255, 255, 0.507)
-    ),
-    url("@/assets/images/contact.jpg") no-repeat center center/cover;
+  // background: linear-gradient(
+  //     to right,
+  //     rgba(255, 255, 255, 0.227),
+  //     rgba(255, 255, 255, 0.392),
+  //     rgba(255, 255, 255, 0.507)
+  //   ),
+  //   url("@/assets/images/contact.jpg") no-repeat center center/cover;
   height: 45vh;
 
   display: flex;

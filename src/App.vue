@@ -1,13 +1,14 @@
 //@author Halid Lihovac
 <template>
-  <!-- <div class="cookie">
+  <div class="cookie">
     <div class="cookie-flex">
-      <a href="" style="color: white; width: 100%; text-decoration: underline"
-        >Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum
+      <a href="">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum
         dolor sit amet. Lorem ipsum dolor sit.
       </a>
     </div>
-  </div> -->
+  </div>
+
   <NavigationBar />
   <router-view />
   <BaseScrollToTop />
@@ -98,9 +99,13 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: rgb(255, 255, 255);
   text-align: center;
-  color: white;
+  a {
+    color: rgb(255, 98, 0);
+    width: 100%;
+    text-decoration: underline;
+  }
 
   @media screen and (max-width: 567px) {
     font-size: 12px;

@@ -15,6 +15,12 @@ export default {
 a {
   display: inline-block;
 }
+.about_presentation {
+  border-radius: 50px;
+  padding: 40px 50px;
+  background: rgb(255, 102, 0);
+  color: white;
+}
 .about,
 .presentation,
 .product_btn {

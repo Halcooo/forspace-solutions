@@ -3,7 +3,7 @@
     <router-link
       :to="navItem.to"
       class="nav"
-      :class="[{ sidenav_r: sidenav_class }]"
+      :class="[{ sidenav_r: sidenav_class }, { navy: navy }]"
       @click="showSideNav"
       @mouseover="giveindex(index)"
     >
@@ -73,7 +73,15 @@ export default {
       this.toggleActive(index, false);
     },
   },
-  mounted() {},
+  mounted() {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 40) {
+        this.navy = true;
+      } else {
+        this.navy = false;
+      }
+    });
+  },
 };
 </script>
 
@@ -88,7 +96,7 @@ li {
   }
 
   .nav {
-    color: rgb(70, 70, 70);
+    color: rgb(255, 255, 255);
     font-size: 20px;
 
     display: flex;
@@ -123,7 +131,7 @@ li {
   }
 
   .router-link-active {
-    color: orangered;
+    color: rgb(255, 102, 0);
   }
   .router-link {
     text-align: left;
