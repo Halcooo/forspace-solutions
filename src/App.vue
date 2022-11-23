@@ -1,5 +1,14 @@
 //@author Halid Lihovac
 <template>
+  <div class="cookie">
+    <div class="cookie-flex">
+      <a href="">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum
+        dolor sit amet. Lorem ipsum dolor sit.
+      </a>
+    </div>
+  </div>
+
   <NavigationBar />
   <router-view />
   <BaseScrollToTop />
@@ -26,6 +35,7 @@ export default {
       this.$router.push({ path: "/" });
     },
   },
+  mounted() {},
 };
 </script>
 <style lang="scss">
@@ -73,7 +83,7 @@ h1 {
 .carousel__pagination-button::after {
   display: block;
   content: "";
-  border: 1px solid #0b4383 !important;
+  border: 1px solid white !important;
   width: 12px !important;
   height: 12px !important;
   border-radius: 50% !important;
@@ -81,6 +91,26 @@ h1 {
 }
 .carousel__pagination-button:hover::after,
 .carousel__pagination-button--active::after {
-  background-color: #0b4383 !important;
+  background-color: white !important;
+}
+
+.cookie {
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  a {
+    color: rgb(255, 98, 0);
+    width: 100%;
+    text-decoration: underline;
+  }
+
+  @media screen and (max-width: 567px) {
+    font-size: 12px;
+    // padding: 0px 5px;
+    height: 50px;
+  }
 }
 </style>

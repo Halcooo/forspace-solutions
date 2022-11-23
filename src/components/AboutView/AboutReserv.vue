@@ -44,7 +44,7 @@ export default {};
       width: 100%;
     }
     .res-termin {
-      padding-left: 5%;
+      padding-left: 0%;
     }
     .termin {
       display: flex;
@@ -52,12 +52,31 @@ export default {};
       align-items: center;
       width: 300px;
       height: 70px;
-      border-radius: 2px;
+      border-radius: 50px;
       margin-left: auto;
       margin-right: 10%;
       font-size: 30px;
       color: #26498a;
       background-color: white;
+    }
+  }
+  @media screen and (max-width: 567px) {
+    height: 100%;
+    // padding: 30px;
+    .reserve-content {
+      width: 90%;
+      flex-direction: column;
+      text-align: center;
+      h1 {
+        font-size: 50px;
+        margin-bottom: 15%;
+      }
+      .termin {
+        margin: auto;
+        margin-top: 5%;
+
+        margin-bottom: 5%;
+      }
     }
   }
 }

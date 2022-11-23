@@ -112,8 +112,8 @@ export default {
     align-items: center;
     margin: auto;
     top: 0;
-    right: 0;
-    width: 0%;
+    right: -28%;
+    width: 18%;
     height: 100vh;
     background-color: $navy;
     transition: all 0.4s;
@@ -126,21 +126,22 @@ export default {
     }
   }
 
-  .grid {
-    position: fixed;
-    z-index: 1;
-    background-color: white;
-    top: 0;
-    left: -83%;
-    width: 83%;
-    height: 100vh;
-  }
+  // .grid {
+  //   position: fixed;
+  //   z-index: 1;
+  //   background-color: white;
+  //   top: 0;
+  //   left: -83%;
+  //   width: 83%;
+  //   height: 100vh;
+  // }
 
-  .active {
-    animation: toLeft 0.2s forwards;
-  }
+  // .active {
+  //   animation: toLeft 0.2s forwards;
+  // }
   .nav-links-vertical {
     // width: 100%;
+
     display: flex;
     flex-direction: column;
     line-height: 4rem;
@@ -164,7 +165,7 @@ export default {
   }
   @media screen and (min-width: 1500px) {
     .sidenav_content_visible {
-      width: 17.5%;
+      right: 0%;
     }
   }
   @media screen and (max-width: 1450px) {
@@ -209,6 +210,7 @@ export default {
 
     .sidenav_content_visible {
       width: 100%;
+      right: 0%;
     }
 
     z-index: 3;
@@ -217,15 +219,6 @@ export default {
         left: 88%;
       }
     }
-  }
-}
-
-@keyframes toLeft {
-  from {
-    left: -210%;
-  }
-  to {
-    left: 0%;
   }
 }
 </style>

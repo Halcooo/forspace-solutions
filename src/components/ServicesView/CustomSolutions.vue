@@ -16,4 +16,6 @@ export default {
   name: "CustomSolutions",
 };
 </script>
-<style lang=""></style>
+<style lang="scss" scoped>
+// background: linear-gradient(to top, black, black, black);
+</style>

@@ -3,12 +3,13 @@
   <Carousel :wrap-around="true" :items-to-show="1" v-model="currentSlide">
     <Slide v-for="slide in images" :key="slide.id">
       <div class="carousel__item">
-        <div>
-          <h1>{{ slide.name }}</h1>
-          <p>
-            Našim klijentima je na raspolaganju stručnost našeg tima u razvoju
-          </p>
+        <div class="overlay">
+          <div>
+            <h1>{{ slide.name }}</h1>
+            <p>{{ slide.text }}</p>
+          </div>
         </div>
+
         <img
           @mousedown="pressedMouse = true"
           @mouseup="pressedMouse = false"
@@ -96,15 +97,29 @@ h1 {
   color: white;
   font-size: 20px;
   border-radius: 8px;
+  position: relative;
 
-  div {
-    width: 40%;
+  .overlay {
     position: absolute;
-    text-align: left;
-    transform: translate(20%, 70%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.3);
     top: 0;
     left: 0;
-    font-size: 55px;
+    div {
+      width: 100%;
+      margin: auto;
+      position: absolute;
+      text-align: center;
+      // transform: translate(20%, 20%);
+      top: 20%;
+      font-size: 55px;
+      p {
+        font-size: 30px;
+        width: 50%;
+        margin: auto;
+      }
+    }
   }
   img {
     background-size: contain;

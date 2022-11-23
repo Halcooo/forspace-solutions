@@ -3,45 +3,21 @@
     <router-link
       :to="navItem.to"
       class="nav"
-      :class="{ sidenav_r: sidenav_class }"
+      :class="[{ sidenav_r: sidenav_class }, { navy: navy }]"
       @click="showSideNav"
       @mouseover="giveindex(index)"
     >
       <div>
         {{ $t(navItem.name) }}
 
-        <font-awesome-icon icon="fa-solid fa-chevron-down" />
+        <font-awesome-icon
+          icon="fa-solid fa-chevron-down"
+          v-if="index == 1 || index == 2"
+        />
       </div>
       <div class="underline"></div>
     </router-link>
   </li>
-
-  <!-- <li style="display: inline-block">
-    <div
-      class="sidenav"
-      @mouseover="
-        () => {
-          if (drop) {
-            drop = false;
-            active = false;
-          } else {
-            drop = true;
-            active = true;
-          }
-        }
-      "
-      :class="{ sidelang: sidenav_class }"
-    >
-      {{ language }} <font-awesome-icon icon="fa-solid fa-chevron-down" />
-    </div>
-    <div v-if="drop" class="dropdown">
-      <div v-for="lang in languages" @click="translatePage(lang)">
-        <div class="lang">
-          {{ lang.language }}
-        </div>
-      </div>
-    </div>
-  </li> -->
 </template>
 
 <script>
@@ -54,8 +30,6 @@ export default {
   },
   data() {
     return {
-      active: false,
-      drop: false,
       language: "Language",
       selected: "bs",
       languages: [
@@ -63,6 +37,7 @@ export default {
         { language: "Engleski", abr: "en" },
         { language: "Njemački", abr: "de" },
       ],
+      navy: false,
     };
   },
   computed: {
@@ -71,13 +46,6 @@ export default {
     },
   },
   methods: {
-    show() {
-      if (this.drop) {
-        this.drop = false;
-      } else {
-        this.drop = true;
-      }
-    },
     giveindex(index) {
       this.$emit("index", index);
     },
@@ -106,7 +74,13 @@ export default {
     },
   },
   mounted() {
-    console.log(this.$props);
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 40) {
+        this.navy = true;
+      } else {
+        this.navy = false;
+      }
+    });
   },
 };
 </script>
@@ -116,33 +90,34 @@ export default {
 
 li {
   list-style: none;
-
+  position: relative;
   svg {
     width: 17px;
   }
 
   .nav {
-    color: $navy;
-    font-size: 23px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
-    // gap: 5px;
 
     .underline {
-      background-color: red;
       width: 0%;
       height: 2px;
     }
     &:hover {
-      color: $lightgreen;
+      color: white;
       .underline {
-        background-color: $lightgreen;
+        background-color: white;
         width: 100%;
         transition: width 0.3s ease-out;
       }
     }
+  }
+  .navy {
+    color: #333;
   }
 
   .sidenav {
@@ -151,37 +126,12 @@ li {
       cursor: pointer;
     }
   }
-
-  .dropdown {
-    position: absolute;
-    display: inline-block;
-    width: 200px;
-    padding: 5px;
-    transform: translate(0%, 24%);
-
-    background-color: white;
-
-    .lang {
-      width: 100%;
-      height: 100%;
-      padding: 10px 5px;
-
-      cursor: pointer;
-      // background-color: white;
-      &:hover {
-        background-color: #ccc;
-      }
-    }
-  }
-  .sidelang {
-    color: white;
-  }
   .sidenav_r {
     color: white;
   }
 
   .router-link-active {
-    color: $lightgreen;
+    color: rgb(255, 102, 0);
   }
   .router-link {
     text-align: left;

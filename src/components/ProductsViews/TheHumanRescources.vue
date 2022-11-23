@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container  purchase">
+  <div class="container purchase">
     <div class="col-12">
       <h1>Ljudski resursi i obračun plaća</h1>
       <h4></h4>
@@ -18,11 +18,7 @@
         <tbody>
           <tr>
             <td class="d-flex justify-content-end">
-              <img
-                class="p-b-2"
-                width="65vw"
-                src="@/assets/images/check.png"
-              />
+              <img class="p-b-2" width="65vw" src="@/assets/images/check.png" />
             </td>
 
             <td>
@@ -36,11 +32,7 @@
           </tr>
           <tr>
             <td class="d-flex justify-content-end">
-              <img
-                class="p-b-2"
-                width="65vw"
-                src="@/assets/images/check.png"
-              />
+              <img class="p-b-2" width="65vw" src="@/assets/images/check.png" />
             </td>
 
             <td>
@@ -51,11 +43,7 @@
           </tr>
           <tr>
             <td class="d-flex justify-content-end">
-              <img
-                class="p-b-2"
-                width="65vw"
-                src="@/assets/images/check.png"
-              />
+              <img class="p-b-2" width="65vw" src="@/assets/images/check.png" />
             </td>
             <td>
               <h4>
@@ -190,4 +178,8 @@ export default {
   name: "TheHumanRescources",
 };
 </script>
-<style lang="scss" scooped></style>
+<style lang="scss" scoped>
+h1 {
+  color: white;
+}
+</style>

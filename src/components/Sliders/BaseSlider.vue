@@ -1,13 +1,13 @@
 @author Halid Lihovac
 <template>
-  <Carousel :autoplay="900" :wrap-around="true" :items-to-show="2.5">
+  <Carousel :autoplay="1100" :wrap-around="true" :items-to-show="2.5">
     <Slide v-for="slide in images" :key="slide">
       <div class="carousel__item">
         <img :src="slide.url" alt="logo" />
       </div>
     </Slide>
     <template #addons>
-      <Pagination />
+      <!-- <Pagination /> -->
     </template>
   </Carousel>
 </template>
@@ -34,7 +34,7 @@ export default {
   background-position: center;
   padding-top: 200px;
 }
-.carousel__pagination-item{
+.carousel__pagination-item {
   background-color: blue !important;
 }
 .carousel__item {

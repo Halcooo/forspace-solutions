@@ -41,6 +41,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 .the_next {
   width: 100%;
 
@@ -50,16 +51,18 @@ export default {
 
   .the_next_content {
     width: 55%;
-    margin: 7% auto;
+    margin: 5% auto;
 
     height: 370px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
+
     .item_one {
       width: 100%;
       height: 100%;
+
       background: url("@/assets/images/product_item_1.jpg") no-repeat center
         center/cover;
       position: relative;
@@ -78,7 +81,7 @@ export default {
       width: 90%;
       margin: auto;
       height: 18vh;
-      background-color: rgba(134, 134, 134, 0.74);
+      background-color: rgb(51, 51, 51);
       transform: translate(6%, 50%);
       padding: 20px;
       h3,
@@ -87,11 +90,27 @@ export default {
       }
       .read-more {
         padding: 10px 20px;
-        background-color: gray;
+        background-color: rgb(255, 255, 255);
         position: absolute;
         bottom: 0;
         right: 0;
       }
+    }
+  }
+  @media screen and (max-width: 567px) {
+    height: 100%;
+
+    .the_next_content {
+      width: 90%;
+      flex-direction: column;
+      height: 550px;
+      .overlay {
+        height: 23vh;
+      }
+    }
+    .item_one,
+    .item_two {
+      width: 90%;
     }
   }
 }

@@ -7,22 +7,10 @@
             style="display: flex; justify-content: center; align-items: center"
           >
             <div style="position: relative">
-              <h1>{{ $t("about_us_heading") }}</h1>
-              <p
-                style="
-                  width: 100%;
-                  padding: 2px;
-                  border-radius: 50px;
-                  background-color: rgb(0, 156, 161);
-                  position: absolute;
-                  bottom: 0;
-                  z-index: -1;
-                  transform: translate(0px, 2px) rotate(-2deg);
-                "
-              ></p>
+              <h1 class="text-light">{{ $t("about_us_heading") }}</h1>
             </div>
           </div>
-          <small>
+          <small class="text-light">
             {{ $t("about_us_additional_paragraph") }}
           </small>
         </div>
@@ -76,6 +64,8 @@
 <script>
 export default {
   name: "AboutUs",
+  about: false,
+  mounted() {},
 };
 </script>
 <style lang="scss" scoped>
@@ -83,7 +73,11 @@ export default {
 
 .about-nav {
   width: 100%;
-  padding-top: 8%;
+
+  padding-top: 7%;
+  padding-bottom: 5%;
+  margin-bottom: 2%;
+  background-color: rgb(59, 73, 112);
 
   p {
     color: white;
@@ -100,10 +94,11 @@ export default {
     margin-top: 2%;
     margin-bottom: 5%;
     border-radius: 5px;
+
     .flex-first {
       width: 45%;
       height: 100%;
-      background: $navy;
+      background: transparent;
       padding: 10px;
 
       .div-1,
@@ -133,6 +128,7 @@ export default {
         color: white;
       }
     }
+
     .flex-second {
       width: 60%;
       display: grid;
@@ -154,6 +150,7 @@ export default {
         justify-content: center;
         align-items: center;
       }
+
       .card-1 {
         background: linear-gradient(
             to right,
@@ -191,6 +188,26 @@ export default {
           ),
           url("@/assets/images/forspace_info_2.jpg") no-repeat center
             center/cover;
+      }
+    }
+    @media screen and (max-width: 567px) {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      .flex-first {
+        width: 90%;
+        margin: auto;
+        margin-top: 5%;
+      }
+      .flex-second {
+        width: 90%;
+        margin: auto;
+        .card-1,
+        .card-2,
+        .card-3,
+        .card-4 {
+          height: 200px;
+        }
       }
     }
   }

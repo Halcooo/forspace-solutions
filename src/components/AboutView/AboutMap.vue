@@ -4,18 +4,7 @@
       <div class="inner">
         <div style="position: relative; z-index: 1">
           <h1>Pronadjite nas na karti</h1>
-          <p
-            style="
-              width: 100%;
-              background-color: orangered;
-              padding: 3px;
-              position: absolute;
-              bottom: 0;
-              z-index: -1;
-              border-radius: 50px;
-              transform: rotate(-0.5deg);
-            "
-          ></p>
+          <p class="under"></p>
         </div>
         <button type="button" class="button" @click="showMap()">
           Google Maps
@@ -46,16 +35,17 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import "@/styles/variables.scss";
 .about_map {
   width: 100%;
-  //   height: 30vh;
-  background-color: rgb(43, 43, 43);
-  //   background: url("@/assets/images/pins.jpg") no-repeat center center/cover;
+  // background-color: rgb(43, 43, 43);
+  background: url("@/assets/images/leaf.jpg") no-repeat center center/cover;
   display: flex;
-  padding: 150px 50px;
+  padding: 50px 50px;
   justify-content: center;
+
   align-items: center;
-  margin-bottom: 5%;
+  margin-top: 5%;
 
   .inner {
     width: 50%;
@@ -68,15 +58,37 @@ export default {
     color: white;
     font-size: 50px;
   }
+  .under {
+    width: 100%;
+    background-color: $lightgreen;
+    padding: 3px;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    border-radius: 50px;
+    transform: rotate(-0.5deg);
+  }
   .button {
     background-color: transparent;
     border: 2px solid white;
     padding: 20px 60px;
-    border-radius: 2px;
+    border-radius: 50px;
     color: white;
     font-size: 25px;
     &:hover {
       border: 2px solid rgb(255, 97, 0);
+    }
+  }
+  @media screen and (max-width: 567px) {
+    .inner {
+      h1 {
+        font-size: 40px;
+      }
+      width: 90%;
+      flex-direction: column;
+    }
+    .button {
+      margin-top: 5%;
     }
   }
 }

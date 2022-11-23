@@ -16,25 +16,28 @@
       ></p>
     </div>
   </div>
-  <ContactForm></ContactForm>
+  <ContactForm />
+  <AboutMap />
 </template>
 <script>
-import ContactForm from "@/components/Forms/ContactForm.vue";
+import ContactForm from "@/components/ContactView/ContactForm.vue";
+import AboutMap from "@/components/AboutView/AboutMap.vue";
 export default {
   components: {
     ContactForm,
+    AboutMap,
   },
 };
 </script>
 <style lang="scss" scoped>
 .wrapper {
-  background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0.227),
-      rgba(0, 0, 0, 0.392),
-      rgba(0, 0, 0, 0.507)
-    ),
-    url("@/assets/images/contact.jpg") no-repeat center center/cover;
+  // background: linear-gradient(
+  //     to right,
+  //     rgba(255, 255, 255, 0.227),
+  //     rgba(255, 255, 255, 0.392),
+  //     rgba(255, 255, 255, 0.507)
+  //   ),
+  //   url("@/assets/images/contact.jpg") no-repeat center center/cover;
   height: 45vh;
 
   display: flex;

@@ -30,13 +30,24 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+@import "../styles/variables.scss";
 a {
   text-decoration: none;
   svg {
     width: 40px;
+
     &:hover {
-      color: #f16822;
+      color: rgb(36, 64, 139);
+      opacity: 0.9;
     }
+  }
+}
+@keyframes tr {
+  from {
+    transform: translate(0%, -100%);
+  }
+  to {
+    transform: translate(0%, 0%);
   }
 }
 </style>

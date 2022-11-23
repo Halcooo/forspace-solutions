@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container  purchase">
+  <div class="container purchase">
     <h1 class="mt-4">Proizvodnja</h1>
     <h3>Kako proizvodnju staviti pod kontrolu?</h3>
     <p class="mt-4">
@@ -21,4 +21,8 @@ export default {
   name: "TheProduction",
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+h1 {
+  color: white;
+}
+</style>

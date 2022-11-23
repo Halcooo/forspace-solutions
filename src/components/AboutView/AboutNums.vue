@@ -8,12 +8,15 @@
     </div>
 
     <div class="num-flex">
+      <div class="label"><h1>Osnovano</h1></div>
       <div class="year">
-        <div>{{ roundedValyear }}</div>
+        <div>{{ roundedValyear }} y</div>
       </div>
+      <div class="label"><h1>Klijenti</h1></div>
       <div class="client">
         <div>{{ roundedValcli }} +</div>
       </div>
+      <div class="label"><h1>Zaposlenih</h1></div>
       <div class="emp">
         <div>{{ roundedValEmp }} +</div>
       </div>
@@ -100,6 +103,22 @@ export default {
 
     > h1 {
       width: 100%;
+      display: block;
+    }
+  }
+  .label {
+    display: none;
+  }
+  @media screen and (max-width: 567px) {
+    .num-flex {
+      width: 90%;
+      margin-top: 10%;
+      flex-direction: column;
+    }
+    .heading-flex {
+      display: none;
+    }
+    .label {
       display: block;
     }
   }
