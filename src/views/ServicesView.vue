@@ -4,6 +4,7 @@
   </div>
   <div class="content">
     <div class="services-container mt-5">
+      <h1 class="text-secondary text-center">Nase usluge</h1>
       <div class="heading">
         <h1 class="mb-5 text-center">Programerske usluge i razvoj</h1>
         <div
@@ -75,17 +76,17 @@ export default {
       ],
       images: [
         {
-          name: "Razvoj",
+          name: "Razvijanje Web i desktop aplikacija",
           url: require("@/assets/images/purchase-cover-image.png"),
-          text: "Web i desktop aplikacija podržanih na OS platformama Linux, Unix, macOS, Windows",
+          text: "Web i desktop aplikacije",
         },
         {
-          name: "Razvoj",
+          name: "Olaksavanje poslovnih procesa uz mobilne aplikacije",
           url: require("@/assets/images/product_item_1.jpg"),
-          text: "Mobilnih aplikacija podržanih na Android i iOS operativnim sistemima",
+          text: "Mobilne aplikacije ",
         },
         {
-          name: "Razvoj",
+          name: "Poboljsavanje poslovnih rjesenja pomocu API integracije ",
           url: require("@/assets/images/product_item_2.jpg"),
           text: "API integracija",
         },

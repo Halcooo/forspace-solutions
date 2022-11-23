@@ -7,8 +7,6 @@
           <div>
             <h1>{{ slide.name }}</h1>
             <p>{{ slide.text }}</p>
-
-            <BaseButton :to="routes.route" :name="routes.name" />
           </div>
         </div>
 
@@ -32,7 +30,6 @@
 import { Carousel, Pagination, Slide, Navigation } from "vue3-carousel";
 
 import "vue3-carousel/dist/carousel.css";
-import BaseButton from "../Forms/buttons/BaseButton.vue";
 
 export default {
   props: ["images"],
@@ -42,7 +39,6 @@ export default {
     Slide,
     Pagination,
     Navigation,
-    BaseButton,
   },
   data() {
     return {
@@ -69,8 +65,8 @@ export default {
 <style lang="scss" scoped>
 h1 {
   // padding: 7px;
-  font-size: 70px;
-  color: gray;
+  font-size: 50px;
+  color: white;
   margin-bottom: 5%;
   // background-color: rgba(255, 253, 253, 0.8);
   // border-radius: 5px;
@@ -90,16 +86,14 @@ h1 {
     }
   }
 }
-.wrapper {
-  height: 50vh;
-}
+//
 .grabbed {
   cursor: grabbing !important;
 }
 .carousel__item {
-  height: 70vh;
+  height: 50vh;
   width: 100%;
-  color: gray;
+  color: white;
   font-size: 20px;
   border-radius: 8px;
   position: relative;
@@ -108,7 +102,7 @@ h1 {
     position: absolute;
     width: 50%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
 
@@ -118,7 +112,7 @@ h1 {
       position: absolute;
       text-align: left;
       // transform: translate(20%, 20%);
-      top: 20%;
+      top: 30%;
       font-size: 55px;
       padding-left: 10%;
       p {

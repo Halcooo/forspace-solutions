@@ -65,10 +65,10 @@ export default {
     height: 70vh;
   }
   background: linear-gradient(
-      to top,
-      rgba(0, 32, 214, 0.397),
-      rgba(0, 49, 185, 0.349),
-      rgba(0, 47, 177, 0.308)
+      to bottom,
+      rgba(62, 113, 255, 0.349),
+      rgba(100, 149, 255, 0.233),
+      rgba(0, 0, 0, 0.308)
     ),
     url("@/assets/images/productscover.jpg") no-repeat center center/cover;
 

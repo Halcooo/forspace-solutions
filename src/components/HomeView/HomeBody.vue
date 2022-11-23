@@ -1,32 +1,6 @@
 @author Halid Lihovac
 <template>
-  <div class="body text-center pt-5">
-    <div class="items container text-center pb-5">
-      <div class="row gap-2">
-        <div class="col-sm item bg-light p-5">
-          <img src="@/assets/images/companies.png" alt="companies" />
-          <h4>Vaša kompanija pod jednim krovom</h4>
-          <p>Centralno upravljanje procesima.</p>
-        </div>
-        <div class="item col-sm bg-light p-5">
-          <img src="@/assets/images/cloud.png" alt="cloud" />
-          <h4>Vaša kompanija pod jednim krovom</h4>
-          <p>Centralno upravljanje procesima.</p>
-        </div>
-        <div class="item col-sm bg-light p-5">
-          <img src="@/assets/images/config.png" alt="config" />
-          <h4>Vaša kompanija pod jednim krovom</h4>
-          <p>Centralno upravljanje procesima.</p>
-        </div>
-        <div class="item col-sm bg-light p-5">
-          <img src="@/assets/images/circle.png" alt="circle" />
-          <h4>Vaša kompanija pod jednim krovom</h4>
-          <p>Centralno upravljanje procesima.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="widget-container">
+  <div class="widget-container mt-5">
     <div class="widget-box">
       <div class="widget-frame"></div>
       <div class="widget-pic"></div>
@@ -62,6 +36,33 @@
       </div>
     </div>
   </div>
+  <div class="body text-center pt-5">
+    <div class="items container text-center pb-5">
+      <div class="row gap-2">
+        <div class="col-sm item bg-light p-5">
+          <img src="@/assets/images/companies.png" alt="companies" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
+        <div class="item col-sm bg-light p-5">
+          <img src="@/assets/images/cloud.png" alt="cloud" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
+        <div class="item col-sm bg-light p-5">
+          <img src="@/assets/images/config.png" alt="config" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
+        <div class="item col-sm bg-light p-5">
+          <img src="@/assets/images/circle.png" alt="circle" />
+          <h4>Vaša kompanija pod jednim krovom</h4>
+          <p>Centralno upravljanje procesima.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="cube-background pb-5" style="position: relative">
     <svg
       id="wave"

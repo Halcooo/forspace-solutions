@@ -2,17 +2,7 @@
 <template>
   <div class="form-div">
     <h3>Pošaljite nam poruku</h3>
-    <p
-      style="
-        width: 75px;
-        padding: 1.7px;
-        background-color: rgb(0, 156, 161);
-        border-radius: 50px;
-        transform: translate(0px, -15px) rotate(-2deg);
-        position: absolute;
-        z-index: -1;
-      "
-    ></p>
+
     <form>
       <div class="form-group">
         <div class="form-group-flex">
