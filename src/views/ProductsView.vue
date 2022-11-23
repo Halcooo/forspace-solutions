@@ -1,9 +1,14 @@
 <template lang="">
   <div class="wrapper">
     <h1>Products</h1>
-  </div>
-  <div class="content">
-    <!-- <div class="items">
+    <small
+      >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil eum
+      assumenda reiciendis, autem necessitatibus eos veniam iure, soluta
+      voluptate iste id sunt dolorum illum eligendi odit et mollitia ratione
+      fuga?</small
+    >
+    <div class="content">
+      <!-- <div class="items">
       <router-link to="/products/purchase">{{ $t("purchase") }}</router-link>
       <router-link to="/products/sales">{{ $t("sales") }}</router-link>
       <router-link to="/products/production">{{
@@ -14,11 +19,12 @@
       <router-link to="/products/finance">{{ $t("finance") }}</router-link>
       <router-link to="/products/human-resources">{{ $t("hr") }}</router-link>
     </div> -->
-    <router-view v-slot="{ Component }">
-      <transition name="fade" mode="out-in">
-        <component :is="Component" />
-      </transition>
-    </router-view>
+      <router-view v-slot="{ Component }">
+        <transition name="fade" mode="out-in">
+          <component :is="Component" />
+        </transition>
+      </router-view>
+    </div>
   </div>
 </template>
 <script>
@@ -27,12 +33,15 @@ export default {};
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
 .wrapper {
-  height: 40vh;
-
+  background-color: rgb(59, 73, 112);
+  color: white;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   h1 {
+    margin-top: 7%;
+    font-size: 40px;
     color: white;
   }
 }

@@ -117,7 +117,7 @@ li {
     }
   }
   .navy {
-    color: $navy;
+    color: #333;
   }
 
   .sidenav {

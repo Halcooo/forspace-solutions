@@ -227,6 +227,8 @@ img {
     bottom: 0;
     left: 0;
     z-index: -1;
+    @media screen and (max-width: 567px) {
+    }
   }
 }
 .item {

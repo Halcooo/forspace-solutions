@@ -20,13 +20,16 @@ export default {
 </script>
 <style lang="scss" scoped>
 .purchase {
-  background: url("@/assets/images/gradient-bg.png") no-repeat center
-    center/cover;
+  // background: url("@/assets/images/gradient-bg.png") no-repeat center
+  //   center/cover;
   display: flex;
   flex-direction: column;
   padding: 30px;
-  background-color: azure;
+  // background-color: azure;
   border-radius: 2px;
   margin-bottom: 2rem;
+  h1 {
+    color: white;
+  }
 }
 </style>

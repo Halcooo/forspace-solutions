@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container  purchase">
+  <div class="container purchase">
     <h1>Prodaja</h1>
     <h3>Maloprodaja - Veleprodaja</h3>
     <p>
@@ -8,7 +8,7 @@
       rad sa POS uređajima i svim ostalim zakonskim potrebama i obavezama.
       Kontaktirajte nas za više detalja.
     </p>
-    <img src="@/assets/images/saless.png" alt="image">
+    <img src="@/assets/images/saless.png" alt="image" />
   </div>
 </template>
 <script>
@@ -16,4 +16,8 @@ export default {
   name: "TheSales",
 };
 </script>
-<style lang=""></style>
+<style lang="scss" scoped>
+h1 {
+  color: white;
+}
+</style>

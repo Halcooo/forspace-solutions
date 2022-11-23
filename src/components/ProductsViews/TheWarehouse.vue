@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container  purchase">
+  <div class="container purchase">
     <h1>Skladište</h1>
     <h4>Centralna tačka logističkih aktivnosti</h4>
     <p>
@@ -34,4 +34,8 @@ export default {
   name: "TheWarehouse",
 };
 </script>
-<style lang="scss" scooped></style>
+<style lang="scss" scooped>
+h1 {
+  color: white;
+}
+</style>

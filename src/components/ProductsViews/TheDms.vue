@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container  purchase">
+  <div class="container purchase">
     <h1>Dokument Manadžment Sistem (DMS)</h1>
     <h3>Dostupan i praktičan</h3>
     <p>
@@ -146,5 +146,8 @@ export default {
 <style lang="scss" scooped>
 img {
   margin-right: 8px;
+}
+h1 {
+  color: white;
 }
 </style>

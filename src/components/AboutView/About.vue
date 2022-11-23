@@ -65,9 +65,7 @@
 export default {
   name: "AboutUs",
   about: false,
-  mounted() {
-    console.log(window.location.pathname);
-  },
+  mounted() {},
 };
 </script>
 <style lang="scss" scoped>
@@ -75,10 +73,11 @@ export default {
 
 .about-nav {
   width: 100%;
+
   padding-top: 7%;
   padding-bottom: 5%;
   margin-bottom: 2%;
-  background-color: rgb(39, 39, 109);
+  background-color: rgb(59, 73, 112);
 
   p {
     color: white;
@@ -99,7 +98,7 @@ export default {
     .flex-first {
       width: 45%;
       height: 100%;
-      background: $navy;
+      background: transparent;
       padding: 10px;
 
       .div-1,

@@ -194,41 +194,16 @@ export default {
     return {
       images: [
         {
-          id: 1,
-          url: require("@/assets/images/services.jpg"),
-          name: "Usluge",
-          text: "",
-        },
-
-        {
-          id: 2,
-          url: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2072&q=80",
-          name: "ERP",
-          text: " ERP (Enterprise Resource Planning) sistem je poslovni program koji omogućava kompanijama da planiraju svoje resurse i upravljaju cjelokupnim poslovanjem i pokriva sve procesne tokove uslužne, prodajne ili proizvodne djelatnosti.",
+          url: require("@/assets/images/purchase-cover-image.png"),
+          text: "web i desktop aplikacija podržanih na OS platformama Linux, Unix, macOS, Windows",
         },
         {
-          id: 3,
-          url: require("@/assets/images/dms-header.jpg"),
-          name: "DMS",
-          text: "DMS (Document Management System) je poslovni program za praćenje, upravljanje i digitalno arhiviranje dokumenata. Vodi evidenciju o različitim vrstama dokumenata kreiranih i arhiviranih od strane različitih korisnika (praćenje historije).",
+          url: require("@/assets/images/product_item_1.jpg"),
+          text: "mobilnih aplikacija podržanih na Android i iOS operativnim sistemima",
         },
         {
-          id: 4,
-          url: require("@/assets/images/wms-header.jpg"),
-          name: "WMS",
-          text: " Poslovni program za upravljanje skladištem koji ima za cilj da automatizuje, pojednostavi i racionalizuje radne zadatke i aktivnosti unutar skladišta, čime se povećava produktivnost i smanjuje mogućnost greške na minimum.",
-        },
-        {
-          id: 5,
-          url: require("@/assets/images/sistemi-placanja.jpg"),
-          name: "Sistemi plaćanja",
-          text: "Payment Provider aplikacije za platne sisteme u eCommerce sektoru i integracija u cjelokupan lanac procesa.",
-        },
-        {
-          id: 6,
-          url: require("@/assets/images/rijesenja-po-mjeri.jpg"),
-          name: "Rješenja po mjeri",
-          text: " Stručnjaci smo u pretvaranju različitih poslovnih potreba/ideja naših klijenata u digitalne proizvode namijenjene unapređenju njihovih poslovnih procesa, razvoju i digitalnoj transformaciji.",
+          url: require("@/assets/images/product_item_2.jpg"),
+          text: "API integracija",
         },
       ],
     };

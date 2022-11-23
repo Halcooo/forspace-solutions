@@ -99,6 +99,9 @@ img {
   height: 50vh;
   padding-top: 2%;
   background-color: rgb(31, 31, 31);
+  @media screen and (max-width: 567px) {
+    height: 100%;
+  }
   // background: url("@/assets/images/footer.jpg") no-repeat center center/cover;
   // background: linear-gradient(
   //     to top,

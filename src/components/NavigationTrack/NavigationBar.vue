@@ -39,14 +39,14 @@
                   <NavLink :to="link.route" :name="link.name" />
                 </div>
               </div>
-              <div class="third">
+              <div class="third p-3">
                 <div class="nav-img mb-4"></div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dolores animi molestiae consequatur doloremque, aspernatur
                   commodi.
                 </p>
-                <div class="nav_btn mt-3">
+                <div class="nav_btn mt-4">
                   <BaseButton :to="route.route" :name="route.name" />
                 </div>
                 <!-- <BaseButton :to="true" :name="true" /> -->
@@ -61,17 +61,17 @@
                 <div v-for="product in products" class="dropnav_item">
                   <div
                     style="
-                      width: 40px;
+                      width: 30px;
                       padding: 2px;
-                      border: 1px solid rgb(255, 98, 0);
+                      background-color: rgb(255, 98, 0);
                     "
                   ></div>
                   <!-- <img src="../../assets/images/icon-orange.png" alt="" /> -->
                   <router-link :to="product.to">
                     <div>
-                      <h4>
+                      <p>
                         {{ product.heading }}
-                      </h4>
+                      </p>
                       <small>{{ product.p }}</small>
                     </div>
                   </router-link>
@@ -466,9 +466,7 @@ export default {
 
 .white_wrapper {
   background-color: white;
-  .router-link {
-    color: $navy;
-  }
+
   top: 0%;
 }
 </style>
