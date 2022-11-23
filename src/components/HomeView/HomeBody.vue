@@ -1,12 +1,6 @@
 @author Halid Lihovac
 <template>
   <div class="body text-center pt-5">
-    <!-- <h1>Posao iz jednog izvora</h1>
-    <p>
-      Iskoristite Forspace potpuno integrisano all-in-one rješenje za
-      <br />
-      standardizaciju i digitalizaciju poslovnih procesa u Vašoj kompaniji.
-    </p> -->
     <div class="items container text-center pb-5">
       <div class="row gap-2">
         <div class="col-sm item bg-light p-5">
@@ -28,6 +22,42 @@
           <img src="@/assets/images/circle.png" alt="circle" />
           <h4>Vaša kompanija pod jednim krovom</h4>
           <p>Centralno upravljanje procesima.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="widget-container">
+    <div class="widget-box">
+      <div class="widget-frame"></div>
+      <div class="widget-pic"></div>
+    </div>
+    <div class="text">
+      <small class="">Dobrodosli</small>
+      <h1 class="mb-5 text-secondary">Forspace Solutions</h1>
+      <p class="mb-5 text-secondary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        enim in laudantium accusamus iure doloremque explicabo dignissimos,
+        veritatis adipisci laborum
+      </p>
+
+      <small>Call to ask any question</small>
+      <p>123-456-78910</p>
+
+      <div class="d-flex gap-2 mt-5">
+        <div class="w-100 bg-light text-center p-3">
+          <font-awesome-icon icon="fa-solid fa-rocket " />
+          <small> 49+ </small>
+          <p>Professionals</p>
+        </div>
+        <div class="w-100 bg-light text-center p-3">
+          <font-awesome-icon icon="fa-solid fa-gem " />
+          <small> 299+ </small>
+          <p>Project Successful</p>
+        </div>
+        <div class="w-100 bg-light text-center p-3">
+          <font-awesome-icon icon="fa-solid fa-check" />
+          <small> 199+ </small>
+          <p>Awards Wining</p>
         </div>
       </div>
     </div>
@@ -69,7 +99,9 @@
       ></path>
     </svg>
     <div class="erp-text text-center">
-      <h1 class="erp-main-text">Forspace ERP & Računovodstvo +</h1>
+      <h1 class="erp-main-text text-secondary">
+        Forspace ERP & Računovodstvo +
+      </h1>
       <p class="erp-secondary-text">
         Odluke zasnovane na činjenicama, a ne na pretpostavkama!
       </p>
@@ -122,6 +154,73 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
+
+.widget-container {
+  width: 65%;
+  margin: auto;
+  margin-bottom: 5%;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  .widget-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .widget-frame {
+      position: absolute;
+      width: 52%;
+      height: 100%;
+      border: 23px solid rgb(55, 165, 255);
+      // border: 23px solid rgb(255, 97, 0);
+      top: 0;
+      left: 10%;
+    }
+    .widget-pic {
+      position: absolute;
+      top: 15%;
+      left: 22%;
+      width: 78%;
+      height: 70%;
+      background: url("@/assets/images/forspace_info.jpg") no-repeat center
+        center/cover;
+    }
+  }
+  .text {
+    width: 100%;
+    padding: 30px 60px;
+    .d-flex {
+      svg {
+        display: block;
+        margin: auto;
+        width: 30px;
+        height: 30px;
+        color: gray;
+      }
+      small {
+        font-size: 30px;
+      }
+      p {
+        color: gray;
+      }
+    }
+
+    small {
+      font-size: 20px;
+      color: rgb(55, 165, 255);
+      margin-bottom: 4%;
+    }
+    h1 {
+      font-size: 50px;
+      letter-spacing: 0.1rem;
+      color: rgb(37, 37, 37);
+    }
+    p {
+      font-size: 20px;
+    }
+  }
+}
 .conatiner-sm {
   p {
     margin-bottom: 15vh;
@@ -231,22 +330,19 @@ img {
     }
   }
 }
+.container {
+  h1 {
+    color: gray;
+  }
+  p {
+    color: gray;
+  }
+}
 .item {
   margin-bottom: 5vh;
-  // margin-top: 4vh;
+
   h4 {
     font-weight: bolder;
   }
-}
-.body {
-  // margin-top: 30px;
-  // margin-left: auto;
-  // margin-right: auto;
-  // width: 90%;
-  // padding: 20px;
-
-  // svg {
-  //   background-color: rgb(37, 37, 37);
-  // }
 }
 </style>

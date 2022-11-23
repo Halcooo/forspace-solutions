@@ -20,6 +20,8 @@ import {
   faDesktop,
   faMobile,
   faServer,
+  faRocket,
+  faCheck,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
@@ -48,7 +50,9 @@ library.add(
   faReact,
   faDesktop,
   faMobile,
-  faServer
+  faServer,
+  faRocket,
+  faCheck
 );
 
 createApp(App)

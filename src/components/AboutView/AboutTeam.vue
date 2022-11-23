@@ -1,6 +1,8 @@
 <template>
   <div class="recension">
-    <h1 style="text-align: center">{{ $t("about_us_team") }}</h1>
+    <h1 class="text-secondary" style="text-align: center">
+      {{ $t("about_us_team") }}
+    </h1>
     <div class="recension_background">
       <p
         style="

@@ -1,0 +1,153 @@
+<template>
+  <div class="choose">
+    <div class="choose-flex">
+      <div class="choose-text">
+        <small>Why choose us</small>
+        <h1 class="text-dark">Best Services</h1>
+        <p>In Our Company</p>
+        <p class="line"></p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tempora
+          quisquam inventore, odit quae cupiditate aut fugiat veritatis corporis
+          pariatur ullam reiciendis repellendus odio quam deleniti tenetur sunt
+          asperiores nesciunt.
+        </p>
+        <div class="checkmarks">
+          <div class="checkmark-tab">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>
+              <font-awesome-icon icon="fa-solid fa-check" />
+            </p>
+          </div>
+          <div class="checkmark-tab">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>
+              <font-awesome-icon icon="fa-solid fa-check" />
+            </p>
+          </div>
+          <div class="checkmark-tab">
+            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p><font-awesome-icon icon="fa-solid fa-check" /></p>
+          </div>
+        </div>
+        <div>
+          <BaseButton :to="routes.route" :name="routes.name" />
+        </div>
+      </div>
+      <div class="choose-widget-frame">
+        <div class="widget-frame"></div>
+        <div class="widget-photo"></div>
+        <div class="widget-video">
+          <iframe
+            src="https://www.youtube.com/embed/Yngh1X63Nyo"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+import BaseButton from "../Forms/buttons/BaseButton.vue";
+
+export default {
+  name: "AboutChoose",
+  components: { BaseButton },
+  data() {
+    return {
+      routes: { route: "/", name: "read" },
+    };
+  },
+};
+</script>
+<style lang="scss" scoped>
+.choose {
+  width: 60%;
+  margin: auto;
+  height: 60vh;
+  margin-top: 10%;
+  padding: 20px;
+
+  .choose-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    gap: 5px;
+    .choose-text {
+      width: 70%;
+      height: 100%;
+      // border: 1px solid black;
+      text-align: right;
+      padding-right: 15px;
+
+      .line {
+        width: 50px;
+        height: 2px;
+        background-color: cornflowerblue;
+        display: inline-flex;
+        justify-content: right;
+      }
+    }
+    .choose-widget-frame {
+      width: 100%;
+      height: 100%;
+
+      // border: 1px solid black;
+      position: relative;
+
+      .widget-frame {
+        position: absolute;
+        width: 52%;
+        height: 100%;
+        border: 23px solid rgb(55, 165, 255);
+        // border: 23px solid rgb(255, 97, 0);
+        top: 0;
+        right: 5%;
+      }
+
+      .widget-photo {
+        width: 82%;
+        height: 55%;
+        background: url("@/assets/images/widget.png") no-repeat center
+          center/cover;
+        position: absolute;
+        top: 8%;
+        left: 20%;
+      }
+      .widget-video {
+        width: 70%;
+        height: 50%;
+        background-color: gray;
+        position: absolute;
+        top: 32%;
+        left: 10%;
+        iframe {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .checkmarks {
+      margin-top: 10%;
+      .checkmark-tab {
+        display: flex;
+        gap: 10px;
+        justify-content: right;
+        align-items: center;
+        svg {
+          color: white;
+          background-color: cornflowerblue;
+          border-radius: 50%;
+          padding: 3px;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+</style>

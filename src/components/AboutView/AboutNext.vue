@@ -1,8 +1,10 @@
 <template>
   <div class="the_next">
     <div class="the_next_heading">
-      <h1>{{ $t("about_us_next_heading") }}</h1>
-      <h3>{{ $t("about_us_next_additional_paragraph") }}</h3>
+      <h1 class="text-secondary">{{ $t("about_us_next_heading") }}</h1>
+      <h3 class="text-secondary">
+        {{ $t("about_us_next_additional_paragraph") }}
+      </h3>
       <!-- <small>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
 					consequatur veniam amet voluptatum totam beatae.

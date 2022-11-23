@@ -72,6 +72,7 @@ export default {
 .nums {
   h1 {
     text-align: center;
+    color: gray;
   }
 
   .num-flex {
@@ -104,6 +105,7 @@ export default {
     > h1 {
       width: 100%;
       display: block;
+      color: gray;
     }
   }
   .label {
