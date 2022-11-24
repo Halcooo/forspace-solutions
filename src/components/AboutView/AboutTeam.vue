@@ -1,9 +1,12 @@
 <template>
   <div class="recension">
-    <h1 class="text-secondary" style="text-align: center">
+    <h1 class="text-secondary mb-4" style="text-align: center">
       {{ $t("about_us_team") }}
     </h1>
+    <Line />
     <div class="recension_background">
+      <div class="dots"></div>
+
       <p
         style="
           position: absolute;
@@ -24,9 +27,10 @@
 </template>
 <script>
 import AboutSlider from "@/components/Sliders/AboutSlider.vue";
+import Line from "@/particles/Line.vue";
 export default {
   name: "AboutTeam",
-  components: { AboutSlider },
+  components: { AboutSlider, Line },
   data() {
     return {
       images: [
@@ -55,9 +59,10 @@ export default {
   width: 100%;
   // height: 100vh;
   padding-top: 6%;
+  position: relative;
 
   .recension_background {
-    width: 55%;
+    width: 70%;
     margin: 5% auto;
     height: 400px;
     position: relative;
@@ -65,10 +70,19 @@ export default {
       center/cover;
     .recension_overlay {
       background-color: rgb(48, 48, 48);
-      width: 450px;
-      height: 170px;
-      transform: translate(125%, 180%);
+      width: 500px;
+      height: 200px;
+      transform: translate(145%, 150%);
       padding: 10px 5px;
+    }
+    .dots {
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background: url("@/assets/images/dots.png") no-repeat center center/cover;
+      top: -40px;
+      right: -40px;
+      z-index: -1;
     }
   }
 

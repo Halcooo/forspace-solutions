@@ -94,39 +94,30 @@ h1 {
   height: 50vh;
   width: 100%;
   color: white;
-  font-size: 20px;
+  // font-size: 20px;
   border-radius: 8px;
   position: relative;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .overlay {
     position: absolute;
-    width: 50%;
+    width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.473);
     top: 0;
     left: 0;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     div {
-      width: 100%;
-      margin: auto;
-      position: absolute;
-      text-align: left;
-      // transform: translate(20%, 20%);
-      top: 30%;
-      font-size: 55px;
-      padding-left: 10%;
       p {
         font-size: 30px;
-        width: 50%;
-        // margin: auto;
       }
     }
   }
   img {
-    background-size: contain;
-    object-fit: cover;
     width: 100% !important;
-    height: 70vh;
     cursor: grab;
   }
 }

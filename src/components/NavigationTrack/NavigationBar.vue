@@ -207,10 +207,7 @@ export default {
           classname: "nav",
         },
       ],
-      classes: [
-        { id: 1, active: false },
-        { id: 2, active: false },
-      ],
+      classes: [{ id: 1, active: false }],
     };
   },
   methods: {

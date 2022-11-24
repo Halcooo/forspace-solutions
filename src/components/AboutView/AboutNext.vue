@@ -1,8 +1,9 @@
 <template>
   <div class="the_next">
     <div class="the_next_heading">
-      <h1 class="text-secondary">{{ $t("about_us_next_heading") }}</h1>
-      <h3 class="text-secondary">
+      <h1 class="text-secondary mb-4">{{ $t("about_us_next_heading") }}</h1>
+      <Line />
+      <h3 class="text-secondary mt-2">
         {{ $t("about_us_next_additional_paragraph") }}
       </h3>
       <!-- <small>
@@ -12,8 +13,23 @@
     </div>
 
     <div class="the_next_content">
-      <div class="item_one">
-        <div class="overlay">
+      <div
+        class="item_one text-light d-flex justify-content-center align-items-center text-center"
+      >
+        <div>
+          <h3>{{ $t("about_us_next_overlay_left_heading") }}</h3>
+          <p>
+            {{ $t("about_us_next_overlay_left_paragraph") }}
+          </p>
+          <div class="read-more d-flex justify-content-center">
+            <router-link
+              to="/"
+              class="border pt-2 ps-5 px-5 pb-2 text-light mt-5"
+              >Saznaj Vise</router-link
+            >
+          </div>
+        </div>
+        <!-- <div class="overlay">
           <h3>{{ $t("about_us_next_overlay_left_heading") }}</h3>
           <p>
             {{ $t("about_us_next_overlay_left_paragraph") }}
@@ -21,16 +37,22 @@
           <div class="read-more">
             <router-link to="/">Saznaj Vise</router-link>
           </div>
-        </div>
+        </div> -->
       </div>
-      <div class="item_two">
-        <div class="overlay">
+      <div
+        class="item_two text-light d-flex justify-content-center align-items-center text-center"
+      >
+        <div>
           <h3>{{ $t("about_us_next_overlay_right_heading") }}</h3>
           <p>
             {{ $t("about_us_next_overlay_right_paragraph") }}
           </p>
-          <div class="read-more">
-            <router-link to="/">Saznaj Vise</router-link>
+          <div class="read-more d-flex justify-content-center">
+            <router-link
+              to="/"
+              class="border pt-2 ps-5 px-5 pb-2 text-light mt-5"
+              >Saznaj Vise</router-link
+            >
           </div>
         </div>
       </div>
@@ -38,8 +60,10 @@
   </div>
 </template>
 <script>
+import Line from "@/particles/Line.vue";
 export default {
   name: "AboutUsNext",
+  components: { Line },
 };
 </script>
 <style lang="scss" scoped>
@@ -52,7 +76,7 @@ export default {
   }
 
   .the_next_content {
-    width: 55%;
+    width: 70%;
     margin: 5% auto;
 
     height: 370px;
@@ -65,15 +89,25 @@ export default {
       width: 100%;
       height: 100%;
 
-      background: url("@/assets/images/product_item_1.jpg") no-repeat center
-        center/cover;
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.452),
+          rgba(0, 0, 0, 0.397),
+          rgba(0, 0, 0, 0.445)
+        ),
+        url("@/assets/images/product_item_1.jpg") no-repeat center center/cover;
       position: relative;
     }
     .item_two {
       width: 100%;
       height: 100%;
-      background: url("@/assets/images/product_item_2.jpg") no-repeat center
-        center/cover;
+      background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.452),
+          rgba(0, 0, 0, 0.397),
+          rgba(0, 0, 0, 0.445)
+        ),
+        url("@/assets/images/product_item_2.jpg") no-repeat center center/cover;
       position: relative;
     }
 

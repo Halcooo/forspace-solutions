@@ -65,17 +65,18 @@ export default {
 </script>
 <style lang="scss" scoped>
 .choose {
-  width: 60%;
-  margin: auto;
+  width: 100%;
+
   height: 60vh;
   margin-top: 10%;
   padding: 20px;
-
+  background-color: rgb(231, 231, 231);
   .choose-flex {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 60%;
+    margin: auto;
     height: 100%;
     gap: 5px;
     .choose-text {
@@ -83,6 +84,7 @@ export default {
       height: 100%;
       // border: 1px solid black;
       text-align: right;
+      padding-top: 5%;
       padding-right: 15px;
 
       .line {

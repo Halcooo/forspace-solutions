@@ -60,15 +60,15 @@ export default {
 
 .landing-page {
   width: 100%;
-  height: 50vh;
+  height: 70vh;
   @media screen and (max-width: 567px) {
     height: 70vh;
   }
   background: linear-gradient(
-      to bottom,
-      rgba(62, 113, 255, 0.349),
-      rgba(100, 149, 255, 0.233),
-      rgba(0, 0, 0, 0.308)
+      to right,
+      rgba(0, 0, 0, 0.493),
+      rgba(0, 0, 0, 0.336),
+      rgba(0, 0, 0, 0.253)
     ),
     url("@/assets/images/productscover.jpg") no-repeat center center/cover;
 
@@ -100,6 +100,7 @@ export default {
     .head-2 {
       font-size: 80px;
     }
+
     .head-3 {
       margin-top: 10%;
     }
@@ -139,11 +140,11 @@ export default {
         height: 100%;
         li {
           padding: 20px 40px;
-          border-radius: 2px;
+          // border-radius: 2px;
           color: rgb(117, 117, 117);
           transition: 0.2s;
           &:hover {
-            background-color: gray;
+            // background-color: gray;
             color: white;
             cursor: pointer;
           }
@@ -161,7 +162,7 @@ export default {
       a {
         padding: 20px 40px;
         border: 1px solid gray;
-        border-radius: 2px;
+        border-radius: 50px;
         color: gray;
         transition: 0.3s;
         &:hover {

@@ -101,17 +101,21 @@
           <small style="color: orangered">Molimo unesite poruku</small>
         </div>
       </div>
-      <div class="form-group">
+      <div class="form-group d-flex gap-3">
         <BaseButton :to="routes.route" :name="routes.name" />
+        <a type="button" class="button" @click="showMap()"> Google Karta </a>
       </div>
     </form>
+    <TheLocationMap :showMap="showMap" />
   </div>
 </template>
 <script>
 import BaseButton from "../Forms/buttons/BaseButton.vue";
+import TheLocationMap from "../TheLocationMap.vue";
+
 export default {
   name: "ContactForm",
-  components: { BaseButton },
+  components: { BaseButton, TheLocationMap },
   data() {
     return {
       routes: { route: "form", name: "form" },
@@ -157,6 +161,13 @@ export default {
         ? (this.messageInvalid = true)
         : (this.messageInvalid = false);
     },
+    showMap() {
+      if (this.$store.state.map) {
+        this.$store.state.map = false;
+      } else {
+        this.$store.state.map = true;
+      }
+    },
   },
 };
 </script>
@@ -184,7 +195,7 @@ export default {
     // margin-bottom: 5%;
     // padding: 10px;
 
-    color: $navy;
+    color: gray;
     border-radius: 5px;
   }
   .form-group {
@@ -203,7 +214,7 @@ export default {
       }
     }
     .form-control-custom {
-      background: rgba(153, 153, 153, 0.552);
+      background: rgba(207, 207, 207, 0.552);
       width: 100%;
       margin: 10px 0px 20px 0px;
       padding: 10px 2px 10px 2px;
@@ -219,13 +230,13 @@ export default {
       &:focus {
         outline: none;
 
-        border-bottom: 2px solid $lightgreen;
+        border-bottom: 2px solid gray;
       }
     }
 
     .active {
       transform: translate(0px, -22px) scale(0.8);
-      color: $lightgreen;
+      color: gray;
       transition: transform 0.2s ease-out, color 0.2s ease-out;
     }
   }
@@ -245,6 +256,18 @@ export default {
     label {
       transform: translate(6px, 16px);
     }
+  }
+}
+.button {
+  color: black;
+  border: 2px solid black;
+  padding: 20px 40px;
+  font-size: 16px;
+  transition: 0.3s ease-out;
+  &:hover {
+    background: rgb(255, 102, 0);
+    border: 2px solid rgb(255, 102, 0);
+    color: white;
   }
 }
 </style>

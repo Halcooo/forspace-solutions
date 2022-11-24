@@ -1,13 +1,13 @@
 //@author Halid Lihovac
 <template>
-  <div class="cookie">
+  <!-- <div class="cookie">
     <div class="cookie-flex">
       <a href="">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum
         dolor sit amet. Lorem ipsum dolor sit.
       </a>
     </div>
-  </div>
+  </div> -->
   <div class="nav-contact">
     <div class="track">
       <ul>
@@ -16,7 +16,7 @@
         </li>
         <li>
           <font-awesome-icon icon="fa-solid fa-mail-bulk" size="1x" />
-          forspace@info.ba
+          info@forspace.ba
         </li>
       </ul>
 
@@ -144,7 +144,7 @@ h1 {
       justify-content: center;
       align-items: center;
       margin: 0;
-      padding: 10px 15px;
+      padding: 10px 30px;
 
       gap: 50px;
     }

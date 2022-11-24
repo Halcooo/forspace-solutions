@@ -2,10 +2,15 @@
   <div class="wrapper">
     <div class="wrapper-div">
       <h1>{{ $t("contact") }}</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+        aspernatur eligendi ipsam et blanditiis voluptate nostrum inventore
+        cupiditate dolor saepe labore officia fuga exercitationem reiciendis,
+        voluptatem quis voluptatibus odit mollitia?
+      </p>
     </div>
   </div>
   <ContactForm />
-  <AboutMap />
 </template>
 <script>
 import ContactForm from "@/components/ContactView/ContactForm.vue";
@@ -27,13 +32,11 @@ export default {
     ),
     url("@/assets/images/contact.jpg") no-repeat center center/cover;
   height: 50vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
   .wrapper-div {
-    position: relative;
-    z-index: 1;
+    text-align: center;
   }
   h1 {
     // text-align: center;

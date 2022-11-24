@@ -4,9 +4,7 @@
     v-if="this.$store.state.map"
   >
     <div>
-      <div style="text-align: center" class="mb-5">
-        <h1 class="text-light">Pronadjite nas na karti</h1>
-      </div>
+      <div style="text-align: center" class="mb-5"></div>
       <iframe
         width="1080"
         height="480"

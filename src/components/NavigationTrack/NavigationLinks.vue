@@ -10,10 +10,7 @@
       <div>
         {{ $t(navItem.name) }}
 
-        <font-awesome-icon
-          icon="fa-solid fa-chevron-down"
-          v-if="index == 1 || index == 2"
-        />
+        <font-awesome-icon icon="fa-solid fa-chevron-down" v-if="index == 1" />
       </div>
       <div class="underline"></div>
     </router-link>
@@ -131,7 +128,7 @@ li {
   }
 
   .router-link-active {
-    color: rgb(255, 102, 0);
+    color: rgb(55, 165, 255);
   }
   .router-link {
     text-align: left;

@@ -1,14 +1,17 @@
 <template lang="">
   <div class="wrapper">
-    <h1>Products</h1>
-    <small
-      >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil eum
-      assumenda reiciendis, autem necessitatibus eos veniam iure, soluta
-      voluptate iste id sunt dolorum illum eligendi odit et mollitia ratione
-      fuga?</small
-    >
-    <div class="content">
-      <!-- <div class="items">
+    <div>
+      <h1>Proizvodi</h1>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil eum
+        assumenda reiciendis, autem necessitatibus eos veniam iure, soluta
+        voluptate iste id sunt dolorum illum eligendi odit et mollitia ratione
+        fuga?
+      </p>
+    </div>
+  </div>
+  <div class="content">
+    <div class="items">
       <router-link to="/products/purchase">{{ $t("purchase") }}</router-link>
       <router-link to="/products/sales">{{ $t("sales") }}</router-link>
       <router-link to="/products/production">{{
@@ -18,14 +21,13 @@
       <router-link to="/products/dms">{{ $t("dms") }}</router-link>
       <router-link to="/products/finance">{{ $t("finance") }}</router-link>
       <router-link to="/products/human-resources">{{ $t("hr") }}</router-link>
-    </div> -->
-      <router-view v-slot="{ Component }">
-        <transition name="fade" mode="out-in">
-          <component :is="Component" />
-        </transition>
-      </router-view>
     </div>
   </div>
+  <router-view v-slot="{ Component }">
+    <transition name="fade" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
 </template>
 <script>
 export default {};
@@ -33,45 +35,57 @@ export default {};
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
 .wrapper {
-  background-color: rgb(59, 73, 112);
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.493),
+      rgba(0, 0, 0, 0.336),
+      rgba(0, 0, 0, 0.253)
+    ),
+    url("@/assets/images/productscover.jpg") no-repeat center center/cover;
   color: white;
+  height: 50vh;
   display: flex;
-  flex-direction: column;
+
   justify-content: center;
   align-items: center;
+  text-align: center;
   h1 {
-    margin-top: 7%;
-    font-size: 40px;
+    // margin-top: 7%;
+    font-size: 50px;
     color: white;
   }
-}
-.purchase {
-  // background: url("@/assets/images/gradient-bg.png") no-repeat center
-  //   center/cover;
-
-  padding: 30px;
-
-  border-radius: 2px;
-  margin-bottom: 2rem;
-  margin-top: 10vh;
-}
-.row {
-  .col-sm {
-    z-index: 0;
+  p {
+    // font-size: 22px;
   }
 }
 
+.content {
+  width: 100%;
+  background-color: #ccc;
+  height: 80px;
+  background-color: rgb(231, 231, 231);
+}
 .items {
   width: 70%;
+  height: 100%;
   margin: auto;
-  margin-top: 0%;
-
   display: flex;
-  padding: 20px 30px;
   justify-content: space-between;
-  margin-bottom: 2rem;
-
+  align-items: center;
+  gap: 10px;
+  padding: 0px 40px;
   border-radius: 5px;
+  a {
+    padding: 20px 45px;
+
+    color: gray;
+  }
+
+  .router-link-active {
+    background-color: gray;
+    color: white;
+    // border-radius: 50px;
+  }
 }
 @media only screen and (max-width: 600px) {
   .items {

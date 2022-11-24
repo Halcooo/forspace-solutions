@@ -1,6 +1,7 @@
 <template>
   <div class="nums">
-    <h1>Forspace u brojkama</h1>
+    <h1 class="mb-4">Forspace u brojkama</h1>
+    <Line />
     <div class="heading-flex">
       <h1>Osnovano</h1>
       <h1>Klijenti</h1>
@@ -25,27 +26,23 @@
 </template>
 
 <script>
+import Line from "@/particles/Line.vue";
 import { ref } from "@vue/reactivity";
 export default {
   name: "AboutNums",
-
   setup() {
     const years = ref(0);
     const clients = ref(0);
     const employees = ref(0);
-
     const year = ref(2020);
     const client = ref(10);
     const employee = ref(30);
-
     const speed = ref(100);
-
     const roundedValyear = ref(0);
     const roundedValcli = ref(0);
     const roundedValEmp = ref(0);
-
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 2800) {
+      if (window.scrollY > 3800) {
         setInterval(() => {
           if (years.value < year.value) {
             years.value += year.value / speed.value;
@@ -62,9 +59,9 @@ export default {
         }, 100);
       }
     });
-
     return { roundedValyear, roundedValcli, roundedValEmp };
   },
+  components: { Line },
 };
 </script>
 
@@ -79,7 +76,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: 70%;
     margin: 0% auto 10% auto;
     gap: 20px;
     font-size: 100px;

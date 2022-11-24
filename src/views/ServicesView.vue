@@ -4,11 +4,13 @@
   </div>
   <div class="content">
     <div class="services-container mt-5">
-      <h1 class="text-secondary text-center">Nase usluge</h1>
       <div class="heading">
-        <h1 class="mb-5 text-center">Programerske usluge i razvoj</h1>
+        <h1 class="mb-5 text-center text-secondary">
+          Programerske usluge i razvoj
+        </h1>
+        <Line />
         <div
-          class="d-flex gap-5 col-12 justify-content-center align-items-center m-auto"
+          class="d-flex gap-5 col-12 justify-content-center align-items-center m-auto mt-5"
         >
           <div
             v-for="icon in icons"
@@ -21,7 +23,7 @@
           </div>
         </div>
       </div>
-      <div class="grid">
+      <div class="grid mb-5">
         <div v-for="div in divs" :key="div" class="first" :class="div.class">
           <h1 class="text-center mt-5">{{ div.text }}</h1>
           <p
@@ -48,6 +50,7 @@
   </div>
 </template>
 <script>
+import Line from "@/particles/Line.vue";
 import ServicesSlider from "@/components/Sliders/ServicesSlider.vue";
 import Erp from "@/components/ServicesView/Erp.vue";
 import Dms from "@/components/ServicesView/Dms.vue";
@@ -100,6 +103,7 @@ export default {
     Wms,
     PaymentProvider,
     CustomSolutions,
+    Line,
   },
   computed: {
     currentSlide() {
@@ -187,45 +191,45 @@ export default {
     .erp {
       background: linear-gradient(
           to top,
-          rgba(59, 59, 59, 0.405),
-          rgba(0, 0, 0, 0.432),
-          rgba(0, 0, 0, 0.438)
+          rgba(0, 0, 0, 0.493),
+          rgba(0, 0, 0, 0.336),
+          rgba(0, 0, 0, 0.253)
         ),
         url("@/assets/images/mockup2-1.png") no-repeat center center/cover;
     }
     .dms {
       background: linear-gradient(
           to top,
-          rgba(59, 59, 59, 0.405),
-          rgba(0, 0, 0, 0.432),
-          rgba(0, 0, 0, 0.438)
+          rgba(0, 0, 0, 0.493),
+          rgba(0, 0, 0, 0.336),
+          rgba(0, 0, 0, 0.253)
         ),
         url("@/assets/images/mockup3-1.png") no-repeat center center/cover;
     }
     .wms {
       background: linear-gradient(
           to top,
-          rgba(59, 59, 59, 0.405),
-          rgba(0, 0, 0, 0.432),
-          rgba(0, 0, 0, 0.438)
+          rgba(0, 0, 0, 0.493),
+          rgba(0, 0, 0, 0.336),
+          rgba(0, 0, 0, 0.253)
         ),
         url("@/assets/images/erp-sistemi.png") no-repeat center center/cover;
     }
     .systemp {
       background: linear-gradient(
           to top,
-          rgba(59, 59, 59, 0.405),
-          rgba(0, 0, 0, 0.432),
-          rgba(0, 0, 0, 0.438)
+          rgba(0, 0, 0, 0.493),
+          rgba(0, 0, 0, 0.336),
+          rgba(0, 0, 0, 0.253)
         ),
         url("@/assets/images/product_item_2.jpg") no-repeat center center/cover;
     }
     .solution {
       background: linear-gradient(
           to top,
-          rgba(59, 59, 59, 0.405),
-          rgba(0, 0, 0, 0.432),
-          rgba(0, 0, 0, 0.438)
+          rgba(0, 0, 0, 0.493),
+          rgba(0, 0, 0, 0.336),
+          rgba(0, 0, 0, 0.253)
         ),
         url("@/assets/images/payments.jpg") no-repeat center center/cover;
     }
