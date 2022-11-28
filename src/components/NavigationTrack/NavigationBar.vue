@@ -197,7 +197,6 @@ export default {
       }
     },
     currentEmit(index) {
-      console.log(index);
       this.classes.forEach((item) => {
         item.active = item.id == index ? true : false;
       });
@@ -205,7 +204,6 @@ export default {
   },
   mounted() {
     window.addEventListener("scroll", (e) => {
-      console.log(window.scrollY);
       if (window.scrollY > 30) {
         this.white_wrapper = true;
         this.mobile = true;
@@ -430,8 +428,6 @@ export default {
   display: none;
 }
 .mobile {
-  a {
-  }
   display: block;
 }
 

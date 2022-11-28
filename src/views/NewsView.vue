@@ -18,7 +18,6 @@
 export default {
   methods: {
     display(param) {
-      console.log("ide hover");
       this.$router.push(param);
     },
   },
