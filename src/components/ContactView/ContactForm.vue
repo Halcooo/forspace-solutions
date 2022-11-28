@@ -135,7 +135,6 @@ export default {
       this.validateMessage();
       this.validateName();
       this.validateEmail();
-      console.log(event.target, this.name, this.email, this.message);
     },
     validateName() {
       this.name.trim() === ""
