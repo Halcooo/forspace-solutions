@@ -3,76 +3,29 @@
     <ServicesSlider :images="images"></ServicesSlider>
   </div>
   <div class="content">
-    <!-- <div class="nav-text d-flex flex-column container" v-if="currentSlide == 0">
-      <h2>Web i desktop aplikacije</h2>
-      <h2>Mobilne aplikacije</h2>
-      <h2>API integracija</h2>
-    </div> -->
-    <!-- <div v-if="currentSlide == 0">
-      <div class="container">
-        <h1 class="mb-5">Programerske usluge i razvoj:</h1>
-        <h2 class="mb-2">
-          <b>Web i desktop aplikacija</b> podržanih na OS platformama Linux,
-          Unix, macOS, Windows
-        </h2>
-        <h2 class="mb-2">
-          <b>Mobilnih aplikacija</b> podržanih na Android i iOS operativnim
-          sistemima
-        </h2>
-        <h2 class="mb-2"><b>API integracija</b></h2>
-        <p>
-          Naš tim za razvoj softvera čine iskusni inžinjeri i profesionalci koji
-          koristeći napredne alate, jezike i tehnologije, osiguravaju uspješnu
-          realizaciju projekata u dogovorenim rokovima.
-        </p>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div v-if="currentSlide == 1" class="col-sm">
-          <Erp></Erp>
-        </div>
-        <div class="col-sm" v-if="currentSlide == 2">
-          <Dms></Dms>
-        </div>
-        <div class="col-sm" v-if="currentSlide == 3">
-          <Wms></Wms>
-        </div>
-        <div class="col-sm" v-if="currentSlide == 4">
-          <PaymentProvider></PaymentProvider>
-        </div>
-        <div class="col-sm" v-if="currentSlide == 5">
-          <CustomSolutions></CustomSolutions>
-        </div>
-      </div>
-    </div> -->
-
     <div class="services-container mt-5">
       <div class="heading">
-        <h1 class="mb-5 text-center">Programerske usluge i razvoj</h1>
+        <h1 class="mb-5 text-center text-secondary">
+          Programerske usluge i razvoj
+        </h1>
+        <Line />
         <div
-          class="d-flex gap-5 col-12 justify-content-center align-items-center m-auto"
+          class="d-flex gap-5 col-12 justify-content-center align-items-center m-auto mt-5"
         >
-          <div class="bg-light text-center card-body w-100 p-2">
-            <font-awesome-icon icon="fa-solid fa-desktop " />
-            <h3>Web i desktop aplikacije</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="bg-light text-center card-body w-100 p-2">
-            <font-awesome-icon icon="fa-solid fa-mobile" />
-            <h3>Mobilne aplikacije</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-          <div class="bg-light text-center card-body w-100 p-2">
-            <font-awesome-icon icon="fa-solid fa-server" />
-            <h3>API Integracija</h3>
+          <div
+            v-for="icon in icons"
+            :key="icon"
+            class="bg-light text-center card-body w-100 p-2"
+          >
+            <font-awesome-icon :icon="icon.icon_text" />
+            <h3>{{ icon.text }}</h3>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
       </div>
-      <div class="grid">
-        <div class="first erp">
-          <h1 class="text-center mt-5">ERP Sistemi</h1>
+      <div class="grid mb-5">
+        <div v-for="div in divs" :key="div" class="first" :class="div.class">
+          <h1 class="text-center mt-5">{{ div.text }}</h1>
           <p
             style="
               width: 100px;
@@ -89,93 +42,7 @@
             Nam voluptates et fugit libero quisquam.
           </p>
           <div class="flex">
-            <router-link to="">Read More</router-link>
-          </div>
-        </div>
-
-        <div class="first dms">
-          <h1 class="text-center mt-5">DMS Sistemi</h1>
-          <p
-            style="
-              width: 100px;
-              padding: 3px;
-              background-color: tomato;
-              margin: auto;
-              margin-top: 10%;
-            "
-          ></p>
-          <p class="text-center mt-5 p-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            corporis odio voluptas? Perspiciatis, enim mollitia quaerat quia
-            voluptas necessitatibus officiis voluptatem delectus error rerum!
-            Nam voluptates et fugit libero quisquam.
-          </p>
-          <div class="flex">
-            <router-link to="">Read More</router-link>
-          </div>
-        </div>
-        <div class="first wms">
-          <h1 class="text-center mt-5">WMS Sistemi</h1>
-          <p
-            style="
-              width: 100px;
-              padding: 3px;
-              background-color: tomato;
-              margin: auto;
-              margin-top: 10%;
-            "
-          ></p>
-          <p class="text-center mt-5 p-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            corporis odio voluptas? Perspiciatis, enim mollitia quaerat quia
-            voluptas necessitatibus officiis voluptatem delectus error rerum!
-            Nam voluptates et fugit libero quisquam.
-          </p>
-          <div class="flex">
-            <router-link to="">Read More</router-link>
-          </div>
-        </div>
-
-        <div class="first systemp">
-          <h1 class="text-center mt-5">Sistemi Placanja</h1>
-          <p
-            style="
-              width: 100px;
-              padding: 3px;
-              background-color: tomato;
-              margin: auto;
-              margin-top: 10%;
-            "
-          ></p>
-          <p class="text-center mt-5 p-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            corporis odio voluptas? Perspiciatis, enim mollitia quaerat quia
-            voluptas necessitatibus officiis voluptatem delectus error rerum!
-            Nam voluptates et fugit libero quisquam.
-          </p>
-          <div class="flex">
-            <router-link to="">Read More</router-link>
-          </div>
-        </div>
-        <div class="first solution">
-          <h1 class="text-center mt-5">Rjesenja po mjeri</h1>
-          <p
-            style="
-              width: 100px;
-              padding: 3px;
-              background-color: tomato;
-              margin: auto;
-              margin-top: 10%;
-            "
-          ></p>
-          <p class="text-center mt-5 p-5">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            corporis odio voluptas? Perspiciatis, enim mollitia quaerat quia
-            voluptas necessitatibus officiis voluptatem delectus error rerum!
-            Nam voluptates et fugit libero quisquam.
-          </p>
-          <div class="flex">
-            <router-link to="">Read More</router-link>
+            <router-link :to="div.to">Read More</router-link>
           </div>
         </div>
       </div>
@@ -183,25 +50,46 @@
   </div>
 </template>
 <script>
+import Line from "@/particles/Line.vue";
 import ServicesSlider from "@/components/Sliders/ServicesSlider.vue";
 import Erp from "@/components/ServicesView/Erp.vue";
 import Dms from "@/components/ServicesView/Dms.vue";
 import Wms from "@/components/ServicesView/Wms.vue";
 import PaymentProvider from "@/components/ServicesView/PaymentProvider.vue";
 import CustomSolutions from "@/components/ServicesView/CustomSolutions.vue";
+
 export default {
   data() {
     return {
+      icons: [
+        { text: "Web i desktop aplikacije", icon_text: "fa-solid fa-desktop" },
+        { text: "Mobilne aplikacije", icon_text: "fa-solid fa-mobile" },
+        { text: "Api integracija", icon_text: "fa-solid fa-server" },
+      ],
+      divs: [
+        { class: "erp", text: "ERP Sistemi", to: "/erp" },
+        { class: "dms", text: "DMS Sistemi", to: "/dms" },
+        { class: "wms", text: "WMS Sistemi", to: "/wms" },
+        { class: "systemp", text: "Sistemi Placanja", to: "/payment-provider" },
+        {
+          class: "solution",
+          text: "Rjesenja po mjeri",
+          to: "/custom-solutions",
+        },
+      ],
       images: [
         {
+          name: "Razvijanje Web i desktop aplikacija",
           url: require("@/assets/images/purchase-cover-image.png"),
-          text: "web i desktop aplikacija podržanih na OS platformama Linux, Unix, macOS, Windows",
+          text: "Web i desktop aplikacije",
         },
         {
+          name: "Olaksavanje poslovnih procesa uz mobilne aplikacije",
           url: require("@/assets/images/product_item_1.jpg"),
-          text: "mobilnih aplikacija podržanih na Android i iOS operativnim sistemima",
+          text: "Mobilne aplikacije ",
         },
         {
+          name: "Poboljsavanje poslovnih rjesenja pomocu API integracije ",
           url: require("@/assets/images/product_item_2.jpg"),
           text: "API integracija",
         },
@@ -215,6 +103,7 @@ export default {
     Wms,
     PaymentProvider,
     CustomSolutions,
+    Line,
   },
   computed: {
     currentSlide() {
@@ -302,45 +191,45 @@ export default {
     .erp {
       background: linear-gradient(
           to top,
-          rgba(59, 59, 59, 0.405),
-          rgba(0, 0, 0, 0.432),
-          rgba(0, 0, 0, 0.438)
+          rgba(0, 0, 0, 0.493),
+          rgba(0, 0, 0, 0.336),
+          rgba(0, 0, 0, 0.253)
         ),
         url("@/assets/images/mockup2-1.png") no-repeat center center/cover;
     }
     .dms {
       background: linear-gradient(
           to top,
-          rgba(59, 59, 59, 0.405),
-          rgba(0, 0, 0, 0.432),
-          rgba(0, 0, 0, 0.438)
+          rgba(0, 0, 0, 0.493),
+          rgba(0, 0, 0, 0.336),
+          rgba(0, 0, 0, 0.253)
         ),
         url("@/assets/images/mockup3-1.png") no-repeat center center/cover;
     }
     .wms {
       background: linear-gradient(
           to top,
-          rgba(59, 59, 59, 0.405),
-          rgba(0, 0, 0, 0.432),
-          rgba(0, 0, 0, 0.438)
+          rgba(0, 0, 0, 0.493),
+          rgba(0, 0, 0, 0.336),
+          rgba(0, 0, 0, 0.253)
         ),
         url("@/assets/images/erp-sistemi.png") no-repeat center center/cover;
     }
     .systemp {
       background: linear-gradient(
           to top,
-          rgba(59, 59, 59, 0.405),
-          rgba(0, 0, 0, 0.432),
-          rgba(0, 0, 0, 0.438)
+          rgba(0, 0, 0, 0.493),
+          rgba(0, 0, 0, 0.336),
+          rgba(0, 0, 0, 0.253)
         ),
         url("@/assets/images/product_item_2.jpg") no-repeat center center/cover;
     }
     .solution {
       background: linear-gradient(
           to top,
-          rgba(59, 59, 59, 0.405),
-          rgba(0, 0, 0, 0.432),
-          rgba(0, 0, 0, 0.438)
+          rgba(0, 0, 0, 0.493),
+          rgba(0, 0, 0, 0.336),
+          rgba(0, 0, 0, 0.253)
         ),
         url("@/assets/images/payments.jpg") no-repeat center center/cover;
     }

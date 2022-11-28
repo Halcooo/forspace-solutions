@@ -15,6 +15,14 @@ export default {
 a {
   display: inline-block;
 }
+.read {
+  color: white;
+  background-color: cornflowerblue;
+
+  border-radius: 50px;
+  padding: 20px 50px;
+  transition: 0.3s ease-out;
+}
 .about_presentation {
   border-radius: 50px;
   padding: 40px 50px;

@@ -1,14 +1,28 @@
 //@author Halid Lihovac
 <template>
-  <div class="cookie">
+  <!-- <div class="cookie">
     <div class="cookie-flex">
       <a href="">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum
         dolor sit amet. Lorem ipsum dolor sit.
       </a>
     </div>
-  </div>
+  </div> -->
+  <div class="nav-contact">
+    <div class="track">
+      <ul>
+        <li>
+          <font-awesome-icon icon="fa-solid fa-phone" size="1x" /> 123-456-789
+        </li>
+        <li>
+          <font-awesome-icon icon="fa-solid fa-mail-bulk" size="1x" />
+          info@forspace.ba
+        </li>
+      </ul>
 
+      <TheSocialIcons />
+    </div>
+  </div>
   <NavigationBar />
   <router-view />
   <BaseScrollToTop />
@@ -19,6 +33,7 @@ import NavigationBar from "@/components/NavigationTrack/NavigationBar.vue";
 import TheFooter from "@/components/TheFooter.vue";
 import Sidenav from "@/components/NavigationTrack/Sidenav.vue";
 import BaseScrollToTop from "./components/BaseScrollToTop.vue";
+import TheSocialIcons from "./components/TheSocialIcons.vue";
 
 export default {
   components: {
@@ -26,6 +41,7 @@ export default {
     TheFooter,
     Sidenav,
     BaseScrollToTop,
+    TheSocialIcons,
   },
   data() {
     return {};
@@ -111,6 +127,40 @@ h1 {
     font-size: 12px;
     // padding: 0px 5px;
     height: 50px;
+  }
+}
+
+.nav-contact {
+  background-color: rgb(70, 70, 70);
+  color: white;
+  .track {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 10px 30px;
+
+      gap: 50px;
+    }
+    a {
+      margin: 0;
+      padding: 0;
+    }
+    svg {
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      &:hover {
+        opacity: 1;
+        color: white;
+      }
+    }
   }
 }
 </style>

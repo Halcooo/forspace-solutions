@@ -42,6 +42,7 @@ export default {
   },
   data() {
     return {
+      routes: { route: "/products/sales", name: "mobile" },
       pressedMouse: false,
       currentSlide: 0,
     };
@@ -64,7 +65,7 @@ export default {
 <style lang="scss" scoped>
 h1 {
   // padding: 7px;
-  font-size: 100px;
+  font-size: 50px;
   color: white;
   margin-bottom: 5%;
   // background-color: rgba(255, 253, 253, 0.8);
@@ -85,47 +86,38 @@ h1 {
     }
   }
 }
-.wrapper {
-  height: 50vh;
-}
+//
 .grabbed {
   cursor: grabbing !important;
 }
 .carousel__item {
-  height: 70vh;
+  height: 50vh;
   width: 100%;
   color: white;
-  font-size: 20px;
+  // font-size: 20px;
   border-radius: 8px;
   position: relative;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .overlay {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.3);
+    background-color: rgba(0, 0, 0, 0.473);
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     div {
-      width: 100%;
-      margin: auto;
-      position: absolute;
-      text-align: center;
-      // transform: translate(20%, 20%);
-      top: 20%;
-      font-size: 55px;
       p {
         font-size: 30px;
-        width: 50%;
-        margin: auto;
       }
     }
   }
   img {
-    background-size: contain;
-    object-fit: cover;
     width: 100% !important;
-    height: 70vh;
     cursor: grab;
   }
 }

@@ -2,22 +2,15 @@
   <div class="wrapper">
     <div class="wrapper-div">
       <h1>{{ $t("contact") }}</h1>
-      <p
-        style="
-          width: 100%;
-          margin: auto;
-          padding: 2.5px;
-          background-color: rgb(0, 156, 161);
-          border-radius: 50px;
-          transform: translate(0px, -20px) rotate(-2deg);
-          position: absolute;
-          z-index: -1;
-        "
-      ></p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
+        aspernatur eligendi ipsam et blanditiis voluptate nostrum inventore
+        cupiditate dolor saepe labore officia fuga exercitationem reiciendis,
+        voluptatem quis voluptatibus odit mollitia?
+      </p>
     </div>
   </div>
   <ContactForm />
-  <AboutMap />
 </template>
 <script>
 import ContactForm from "@/components/ContactView/ContactForm.vue";
@@ -31,21 +24,19 @@ export default {
 </script>
 <style lang="scss" scoped>
 .wrapper {
-  // background: linear-gradient(
-  //     to right,
-  //     rgba(255, 255, 255, 0.227),
-  //     rgba(255, 255, 255, 0.392),
-  //     rgba(255, 255, 255, 0.507)
-  //   ),
-  //   url("@/assets/images/contact.jpg") no-repeat center center/cover;
-  height: 45vh;
-
+  background: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.227),
+      rgba(0, 0, 0, 0.392),
+      rgba(0, 0, 0, 0.507)
+    ),
+    url("@/assets/images/contact.jpg") no-repeat center center/cover;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
   .wrapper-div {
-    position: relative;
-    z-index: 1;
+    text-align: center;
   }
   h1 {
     // text-align: center;

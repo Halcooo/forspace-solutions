@@ -1,6 +1,6 @@
 <template lang="">
   <div class="container-xl d-flex purchase">
-    <h1>Nabava</h1>
+    <h1 class="text-secondary">Nabava</h1>
     <p>
       Forspace modul nabave vam omogućava jednostavnu narudžbu svega što vam
       treba za svakodnevno poslovanje. Sistem se brine o ispravnosti procesa: ko

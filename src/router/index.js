@@ -19,6 +19,11 @@ import TheFinance from "../components/ProductsViews/TheFinance.vue";
 import TheHumanRescources from "../components/ProductsViews/TheHumanRescources.vue";
 import TheDms from "../components/ProductsViews/TheDms.vue";
 
+import Erp from "../components/ServicesView/Erp.vue";
+import Dms from "../components/ServicesView/Dms.vue";
+import Wms from "../components/ServicesView/Wms.vue";
+import PaymentProvider from "../components/ServicesView/PaymentProvider.vue";
+import CustomSolutions from "../components/ServicesView/CustomSolutions.vue";
 // import store from "@/store/index.js"; // to use store in router if needed
 
 const routes = [
@@ -99,6 +104,31 @@ const routes = [
     path: "/promo",
     name: "promo",
     component: PromoView,
+  },
+  {
+    path: "/erp",
+    name: "Erp",
+    component: Erp,
+  },
+  {
+    path: "/dms",
+    name: "Dms",
+    component: Dms,
+  },
+  {
+    path: "/wms",
+    name: "wms",
+    component: Wms,
+  },
+  {
+    path: "/payment-provider",
+    name: "payment-provider",
+    component: PaymentProvider,
+  },
+  {
+    path: "/custom-solutions",
+    name: "custom-solutions",
+    component: CustomSolutions,
   },
 ];
 

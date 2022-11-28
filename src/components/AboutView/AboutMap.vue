@@ -4,7 +4,6 @@
       <div class="inner">
         <div style="position: relative; z-index: 1">
           <h1>Pronadjite nas na karti</h1>
-          <p class="under"></p>
         </div>
         <button type="button" class="button" @click="showMap()">
           Google Maps

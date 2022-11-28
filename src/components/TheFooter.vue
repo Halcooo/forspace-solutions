@@ -1,6 +1,9 @@
 @author Halid Lihovac
 <template>
   <div class="footer">
+    <div class="square"></div>
+    <div class="circle"></div>
+    <div class="round"></div>
     <footer class="text-center text-dark text-lg-start text-muted">
       <section class="d-flex justify-content-between">
         <div class="d-none d-md-block">
@@ -99,6 +102,7 @@ img {
   height: 50vh;
   padding-top: 2%;
   background-color: rgb(31, 31, 31);
+  position: relative;
   @media screen and (max-width: 567px) {
     height: 100%;
   }
@@ -112,5 +116,32 @@ img {
   //   url("@/assets/images/footer2.png") no-repeat center center/cover;
   // background-image: url("@/assets/images/bg-pattern-2.png");
   // background: url("@/assets/images/leaf.jpg") no-repeat center center/cover;
+  .square {
+    width: 50px;
+    height: 50px;
+
+    border: 10px solid rgba(116, 116, 116, 0.363);
+    position: absolute;
+    top: 20%;
+    right: 35%;
+    transform: rotate(35deg);
+  }
+  .circle {
+    width: 250px;
+    height: 250px;
+    border: 20px solid rgba(116, 116, 116, 0.363);
+    position: absolute;
+    top: 10%;
+    left: 18%;
+  }
+  .round {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(116, 116, 116, 0.363);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 42%;
+  }
 }
 </style>

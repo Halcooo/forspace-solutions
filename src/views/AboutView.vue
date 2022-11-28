@@ -1,6 +1,7 @@
 <template>
   <AboutVue />
   <AboutNext />
+  <AboutChoose />
   <AboutTeam />
   <AboutReserv />
   <SideIcons />
@@ -15,11 +16,12 @@ import AboutTeam from "@/components/AboutView/AboutTeam.vue";
 import SideIcons from "@/components/AboutView/SideIcons.vue";
 import AboutNums from "@/components/AboutView/AboutNums.vue";
 import AboutMap from "@/components/AboutView/AboutMap.vue";
-
+import AboutChoose from "@/components/AboutView/AboutChoose.vue";
 export default {
   components: {
     AboutVue,
     AboutNext,
+    AboutChoose,
     AboutTeam,
     AboutReserv,
     SideIcons,
