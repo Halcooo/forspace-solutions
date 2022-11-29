@@ -53,7 +53,7 @@ export default {
 
     margin: 4px auto;
 
-    background-color: $navy;
+    background-color: white;
     padding: 1px 4px;
     transition: all 0.5s;
   }
