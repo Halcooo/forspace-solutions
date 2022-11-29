@@ -21,10 +21,11 @@
         <ul class="nav-links">
           <Links :routes="routes" @index="currentEmit" />
 
-          <div v-for="drop in classes" :key="drop" class="main_dropnav">
+          <div v-for="drop in classes" :key="drop" class="main_dropnav ">
             <div
-              v-if="drop.id == 1"
-              class="dropnav"
+           @mouseleave="()=>{return false
+           drop.active=false}" 
+              class="dropnav "
               :class="{ first: drop.active }"
             >
               <div>
@@ -51,6 +52,32 @@
                   <!-- <BaseButton :to="route.route" :name="route.name" /> -->
                 </div>
                 <!-- <BaseButton :to="true" :name="true" /> -->
+              </div>
+            </div>
+            <div
+              v-if="drop.id == 2"
+              class="dropnav"
+              :class="{ second: drop.active }"
+            >
+              <div class="grid">
+                <div v-for="product in products" class="dropnav_item">
+                  <div
+                    style="
+                      width: 30px;
+                      padding: 2px;
+                      background-color: rgb(255, 98, 0); 
+                    "
+                  ></div>
+                  <!-- <img src="../../assets/images/icon-orange.png" alt="" /> -->
+                  <router-link :to="product.to">
+                    <div>
+                      <p>
+                        {{ product.heading }}
+                      </p>
+                      <small>{{ product.p }}</small>
+                    </div>
+                  </router-link>
+                </div>
               </div>
             </div>
           </div>
