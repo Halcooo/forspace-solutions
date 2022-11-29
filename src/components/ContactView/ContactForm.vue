@@ -213,7 +213,7 @@ export default {
       }
     }
     .form-control-custom {
-      background: rgba(207, 207, 207, 0.552);
+      background: rgba(218, 215, 215, 0.552);
       width: 100%;
       margin: 10px 0px 20px 0px;
       padding: 10px 2px 10px 2px;
@@ -225,7 +225,6 @@ export default {
 
     input,
     textarea {
-      color: #fff;
       &:focus {
         outline: none;
 
