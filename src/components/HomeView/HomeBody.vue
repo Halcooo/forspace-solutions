@@ -36,7 +36,7 @@
       </div>
     </div>
   </div>
-  <div class="body text-center pt-5">
+  <div class="body bg-light text-center pt-5">
     <div class="items container text-center pb-5">
       <div class="square">
         <h1>Brza i jednostavna rjesenja</h1>

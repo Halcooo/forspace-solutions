@@ -47,35 +47,10 @@
                   commodi.
                 </p>
                 <div class="nav_btn mt-4">
-                  <BaseButton :to="route.route" :name="route.name" />
+                  <a href=""> Procitaj vise ></a>
+                  <!-- <BaseButton :to="route.route" :name="route.name" /> -->
                 </div>
                 <!-- <BaseButton :to="true" :name="true" /> -->
-              </div>
-            </div>
-            <div
-              v-if="drop.id == 2"
-              class="dropnav"
-              :class="{ second: drop.active }"
-            >
-              <div class="grid">
-                <div v-for="product in products" class="dropnav_item">
-                  <div
-                    style="
-                      width: 30px;
-                      padding: 2px;
-                      background-color: rgb(255, 98, 0);
-                    "
-                  ></div>
-                  <!-- <img src="../../assets/images/icon-orange.png" alt="" /> -->
-                  <router-link :to="product.to">
-                    <div>
-                      <p>
-                        {{ product.heading }}
-                      </p>
-                      <small>{{ product.p }}</small>
-                    </div>
-                  </router-link>
-                </div>
               </div>
             </div>
           </div>
@@ -356,13 +331,12 @@ export default {
 
       .nav_btn {
         display: flex;
-        justify-content: left;
+        justify-content: right;
         align-items: center;
         width: 100%;
 
         a {
-          padding: 20px 40px;
-          color: white;
+          color: gray;
         }
       }
     }
