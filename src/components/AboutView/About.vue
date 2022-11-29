@@ -103,8 +103,6 @@ export default {
     border-radius: 0%;
     border: 15px solid gray;
   }
-  .lamp {
-  }
 }
 .about-flex-grid {
   width: 70%;

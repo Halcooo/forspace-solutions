@@ -21,10 +21,11 @@
         <ul class="nav-links">
           <Links :routes="routes" @index="currentEmit" />
 
-          <div v-for="drop in classes" :key="drop" class="main_dropnav">
+          <div v-for="drop in classes" :key="drop" class="main_dropnav ">
             <div
-              v-if="drop.id == 1"
-              class="dropnav"
+           @mouseleave="()=>{return false
+           drop.active=false}" 
+              class="dropnav "
               :class="{ first: drop.active }"
             >
               <div>
@@ -63,7 +64,7 @@
                     style="
                       width: 30px;
                       padding: 2px;
-                      background-color: rgb(255, 98, 0);
+                      background-color: rgb(255, 98, 0); 
                     "
                   ></div>
                   <!-- <img src="../../assets/images/icon-orange.png" alt="" /> -->
