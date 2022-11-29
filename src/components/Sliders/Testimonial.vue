@@ -47,10 +47,13 @@ export default {
   }
   img {
     display: flex;
-    justify-content: left;
+
     margin: auto;
     width: 200px;
     height: 200px;
+    @media screen and (max-width: 567px) {
+      width: 400px;
+    }
   }
 }
 .carousel__pagination {
@@ -62,7 +65,7 @@ export default {
 @media only screen and (max-width: 600px) {
   .carousel__item {
     img {
-      max-width: 100px;
+      max-width: 250px;
     }
   }
 }

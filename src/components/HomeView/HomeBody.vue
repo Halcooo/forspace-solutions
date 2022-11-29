@@ -411,8 +411,8 @@ img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     // gap: 10px;
-    margin-left: 2%;
-    margin-right: auto;
+    // margin-left: 2%;
+    // margin-right: auto;
   }
   .square {
     width: 370px;
@@ -451,39 +451,6 @@ img {
   // background-color: rgb(241, 241, 241);
 }
 
-@media screen and (max-width: 567px) {
-  .body {
-    width: 90%;
-    margin: auto;
-  }
-
-  .cube-background {
-    img {
-      width: 400px;
-      height: 400px;
-    }
-  }
-
-  .widget-container {
-    width: 100%;
-    flex-direction: column;
-    height: 100%;
-    margin-bottom: 0%;
-    .widget-box {
-      height: 50vh;
-      .widget-frame {
-        width: 50%;
-        height: 50vh;
-        left: 5%;
-      }
-      .widget-pic {
-        width: 74%;
-        height: 300px;
-      }
-    }
-  }
-}
-
 .testimonial {
   .testimonial-top {
     display: flex;
@@ -502,8 +469,7 @@ img {
         top: 0%;
         left: 50%;
         transform: translate(-50%, 0%);
-        box-sizing: border-box;
-        padding: 50px;
+
         .testimonial-square {
           width: 70px;
           height: 70px;
@@ -562,7 +528,38 @@ img {
     }
   }
 }
+
 @media screen and (max-width: 567px) {
+  .body {
+    width: 95%;
+    margin: auto;
+  }
+
+  .cube-background {
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  .widget-container {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 0%;
+    .widget-box {
+      height: 50vh;
+      .widget-frame {
+        width: 50%;
+        height: 50vh;
+        left: 5%;
+      }
+      .widget-pic {
+        width: 74%;
+        height: 300px;
+      }
+    }
+  }
   .items {
     .items-container {
       grid-template-columns: repeat(1, 1fr);
@@ -573,7 +570,10 @@ img {
     .square {
       position: relative;
       width: 100%;
+      height: 100%;
       margin: auto;
+      padding: 10px 5px;
+      top: 0;
       right: 0;
     }
     .square-2 {
@@ -594,7 +594,8 @@ img {
         .testimonial-box {
           position: relative;
           width: 100%;
-          height: 80%;
+          height: 100%;
+          padding: 20px;
           margin-bottom: 5%;
           .testimonial-square {
             // top: -20%;
@@ -641,6 +642,7 @@ img {
     }
   }
 }
+
 .item {
   display: block;
   width: 100%;
