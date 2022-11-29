@@ -73,7 +73,6 @@ h1 {
   // box-shadow: rgba(255, 253, 253, 1) 0px 40px 100px 4px;
 }
 .carousel__pagination {
-  z-index: 21;
   position: absolute;
   bottom: 5%;
   width: 100%;
@@ -118,6 +117,7 @@ h1 {
   }
   img {
     width: 100% !important;
+    height: 100%;
     cursor: grab;
   }
 }
