@@ -69,6 +69,5 @@ export default {
   .times-line {
     background-color: $navy;
   }
-  // border: 1px solid $navy;
 }
 </style>

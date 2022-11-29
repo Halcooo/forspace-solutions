@@ -254,7 +254,7 @@ export default {
 
   z-index: 2;
   margin: 0;
-  // padding: 20px;
+  padding: 5px 0px;
 
   width: 100%;
   .logo {
@@ -463,7 +463,7 @@ export default {
 
 .white_wrapper {
   background-color: white;
-
+  padding: 12px 0px;
   top: 0%;
 }
 </style>
