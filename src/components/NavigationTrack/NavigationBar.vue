@@ -23,8 +23,7 @@
 
           <div v-for="drop in classes" :key="drop" class="main_dropnav ">
             <div
-           @mouseleave="()=>{return false
-           drop.active=false}" 
+           @mouseleave="()=>drop.active=false" 
               class="dropnav "
               :class="{ first: drop.active }"
             >
