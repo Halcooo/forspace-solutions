@@ -23,10 +23,10 @@ export default {
   },
   methods: {
     showMap() {
-      if (this.$store.state.map) {
-        this.$store.state.map = false;
+      if (this.$store.getters.getMapState) {
+        this.$store.commit('setMapState',false) // vuex store must be used like this with getters and mutations and separate modules!!
       } else {
-        this.$store.state.map = true;
+        this.$store.commit('setMapState',true)
       }
     },
   },
