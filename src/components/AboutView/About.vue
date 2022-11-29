@@ -119,7 +119,7 @@ export default {
   .flex-first {
     width: 45%;
     height: 100%;
-    background: $navy;
+    background: rgb(50, 145, 168);
     padding: 10px;
 
     .div-1,

@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="wrapper-div">
       <h1>{{ $t("contact") }}</h1>
-      <p>
+      <p class="text-light">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
         aspernatur eligendi ipsam et blanditiis voluptate nostrum inventore
         cupiditate dolor saepe labore officia fuga exercitationem reiciendis,
