@@ -218,7 +218,7 @@ export default {
       position: absolute;
       width: 52%;
       height: 100%;
-      border: 23px solid rgba(77, 219, 255, 0.6);
+      border: 23px solid rgba(45, 138, 161, 0.8);
       // border: 23px solid rgb(255, 97, 0);
       top: 0;
       left: 7%;
@@ -418,7 +418,7 @@ img {
     width: 370px;
     height: 350px;
 
-    background-color: rgba(77, 219, 255, 0.6);
+    background-color: rgba(45, 138, 161, 0.8);
     position: absolute;
     z-index: -1;
     top: -3%;

@@ -66,9 +66,9 @@ export default {
   }
   background: linear-gradient(
       to right,
-      rgba(77, 219, 255, 0.6),
-      rgba(77, 219, 255, 0.6),
-      rgba(77, 219, 255, 0.6)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
     url("@/assets/images/forspace_info.jpg") no-repeat center center/cover;
 
