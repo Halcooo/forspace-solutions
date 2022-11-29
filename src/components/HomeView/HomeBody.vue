@@ -44,7 +44,7 @@
       <div class="square-2"></div>
       <div class="items-container">
         <div
-          class="col-sm item bg-light p-5"
+          class="item bg-light p-5"
           style="
             border-bottom: 1px solid gainsboro;
             border-right: 1px solid gainsboro;
@@ -55,7 +55,7 @@
           <p>Centralno upravljanje procesima.</p>
         </div>
         <div
-          class="item col-sm bg-light p-5"
+          class="item bg-light p-5"
           style="border-bottom: 1px solid gainsboro"
         >
           <img src="@/assets/images/cloud.png" alt="cloud" />
@@ -63,14 +63,14 @@
           <p>Centralno upravljanje procesima.</p>
         </div>
         <div
-          class="item col-sm bg-light p-5"
+          class="item bg-light p-5"
           style="border-right: 1px solid gainsboro"
         >
           <img src="@/assets/images/config.png" alt="config" />
           <h4>Vaša kompanija pod jednim krovom</h4>
           <p>Centralno upravljanje procesima.</p>
         </div>
-        <div class="item col-sm bg-light p-5">
+        <div class="item bg-light p-5">
           <img src="@/assets/images/circle.png" alt="circle" />
           <h4>Vaša kompanija pod jednim krovom</h4>
           <p>Centralno upravljanje procesima.</p>
@@ -487,9 +487,7 @@ img {
 .testimonial {
   .testimonial-top {
     display: flex;
-
     width: 70%;
-
     margin: auto;
     .testimonial-top-item-one {
       width: 100%;
@@ -515,18 +513,6 @@ img {
           background-color: white;
           transform: rotate(45deg) translate(70%, 0%);
         }
-
-        .quote-div {
-        }
-        // .quote {
-        //   width: 100px;
-        //   height: 0;
-        //   border: 10px solid #ffffff;
-
-        //   border-right: 10px solid transparent;
-        //   border-top: 10px solid transparent;
-        //   background-color: white;
-        // }
       }
     }
     .testimonial-top-item-two {
@@ -575,5 +561,89 @@ img {
       }
     }
   }
+}
+@media screen and (max-width: 567px) {
+  .items {
+    .items-container {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0;
+      width: 100%;
+      margin-left: 0%;
+    }
+    .square {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      right: 0;
+    }
+    .square-2 {
+      display: none;
+    }
+  }
+
+  .testimonial {
+    .testimonial-top {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 95%;
+      height: 100%;
+      margin: auto;
+      .testimonial-top-item-one {
+        position: relative;
+        margin-top: 12%;
+        .testimonial-box {
+          position: relative;
+          width: 100%;
+          height: 80%;
+          margin-bottom: 5%;
+          .testimonial-square {
+            // top: -20%;
+            top: 0;
+            left: 0;
+            transform: rotate(45deg) translate(40%, -110%);
+          }
+        }
+      }
+      .testimonial-top-item-two {
+        position: relative;
+        width: 100%;
+        padding-left: 5%;
+        h1 {
+          font-size: 60px;
+        }
+      }
+    }
+
+    .testimonial-bottom {
+      width: 95%;
+      margin: auto;
+      height: 100%;
+      padding: 10px;
+
+      .bottom-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        > div {
+          width: 100%;
+        }
+        h1 {
+          width: 100%;
+          font-size: 60px;
+        }
+
+        .button-group {
+          transform: translate(-6%, 0);
+        }
+      }
+    }
+  }
+}
+.item {
+  display: block;
+  width: 100%;
+  margin: auto;
 }
 </style>
