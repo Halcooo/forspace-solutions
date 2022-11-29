@@ -132,6 +132,7 @@ h1 {
 
 .nav-contact {
   background-color: rgb(70, 70, 70);
+  // background-color: rgb(55, 165, 255);
   color: white;
   .track {
     width: 70%;
@@ -141,10 +142,10 @@ h1 {
     align-items: center;
     ul {
       display: flex;
-      justify-content: center;
+      justify-content: right;
       align-items: center;
       margin: 0;
-      padding: 10px 30px;
+      padding: 10px 25px;
 
       gap: 50px;
     }
@@ -156,9 +157,19 @@ h1 {
       font-size: 20px;
       margin: 0;
       padding: 0;
+
       &:hover {
         opacity: 1;
         color: white;
+      }
+    }
+
+    @media screen and (max-width: 567px) {
+      width: 100%;
+      display: none;
+      ul {
+        padding: 5px 10px;
+        gap: 30px;
       }
     }
   }

@@ -66,7 +66,7 @@
   <div class="cube-background">
     <div class="cube-content">
       <div class="erp-text mt-5">
-        <h1 class="erp-main-text text-secondary mt-5">
+        <h1 class="erp-main-text text-secondary mt-2">
           Forspace ERP & Računovodstvo +
         </h1>
         <p class="erp-secondary-text">
@@ -126,13 +126,14 @@ export default {
 @import "../../styles/variables.scss";
 
 .widget-container {
-  width: 65%;
+  width: 70%;
   margin: auto;
   margin-bottom: 5%;
   height: 55vh;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
+
   .widget-box {
     width: 100%;
     height: 100%;
@@ -145,7 +146,7 @@ export default {
       border: 23px solid rgb(55, 165, 255);
       // border: 23px solid rgb(255, 97, 0);
       top: 0;
-      left: 10%;
+      left: 7%;
     }
     .widget-pic {
       position: absolute;
@@ -157,6 +158,7 @@ export default {
         center/cover;
     }
   }
+
   .text {
     width: 100%;
     padding: 30px 60px;
@@ -274,9 +276,11 @@ img {
   // margin-top: 90px;
 }
 .cube-background {
-  // background-color: rgb(230, 230, 230);
+  background-color: rgb(248, 248, 248);
   width: 100%;
   margin: auto;
+  padding: 50px 0px;
+  margin-bottom: 10%;
 
   // align-items: center;
   .cube-content {
@@ -284,6 +288,7 @@ img {
     margin: auto;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     > div {
       width: 100%;
@@ -295,10 +300,6 @@ img {
     height: 400px;
     display: flex;
     margin: auto;
-    @media screen and (max-width: 567px) {
-      width: 400px;
-      height: 400px;
-    }
   }
 
   svg {
@@ -307,7 +308,12 @@ img {
     bottom: 0;
     left: 0;
     z-index: -1;
-    @media screen and (max-width: 567px) {
+  }
+  @media screen and (max-width: 567px) {
+    padding: 10px;
+    .cube-content {
+      width: 90%;
+      flex-direction: column;
     }
   }
 }
@@ -321,9 +327,48 @@ img {
 }
 .item {
   margin-bottom: 5vh;
+  border-radius: 5px;
 
   h4 {
     font-weight: bolder;
+  }
+}
+
+.body {
+  margin-top: 7%;
+  margin-bottom: 5%;
+}
+
+@media screen and (max-width: 567px) {
+  .body {
+    width: 90%;
+    margin: auto;
+  }
+
+  .cube-background {
+    img {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  .widget-container {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 0%;
+    .widget-box {
+      height: 50vh;
+      .widget-frame {
+        width: 50%;
+        height: 50vh;
+        left: 5%;
+      }
+      .widget-pic {
+        width: 74%;
+        height: 300px;
+      }
+    }
   }
 }
 </style>

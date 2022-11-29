@@ -104,6 +104,11 @@ export default {
         margin: auto;
         transform: translate(0%, 210%);
       }
+
+      .dots {
+        top: -40px;
+        right: -20px;
+      }
     }
   }
 }
