@@ -105,9 +105,9 @@ li {
       height: 2px;
     }
     &:hover {
-      color: white;
+      opacity: .8;
       .underline {
-        background-color: white;
+        background-color: rgb(166, 166, 166);
         width: 100%;
         transition: width 0.3s ease-out;
       }
