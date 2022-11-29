@@ -1,12 +1,12 @@
 import { createStore } from "vuex";
 import servicesModule from "./modules/services.js";
+import mapModule from "./modules/map.js";
 
 export default createStore({
   state: {
     none: true,
     sidenav: false,
     sidecontent: false,
-    map: false,
   },
   getters: {
     getSideNav(state) {
@@ -19,5 +19,5 @@ export default createStore({
     },
   },
   actions: {},
-  modules: { servicesModule },
+  modules: { servicesModule, mapModule },
 });

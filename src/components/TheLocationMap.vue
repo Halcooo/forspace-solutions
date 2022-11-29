@@ -1,7 +1,7 @@
 <template lang="">
   <div
     class="map d-flex justify-content-center align-items-center"
-    v-if="this.$store.state.map"
+    v-if="this.$store.getters.getMapState"
   >
     <div>
       <div style="text-align: center" class="mb-5"></div>
