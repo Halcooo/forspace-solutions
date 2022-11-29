@@ -38,18 +38,34 @@
   </div>
   <div class="body text-center pt-5">
     <div class="items container text-center pb-5">
-      <div class="row gap-2">
-        <div class="col-sm item bg-light p-5">
+      <div class="square">
+        <h1>Brza i jednostavna rjesenja</h1>
+      </div>
+      <div class="square-2"></div>
+      <div class="items-container">
+        <div
+          class="col-sm item bg-light p-5"
+          style="
+            border-bottom: 1px solid gainsboro;
+            border-right: 1px solid gainsboro;
+          "
+        >
           <img src="@/assets/images/companies.png" alt="companies" />
           <h4>Vaša kompanija pod jednim krovom</h4>
           <p>Centralno upravljanje procesima.</p>
         </div>
-        <div class="item col-sm bg-light p-5">
+        <div
+          class="item col-sm bg-light p-5"
+          style="border-bottom: 1px solid gainsboro"
+        >
           <img src="@/assets/images/cloud.png" alt="cloud" />
           <h4>Vaša kompanija pod jednim krovom</h4>
           <p>Centralno upravljanje procesima.</p>
         </div>
-        <div class="item col-sm bg-light p-5">
+        <div
+          class="item col-sm bg-light p-5"
+          style="border-right: 1px solid gainsboro"
+        >
           <img src="@/assets/images/config.png" alt="config" />
           <h4>Vaša kompanija pod jednim krovom</h4>
           <p>Centralno upravljanje procesima.</p>
@@ -78,32 +94,91 @@
       </div>
     </div>
   </div>
-  <!-- <div class="dir-container m-5"></div> -->
-  <div class="container text-center pt-5">
-    <h1>Kompanije koje su već optimizirale svoje procese sa Forspace</h1>
-
-    <BaseSlider :images="images" />
-
-    <p class="mt-5 pt-5">
+  <div class="testimonial">
+    <div class="testimonial-top">
+      <div class="testimonial-top-item-one">
+        <div class="testimonial-box">
+          <div class="quote-div">
+            <!-- <font-awesome-icon icon="fa-solid fa-quote-left" /> -->
+          </div>
+          <div class="testimonial-square"></div>
+          <Testimonial :images="test" />
+        </div>
+      </div>
+      <div class="testimonial-top-item-two">
+        <h1 class="text-secondary">Sta nasi klijenti kazu o nama</h1>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem
+          quaerat labore non recusandae, veritatis et tempora ex neque mollitia
+          laboriosam magnam explicabo voluptatum nobis sequi sed asperiores
+          assumenda maxime accusamus!
+        </p>
+      </div>
+    </div>
+    <div class="testimonial-bottom">
+      <div class="bottom-flex">
+        <div>
+          <h1 class="text-light">
+            Da li imate nekih pitanja ? Kontaktirajte nas.
+          </h1>
+        </div>
+        <div class="button-group">
+          <div>
+            <BaseButton :to="routes_1.route_1" :name="routes_1.name_1" />
+            <BaseButton :to="routes_2.route_2" :name="routes_2.name_2" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="w-100 text-center bg-light">
+    <!-- <h1>Kompanije koje su već optimizirale svoje procese sa Forspace</h1> -->
+    <div class="container">
+      <BaseSlider :images="images" />
+    </div>
+    <!-- <p class="mt-5 pt-5">
       Sve naše klijente ponosno ističemo i gradimo partnerske odnose na
       obostrano zadovoljstvo. Ukoliko neki od naših klijenata nisu još uvijek
       dodani na listu, ne znači da ih manje cijenimo ili da su nam manje važni.
-    </p>
-    <br />
+    </p> -->
   </div>
   <TheLocationMap></TheLocationMap>
 </template>
 <script>
 import BaseSlider from "../Sliders/BaseSlider.vue";
 import TheLocationMap from "@/components/TheLocationMap.vue";
+import Testimonial from "@/components/Sliders/Testimonial.vue";
+import BaseButton from "../Forms/buttons/BaseButton.vue";
 export default {
   name: "HomeBody",
   components: {
     BaseSlider,
     TheLocationMap,
+    Testimonial,
+    BaseButton,
   },
   data() {
     return {
+      routes_1: { route_1: "/contact", name_1: "faq" },
+      routes_2: { route_2: "/contact", name_2: "faq-2" },
+
+      test: [
+        {
+          id: 1,
+          url: require("@/assets/images/asa-group-logo.png"),
+          name: "about_us_client_one",
+        },
+        {
+          id: 2,
+          url: require("@/assets/images/prevent-logo.png"),
+          name: "about_us_client_two",
+        },
+        {
+          id: 3,
+          url: require("@/assets/images/interior-logo-2.png"),
+          name: "about_us_client_three",
+        },
+      ],
       images: [
         { id: 1, url: require("@/assets/images/asa-group-logo.png") },
         { id: 2, url: require("@/assets/images/prevent-logo.png") },
@@ -143,7 +218,7 @@ export default {
       position: absolute;
       width: 52%;
       height: 100%;
-      border: 23px solid rgb(55, 165, 255);
+      border: 23px solid rgba(77, 219, 255, 0.6);
       // border: 23px solid rgb(255, 97, 0);
       top: 0;
       left: 7%;
@@ -276,7 +351,7 @@ img {
   // margin-top: 90px;
 }
 .cube-background {
-  background-color: rgb(248, 248, 248);
+  // background-color: rgb(248, 248, 248);
   width: 100%;
   margin: auto;
   padding: 50px 0px;
@@ -325,18 +400,55 @@ img {
     color: gray;
   }
 }
-.item {
-  margin-bottom: 5vh;
-  border-radius: 5px;
+.items {
+  position: relative;
+  z-index: 1;
+  padding: 50px 0px;
 
-  h4 {
-    font-weight: bolder;
+  .items-container {
+    width: 75%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    // gap: 10px;
+    margin-left: 2%;
+    margin-right: auto;
+  }
+  .square {
+    width: 370px;
+    height: 350px;
+
+    background-color: rgba(77, 219, 255, 0.6);
+    position: absolute;
+    z-index: -1;
+    top: -3%;
+    right: 2%;
+    display: flex;
+    justify-content: right;
+    padding-right: 1%;
+    align-items: center;
+    text-align: right;
+    h1 {
+      color: white;
+      width: 70%;
+      font-size: 60px;
+    }
+  }
+  .square-2 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(190, 190, 190);
+    position: absolute;
+    z-index: -2;
+    top: 40%;
+    right: 10%;
   }
 }
 
 .body {
   margin-top: 7%;
   margin-bottom: 5%;
+  // background-color: rgb(241, 241, 241);
 }
 
 @media screen and (max-width: 567px) {
@@ -367,6 +479,99 @@ img {
       .widget-pic {
         width: 74%;
         height: 300px;
+      }
+    }
+  }
+}
+
+.testimonial {
+  .testimonial-top {
+    display: flex;
+
+    width: 70%;
+
+    margin: auto;
+    .testimonial-top-item-one {
+      width: 100%;
+      position: relative;
+
+      .testimonial-box {
+        width: 600px;
+        height: 600px;
+        position: absolute;
+        background-color: rgb(50, 145, 168);
+
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        box-sizing: border-box;
+        padding: 50px;
+        .testimonial-square {
+          width: 70px;
+          height: 70px;
+          position: absolute;
+          top: 0;
+          right: 0;
+          background-color: white;
+          transform: rotate(45deg) translate(70%, 0%);
+        }
+
+        .quote-div {
+        }
+        // .quote {
+        //   width: 100px;
+        //   height: 0;
+        //   border: 10px solid #ffffff;
+
+        //   border-right: 10px solid transparent;
+        //   border-top: 10px solid transparent;
+        //   background-color: white;
+        // }
+      }
+    }
+    .testimonial-top-item-two {
+      width: 100%;
+      padding-left: 5%;
+      h1 {
+        font-size: 60px;
+      }
+    }
+  }
+  .testimonial-bottom {
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 5%;
+    background: linear-gradient(
+        to right,
+        rgb(0, 0, 0, 0.5),
+        rgb(0, 0, 0, 0.5),
+        rgb(0, 0, 0, 0.5)
+      ),
+      url("@/assets/images/dms-header.jpg") no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bottom-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 70%;
+      > div {
+        width: 100%;
+      }
+      h1 {
+        margin-top: 45%;
+        margin-left: 5%;
+        width: 100%;
+        font-size: 60px;
+      }
+
+      .button-group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15%;
+        padding-left: 15%;
       }
     }
   }

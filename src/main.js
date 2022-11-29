@@ -23,6 +23,7 @@ import {
   faRocket,
   faCheck,
   faMailBulk,
+  faQuoteLeft,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
@@ -54,7 +55,8 @@ library.add(
   faServer,
   faRocket,
   faCheck,
-  faMailBulk
+  faMailBulk,
+  faQuoteLeft
 );
 
 createApp(App)

@@ -57,9 +57,9 @@ export default {};
 
 .content {
   width: 100%;
-  background-color: #ccc;
+  background-color: rgb(247, 247, 247);
   height: 80px;
-  background-color: rgb(231, 231, 231);
+  // background-color: rgb(231, 231, 231);
 }
 .items {
   width: 70%;
@@ -78,7 +78,7 @@ export default {};
   }
 
   .router-link-active {
-    background-color: gray;
+    background-color: rgb(172, 172, 172);
     color: white;
     // border-radius: 50px;
   }
@@ -92,13 +92,13 @@ export default {};
     grid-template-columns: repeat(3, 2fr);
     width: 100%;
     padding: 10px;
-  }
-  a {
-    text-align: center;
-    // border-bottom: 1px solid #25435b;
-    border-radius: 50px;
-    background-color: #ccc;
-    padding: 2px;
+    a {
+      text-align: center;
+      // border-bottom: 1px solid #25435b;
+      border-radius: 50px;
+      // background-color: rgb(238, 238, 238);
+      padding: 10px;
+    }
   }
 }
 .fade-enter-active,

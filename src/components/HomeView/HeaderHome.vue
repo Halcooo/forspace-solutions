@@ -60,18 +60,17 @@ export default {
 
 .landing-page {
   width: 100%;
-  height: 55vh;
+  height: 70vh;
   @media screen and (max-width: 567px) {
     height: 50vh;
   }
   background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.493),
-    rgba(0, 0, 0, 0.336),
-    rgba(0, 0, 0, 0.253)
-  );
-  // ,
-  // url("@/assets/images/productscover.jpg") no-repeat center center/cover;
+      to right,
+      rgba(77, 219, 255, 0.6),
+      rgba(77, 219, 255, 0.6),
+      rgba(77, 219, 255, 0.6)
+    ),
+    url("@/assets/images/forspace_info.jpg") no-repeat center center/cover;
 
   animation: backgroundFade 0.5s ease-in;
   .background {
@@ -125,8 +124,8 @@ export default {
 
 .nav {
   height: 80px;
-  background-color: rgb(231, 231, 231);
-
+  background-color: rgb(247, 247, 247);
+  display: none;
   .middle {
     width: 75%;
     height: 100%;
