@@ -2,7 +2,7 @@
   <AboutVue />
   <AboutNext />
   <AboutChoose />
-  <AboutTeam />
+  <!-- <AboutTeam /> -->
   <AboutVideo />
   <AboutNums />
   <AboutReserv />

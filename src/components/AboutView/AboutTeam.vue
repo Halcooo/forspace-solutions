@@ -4,23 +4,25 @@
       {{ $t("about_us_team") }}
     </h1>
     <Line />
-    <div class="recension_background">
-      <div class="dots"></div>
+    <div class="border-div">
+      <div class="recension_background">
+        <!-- <div class="dots"></div> -->
 
-      <p
-        style="
-          position: absolute;
-          bottom: 2%;
-          left: 10%;
-          color: rgba(255, 255, 255, 0.6);
-          font-size: 40px;
-        "
-      >
-        Life at Forspace
-      </p>
-      <div class="recension_overlay">
-        <h6>{{ $t("about_us_clients") }}</h6>
-        <AboutSlider :images="images" />
+        <p
+          style="
+            position: absolute;
+            bottom: 2%;
+            left: 10%;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 40px;
+          "
+        >
+          Life at Forspace
+        </p>
+        <div class="recension_overlay">
+          <h6>{{ $t("about_us_clients") }}</h6>
+          <AboutSlider :images="images" />
+        </div>
       </div>
     </div>
   </div>
@@ -60,11 +62,18 @@ export default {
   // height: 100vh;
   padding-top: 6%;
   position: relative;
-
-  .recension_background {
+  .border-div {
     width: 70%;
     margin: 5% auto;
     height: 400px;
+    padding: 20px;
+    // border: 2px solid black;
+    // background-color: rgb(238, 238, 238);
+  }
+  .recension_background {
+    width: 100%;
+    height: 100%;
+
     position: relative;
     background: url("@/assets/images/product_item_2.jpg") no-repeat center
       center/cover;
@@ -75,15 +84,15 @@ export default {
       transform: translate(145%, 150%);
       padding: 10px 5px;
     }
-    .dots {
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      background: url("@/assets/images/dots.png") no-repeat center center/cover;
-      top: -40px;
-      right: -40px;
-      z-index: -1;
-    }
+    // .dots {
+    //   position: absolute;
+    //   width: 200px;
+    //   height: 200px;
+    //   background: url("@/assets/images/dots.png") no-repeat center center/cover;
+    //   top: -40px;
+    //   right: -40px;
+    //   z-index: -1;
+    // }
   }
 
   h6 {
