@@ -80,6 +80,7 @@ export default {
         height: 600px;
         position: absolute;
         background-color: cornflowerblue;
+
         padding-top: 15%;
         top: 0%;
         left: 50%;
@@ -90,7 +91,7 @@ export default {
           height: 70px;
           position: absolute;
           top: 0;
-          right: 0;
+          right: -1%;
           background-color: white;
           transform: rotate(45deg) translate(70%, 0%);
         }
