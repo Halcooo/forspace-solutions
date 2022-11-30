@@ -4,78 +4,37 @@
       <div class="paydesk">
         <div class="paydesk white-text-main">
           <div class="paydesk-header text-center">
-            <h1>Blagajna</h1>
-            <h4>Prijem i isplata</h4>
+            <h1>{{ $t("products_paydesk_header_1") }}</h1>
+            <h4>{{ $t("products_paydesk_header_2") }}</h4>
 
             <p>
-              Sve što treba da upravljate vašom blagajnom tačno, transparentno i
-              u skladu sa odobrenjima i budžetom.
+              {{ $t("products_paydesk_header_text") }}
             </p>
           </div>
-          <div class="d-flex justify-content-center paydesk-items">
-            <div class="container col-12 p-5">
-              <table class="m-auto w-100">
-                <tbody>
-                  <tr>
-                    <td>
-                      <h1 class="este-ff">01</h1>
-                    </td>
-                    <td>
-                      <p class="segeo-semi-bold">
-                        Unos i potvrda prijema gotovine po unaprijed definisanom
-                        radnom toku
-                      </p>
-                    </td>
-                    <td>
-                      <h1 class="este-ff">02</h1>
-                    </td>
-                    <td>
-                      <p class="segeo-semi-bold">
-                        Unos i provjera isplate gotovine po unaprijed
-                        definisanom radnom toku
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <h1 class="este-ff">03</h1>
-                    </td>
-                    <td>
-                      <p class="segeo-semi-bold">
-                        Prijem gotovine i obračun isplate
-                      </p>
-                    </td>
-                    <td>
-                      <h1 class="este-ff">04</h1>
-                    </td>
-                    <td>
-                      <p class="segeo-semi-bold">
-                        Pregled dnevnika blagajne i generisanje dokumenta
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <h1 class="este-ff">05</h1>
-                    </td>
-                    <td>
-                      <p class="segeo-semi-bold">
-                        Pregled stavki dnevnika blagajne i generisanje
-                        dokumenata
-                      </p>
-                    </td>
-                    <td>
-                      <h1 class="este-ff">06</h1>
-                    </td>
-                    <td>
-                      <p class="segeo-semi-bold">
-                        Automatsko knjiženje dnevnih transakcija u glavnu knjigu
-                        na osnovu računa dodijeljenih blagajni
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          <div class="d-flex justify-content-center paydesk-items pt-5">
+            <div class="col-6">
+              <div
+                class="d-flex align-items-center"
+                v-for="pay in paydesk_1"
+                :key="pay"
+              >
+                <h1 class="text-secondary">{{ pay.num }}</h1>
+                <p class="segeo-semi-bold">
+                  {{ $t(pay.text) }}
+                </p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div
+                class="d-flex align-items-center"
+                v-for="pay in paydesk_2"
+                :key="pay"
+              >
+                <h1 class="text-secondary">{{ pay.num }}</h1>
+                <p class="segeo-semi-bold">
+                  {{ $t(pay.text) }}
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -86,6 +45,49 @@
 <script>
 export default {
   name: "TheFinancePaydesk",
+  data() {
+    return {
+      paydesk_1: [
+        {
+          num: "01",
+          text: "products_paydesk_01_text",
+        },
+        {
+          num: "02",
+          text: "products_paydesk_02_text",
+        },
+        { num: "03", text: "products_paydesk_03_text" },
+      ],
+      paydesk_2: [
+        {
+          num: "04",
+          text: "products_paydesk_04_text",
+        },
+        {
+          num: "05",
+          text: "products_paydesk_05_text",
+        },
+        {
+          num: "06",
+          text: "products_paydesk_06_text",
+        },
+      ],
+    };
+  },
 };
 </script>
-<style lang=""></style>
+<style lang="scss" scoped>
+.paydesk-items {
+  @media screen and (max-width: 567px) {
+    flex-direction: column;
+    justify-content: center;
+    .col-6 {
+      width: 90%;
+      margin: auto;
+      .d-flex {
+        gap: 20px;
+      }
+    }
+  }
+}
+</style>

@@ -15,14 +15,10 @@
             </h4>
           </div>
         </div>
-        <img class="image-box" src="@/assets/images/planned-BH.png" alt="" />
+        <img class="image-box" v-for="img in planned" :src="img.url" alt="" />
       </div>
       <div class="w-100 d-flex justify-content-center">
-        <img
-          style="width: 50%"
-          src="@/assets/images/COMPARISON-WITH-PREVIOUS-YEAR.png"
-          alt=""
-        />
+        <img style="width: 50%" v-for="img in img_box" :src="img.url" alt="" />
       </div>
     </div>
 
@@ -38,7 +34,8 @@
       <div class="w-100">
         <img
           class="infografika"
-          src="@/assets/images/infografika-bh.png"
+          v-for="img in infograph"
+          :src="img.url"
           alt=""
         />
       </div>
@@ -68,6 +65,34 @@ export default {
     TheFinancePaydesk,
     TheFinanceBankStatement,
     TheFinanceTax,
+  },
+  data() {
+    return {};
+  },
+  computed: {
+    img_box() {
+      if (this.$i18n.locale == "bs") {
+        return [
+          { url: require("@/assets/images/COMPARISON-WITH-PREVIOUS-YEAR.png") },
+        ];
+      } else {
+        return [{ url: require("@/assets/images/transparence.png") }];
+      }
+    },
+    planned() {
+      if (this.$i18n.locale == "bs") {
+        return [{ url: require("@/assets/images/planned-BH.png") }];
+      } else {
+        return [{ url: require("@/assets/images/planned.png") }];
+      }
+    },
+    infograph() {
+      if (this.$i18n.locale == "bs") {
+        return [{ url: require("@/assets/images/infografika-bh.png") }];
+      } else {
+        return [{ url: require("@/assets/images/infografika.png") }];
+      }
+    },
   },
 };
 </script>
