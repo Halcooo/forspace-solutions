@@ -464,7 +464,7 @@ img {
         width: 600px;
         height: 600px;
         position: absolute;
-        background-color: rgb(50, 145, 168);
+        background-color: cornflowerblue;
         padding-top: 15%;
         top: 0%;
         left: 50%;
