@@ -15,7 +15,8 @@
       </div>
     </div>
   </div>
-  <div class="nav">
+ <!-- smisliti content i routes za ovo pa onda ubaciti -->
+  <!-- <div class="nav">
     <div class="middle">
       <div class="left">
         <ul>
@@ -30,7 +31,7 @@
         <router-link to="">Želim prezentaciju</router-link>
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 <script>
 import BaseButton from "@/components/Forms/buttons/BaseButton.vue";

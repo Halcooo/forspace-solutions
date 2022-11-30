@@ -46,7 +46,7 @@ export default {
 div {
   position: fixed;
   right: 30px;
-  bottom: 100px;
+  bottom: 30px;
   z-index: 20;
   &:hover {
     cursor: pointer;

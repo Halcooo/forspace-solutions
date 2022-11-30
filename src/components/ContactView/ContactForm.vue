@@ -93,6 +93,7 @@
           name=""
           id="text"
           cols="30"
+          max-cols="50"
           rows="6"
           v-model="message"
           class="form-control-custom"
@@ -185,7 +186,7 @@ export default {
     top: 0;
     left: 0;
     transform-origin: 0% 100%;
-    color: #ffffff;
+    color: darkgray;
     transform: translate(7px, 20px);
 
     transition: transform 0.2s ease-out, color 0.2s ease-out;
