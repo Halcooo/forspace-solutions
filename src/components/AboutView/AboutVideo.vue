@@ -68,12 +68,12 @@ export default {
   position: relative;
   margin-top: 15%;
   .outer {
-    width: 100px;
-    height: 100px;
+    width: 115px;
+    height: 115px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-314%, -100%);
+    transform: translate(-270%, -50%);
     background-color: rgba(255, 255, 255, 0.178);
     padding: 10px;
     border-radius: 50%;
@@ -89,7 +89,7 @@ export default {
       justify-content: center;
       align-items: center;
 
-      font-size: 40px;
+      font-size: 25px;
       border-radius: 50%;
       border: -4px solid rgba(255, 255, 255, 0.199);
       svg {
@@ -108,6 +108,12 @@ export default {
       width: 50%;
       margin-right: 5%;
       color: white;
+      h1 {
+        font-size: 50px;
+      }
+      p {
+        width: 85%;
+      }
     }
   }
   .frame-video {

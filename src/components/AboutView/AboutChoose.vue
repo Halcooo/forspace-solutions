@@ -37,15 +37,7 @@
       <div class="choose-widget-frame">
         <div class="widget-frame"></div>
         <div class="widget-photo"></div>
-        <!-- <div class="widget-video">
-          <iframe
-            src="https://www.youtube.com/embed/Yngh1X63Nyo"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
-        </div> -->
+        <div class="widget-video"></div>
       </div>
     </div>
   </div>
@@ -126,7 +118,8 @@ export default {
       .widget-video {
         width: 70%;
         height: 50%;
-        background-color: gray;
+        background: url("@/assets/images/product_item_1.jpg") no-repeat center
+          center/cover;
         position: absolute;
         top: 32%;
         left: 10%;

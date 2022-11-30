@@ -5,8 +5,8 @@
       <div class="carousel__item">
         <div class="overlay">
           <div>
-            <h1>{{ slide.name }}</h1>
-            <p>{{ slide.text }}</p>
+            <h1>{{ $t(slide.name) }}</h1>
+            <p>{{ $t(slide.text) }}</p>
           </div>
         </div>
 
