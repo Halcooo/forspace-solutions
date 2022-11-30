@@ -3,10 +3,10 @@
   <AboutNext />
   <AboutChoose />
   <AboutTeam />
+  <AboutVideo />
+  <AboutNums />
   <AboutReserv />
   <SideIcons />
-  <AboutNums />
-  <AboutMap />
 </template>
 <script>
 import AboutVue from "@/components/AboutView/About.vue";
@@ -17,11 +17,13 @@ import SideIcons from "@/components/AboutView/SideIcons.vue";
 import AboutNums from "@/components/AboutView/AboutNums.vue";
 import AboutMap from "@/components/AboutView/AboutMap.vue";
 import AboutChoose from "@/components/AboutView/AboutChoose.vue";
+import AboutVideo from "@/components/AboutView/AboutVideo.vue";
 export default {
   components: {
     AboutVue,
     AboutNext,
     AboutChoose,
+    AboutVideo,
     AboutTeam,
     AboutReserv,
     SideIcons,
