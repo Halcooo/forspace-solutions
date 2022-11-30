@@ -124,7 +124,7 @@ li {
     }
   }
   .sidenav_r {
-    color: white;
+    color: rgb(156, 156, 156);
   }
 
   .router-link-active {
@@ -132,6 +132,13 @@ li {
   }
   .router-link {
     text-align: left;
+  }
+}
+@media screen and (max-width: 567px) {
+  li {
+    svg {
+      display: none;
+    }
   }
 }
 </style>

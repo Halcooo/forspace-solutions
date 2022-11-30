@@ -60,6 +60,39 @@ a {
   }
 }
 
+.faq {
+  color: white;
+  background: rgb(255, 102, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 62px;
+  transition: 0.3s ease-out;
+  margin-bottom: 5%;
+  &:hover {
+    background: white;
+
+    color: rgb(255, 102, 0);
+  }
+}
+.faq-2 {
+  color: orangered;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 62px;
+
+  transition: 0.3s ease-out;
+  &:hover {
+    background: rgb(255, 102, 0);
+
+    color: white;
+  }
+}
+
 .product_middle {
   color: white;
   border: 2px solid white;

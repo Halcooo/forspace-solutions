@@ -21,7 +21,7 @@ export default {};
 <style lang="scss" scoped>
 .reserve {
   height: 35vh;
-  background-color: #26498a;
+  background-color: #ececec;
   padding: 10px;
   margin: 15% 0% 5% 0%;
 
@@ -35,10 +35,10 @@ export default {};
     align-items: center;
     h1 {
       font-size: 70px;
-      color: white;
+      color: gray;
     }
     p {
-      color: white;
+      color: gray;
     }
     > div {
       width: 100%;

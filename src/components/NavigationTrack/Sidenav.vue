@@ -4,15 +4,21 @@
       class="sidenav-content"
       :class="{ sidenav_content_visible: getSideNav }"
     >
-      <ul class="nav-links-vertical">
-        <Links
-          :routes="routes"
-          :sidenav_class="true"
-          :showSideNav="showSideNav"
-        />
-      </ul>
-      <div class="sidenav_times">
-        <ClosingButton @click="showSideNav" />
+      <div>
+        <div class="img">
+          <img alt="Forspace Solutions" src="@/assets/svg/logo.svg" />
+        </div>
+
+        <ul class="nav-links-vertical">
+          <Links
+            :routes="routes"
+            :sidenav_class="true"
+            :showSideNav="showSideNav"
+          />
+        </ul>
+        <div class="sidenav_times">
+          <ClosingButton @click="showSideNav" />
+        </div>
       </div>
     </div>
   </div>
@@ -96,26 +102,21 @@ export default {
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
 .sidenav {
-  position: fixed;
-
-  top: 0;
-  left: 100%;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-
   .sidenav-content {
     position: fixed;
     display: flex;
-    justify-content: left;
-    text-align: left;
-    align-items: center;
-    margin: auto;
+
+    justify-content: center;
+    text-align: center;
+    // align-items: center;
+
+    // margin: auto;
     top: 0;
+    padding-top: 25%;
     right: -28%;
-    width: 18%;
+    width: 0%;
     height: 100vh;
-    background-color: $navy;
+    background-color: #ffffff;
     transition: all 0.4s;
     a {
       color: gray;
@@ -142,16 +143,17 @@ export default {
   .nav-links-vertical {
     // width: 100%;
 
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     line-height: 4rem;
     padding-left: 4%;
-
-    li {
-      text-align: left;
-      a {
-        color: gray;
-        font-size: 23px;
+    ul {
+      li {
+        text-align: left;
+        a {
+          color: gray;
+          font-size: 23px;
+        }
       }
     }
   }
@@ -159,9 +161,13 @@ export default {
   .sidenav_times {
     position: absolute;
     top: 2.5%;
-    left: 80%;
+    left: 83%;
     width: 35px;
     height: 35px;
+  }
+  .img {
+    width: 200px;
+    height: 150px;
   }
   @media screen and (min-width: 1500px) {
     .sidenav_content_visible {

@@ -33,8 +33,10 @@ export default {
 @import "../styles/variables.scss";
 a {
   text-decoration: none;
+  margin: 0;
+  padding: 0;
   svg {
-    width: 40px;
+    width: 20px;
 
     &:hover {
       color: rgb(36, 64, 139);

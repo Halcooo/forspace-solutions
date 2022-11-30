@@ -53,7 +53,7 @@ export default {
 
     margin: 4px auto;
 
-    background-color: $navy;
+    background-color: white;
     padding: 1px 4px;
     transition: all 0.5s;
   }
@@ -69,6 +69,5 @@ export default {
   .times-line {
     background-color: $navy;
   }
-  // border: 1px solid $navy;
 }
 </style>

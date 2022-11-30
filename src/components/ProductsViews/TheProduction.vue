@@ -1,19 +1,8 @@
 <template lang="">
-  <div class="container purchase">
-    <h1 class="mt-4">Proizvodnja</h1>
-    <h3>Kako proizvodnju staviti pod kontrolu?</h3>
-    <p class="mt-4">
-      Proizvodni modul je najveći izazov u implementaciji ERP sistema. Sa tim
-      dolazi potreba kulturološke promjene unutar organizacije. Uposlenici treba
-      da se prilagode različitim promjenama i optimizacijama procesa koje
-      dolaze. ERP sistemi su izgrađeni na najboljim praksama u različitim
-      industrijama, ali nekada softver nije baš najbolje prilagođen procesima
-      koje određena kompanija ima. I u tim slučajevima imamo rješenje kroz
-      custom-made prilagođavanja koje brzo i efikasno sprovodimo. Forspace tim
-      nije sa vama samo tokom implementacije, mi radimo sa vama i nakon toga i
-      dijelimo znanje o procedurama i metodologijama pomoću kojih ćete nastaviti
-      uspješno koristiti EPR sistem.
-    </p>
+  <div class="container purchase mt-5">
+    <h1 class="text-secondary">{{ $t("products_production_header_one") }}</h1>
+    <h3 class="text-dark">{{ $t("products_production_header_two") }}</h3>
+    <p class="mt-4">{{ $t("products_production_text") }}</p>
   </div>
 </template>
 <script>

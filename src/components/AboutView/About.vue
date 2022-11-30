@@ -117,7 +117,7 @@ export default {
   .flex-first {
     width: 45%;
     height: 100%;
-    background: $navy;
+    background: rgb(255, 255, 255);
     padding: 10px;
 
     .div-1,
@@ -133,18 +133,18 @@ export default {
     .div-1,
     .div-2,
     .div-3 {
-      border-bottom: 2px solid white;
+      border-bottom: 2px solid $navy;
     }
 
     .overlay {
       width: 80%;
       margin: auto;
-      background-color: rgba(255, 255, 255, 0.568);
-      height: 20%;
+      background-color: rgba(192, 192, 192, 0.877);
+      height: 22%;
     }
     h1,
     p {
-      color: white;
+      color: gray;
     }
   }
 

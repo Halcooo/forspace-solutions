@@ -221,7 +221,7 @@ export default {
       border: none;
       border-radius: 2px;
 
-      border-bottom: 2px solid rgb(189, 189, 189);
+      // border-bottom: 2px solid rgb(189, 189, 189);
     }
 
     input,
@@ -229,7 +229,7 @@ export default {
       &:focus {
         outline: none;
 
-        border-bottom: 2px solid gray;
+        // border-bottom: 2px solid gray;
       }
     }
 

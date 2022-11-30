@@ -47,7 +47,8 @@
                   commodi.
                 </p>
                 <div class="nav_btn mt-4">
-                  <BaseButton :to="route.route" :name="route.name" />
+                  <a href=""> Procitaj vise ></a>
+                  <!-- <BaseButton :to="route.route" :name="route.name" /> -->
                 </div>
                 <!-- <BaseButton :to="true" :name="true" /> -->
               </div>
@@ -108,62 +109,26 @@ export default {
       none: false,
       navy: false,
       nav_one: [
-        { route: "/about", name: "Novosti" },
-        { route: "/preview", name: "Pregled" },
-        { route: "/team", name: "Nas tim" },
-        { route: "/reserve", name: "Rezervisi" },
+        { route: "/about", name: "news" },
+        { route: "/preview", name: "preview" },
+        { route: "/team", name: "our_team" },
+        { route: "/reserve", name: "reserve" },
       ],
       nav_two: [
-        { route: "/dms", name: "Zašto kompanije trebaju DMS?" },
-        { route: "/preview", name: "ERP sistem baziran na web-u" },
-        { route: "/team", name: "API integracija" },
-        { route: "/reserve", name: "Digitalizacija" },
+        { route: "/dms", name: "nav_news_1" },
+        { route: "/preview", name: "nav_news_2" },
+        { route: "/team", name: "nav_news_3" },
+        { route: "/reserve", name: "nav_news_4" },
         {
           route: "/reserve",
-          name: "Kako ERP sistem moze pomoci malom biznisu da raste ?",
+          name: "nav_news_5",
         },
         {
           route: "/reserve",
-          name: "Znakovi da je Vašem poslovanju potrebno naprednije softversko rješenje",
+          name: "nav_news_6",
         },
       ],
-      products: [
-        {
-          to: "/products/purchase",
-          heading: "Nabava",
-          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-        {
-          to: "/products/sales",
-          heading: "Prodaja",
-          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-        {
-          to: "/products/production",
-          heading: "Proizvodnja",
-          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-        {
-          to: "/products/warehouse",
-          heading: "Skladiste",
-          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-        {
-          to: "/products/dms",
-          heading: "DMS",
-          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-        {
-          to: "/products/finance",
-          heading: "Finansije",
-          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-        {
-          to: "/products/human-resources",
-          heading: "HR i place",
-          p: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-        },
-      ],
+
       routes: [
         {
           to: "/",
@@ -252,7 +217,7 @@ export default {
 
   z-index: 2;
   margin: 0;
-  // padding: 20px;
+  padding: 5px 0px;
 
   width: 100%;
   .logo {
@@ -354,13 +319,12 @@ export default {
 
       .nav_btn {
         display: flex;
-        justify-content: left;
+        justify-content: right;
         align-items: center;
         width: 100%;
 
         a {
-          padding: 20px 40px;
-          color: white;
+          color: gray;
         }
       }
     }
@@ -459,7 +423,7 @@ export default {
 
 .white_wrapper {
   background-color: white;
-
+  padding: 12px 0px;
   top: 0%;
 }
 </style>

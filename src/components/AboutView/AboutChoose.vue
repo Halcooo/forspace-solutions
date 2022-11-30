@@ -71,6 +71,7 @@ export default {
   margin-top: 10%;
   padding: 20px;
   background-color: rgb(231, 231, 231);
+
   .choose-flex {
     display: flex;
     justify-content: center;
@@ -79,6 +80,7 @@ export default {
     margin: auto;
     height: 100%;
     gap: 5px;
+
     .choose-text {
       width: 70%;
       height: 100%;
@@ -147,6 +149,42 @@ export default {
           border-radius: 50%;
           padding: 3px;
           font-size: 10px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 567px) {
+    height: 100%;
+    padding: 10px;
+
+    .choose-flex {
+      width: 100%;
+      flex-direction: column;
+      gap: 100px;
+      .choose-widget-frame {
+        width: 100%;
+        height: 50vh;
+
+        // border: 1px solid black;
+        position: relative;
+
+        .widget-frame {
+          position: absolute;
+          width: 52%;
+          height: 400px;
+          border: 23px solid rgb(55, 165, 255);
+          // border: 23px solid rgb(255, 97, 0);
+          top: 0;
+          right: 5%;
+        }
+        .widget-photo {
+          top: 12%;
+          left: 5%;
+        }
+        .widget-video {
+          top: 37%;
+          left: 0;
+          width: 80%;
         }
       }
     }

@@ -25,7 +25,7 @@
       </div>
       <div class="grid mb-5">
         <div v-for="div in divs" :key="div" class="first" :class="div.class">
-          <h1 class="text-center mt-5">{{ div.text }}</h1>
+          <h1 class="text-center">{{ div.text }}</h1>
           <p
             style="
               width: 100px;
@@ -35,7 +35,7 @@
               margin-top: 10%;
             "
           ></p>
-          <p class="text-center mt-5 p-5">
+          <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             corporis odio voluptas? Perspiciatis, enim mollitia quaerat quia
             voluptas necessitatibus officiis voluptatem delectus error rerum!
@@ -232,6 +232,29 @@ export default {
           rgba(0, 0, 0, 0.253)
         ),
         url("@/assets/images/payments.jpg") no-repeat center center/cover;
+    }
+  }
+}
+@media screen and (max-width: 567px) {
+  .heading {
+    width: 75%;
+    margin: auto;
+  }
+  .d-flex {
+    flex-direction: column;
+  }
+  .services-container {
+    width: 95%;
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+
+      .first {
+        height: 100%;
+        padding: 15px;
+        p {
+          margin: 70px 0px;
+        }
+      }
     }
   }
 }

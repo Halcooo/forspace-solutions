@@ -29,25 +29,37 @@
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <RouterLink to="/products">
                 <h6 class="text-uppercase fw-bold text-light mb-4">
-                  Proizvodi
+                  {{ $t("footer_forspace_products") }}
                 </h6>
               </RouterLink>
               <p>
-                <a href="#" class="text-reset"> Računovodstvo </a>
+                <a href="#" class="text-reset">
+                  {{ $t("footer_accounting") }}
+                </a>
               </p>
               <p>
-                <a href="#" class="text-reset"> Kontroling </a>
+                <a href="#" class="text-reset"
+                  >{{ $t("footer_controlling") }}
+                </a>
               </p>
               <p>
-                <a href="#" class="text-reset"> All-in-one ERP rješenje </a>
+                <a href="#" class="text-reset"
+                  >{{ $t("footer_all_in_one") }}
+                </a>
               </p>
               <p>
-                <a href="#" class="text-reset"> Mobilne aplikacije </a>
+                <a href="#" class="text-reset"
+                  >{{ $t("footer_mobile_app") }}
+                </a>
               </p>
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div
+              class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 uppercase"
+            >
               <RouterLink to="/contact">
-                <h6 class="text-uppercase fw-bold text-light mb-4">Kontakt</h6>
+                <h6 class="text-uppercase fw-bold text-light mb-4">
+                  {{ $t("footer_contact") }}
+                </h6>
               </RouterLink>
               <p>
                 <font-awesome-icon icon="fa-solid fa-home" />
@@ -142,6 +154,10 @@ img {
     position: absolute;
     top: 20%;
     left: 42%;
+  }
+  h6,
+  a {
+    text-transform: capitalize;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 @author Halid Lihovac
 <template>
-  <Carousel :autoplay="1100" :wrap-around="true" :items-to-show="2.5">
+  <Carousel :autoplay="1100" :wrap-around="true" :items-to-show="4">
     <Slide v-for="slide in images" :key="slide">
       <div class="carousel__item">
         <img :src="slide.url" alt="logo" />
