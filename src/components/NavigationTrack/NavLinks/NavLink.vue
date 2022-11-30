@@ -1,6 +1,6 @@
 <template>
   <router-link to="route">
-    {{ name }}
+    {{ $t(name) }}
   </router-link>
 </template>
 <script>

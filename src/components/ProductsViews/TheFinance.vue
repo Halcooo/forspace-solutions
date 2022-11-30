@@ -2,20 +2,16 @@
   <div class="container purchase">
     <div class="purchase d-flex justify-content-center orange-text-main">
       <div class="">
-        <h1>Transparentno i tačno</h1>
-        <h4>Zahtjev za budžet</h4>
+        <h1 class="text-secondary">{{ $t("products_finance_heading_one") }}</h1>
+        <h4>{{ $t("products_finance_heading_two") }}</h4>
         <p>
-          Naš modul Finansija i računovodstva je napravljen na osnovu najboljih
-          svjetskih praksi, gdje planirate i trošite shodno planu. Također,
-          poredite planirano sa realizovanim. Forspace se brine da sve to bude
-          tačno i transparentno.
+          {{ $t("products_finance_text_one") }}
         </p>
         <div class="orange-box">
           <div class="white-text-main p-3">
-            <h4>1. Upravljanje budžetom kompanije prema vrstama troška</h4>
+            <h4>{{ $t("products_finance_text_1") }}</h4>
             <h4>
-              2. Upravljanje budžetom kompanije prema <br />mjestima troška i
-              vrstama troška
+              {{ $t("products_finance_text_2") }}
             </h4>
           </div>
         </div>
@@ -35,9 +31,9 @@
     >
       <div class="workflow text-light w-100">
         <h1 class="text-light">
-          Raditi sa protokom ili Raditi u skladu sa tokom procesa
+          {{ $t("products_finance_workflow_text_1") }}
         </h1>
-        <p>Ulazni dokumenti - Koraci u toku servisiranja fakture</p>
+        <p>{{ $t("products_finance_workflow_text_2") }}</p>
       </div>
       <div class="w-100">
         <img
@@ -50,8 +46,8 @@
 
     <div class="fixed-assets text-center">
       <div class="fixed-assets-header orange-text-main">
-        <h1>Stalna sredstva</h1>
-        <p>Nabava, upotreba i amortizacija stalnih sredstava</p>
+        <h1>{{ $t("products_finance_assets_text_1") }}</h1>
+        <p>{{ $t("products_finance_assets_text_2") }}</p>
       </div>
     </div>
     <TheFinanceCards />
