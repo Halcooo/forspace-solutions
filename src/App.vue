@@ -1,13 +1,13 @@
 //@author Halid Lihovac
 <template>
-  <div class="cookie">
-    <div class="cookie-flex">
+   <!-- <div class="cookie">
+     <div class="cookie-flex">
       <a href="">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum
         dolor sit amet. Lorem ipsum dolor sit.
       </a>
-    </div>
-  </div>
+    </div> 
+  </div> -->
   <!-- <div class="nav-contact">
     <div class="track">
       <ul>
