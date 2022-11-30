@@ -15,6 +15,16 @@
       <div class="underline"></div>
     </router-link>
   </li>
+  <li>
+    <div class="box">
+      <div v-for="lang in languages" :key="lang" @click="translatePage(lang)">
+        {{ lang.language }}
+      </div>
+    </div>
+    <router-link to="">
+      {{ selected }}
+    </router-link>
+  </li>
 </template>
 
 <script>
@@ -48,7 +58,9 @@ export default {
     },
     translatePage(lang) {
       this.selected = lang.abr;
+      console.log(this.selected);
       this.language = lang.language;
+
       return (this.$i18n.locale = this.selected);
     },
     toggleActive(index, bin) {
@@ -71,6 +83,7 @@ export default {
     },
   },
   mounted() {
+    console.log(this.translatePage);
     window.addEventListener("scroll", () => {
       if (window.scrollY > 40) {
         this.navy = true;
@@ -105,7 +118,7 @@ li {
       height: 2px;
     }
     &:hover {
-      opacity: .8;
+      opacity: 0.8;
       .underline {
         background-color: rgb(166, 166, 166);
         width: 100%;
