@@ -25,24 +25,23 @@
       </div>
       <div class="grid mb-5">
         <div v-for="div in divs" :key="div" class="first" :class="div.class">
-          <h1 class="text-center">{{ div.text }}</h1>
-          <p
-            style="
-              width: 100px;
-              padding: 3px;
-              background-color: tomato;
-              margin: auto;
-              margin-top: 10%;
-            "
-          ></p>
-          <p class="text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-            corporis odio voluptas? Perspiciatis, enim mollitia quaerat quia
-            voluptas necessitatibus officiis voluptatem delectus error rerum!
-            Nam voluptates et fugit libero quisquam.
-          </p>
-          <div class="flex">
-            <router-link :to="div.to">Read More</router-link>
+          <div>
+            <h1 class="text-center">{{ $t(div.text) }}</h1>
+            <p
+              style="
+                width: 100px;
+                padding: 3px;
+                background-color: tomato;
+                margin: auto;
+                margin-top: 10%;
+              "
+            ></p>
+            <p class="text-center">
+              {{ $t(div.p) }}
+            </p>
+            <div class="flex">
+              <router-link :to="div.to">Read More</router-link>
+            </div>
           </div>
         </div>
       </div>
@@ -52,11 +51,6 @@
 <script>
 import Line from "@/particles/Line.vue";
 import ServicesSlider from "@/components/Sliders/ServicesSlider.vue";
-import Erp from "@/components/ServicesView/Erp.vue";
-import Dms from "@/components/ServicesView/Dms.vue";
-import Wms from "@/components/ServicesView/Wms.vue";
-import PaymentProvider from "@/components/ServicesView/PaymentProvider.vue";
-import CustomSolutions from "@/components/ServicesView/CustomSolutions.vue";
 
 export default {
   data() {
@@ -67,14 +61,35 @@ export default {
         { text: "services_icon_3", icon_text: "fa-solid fa-server" },
       ],
       divs: [
-        { class: "erp", text: "ERP Sistemi", to: "/erp" },
-        { class: "dms", text: "DMS Sistemi", to: "/dms" },
-        { class: "wms", text: "WMS Sistemi", to: "/wms" },
-        { class: "systemp", text: "Sistemi Placanja", to: "/payment-provider" },
+        {
+          class: "erp",
+          text: "services_grid_div1_header",
+          p: "services_grid_div1_text",
+          to: "/erp-all-in-one",
+        },
+        {
+          class: "dms",
+          text: "services_grid_div2_header",
+          p: "services_grid_div2_text",
+          to: "/why-companies-need-dms",
+        },
+        {
+          class: "wms",
+          text: "services_grid_div3_header",
+          p: "services_grid_div3_text",
+          to: "/why-web-based",
+        },
+        {
+          class: "systemp",
+          text: "services_grid_div4_header",
+          p: "services_grid_div4_text",
+          to: "/payment-provider",
+        },
         {
           class: "solution",
-          text: "Rjesenja po mjeri",
-          to: "/custom-solutions",
+          text: "services_grid_div5_header",
+          p: "services_grid_div5_text",
+          to: "signs-your-business-needs-advanced-software-solution",
         },
       ],
       images: [
@@ -98,11 +113,7 @@ export default {
   },
   components: {
     ServicesSlider,
-    Erp,
-    Dms,
-    Wms,
-    PaymentProvider,
-    CustomSolutions,
+
     Line,
   },
   computed: {
@@ -156,6 +167,9 @@ export default {
     gap: 10px;
     .first {
       height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       h1 {
         font-size: 60px;

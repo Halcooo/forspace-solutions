@@ -15,15 +15,22 @@
       <div class="underline"></div>
     </router-link>
   </li>
+  <!-- <li>
+    <div class="search ms-5 text-light">
+      <font-awesome-icon icon="fa-solid fa-search" />
+    </div>
+  </li> -->
   <li>
-    <div class="box">
-      <div v-for="lang in languages" :key="lang" @click="translatePage(lang)">
-        {{ lang.language }}
+    <div class="box ms-3" @mouseover="showLanguages">
+      {{ language }}
+      <font-awesome-icon icon="fa-solid fa-chevron-down" />
+
+      <div class="menu" :class="{ visible: visible }">
+        <p v-for="lang in languages" :key="lang" @click="translatePage(lang)">
+          {{ lang.language }}
+        </p>
       </div>
     </div>
-    <router-link to="">
-      {{ selected }}
-    </router-link>
   </li>
 </template>
 
@@ -37,7 +44,8 @@ export default {
   },
   data() {
     return {
-      language: "Language",
+      visible: false,
+      language: "Bosanski",
       selected: "bs",
       languages: [
         { language: "Bosanski", abr: "bs" },
@@ -81,6 +89,11 @@ export default {
 
       this.toggleActive(index, false);
     },
+    showLanguages() {
+      if (!this.visible) {
+        this.visible = true;
+      }
+    },
   },
   mounted() {
     console.log(this.translatePage);
@@ -108,7 +121,7 @@ li {
   .nav {
     color: rgb(255, 255, 255);
     font-size: 20px;
-
+    border-radius: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -141,7 +154,8 @@ li {
   }
 
   .router-link-active {
-    color: rgb(55, 165, 255);
+    // color: rgb(55, 165, 255);
+    color: gray;
   }
   .router-link {
     text-align: left;
@@ -152,6 +166,41 @@ li {
     svg {
       display: none;
     }
+  }
+}
+
+.search {
+  font-size: 20px;
+}
+.box {
+  overflow: hidden;
+  color: white;
+  font-size: 20px;
+  // background-color: rgba(255, 255, 255, 0.442);
+  padding: 0px 10px;
+
+  &:hover {
+    cursor: pointer;
+  }
+  .menu {
+    padding: 5px;
+    background-color: white;
+    color: #333;
+    display: none;
+    position: absolute;
+    transform: translate(0%, 5%);
+    p {
+      // margin: 2px;
+      padding-right: 30px;
+      font-size: 17px;
+      &:hover {
+        background-color: rgb(190, 213, 255);
+        cursor: pointer;
+      }
+    }
+  }
+  .visible {
+    display: block;
   }
 }
 </style>
