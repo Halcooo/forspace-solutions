@@ -61,8 +61,8 @@ a {
 }
 
 .faq {
-  color: white;
-  background: rgb(255, 102, 0);
+  color: #333;
+  background: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,13 +71,13 @@ a {
   transition: 0.3s ease-out;
   margin-bottom: 5%;
   &:hover {
-    background: white;
+    background: rgba(8, 40, 67, 0.8);
 
-    color: rgb(255, 102, 0);
+    color: white;
   }
 }
 .faq-2 {
-  color: orangered;
+  color: #333;
   background: white;
   display: flex;
   justify-content: center;
@@ -87,7 +87,7 @@ a {
 
   transition: 0.3s ease-out;
   &:hover {
-    background: rgb(255, 102, 0);
+    background: rgba(8, 40, 67, 0.8);
 
     color: white;
   }

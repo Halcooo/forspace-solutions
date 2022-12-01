@@ -79,7 +79,12 @@ export default {
         width: 600px;
         height: 600px;
         position: absolute;
-        background-color: cornflowerblue;
+        background: linear-gradient(
+          to right,
+          rgba(8, 40, 67, 0.8),
+          rgba(8, 40, 67, 0.8),
+          rgba(8, 40, 67, 0.8)
+        );
 
         padding-top: 15%;
         top: 0%;

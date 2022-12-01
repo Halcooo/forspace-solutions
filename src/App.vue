@@ -173,4 +173,12 @@ h1 {
     }
   }
 }
+.purchase {
+  min-height: 50vh;
+}
+.purchase-img {
+  @media screen and (max-width: 567px) {
+    height: 100%;
+  }
+}
 </style>

@@ -31,6 +31,7 @@
           </p>
         </div>
       </router-link>
+
       <router-link to="/why-web-based">
         <div class="div-4">
           <p>
@@ -38,6 +39,7 @@
           </p>
         </div>
       </router-link>
+
       <div class="overlay"></div>
     </div>
     <div class="flex-second">
@@ -98,9 +100,9 @@ export default {
   height: 50vh;
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.493),
-      rgba(0, 0, 0, 0.336),
-      rgba(0, 0, 0, 0.253)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
     url("@/assets/images/purchase-cover-image.png") no-repeat center
       center/cover;
@@ -110,7 +112,7 @@ export default {
     color: white;
   }
   h1 {
-    font-size: 50px;
+    font-size: 70px;
     color: white;
   }
 
@@ -136,7 +138,7 @@ export default {
 .about-flex-grid {
   width: 70%;
   margin: auto;
-  height: 70vh;
+  height: 60vh;
   display: flex;
   // gap: 10px;
   margin-top: 2%;
@@ -146,7 +148,7 @@ export default {
   .flex-first {
     width: 45%;
     height: 100%;
-    background: rgb(255, 255, 255);
+    // background: rgb(188, 66, 66);
     padding: 10px;
 
     .div-1,
@@ -176,7 +178,7 @@ export default {
       width: 80%;
       margin: auto;
       background-color: rgba(192, 192, 192, 0.877);
-      height: 22%;
+      height: 17%;
     }
     h1,
     p {
@@ -210,7 +212,7 @@ export default {
       position: relative;
       div {
         position: absolute;
-        top: 85%;
+        top: 80.5%;
       }
 
       &:hover {
@@ -224,18 +226,18 @@ export default {
     .card-1 {
       background: linear-gradient(
           to right,
-          rgba(16, 99, 114, 0.6),
-          rgba(16, 99, 114, 0.6),
-          rgba(16, 99, 114, 0.6)
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6)
         ),
         url("@/assets/images/erp-sistemi.png") no-repeat center center/cover;
     }
     .card-2 {
       background: linear-gradient(
           to right,
-          rgba(16, 99, 114, 0.6),
-          rgba(16, 99, 114, 0.6),
-          rgba(16, 99, 114, 0.6)
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6)
         ),
         url("@/assets/images/sistemi-placanja.jpg") no-repeat center
           center/cover;
@@ -243,18 +245,18 @@ export default {
     .card-3 {
       background: linear-gradient(
           to right,
-          rgba(16, 99, 114, 0.6),
-          rgba(16, 99, 114, 0.6),
-          rgba(16, 99, 114, 0.6)
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6)
         ),
         url("@/assets/images/forspace_info.jpg") no-repeat center center/cover;
     }
     .card-4 {
       background: linear-gradient(
           to right,
-          rgba(16, 99, 114, 0.6),
-          rgba(16, 99, 114, 0.6),
-          rgba(16, 99, 114, 0.6)
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6)
         ),
         url("@/assets/images/forspace_info_2.jpg") no-repeat center center/cover;
     }

@@ -39,7 +39,7 @@
                   <NavLink :to="link.route" :name="link.name" />
                 </div>
               </div>
-              <div class="third p-3">
+              <!-- <div class="third p-3">
                 <div class="nav-img mb-4"></div>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -48,12 +48,10 @@
                 </p>
                 <div class="nav_btn mt-4">
                   <a href=""> Procitaj vise ></a>
-                  <!-- <BaseButton :to="route.route" :name="route.name" /> -->
                 </div>
-                <!-- <BaseButton :to="true" :name="true" /> -->
-              </div>
+              </div> -->
             </div>
-            <div
+            <!-- <div
               v-if="drop.id == 2"
               class="dropnav"
               :class="{ second: drop.active }"
@@ -67,7 +65,7 @@
                       background-color: rgb(255, 98, 0);
                     "
                   ></div>
-                  <!-- <img src="../../assets/images/icon-orange.png" alt="" /> -->
+               
                   <router-link :to="product.to">
                     <div>
                       <p>
@@ -78,7 +76,7 @@
                   </router-link>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
         </ul>
         <div class="group">
@@ -298,7 +296,7 @@ export default {
     .first {
       display: flex;
       // grid-template-columns: repeat(1, 1fr);
-      width: 900px;
+      width: 500px;
       height: 400px;
       transform: translate(-20%, 10%);
       background-color: rgb(255, 255, 255);
@@ -381,7 +379,7 @@ export default {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: 15px;
+  gap: 30px;
   padding: 0;
   margin: 0;
 }

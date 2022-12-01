@@ -1,8 +1,10 @@
 <template lang="">
-  <div class="container purchase mt-5">
-    <h1 class="text-secondary">{{ $t("products_production_header_one") }}</h1>
-    <h3 class="text-dark">{{ $t("products_production_header_two") }}</h3>
-    <p class="mt-4">{{ $t("products_production_text") }}</p>
+  <div class="container purchase">
+    <div class="purchase-img">
+      <h1>{{ $t("products_production_header_one") }}</h1>
+      <h3>{{ $t("products_production_header_two") }}</h3>
+      <p class="">{{ $t("products_production_text") }}</p>
+    </div>
   </div>
 </template>
 <script>
@@ -11,7 +13,35 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-h1 {
+.purchase-img {
+  width: 100%;
+  height: 500px;
+  margin-bottom: 4%;
+  padding: 20px;
   color: white;
+
+  background: linear-gradient(
+      to right,
+      rgba(123, 39, 39, 0.8),
+      rgba(123, 39, 39, 0.8),
+      rgba(123, 39, 39, 0.8)
+    ),
+    url("@/assets/images/purchase.jpg") no-repeat center center/cover;
+
+  h1 {
+    font-size: 60px;
+
+    margin-bottom: 2%;
+  }
+  h3 {
+    font-size: 35px;
+    margin-bottom: 4%;
+  }
+  p {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 567px) {
+    height: 100%;
+  }
 }
 </style>
