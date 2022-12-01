@@ -20,9 +20,9 @@ export default {
 .wrapper {
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.227),
-      rgba(0, 0, 0, 0.392),
-      rgba(0, 0, 0, 0.507)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
     url("@/assets/images/contact.jpg") no-repeat center center/cover;
   height: 50vh;
@@ -34,7 +34,7 @@ export default {
   }
   h1 {
     color: white;
-    font-size: 50px;
+    font-size: 70px;
   }
 }
 </style>

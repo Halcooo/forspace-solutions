@@ -37,11 +37,12 @@ export default {};
 .wrapper {
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.493),
-      rgba(0, 0, 0, 0.336),
-      rgba(0, 0, 0, 0.253)
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
     ),
     url("@/assets/images/productscover.jpg") no-repeat center center/cover;
+  // background-color: rgb(182, 182, 169);
   color: white;
   height: 50vh;
   display: flex;
@@ -50,7 +51,7 @@ export default {};
   align-items: center;
   text-align: center;
   h1 {
-    font-size: 50px;
+    font-size: 70px;
     color: white;
   }
 }
@@ -60,6 +61,7 @@ export default {};
   background-color: rgb(247, 247, 247);
   height: 80px;
   // background-color: rgb(231, 231, 231);
+  margin-bottom: 5%;
 }
 .items {
   width: 70%;

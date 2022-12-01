@@ -1,6 +1,6 @@
 <template lang="">
   <div class="container purchase">
-    <h1>{{ $t("products_dms_heading_one") }}</h1>
+    <h1 class="text-secondary">{{ $t("products_dms_heading_one") }}</h1>
     <h3>{{ $t("products_dms_heading_two") }}</h3>
     <p>
       {{ $t("products_dms_text_one") }}
@@ -9,10 +9,10 @@
       {{ $t("products_dms_text_two") }}
     </p>
 
-    <div class="container">
+    <!-- <div class="container">
       <img src="@/assets/images/DOCUMENT-MANAGEMENT.png" alt="image" />
       <img src="@/assets/images/dms-pic.png" alt="img" />
-    </div>
+    </div> -->
 
     <div class="col-12">
       <div v-for="product in products" :key="product" class="d-flex">

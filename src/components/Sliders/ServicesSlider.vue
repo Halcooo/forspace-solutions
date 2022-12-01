@@ -65,7 +65,7 @@ export default {
 <style lang="scss" scoped>
 h1 {
   // padding: 7px;
-  font-size: 50px;
+  font-size: 60px;
   color: white;
   margin-bottom: 5%;
   // background-color: rgba(255, 253, 253, 0.8);
@@ -102,13 +102,15 @@ h1 {
   .overlay {
     position: absolute;
     width: 100%;
+
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.473);
+    background-color: rgba(0, 0, 0, 0.6);
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+
     div {
       p {
         font-size: 30px;

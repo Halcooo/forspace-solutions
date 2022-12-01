@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container purchase mt-5">
+  <div class="container purchase">
     <h1 class="text-secondary">{{ $t("products_warehouse_heading") }}</h1>
     <h4>{{ $t("products_warehouse_heading_two") }}</h4>
     <p>
