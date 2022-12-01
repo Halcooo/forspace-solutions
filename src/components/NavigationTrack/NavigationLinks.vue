@@ -13,12 +13,7 @@
       <div class="underline"></div>
     </router-link>
   </li>
-  <!-- <li>
-    <div class="search ms-5 text-light">
-      <font-awesome-icon icon="fa-solid fa-search" />
-    </div>
-  </li> -->
-  <!-- <li>
+  <li>
     <div class="box ms-3" @mouseover="showLanguages">
       {{ language }}
       <font-awesome-icon icon="fa-solid fa-chevron-down" />
@@ -29,7 +24,7 @@
         </p>
       </div>
     </div>
-  </li> -->
+  </li>
 </template>
 
 <script>
