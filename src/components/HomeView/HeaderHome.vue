@@ -238,7 +238,11 @@ export default {
 .circle-1 {
   width: 500px;
   height: 500px;
+<<<<<<< HEAD
   border: 70px solid rgba(255, 255, 255, 0.107);
+=======
+  border: 30px solid rgba(255, 255, 255, 0.107);
+>>>>>>> d7b1a75 (fdgsdf)
   // border-radius: 50%;
   position: absolute;
   top: 20%;
