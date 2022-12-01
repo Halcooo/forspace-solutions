@@ -8,7 +8,7 @@
         </p>
       </div>
       <div>
-        <router-link to="/" class="termin">{{
+        <router-link to="/contact" class="termin">{{
           $t("about_us_reserve_heading")
         }}</router-link>
       </div>

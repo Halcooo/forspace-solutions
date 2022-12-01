@@ -24,6 +24,17 @@ import Dms from "../components/ServicesView/Dms.vue";
 import Wms from "../components/ServicesView/Wms.vue";
 import PaymentProvider from "../components/ServicesView/PaymentProvider.vue";
 import CustomSolutions from "../components/ServicesView/CustomSolutions.vue";
+
+import ErpAllInOne from "../components/AboutView/News/ErpAllInOne";
+import WhyCompaniesNeedDms from "../components/AboutView/News/WhyCompaniesNeedDms";
+import WhyWebBased from "../components/AboutView/News/WhyWebBased";
+import Entrepreneur from "../components/AboutView/News/Entrepreneur";
+import SoftwareSolutions from "../components/AboutView/News/SoftwareSolutions";
+import HowErp from "../components/AboutView/News/HowErp";
+import DigitalTransformation from "../components/AboutView/News/DigitalTransformation";
+import DigitalTransformationAdvantages from "../components/AboutView/News/DigitalTransformationAdvantages";
+import WhatsAnApi from "../components/AboutView/News/WhatsAnApi";
+
 // import store from "@/store/index.js"; // to use store in router if needed
 
 const routes = [
@@ -85,6 +96,53 @@ const routes = [
       },
     ],
   },
+  {
+    path: "/erp-all-in-one",
+    name: "ErpAllInOne",
+    component: ErpAllInOne,
+  },
+  {
+    path: "/why-companies-need-dms",
+    name: "WhyCompaniesNeedDms",
+    component: WhyCompaniesNeedDms,
+  },
+  {
+    path: "/why-web-based",
+    name: "WhyWebBased",
+    component: WhyWebBased,
+  },
+  {
+    path: "/what-type-of-entrepreneur-are-you",
+    name: "Entrepreneur",
+    component: Entrepreneur,
+  },
+  {
+    path: "/signs-your-business-needs-advanced-software-solution",
+    name: "SoftwareSolutions",
+    component: SoftwareSolutions,
+  },
+  {
+    path: "/how-erp-can-help-small-business-to-grow",
+    name: "HowErp",
+    component: HowErp,
+  },
+
+  {
+    path: "/how-digital-transformation-helps-accounting",
+    name: "DigitalTransformation",
+    component: DigitalTransformation,
+  },
+  {
+    path: "/digital-transformation-advantages",
+    name: "DigitalTransformationAdvantages",
+    component: DigitalTransformationAdvantages,
+  },
+  {
+    path: "/whats-an-api",
+    name: "WhatsAnApi",
+    component: WhatsAnApi,
+  },
+
   {
     path: "/services",
     name: "services",

@@ -2,36 +2,30 @@
   <div class="choose">
     <div class="choose-flex">
       <div class="choose-text">
-        <small>Why choose us</small>
-        <h1 class="text-dark">Best Services</h1>
-        <p>In Our Company</p>
+        <small>{{ $t("about_us_choose_small_heading") }}</small>
+        <h1 class="text-dark">{{ $t("about_us_choose_heading") }}</h1>
+        <p>{{ $t("about_us_aditional") }}</p>
         <p class="line"></p>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe tempora
-          quisquam inventore, odit quae cupiditate aut fugiat veritatis corporis
-          pariatur ullam reiciendis repellendus odio quam deleniti tenetur sunt
-          asperiores nesciunt.
+          {{ $t("about_us_paragraph") }}
         </p>
         <div class="checkmarks">
           <div class="checkmark-tab">
-            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>{{ $t("about_check_one") }}</p>
             <p>
               <font-awesome-icon icon="fa-solid fa-check" />
             </p>
           </div>
           <div class="checkmark-tab">
-            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>{{ $t("about_check_two") }}</p>
             <p>
               <font-awesome-icon icon="fa-solid fa-check" />
             </p>
           </div>
           <div class="checkmark-tab">
-            <p>Lorem ipsum dolor sit amet consectetur</p>
+            <p>{{ $t("about_check_three") }}</p>
             <p><font-awesome-icon icon="fa-solid fa-check" /></p>
           </div>
-        </div>
-        <div>
-          <BaseButton :to="routes.route" :name="routes.name" />
         </div>
       </div>
       <div class="choose-widget-frame">

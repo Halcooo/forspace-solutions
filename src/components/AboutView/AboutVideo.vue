@@ -7,25 +7,15 @@
     </div>
     <div class="frame-text">
       <div>
-        <h1>Forspace Peview</h1>
+        <h1>{{ $t("about_us_video_heading") }}</h1>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea architecto
-          ad magnam praesentium. Ex, optio?
+          {{ $t("about_us_video_paragraph") }}
         </p>
       </div>
     </div>
     <div class="frame-video"></div>
     <div class="overlay-video" :class="{ video: video }">
-      <iframe
-        width="560"
-        height="315"
-        id="frame"
-        src="https://www.youtube.com/embed/Yngh1X63Nyo"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+      <YouTube src="https://www.youtube.com/embed/Yngh1X63Nyo" ref="youtube" />
       <div class="closing">
         <ClosingButton @click="closeVideo" />
       </div>
@@ -33,11 +23,12 @@
   </div>
 </template>
 <script>
+import YouTube from "vue3-youtube";
 import ClosingButton from "../Forms/buttons/ClosingButton.vue";
 
 export default {
   name: "AboutVideo",
-  components: { ClosingButton },
+  components: { ClosingButton, YouTube },
   data() {
     return {
       video: false,
@@ -47,7 +38,7 @@ export default {
     closeVideo() {
       if (this.video) {
         this.video = false;
-        window.location.reload();
+        this.$refs.youtube.stopVideo();
       }
     },
     showVideo() {
@@ -138,11 +129,7 @@ export default {
     display: none;
     justify-content: center;
     align-items: center;
-    iframe {
-      width: 75%;
 
-      height: 75%;
-    }
     .closing {
       position: absolute;
       top: 3%;
