@@ -156,9 +156,15 @@ const routes = [
     component: ContactView,
   },
   {
+<<<<<<< HEAD
     path: "/appointment",
     name: "appointment",
     component: Appointment,
+=======
+    path: "/promo",
+    name: "promo",
+    component: PromoView,
+>>>>>>> d7b1a75 (fdgsdf)
   },
 
   {

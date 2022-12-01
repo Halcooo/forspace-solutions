@@ -201,6 +201,16 @@
   "services_grid_div3_text": "WMS (Warehouse Management System) je poslovni program za upravljanje skladištem koji ima za cilj da automatizuje, pojednostavi i racionalizuje radne zadatke i aktivnosti unutar skladišta, čime se povećava produktivnost i smanjuje mogućnost greške na minimum.",
 
   "services_grid_div4_header": "Sistemi plaćanja",
+
+  "services_grid_div1_header": "ERP Sistemi",
+  "services_grid_div1_text": "ERP (Enterprise Resource Planning) sistem je poslovni program koji omogućava kompanijama da planiraju svoje resurse i upravljaju cjelokupnim poslovanjem i pokriva sve procesne tokove uslužne, prodajne ili proizvodne djelatnosti.",
+  "services_grid_div2_header": "DMS Sistemi",
+  "services_grid_div2_text": "DMS (Document Management System) je poslovni program za praćenje, upravljanje i digitalno arhiviranje dokumenata. Vodi evidenciju o različitim vrstama dokumenata kreiranih i arhiviranih od strane različitih korisnika (praćenje historije).",
+
+  "services_grid_div3_header": "WMS Sistemi",
+  "services_grid_div3_text": "WMS (Warehouse Management System) je poslovni program za upravljanje skladištem koji ima za cilj da automatizuje, pojednostavi i racionalizuje radne zadatke i aktivnosti unutar skladišta, čime se povećava produktivnost i smanjuje mogućnost greške na minimum.",
+  "services_grid_div4_header": "Sistemi Plaćanja",
+
   "services_grid_div4_text": "Payment Provider aplikacije za platne sisteme u eCommerce sektoru i integracija u cjelokupan lanac procesa.",
 
   "services_grid_div5_header": "Rješenja po mjeri",

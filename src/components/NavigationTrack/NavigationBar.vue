@@ -309,7 +309,11 @@ export default {
   display: flex;
   width: 100%;
   justify-content: space-between;
+<<<<<<< HEAD
   gap: 30px;
+=======
+  gap: 15px;
+>>>>>>> d7b1a75 (fdgsdf)
   padding: 0;
   margin: 0;
 }
