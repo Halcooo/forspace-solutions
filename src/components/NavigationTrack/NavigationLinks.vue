@@ -13,6 +13,21 @@
       <div class="underline"></div>
     </router-link>
   </li>
+<<<<<<< HEAD
+=======
+  <li>
+    <div class="box ms-3" @mouseover="showLanguages">
+      {{ language }}
+      <font-awesome-icon icon="fa-solid fa-chevron-down" />
+
+      <div class="menu" :class="{ visible: visible }">
+        <p v-for="lang in languages" :key="lang" @click="translatePage(lang)">
+          {{ lang.language }}
+        </p>
+      </div>
+    </div>
+  </li>
+>>>>>>> f113c41 (fdgsdf)
 </template>
 
 <script>
