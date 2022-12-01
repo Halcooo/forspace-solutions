@@ -379,7 +379,7 @@ export default {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: 15px;
+  gap: 30px;
   padding: 0;
   margin: 0;
 }
