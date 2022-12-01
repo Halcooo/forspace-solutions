@@ -1,13 +1,15 @@
 @author Halid Lihovac
 <template>
   <div class="landing-page" style="position: relative; z-index: 1">
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
     <div class="div">
       <div>
         <div class="head-1">
           <h1>Odluke zasnovane na činjenicama, a ne na pretpostavkama!</h1>
         </div>
         <div class="head-2">
-          <p>Forspace ERP & Računovodstvo</p>
+          <p class="text-warning">Forspace ERP & Računovodstvo</p>
 
           <small
             >Mi smo prvi domaći brend na tržištu ERP softvera sa predznakom
@@ -58,9 +60,9 @@ export default {
   }
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
+      rgba(8, 40, 67, 0.6),
+      rgba(8, 40, 67, 0.6),
+      rgba(8, 40, 67, 0.6)
     ),
     url("@/assets/images/forspace_info.jpg") no-repeat center center/cover;
 
@@ -213,5 +215,15 @@ export default {
       }
     }
   }
+}
+
+.circle-1 {
+  width: 500px;
+  height: 500px;
+  border: 30px solid rgba(255, 255, 255, 0.107);
+  // border-radius: 50%;
+  position: absolute;
+  top: 20%;
+  left: 23%;
 }
 </style>

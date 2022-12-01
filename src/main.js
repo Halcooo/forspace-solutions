@@ -26,6 +26,7 @@ import {
   faMailBulk,
   faQuoteLeft,
   faPlay,
+  faSearch,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
@@ -59,7 +60,8 @@ library.add(
   faCheck,
   faMailBulk,
   faQuoteLeft,
-  faPlay
+  faPlay,
+  faSearch
 );
 
 createApp(App)

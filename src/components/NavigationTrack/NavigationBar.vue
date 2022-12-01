@@ -381,7 +381,7 @@ export default {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  gap: 32px;
+  gap: 15px;
   padding: 0;
   margin: 0;
 }
