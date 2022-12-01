@@ -57,6 +57,7 @@ export default {
 @import "./styles/variables.scss";
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 // @font-face {
 // 	font-family: 'Raleway';
 // 	src: local('Raleway'),
@@ -77,7 +78,8 @@ body {
   padding: 0;
 }
 #app {
-  font-family: "Oswald", sans-serif;
+  //font-family: "Oswald", sans-serif;
+  font-family: "Poppins", sans-serif;
 
   color: $primary-color;
 }
