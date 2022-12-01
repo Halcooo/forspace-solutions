@@ -112,13 +112,13 @@ export default {
   }
   .testimonial-bottom {
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     margin-bottom: 5%;
     background: linear-gradient(
         to right,
-        rgb(0, 0, 0, 0.5),
-        rgb(0, 0, 0, 0.5),
-        rgb(0, 0, 0, 0.5)
+        rgb(0, 0, 0, 0.7),
+        rgb(0, 0, 0, 0.7),
+        rgb(0, 0, 0, 0.7)
       ),
       url("@/assets/images/dms-header.jpg") no-repeat center center/cover;
     display: flex;

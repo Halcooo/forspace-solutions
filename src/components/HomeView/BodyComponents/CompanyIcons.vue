@@ -71,7 +71,7 @@ export default {
       width: 370px;
       height: 350px;
 
-      background-color: rgba(45, 138, 161, 0.8);
+      background-color: rgba(8, 40, 67, 0.8);
       position: absolute;
       z-index: -1;
       top: -3%;

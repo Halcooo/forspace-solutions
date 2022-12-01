@@ -1,7 +1,8 @@
 <template lang="">
   <div class="container purchase">
     <div class="purchase-img">
-      <h1>{{ $t("products_sales_header") }}</h1>
+      <h1>{{ $t("products_sales_heading") }}</h1>
+      <h3>{{ $t("products_sales_header") }}</h3>
       <p>
         {{ $t("products_sales_text") }}
       </p>
@@ -14,30 +15,37 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.purchase-img {
-  width: 100%;
-  height: 500px;
-  margin-bottom: 5%;
-  padding: 20px;
-  background: linear-gradient(
-      to right,
-      rgba(8, 67, 59, 0.8),
-      rgba(8, 67, 59, 0.8),
-      rgba(8, 67, 59, 0.8)
-    ),
-    url("@/assets/images/purchase-2.jpg") no-repeat center center/cover;
+.purchase {
+  width: 70%;
+  margin: auto;
+  .purchase-img {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 5%;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(
+        to right,
+        rgba(8, 67, 59, 0.8),
+        rgba(8, 67, 59, 0.8),
+        rgba(8, 67, 59, 0.8)
+      ),
+      url("@/assets/images/purchase-2.jpg") no-repeat center center/cover;
 
-  h1 {
-    font-size: 60px;
-    color: white;
-    margin-bottom: 4%;
-  }
-  p {
-    color: white;
-    font-size: 25px;
-  }
-  @media screen and (max-width: 567px) {
-    height: 100%;
+    h1 {
+      font-size: 60px;
+
+      margin-bottom: 2%;
+    }
+    h3 {
+      margin-bottom: 2%;
+    }
+    p {
+      font-size: 25px;
+    }
+    @media screen and (max-width: 567px) {
+      height: 100%;
+    }
   }
 }
 </style>

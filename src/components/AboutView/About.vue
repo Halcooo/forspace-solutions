@@ -100,9 +100,9 @@ export default {
   height: 50vh;
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
+      rgba(8, 40, 67, 0.6),
+      rgba(8, 40, 67, 0.6),
+      rgba(8, 40, 67, 0.6)
     ),
     url("@/assets/images/purchase-cover-image.png") no-repeat center
       center/cover;

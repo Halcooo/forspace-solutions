@@ -4,7 +4,7 @@
       <h1>{{ $t("about_us_news_link_heading_three") }}</h1>
     </div>
   </div>
-  <div class="content">
+  <div class="content-news">
     <div>
       <h1>sadghsaodg</h1>
     </div>
@@ -15,33 +15,4 @@ export default {
   name: "ErpAllInOne",
 };
 </script>
-<style lang="scss" scoped>
-.header {
-  background: url("@/assets/images/product-cover.png") no-repeat center
-    center/cover;
-  height: 50vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  div {
-    width: 70%;
-    padding-left: 2%;
-    margin: auto;
-    padding-top: 7%;
-  }
-  h1 {
-    font-size: 60px;
-  }
-}
-.content {
-  min-height: 50vh;
-  width: 70%;
-  padding-left: 2%;
-  margin: auto;
-  div {
-    h1 {
-      color: black;
-    }
-  }
-}
-</style>
+<style lang="scss" scoped></style>

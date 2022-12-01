@@ -104,7 +104,7 @@ h1 {
     width: 100%;
 
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(8, 40, 67, 0.6);
     top: 0;
     left: 0;
     display: flex;

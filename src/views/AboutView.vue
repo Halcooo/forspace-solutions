@@ -6,7 +6,7 @@
   <AboutVideo />
   <AboutNums />
   <AboutReserv />
-  <SideIcons />
+  <!-- <SideIcons /> -->
 </template>
 <script>
 import AboutVue from "@/components/AboutView/About.vue";

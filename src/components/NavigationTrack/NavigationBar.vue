@@ -20,64 +20,6 @@
       <div class="navigation">
         <ul class="nav-links">
           <Links :routes="routes" @index="currentEmit" />
-
-          <div v-for="drop in classes" :key="drop" class="main_dropnav">
-            <div
-              @mouseleave="() => (drop.active = false)"
-              class="dropnav"
-              :class="{ first: drop.active }"
-            >
-              <div>
-                <h4>Trenutno aktuelno</h4>
-                <div v-for="link in nav_one">
-                  <NavLink :to="link.route" :name="link.name" />
-                </div>
-              </div>
-              <div>
-                <h4>Teme i Vijesti</h4>
-                <div v-for="link in nav_two">
-                  <NavLink :to="link.route" :name="link.name" />
-                </div>
-              </div>
-              <!-- <div class="third p-3">
-                <div class="nav-img mb-4"></div>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Dolores animi molestiae consequatur doloremque, aspernatur
-                  commodi.
-                </p>
-                <div class="nav_btn mt-4">
-                  <a href=""> Procitaj vise ></a>
-                </div>
-              </div> -->
-            </div>
-            <!-- <div
-              v-if="drop.id == 2"
-              class="dropnav"
-              :class="{ second: drop.active }"
-            >
-              <div class="grid">
-                <div v-for="product in products" class="dropnav_item">
-                  <div
-                    style="
-                      width: 30px;
-                      padding: 2px;
-                      background-color: rgb(255, 98, 0);
-                    "
-                  ></div>
-               
-                  <router-link :to="product.to">
-                    <div>
-                      <p>
-                        {{ product.heading }}
-                      </p>
-                      <small>{{ product.p }}</small>
-                    </div>
-                  </router-link>
-                </div>
-              </div>
-            </div> -->
-          </div>
         </ul>
         <div class="group">
           <MenuButton :showSideNav="showSideNav" />
@@ -155,6 +97,14 @@ export default {
         {
           to: "/services",
           name: "services",
+          isActive: false,
+          id: 3,
+
+          classname: "nav",
+        },
+        {
+          to: "/termin",
+          name: "appointment",
           isActive: false,
           id: 3,
 
