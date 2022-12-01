@@ -100,6 +100,10 @@ export default {
     display: flex;
     justify-content: center;
     width: 70%;
+<<<<<<< HEAD
+=======
+    // align-items: center;
+>>>>>>> d995ece (ffgsd)
     text-align: center;
     gap: 200px;
     height: 100%;
@@ -111,6 +115,10 @@ export default {
       color: white;
       margin: 0;
       padding: 0;
+<<<<<<< HEAD
+=======
+      //font-family: "Oswald", sans-serif;
+>>>>>>> d995ece (ffgsd)
     }
 
     .head-2 {
