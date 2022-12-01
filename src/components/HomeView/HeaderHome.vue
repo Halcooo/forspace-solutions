@@ -76,7 +76,7 @@ export default {
   .div {
     display: flex;
     justify-content: center;
-    width: 50%;
+    width: 70%;
     // align-items: center;
     text-align: center;
     gap: 200px;
@@ -89,7 +89,7 @@ export default {
       color: white;
       margin: 0;
       padding: 0;
-      font-family: "Oswald", sans-serif;
+      //font-family: "Oswald", sans-serif;
     }
 
     .head-1 {
