@@ -1,13 +1,15 @@
 @author Halid Lihovac
 <template>
   <div class="form-div">
-    <h3>Pošaljite nam poruku</h3>
+    <h3>{{ $t("contact_header") }}</h3>
 
     <form>
       <div class="form-group">
         <div class="form-group-flex">
           <div class="flex-item">
-            <label for="name" :class="{ active: active_name }">Vaše ime</label>
+            <label for="name" :class="{ active: active_name }">{{
+              $t("contact_form_name")
+            }}</label>
             <input
               @input="validateName"
               @click="
@@ -31,9 +33,9 @@
             />
           </div>
           <div class="flex-item">
-            <label for="email" :class="{ active: active_email }"
-              >Vaš email</label
-            >
+            <label for="email" :class="{ active: active_email }">{{
+              $t("contact_form_email")
+            }}</label>
             <input
               @input="validateEmail"
               @click="
@@ -62,18 +64,24 @@
         <div class="form-group-flex">
           <div class="flex-item">
             <div class="warning" v-if="nameInvalid">
-              <small style="color: orangered">Molimo unesite Vase ime</small>
+              <small style="color: orangered">{{
+                $t("contact_form_text")
+              }}</small>
             </div>
           </div>
           <div class="flex-item">
             <div class="warning" v-if="emailInvalid">
-              <small style="color: orangered">Molimo unesite Vas email</small>
+              <small style="color: orangered">{{
+                $t("contact_form_nameInvalid")
+              }}</small>
             </div>
           </div>
         </div>
       </div>
       <div class="form-group">
-        <label for="text" :class="{ active: active_text }">Text poruke</label>
+        <label for="text" :class="{ active: active_text }">{{
+          $t("contact_form_text")
+        }}</label>
         <textarea
           @input="validateMessage"
           @click="
@@ -99,12 +107,16 @@
           class="form-control-custom"
         ></textarea>
         <div class="warning" v-if="messageInvalid">
-          <small style="color: orangered">Molimo unesite poruku</small>
+          <small style="color: orangered">{{
+            $t("contact_form_messageInvalid")
+          }}</small>
         </div>
       </div>
       <div class="form-group d-flex gap-3">
         <BaseButton :to="routes.route" :name="routes.name" />
-        <a type="button" class="button" @click="showMap()"> Google Karta </a>
+        <a type="button" class="button" @click="showMap()">{{
+          $t("contact_form_google_map")
+        }}</a>
       </div>
     </form>
     <TheLocationMap :showMap="showMap" />
@@ -163,9 +175,9 @@ export default {
     },
     showMap() {
       if (this.$store.getters.getMapState) {
-        this.$store.commit('setMapState',false) // vuex store must be used like this with getters and mutations and separate modules!!
+        this.$store.commit("setMapState", false); // vuex store must be used like this with getters and mutations and separate modules!!
       } else {
-        this.$store.commit('setMapState',true)
+        this.$store.commit("setMapState", true);
       }
     },
   },

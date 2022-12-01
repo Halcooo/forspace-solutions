@@ -6,7 +6,7 @@
     <div class="services-container mt-5">
       <div class="heading">
         <h1 class="mb-5 text-center text-secondary">
-          Programerske usluge i razvoj
+          {{ $t("services_container_header") }}
         </h1>
         <Line />
         <div
@@ -18,7 +18,7 @@
             class="bg-light text-center card-body w-100 p-2"
           >
             <font-awesome-icon :icon="icon.icon_text" />
-            <h3>{{ icon.text }}</h3>
+            <h3>{{ $t(icon.text) }}</h3>
             <p>Lorem ipsum dolor sit amet.</p>
           </div>
         </div>
@@ -62,9 +62,9 @@ export default {
   data() {
     return {
       icons: [
-        { text: "Web i desktop aplikacije", icon_text: "fa-solid fa-desktop" },
-        { text: "Mobilne aplikacije", icon_text: "fa-solid fa-mobile" },
-        { text: "Api integracija", icon_text: "fa-solid fa-server" },
+        { text: "services_icon_1", icon_text: "fa-solid fa-desktop" },
+        { text: "services_icon_2", icon_text: "fa-solid fa-mobile" },
+        { text: "services_icon_3", icon_text: "fa-solid fa-server" },
       ],
       divs: [
         { class: "erp", text: "ERP Sistemi", to: "/erp" },
@@ -79,19 +79,19 @@ export default {
       ],
       images: [
         {
-          name: "Razvijanje Web i desktop aplikacija",
+          name: "services_slider_heading_1",
           url: require("@/assets/images/purchase-cover-image.png"),
-          text: "Web i desktop aplikacije",
+          text: "services_slider_text_1",
         },
         {
-          name: "Olaksavanje poslovnih procesa uz mobilne aplikacije",
+          name: "services_slider_heading_2",
           url: require("@/assets/images/product_item_1.jpg"),
-          text: "Mobilne aplikacije ",
+          text: "services_slider_heading_2",
         },
         {
-          name: "Poboljsavanje poslovnih rjesenja pomocu API integracije ",
+          name: "services_slider_heading_3",
           url: require("@/assets/images/product_item_2.jpg"),
-          text: "API integracija",
+          text: "services_slider_text_3",
         },
       ],
     };

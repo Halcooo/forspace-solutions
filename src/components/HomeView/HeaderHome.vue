@@ -4,34 +4,25 @@
     <div class="div">
       <div>
         <div class="head-1">
-          <h1>Mi ne radimo za Vas.</h1>
+          <h1>Odluke zasnovane na činjenicama, a ne na pretpostavkama!</h1>
         </div>
         <div class="head-2">
-          <h1>Mi radimo sa Vama!</h1>
+          <p>Forspace ERP & Računovodstvo</p>
+
+          <small
+            >Mi smo prvi domaći brend na tržištu ERP softvera sa predznakom
+            njemačke tehnologije koji omogućava smanjenje korištenja pisane
+            dokumentacije, uštedu vremena i novca, te predstavlja potpuno
+            prilagođeno i razumljivo softversko rješenje za krajnjeg
+            korisnika</small
+          >
         </div>
-        <!-- <div class="head-3">
-          <BaseButton :to="routes.route" :name="routes.name" />
-        </div> -->
+        <div class="head-3">
+          <!-- <BaseButton :to="routes.route" :name="routes.name" /> -->
+        </div>
       </div>
     </div>
   </div>
- <!-- smisliti content i routes za ovo pa onda ubaciti -->
-  <!-- <div class="nav">
-    <div class="middle">
-      <div class="left">
-        <ul>
-          <li>Overview</li>
-          <li>Fatures</li>
-          <li>Specs</li>
-          <li>Testimonials</li>
-          <li>Pricing</li>
-        </ul>
-      </div>
-      <div class="right">
-        <router-link to="">Želim prezentaciju</router-link>
-      </div>
-    </div>
-  </div> -->
 </template>
 <script>
 import BaseButton from "@/components/Forms/buttons/BaseButton.vue";
@@ -61,7 +52,7 @@ export default {
 
 .landing-page {
   width: 100%;
-  height: 70vh;
+  height: 80vh;
   @media screen and (max-width: 567px) {
     height: 50vh;
   }
@@ -82,14 +73,15 @@ export default {
   }
   .div {
     display: flex;
-    justify-content: left;
-    width: 70%;
-    align-items: center;
+    justify-content: center;
+    width: 50%;
+    // align-items: center;
+    text-align: center;
     gap: 200px;
     height: 100%;
     margin: auto;
-    padding-top: 5%;
-    padding-left: 2%;
+    padding-top: 15%;
+    // padding-left: 2%;
     h1 {
       font-size: 60px;
       color: white;
@@ -97,13 +89,26 @@ export default {
       padding: 0;
       font-family: "Oswald", sans-serif;
     }
-    .head-1,
+
+    .head-1 {
+    }
     .head-2 {
-      font-size: 80px;
+      color: white;
+      margin: 2% 0%;
+
+      p {
+        font-size: 30px;
+      }
+      small {
+        display: block;
+        width: 80%;
+        font-size: 16px;
+        margin: auto;
+      }
     }
 
     .head-3 {
-      margin-top: 10%;
+      padding-top: 10%;
     }
     @media screen and (max-width: 567px) {
       width: 100%;

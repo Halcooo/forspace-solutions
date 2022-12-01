@@ -173,18 +173,18 @@ export default {
     .card-1 {
       background: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.397),
-          rgba(0, 0, 0, 0.199),
-          rgba(0, 0, 0, 0.404)
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
         ),
         url("@/assets/images/erp-sistemi.png") no-repeat center center/cover;
     }
     .card-2 {
       background: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.397),
-          rgba(0, 0, 0, 0.199),
-          rgba(0, 0, 0, 0.404)
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
         ),
         url("@/assets/images/sistemi-placanja.jpg") no-repeat center
           center/cover;
@@ -192,18 +192,18 @@ export default {
     .card-3 {
       background: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.397),
-          rgba(0, 0, 0, 0.199),
-          rgba(0, 0, 0, 0.404)
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
         ),
         url("@/assets/images/forspace_info.jpg") no-repeat center center/cover;
     }
     .card-4 {
       background: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.397),
-          rgba(0, 0, 0, 0.199),
-          rgba(0, 0, 0, 0.404)
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6),
+          rgba(0, 0, 0, 0.6)
         ),
         url("@/assets/images/forspace_info_2.jpg") no-repeat center center/cover;
     }

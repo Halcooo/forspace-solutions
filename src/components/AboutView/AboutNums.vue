@@ -67,6 +67,7 @@ export default {
 
 <style lang="scss" scoped>
 .nums {
+  padding-top: 5%;
   h1 {
     text-align: center;
     color: gray;

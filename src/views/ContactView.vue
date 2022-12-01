@@ -2,12 +2,6 @@
   <div class="wrapper">
     <div class="wrapper-div">
       <h1>{{ $t("contact") }}</h1>
-      <!-- <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
-        aspernatur eligendi ipsam et blanditiis voluptate nostrum inventore
-        cupiditate dolor saepe labore officia fuga exercitationem reiciendis,
-        voluptatem quis voluptatibus odit mollitia?
-      </p> -->
     </div>
   </div>
   <ContactForm />
@@ -39,7 +33,6 @@ export default {
     text-align: center;
   }
   h1 {
-    // text-align: center;
     color: white;
     font-size: 50px;
   }
