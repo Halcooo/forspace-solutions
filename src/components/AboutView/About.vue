@@ -15,42 +15,71 @@
       <div class="div-1">
         <h1>{{ $t("about_us_news_heading") }}</h1>
       </div>
-      <div class="div-2">
-        <p>
-          {{ $t("about_us_news_link_one") }}
-        </p>
-      </div>
-      <div class="div-3">
-        <p>{{ $t("about_us_news_link_heading_two") }}</p>
-        <p>
-          {{ $t("about_us_news_link_two") }}
-        </p>
-      </div>
-      <div class="div-4">
-        <p>
-          {{ $t("about_us_news_link_heading_three") }}
-        </p>
-      </div>
 
+      <router-link to="/erp-all-in-one">
+        <div class="div-2">
+          <p>
+            {{ $t("about_us_news_link_one") }}
+          </p>
+        </div>
+      </router-link>
+      <router-link to="/why-companies-need-dms">
+        <div class="div-3">
+          <p>{{ $t("about_us_news_link_heading_two") }}</p>
+          <p>
+            {{ $t("about_us_news_link_two") }}
+          </p>
+        </div>
+      </router-link>
+      <router-link to="/why-web-based">
+        <div class="div-4">
+          <p>
+            {{ $t("about_us_news_link_heading_three") }}
+          </p>
+        </div>
+      </router-link>
       <div class="overlay"></div>
     </div>
     <div class="flex-second">
-      <div class="card-1">
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="card-2">
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="card-3">
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
-      <div class="card-4">
-        <h3>Lorem, ipsum dolor.</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div>
+      <router-link to="/what-type-of-entrepreneur-are-you">
+        <div class="card-1">
+          <div>
+            <h1>{{ $t("about_us_news_right_flex_one_heading") }}</h1>
+            <h3>{{ $t("about_us_news_right_flex_one") }}</h3>
+            <p>{{ $t("about_us_news_right_flex_one_text") }}</p>
+          </div>
+        </div>
+      </router-link>
+      <router-link to="/signs-your-business-needs-advanced-software-solution">
+        <div class="card-2">
+          <div>
+            <h1>{{ $t("about_us_news_right_flex_two_heading") }}</h1>
+
+            <h3>{{ $t("about_us_news_right_flex_two") }}</h3>
+            <p>{{ $t("about_us_news_right_flex_two_text") }}</p>
+          </div>
+        </div>
+      </router-link>
+      <router-link to="/how-erp-can-help-small-business-to-grow">
+        <div class="card-3">
+          <div>
+            <h1>{{ $t("about_us_news_right_flex_three_heading") }}</h1>
+
+            <h3>{{ $t("about_us_news_right_flex_three") }}</h3>
+            <p>{{ $t("about_us_news_right_flex_three_text") }}</p>
+          </div>
+        </div>
+      </router-link>
+      <router-link to="/how-digital-transformation-helps-accounting">
+        <div class="card-4">
+          <div>
+            <h1>{{ $t("about_us_news_right_flex_four_heading") }}</h1>
+
+            <h3>{{ $t("about_us_news_right_flex_four") }}</h3>
+            <p>{{ $t("about_us_news_right_flex_four_text") }}</p>
+          </div>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -109,7 +138,7 @@ export default {
   margin: auto;
   height: 70vh;
   display: flex;
-  gap: 10px;
+  // gap: 10px;
   margin-top: 2%;
   margin-bottom: 5%;
   border-radius: 5px;
@@ -133,9 +162,16 @@ export default {
     .div-1,
     .div-2,
     .div-3 {
-      border-bottom: 2px solid $navy;
+      border-bottom: 2px solid rgba(16, 99, 114, 0.6);
     }
-
+    .div-2,
+    .div-3,
+    .div-4 {
+      &:hover {
+        opacity: 0.8;
+        color: gray;
+      }
+    }
     .overlay {
       width: 80%;
       margin: auto;
@@ -152,7 +188,7 @@ export default {
     width: 60%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    // gap: 10px;
     .card-1,
     .card-2,
     .card-3,
@@ -160,6 +196,7 @@ export default {
       width: 100%;
       height: 100%;
       color: white;
+      overflow: hidden;
       &:hover {
         opacity: 0.8;
         cursor: pointer;
@@ -168,23 +205,37 @@ export default {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      text-align: left;
+      padding-left: 5%;
+      position: relative;
+      div {
+        position: absolute;
+        top: 85%;
+      }
+
+      &:hover {
+        div {
+          top: 30%;
+          transition: top 1s;
+        }
+      }
     }
 
     .card-1 {
       background: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
+          rgba(16, 99, 114, 0.6),
+          rgba(16, 99, 114, 0.6),
+          rgba(16, 99, 114, 0.6)
         ),
         url("@/assets/images/erp-sistemi.png") no-repeat center center/cover;
     }
     .card-2 {
       background: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
+          rgba(16, 99, 114, 0.6),
+          rgba(16, 99, 114, 0.6),
+          rgba(16, 99, 114, 0.6)
         ),
         url("@/assets/images/sistemi-placanja.jpg") no-repeat center
           center/cover;
@@ -192,18 +243,18 @@ export default {
     .card-3 {
       background: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
+          rgba(16, 99, 114, 0.6),
+          rgba(16, 99, 114, 0.6),
+          rgba(16, 99, 114, 0.6)
         ),
         url("@/assets/images/forspace_info.jpg") no-repeat center center/cover;
     }
     .card-4 {
       background: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6),
-          rgba(0, 0, 0, 0.6)
+          rgba(16, 99, 114, 0.6),
+          rgba(16, 99, 114, 0.6),
+          rgba(16, 99, 114, 0.6)
         ),
         url("@/assets/images/forspace_info_2.jpg") no-repeat center center/cover;
     }

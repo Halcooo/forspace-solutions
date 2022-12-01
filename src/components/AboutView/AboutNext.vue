@@ -23,7 +23,7 @@
           </p>
           <div class="read-more d-flex justify-content-center">
             <router-link
-              to="/"
+              to="/digital-transformation-advantages"
               class="border pt-2 ps-5 px-5 pb-2 text-light mt-5"
               >Saznaj Vise</router-link
             >
@@ -49,7 +49,7 @@
           </p>
           <div class="read-more d-flex justify-content-center">
             <router-link
-              to="/"
+              to="/whats-an-api"
               class="border pt-2 ps-5 px-5 pb-2 text-light mt-5"
               >Saznaj Vise</router-link
             >

@@ -1,6 +1,6 @@
 <template>
   <div class="nums">
-    <h1 class="mb-4">Forspace u brojkama</h1>
+    <h1 class="mb-4">{{ $t("about_us_nums_heading") }}</h1>
     <Line />
     <div class="heading-flex">
       <h1>Osnovano</h1>
@@ -9,15 +9,21 @@
     </div>
 
     <div class="num-flex">
-      <div class="label"><h1>Osnovano</h1></div>
+      <div class="label">
+        <h1>{{ $t("about_us_nums_established") }}</h1>
+      </div>
       <div class="year">
         <div>{{ roundedValyear }} y</div>
       </div>
-      <div class="label"><h1>Klijenti</h1></div>
+      <div class="label">
+        <h1>{{ $t("about_us_nums_clients") }}</h1>
+      </div>
       <div class="client">
         <div>{{ roundedValcli }} +</div>
       </div>
-      <div class="label"><h1>Zaposlenih</h1></div>
+      <div class="label">
+        <h1>{{ $t("about_us_nums_employed") }}</h1>
+      </div>
       <div class="emp">
         <div>{{ roundedValEmp }} +</div>
       </div>

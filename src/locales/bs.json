@@ -56,6 +56,25 @@
 
   "about_us_news_link_heading_three": "Zašto je poslovni program baziran na web-u pravi izbor?",
 
+  "about_us_news_right_flex_one": "Koji ste tip preduzetnika?",
+  "about_us_news_right_flex_one_heading": "Preduzetništvo",
+  "about_us_news_right_flex_one_text": "Preduzetnik se obično smatra inovatorom, izvorom novih ideja, roba, usluga i/ili poslovnih procedura.",
+
+  "about_us_news_right_flex_two": "Znakovi da je Vašem poslovanju potrebno naprednije softversko rješenje",
+  "about_us_news_right_flex_two_heading": "Softverska rješenja",
+
+  "about_us_news_right_flex_two_text": "Većina kompanija implementacijom ERP softvera nastoji poboljšati ukupne performanse.",
+
+  "about_us_news_right_flex_three": "Kako ERP može pomoći malom biznisu da raste?",
+  "about_us_news_right_flex_three_heading": "ERP sistem",
+
+  "about_us_news_right_flex_three_text": "Sistem za planiranje resursa preduzeća, takozvani ERP, upravlja svim segmentima poslovanja, uključujući proizvodnju, nabavku, prodaju, distribuciju, računovodstvo, ljudske resurse, sistem za uprav..",
+
+  "about_us_news_right_flex_four": "Kako digitalna transformacija pospješuje i olakšava posao računovođa?",
+  "about_us_news_right_flex_four_heading": "Digitalna transformacija",
+
+  "about_us_news_right_flex_four_text": "Profesionalci u svim industrijama suočavaju se s velikim promjenama a mnoge od njih vođene su novim tehnologijama.",
+
   "about_us_next_heading": "Slijedeće",
   "about_us_next_additional_paragraph": "Forspace Preview",
 
@@ -65,15 +84,28 @@
   "about_us_next_overlay_right_heading": "Šta je API?",
   "about_us_next_overlay_right_paragraph": "Izraz “API” je često korišten u web razvoju. Ažuriranja operativnog sistema, web pretraživača i aplikacija često najavljuju nove API-je za programere. Stoga, šta je API i kako ga programeri..",
 
-  "about_us_team": "Naš tim",
-  "about_us_clients": "Šta kažu naši klijenti",
+  "about_us_choose_small_heading": "Zašto izabrati nas",
+  "about_us_choose_heading": "Posao iz jednog izvora",
+  "about_us_aditional": "U našoj kompaniji",
+  "about_us_paragraph": " Forspace tim daje bezrezervnu podršku u svim fazama korištenja, a posebno smo ponosni na našu post-prodajnu uslugu, jer prihvatanjem ovog softvera možete računati na naš stalni angažman i kontakt. Mi smo prvi domaći brend na tržištu ERP softvera sa predznakom njemačke tehnologije koji omogućava smanjenje korištenja pisane dokumentacije, uštedu vremena i novca, te predstavlja potpuno prilagođeno i razumljivo softversko rješenje za krajnjeg korisnika",
+  "about_check_one": "Podržava jednostavnu integraciju s drugim rješenjima.",
+  "about_check_two": "Mapiranje stvarnih procesa u digitalne.",
+  "about_check_three": "Centralno upravljanje procesima.",
+
+  "about_us_video_heading": "Forspace Preview",
+  "about_us_video_paragraph": "Pogledajte naš kratki video",
+
+  "about_us_nums_heading": "Forspace u brojkama",
+  "about_us_nums_established": "Osnovano",
+  "about_us_nums_clients": "Klijeni",
+  "about_us_nums_employed": "Zaposlenih",
 
   "about_us_client_one": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
   "about_us_client_two": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
   "about_us_client_three": " \"Kada je u pitanju automatizacija računovodstva i potpuno prilagođavanje našim potrebama, ne tražimo dalje od tima Forspace Solutions. Njihov konkurentski krajolik je strm, ali Forspace to čini ostvarivim.\" ",
 
   "about_us_reserve_heading": "Rezervišite termin",
-  "about_us_reserve_p": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nostrum illo id adipisci mollitia commodi eligendi maiores nesciunt quas voluptates iusto assumenda, voluptatibus accusantium et esse ipsum nobis, vel nulla.",
+  "about_us_reserve_p": "Osjećajte se slobodnim da rezervirate termin za sastanak sa našim timom za više informacija o našim proizvodima ili o procesima u vašoj kompaniji za koje je potrebno softversko rješenje i savjetovanje. Možda imamo upravo savršeno rješenje za vas na osnovu naše najbolje prakse i iskustva.",
 
   "products_purchase_header": "Nabava",
   "products_purchase_text": " Forspace modul nabave vam omogućava jednostavnu narudžbu svega što vam treba za svakodnevno poslovanje. Sistem se brine o ispravnosti procesa: ko treba da odobri narudžbu? Informiše odjel nabave da treba prikupiti ponude. Provjerava da li su nabavke u skladu sa budžetom (ovdje je omogućen i automatski workflow za odobravanje prekoračenja budžeta od strane odgovorne osobe, kako proces ne bi bio u zastoju). Dozvoljava višestuko odobravanje predefinisanih osoba.",
