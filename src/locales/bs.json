@@ -4,7 +4,7 @@
   "about": "O nama",
   "products": "Proizvodi",
   "services": "Usluge",
-  "preview": "Pregled",
+  "appointment": "Termin",
   "our_team": "Naš tim",
   "contact": "Kontakt",
   "language": "Jezik",
@@ -89,6 +89,7 @@
   "about_us_reserve_p": "Osjećajte se slobodnim da rezervirate termin za sastanak sa našim timom za više informacija o našim proizvodima ili o procesima u vašoj kompaniji za koje je potrebno softversko rješenje i savjetovanje. Možda imamo upravo savršeno rješenje za vas na osnovu naše najbolje prakse i iskustva.",
   "products_purchase_header": "Nabava",
   "products_purchase_text": " Forspace modul nabave vam omogućava jednostavnu narudžbu svega što vam treba za svakodnevno poslovanje. Sistem se brine o ispravnosti procesa: ko treba da odobri narudžbu? Informiše odjel nabave da treba prikupiti ponude. Provjerava da li su nabavke u skladu sa budžetom (ovdje je omogućen i automatski workflow za odobravanje prekoračenja budžeta od strane odgovorne osobe, kako proces ne bi bio u zastoju). Dozvoljava višestuko odobravanje predefinisanih osoba.",
+  "products_sales_heading": "Prodaja",
   "products_sales_header": "Maloprodaja - Veleprodaja",
   "products_sales_text": " Naš standardizirani modul veleprodaje ili maloprodaje zadovoljit će sve vaše potrebe pri poslovanju. Modul maloprodaje je dodatno prilagođen za rad sa POS uređajima i svim ostalim zakonskim potrebama i obavezama. Kontaktirajte nas za više detalja.",
   "products_production_header_one": "Proizvodnja",
@@ -186,6 +187,7 @@
   "services_slider_text_3": "API integracija",
   "services_container_header": "Programerske usluge i razvoj",
   "services_icon_1": "Web i desktop aplikacije",
+
   "services_icon_2": "Mobilne aplikacije",
   "services_icon_3": "Api integracija",
   "contact_header": "Pošaljite nam poruku",
@@ -217,5 +219,9 @@
   "warehouse": "Skladište",
   "dms": "DMS",
   "finance": "Finansije",
-  "hr": "HR"
+  "hr": "HR",
+
+  "services-_icon_text_1": "Podržane na OS platformama Linux, Unix, macOS, Windows",
+  "services-_icon_text_2": "Podržanih na Android i iOS operativnim sistemima",
+  "services-_icon_text_3": "Na serveru"
 }

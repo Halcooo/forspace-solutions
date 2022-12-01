@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="container purchase">
+  <div class="purchase">
     <!-- <img src="@/assets/images/nabava_animacija.gif" alt="" /> -->
     <div class="purchase-img">
       <h1 class="text-light">{{ $t("products_purchase_header") }}</h1>
@@ -16,14 +16,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .purchase {
-  // background: url("@/assets/images/gradient-bg.png") no-repeat center
-  //   center/cover;
-  display: flex;
-  flex-direction: column;
-
-  // background-color: azure;
-  border-radius: 2px;
-
+  width: 70%;
+  margin: auto;
   .purchase-img {
     width: 100%;
     height: 500px;

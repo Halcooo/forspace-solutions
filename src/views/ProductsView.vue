@@ -37,11 +37,11 @@ export default {};
 .wrapper {
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
+      rgba(8, 40, 67, 0.6),
+      rgba(8, 40, 67, 0.6),
+      rgba(8, 40, 67, 0.6)
     ),
-    url("@/assets/images/productscover.jpg") no-repeat center center/cover;
+    url("@/assets/images/product_item_2.jpg") no-repeat center center/cover;
   // background-color: rgb(182, 182, 169);
   color: white;
   height: 50vh;

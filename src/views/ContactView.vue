@@ -20,9 +20,9 @@ export default {
 .wrapper {
   background: linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
+      rgba(8, 40, 67, 0.6),
+      rgba(8, 40, 67, 0.6),
+      rgba(8, 40, 67, 0.6)
     ),
     url("@/assets/images/contact.jpg") no-repeat center center/cover;
   height: 50vh;

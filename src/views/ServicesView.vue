@@ -19,7 +19,7 @@
           >
             <font-awesome-icon :icon="icon.icon_text" />
             <h3>{{ $t(icon.text) }}</h3>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>{{ $t(icon.p) }}</p>
           </div>
         </div>
       </div>
@@ -56,9 +56,21 @@ export default {
   data() {
     return {
       icons: [
-        { text: "services_icon_1", icon_text: "fa-solid fa-desktop" },
-        { text: "services_icon_2", icon_text: "fa-solid fa-mobile" },
-        { text: "services_icon_3", icon_text: "fa-solid fa-server" },
+        {
+          text: "services_icon_1",
+          p: "services-_icon_text_1",
+          icon_text: "fa-solid fa-desktop",
+        },
+        {
+          text: "services_icon_2",
+          p: "services-_icon_text_2",
+          icon_text: "fa-solid fa-mobile",
+        },
+        {
+          text: "services_icon_3",
+          p: "services-_icon_text_3",
+          icon_text: "fa-solid fa-server",
+        },
       ],
       divs: [
         {

@@ -64,7 +64,7 @@ export default {
       rgba(8, 40, 67, 0.6),
       rgba(8, 40, 67, 0.6)
     ),
-    url("@/assets/images/forspace_info.jpg") no-repeat center center/cover;
+    url("@/assets/images/office.jpg") no-repeat center center/cover;
 
   animation: backgroundFade 0.5s ease-in;
   .background {
