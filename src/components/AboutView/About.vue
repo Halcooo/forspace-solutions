@@ -138,7 +138,7 @@ export default {
 .about-flex-grid {
   width: 70%;
   margin: auto;
-  height: 60vh;
+  height: 70vh;
   display: flex;
   // gap: 10px;
   margin-top: 2%;
@@ -212,7 +212,10 @@ export default {
       position: relative;
       div {
         position: absolute;
-        top: 80.5%;
+        h1 {
+          font-size: 30px;
+        }
+        top: 87.5%;
       }
 
       &:hover {

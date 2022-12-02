@@ -187,7 +187,17 @@ h1 {
   // background: url("@/assets/images/product-cover.png") no-repeat center
   //   center/cover;
   // background-color: rgb(255, 210, 61);
-  background-color: $navy;
+  // background-color: #8bc6ec;
+  // background-image: linear-gradient(135deg, #8bc5ec7c 0%, #9599e293 100%);
+  // background: linear-gradient(135deg, #8bc5ecbe 0%, #9599e2c2 100%),
+  //   url("@/assets/images/header-cover.jpg") no-repeat center center/cover;
+  background: linear-gradient(
+      135deg,
+      rgba(8, 40, 67, 0.6),
+      rgba(8, 40, 67, 0.6),
+      rgba(8, 40, 67, 0.6)
+    ),
+    url("@/assets/images/header-cover.jpg") no-repeat center center/cover;
   height: 50vh;
   display: flex;
   justify-content: center;
@@ -203,6 +213,17 @@ h1 {
   }
 }
 .content-news {
+  width: 70%;
+  margin: auto;
+  padding-top: 2%;
+  padding-left: 2%;
   min-height: 50vh;
+
+  h3 {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 25px;
+    color: rgb(0, 55, 77);
+  }
 }
 </style>

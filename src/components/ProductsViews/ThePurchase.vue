@@ -25,9 +25,9 @@ export default {
     padding: 20px;
     background: linear-gradient(
         to right,
-        rgba(8, 40, 67, 0.8),
-        rgba(8, 40, 67, 0.8),
-        rgba(8, 40, 67, 0.8)
+        rgba(8, 40, 67, 0.7),
+        rgba(8, 40, 67, 0.7),
+        rgba(8, 40, 67, 0.7)
       ),
       url("@/assets/images/purchase.jpg") no-repeat center center/cover;
 

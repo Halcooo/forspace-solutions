@@ -77,23 +77,19 @@ export default {
     display: flex;
     justify-content: center;
     width: 70%;
-    // align-items: center;
     text-align: center;
     gap: 200px;
     height: 100%;
     margin: auto;
     padding-top: 15%;
-    // padding-left: 2%;
+
     h1 {
       font-size: 60px;
       color: white;
       margin: 0;
       padding: 0;
-      //font-family: "Oswald", sans-serif;
     }
 
-    .head-1 {
-    }
     .head-2 {
       color: white;
       margin: 2% 0%;
