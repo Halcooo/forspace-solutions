@@ -136,7 +136,7 @@ li {
 
   .router-link-active {
     // color: rgb(55, 165, 255);
-    color: rgb(252, 179, 45);
+    color: orange;
   }
   .router-link {
     text-align: left;

@@ -5,14 +5,36 @@
     </div>
   </div>
   <div class="content-news">
-    <div>
-      <h1>sadghsaodg</h1>
+    <div v-for="(c, index) in content" :key="c">
+      <div v-if="index == 5">
+        <p>
+          {{ $t(c.p) }}
+        </p>
+      </div>
+      <div v-else>
+        <p>
+          {{ $t(c.p) }}
+        </p>
+        <h3>{{ $t(c.h) }}</h3>
+      </div>
     </div>
   </div>
 </template>
 <script>
 export default {
   name: "ErpAllInOne",
+  data() {
+    return {
+      content: [
+        { p: "why_web_based_p1", h: "why_web_based_h1" },
+        { p: "why_web_based_p2", h: "why_web_based_h2" },
+        { p: "why_web_based_p3", h: "why_web_based_h3" },
+        { p: "why_web_based_p4", h: "why_web_based_h4" },
+        { p: "why_web_based_p5", h: "why_web_based_h5" },
+        { p: "why_web_based_p6" },
+      ],
+    };
+  },
 };
 </script>
 <style lang="scss" scoped></style>
