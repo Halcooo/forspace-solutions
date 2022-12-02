@@ -78,13 +78,13 @@ export default {
       right: 2%;
       display: flex;
       justify-content: right;
-      padding-right: 1%;
+      padding-right: 7%;
       align-items: center;
       text-align: right;
       h1 {
         color: white;
         width: 70%;
-        font-size: 60px;
+        font-size: 45px;
       }
     }
     .square-2 {
