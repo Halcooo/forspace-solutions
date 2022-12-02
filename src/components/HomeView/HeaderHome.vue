@@ -239,6 +239,7 @@ export default {
   width: 500px;
   height: 500px;
   border: 70px solid rgba(255, 255, 255, 0.107);
+  // border-radius: 50%;
   position: absolute;
   top: 20%;
   left: 23%;
