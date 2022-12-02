@@ -19,9 +19,21 @@
             korisnika</small
           >
         </div>
-        <div class="head-3">
-          <!-- <BaseButton :to="routes.route" :name="routes.name" /> -->
-        </div>
+        <!-- <div
+          class="d-inline-flex justify-content-center align-items-center"
+          style="
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(0%, 150%);
+            cursor: pointer;
+            font-size: 30px;
+            color: white;
+          "
+          @click="scrollDown()"
+        >
+          <font-awesome-icon icon="fa-solid fa-chevron-down" />
+        </div> -->
       </div>
     </div>
   </div>
@@ -38,6 +50,16 @@ export default {
     return {
       routes: { route: "/contact", name: "presentation" },
     };
+  },
+  methods: {
+    scrollDown() {
+      window.scrollTo(0, 720);
+    },
+  },
+  mounted() {
+    window.addEventListener("scroll", (e) => {
+      console.log(window.scrollY);
+    });
   },
 };
 </script>
@@ -216,7 +238,7 @@ export default {
 .circle-1 {
   width: 500px;
   height: 500px;
-  border: 30px solid rgba(255, 255, 255, 0.107);
+  border: 70px solid rgba(255, 255, 255, 0.107);
   // border-radius: 50%;
   position: absolute;
   top: 20%;
