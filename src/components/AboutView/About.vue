@@ -40,7 +40,7 @@
         </div>
       </router-link>
 
-      <div class="overlay"></div>
+      <!-- <div class="overlay"></div> -->
     </div>
     <div class="flex-second">
       <router-link to="/what-type-of-entrepreneur-are-you">
@@ -138,7 +138,7 @@ export default {
 .about-flex-grid {
   width: 70%;
   margin: auto;
-  height: 70vh;
+  height: 56vh;
   display: flex;
   // gap: 10px;
   margin-top: 2%;
@@ -157,13 +157,14 @@ export default {
     .div-4 {
       width: 80%;
       margin: auto;
-      margin-bottom: 5%;
+      margin-bottom: 2%;
       padding: 15px 0px;
     }
 
     .div-1,
     .div-2,
-    .div-3 {
+    .div-3,
+    .div-4 {
       border-bottom: 2px solid rgba(16, 99, 114, 0.6);
     }
     .div-2,
@@ -206,21 +207,22 @@ export default {
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+
       text-align: left;
-      padding-left: 5%;
+      padding-left: 2%;
       position: relative;
       div {
         position: absolute;
+        transition: 1s;
         h1 {
           font-size: 30px;
         }
-        top: 87.5%;
+        top: 83.5%;
       }
 
       &:hover {
         div {
-          top: 30%;
+          top: 10%;
           transition: top 1s;
         }
       }

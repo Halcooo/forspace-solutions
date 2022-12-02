@@ -48,26 +48,6 @@ export default {
       mobile: false,
       none: false,
       navy: false,
-      nav_one: [
-        { route: "/about", name: "news" },
-        { route: "/preview", name: "preview" },
-        { route: "/team", name: "our_team" },
-        { route: "/reserve", name: "reserve" },
-      ],
-      nav_two: [
-        { route: "/dms", name: "nav_news_1" },
-        { route: "/preview", name: "nav_news_2" },
-        { route: "/team", name: "nav_news_3" },
-        { route: "/reserve", name: "nav_news_4" },
-        {
-          route: "/reserve",
-          name: "nav_news_5",
-        },
-        {
-          route: "/reserve",
-          name: "nav_news_6",
-        },
-      ],
 
       routes: [
         {
@@ -103,10 +83,10 @@ export default {
           classname: "nav",
         },
         {
-          to: "/termin",
+          to: "/appointment",
           name: "appointment",
           isActive: false,
-          id: 3,
+          id: 4,
 
           classname: "nav",
         },
@@ -120,7 +100,6 @@ export default {
           classname: "nav",
         },
       ],
-      classes: [{ id: 1, active: false }],
     };
   },
   methods: {

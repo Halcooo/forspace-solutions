@@ -11,6 +11,7 @@ import ForspacePreview from "../views/ForspacePreview.vue";
 import ContactView from "../views/ContactView.vue";
 import PromoView from "../views/PromoView.vue";
 import AboutView from "../views/AboutView.vue";
+import Appointment from "../views/Appointment.vue";
 import TheSales from "../components/ProductsViews/TheSales.vue";
 import ThePurchase from "../components/ProductsViews/ThePurchase.vue";
 import TheProduction from "../components/ProductsViews/TheProduction.vue";
@@ -156,9 +157,9 @@ const routes = [
     component: ContactView,
   },
   {
-    path: "/promo",
-    name: "promo",
-    component: PromoView,
+    path: "/appointment",
+    name: "appointment",
+    component: Appointment,
   },
 
   {
