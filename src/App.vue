@@ -191,7 +191,6 @@ h1 {
   // background-image: linear-gradient(135deg, #8bc5ec7c 0%, #9599e293 100%);
   // background: linear-gradient(135deg, #8bc5ecbe 0%, #9599e2c2 100%),
   //   url("@/assets/images/header-cover.jpg") no-repeat center center/cover;
-
   // background: linear-gradient(
   //     135deg,
   //     rgba(8, 40, 67, 0.6),

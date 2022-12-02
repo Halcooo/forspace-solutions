@@ -227,7 +227,7 @@ export default {
         h1 {
           font-size: 30px;
         }
-        top: 87.5%;
+        top: 83.5%;
       }
 
       &:hover {
