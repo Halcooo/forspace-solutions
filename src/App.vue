@@ -191,7 +191,7 @@ h1 {
   // background-image: linear-gradient(135deg, #8bc5ec7c 0%, #9599e293 100%);
   // background: linear-gradient(135deg, #8bc5ecbe 0%, #9599e2c2 100%),
   //   url("@/assets/images/header-cover.jpg") no-repeat center center/cover;
-<<<<<<< HEAD
+
   // background: linear-gradient(
   //     135deg,
   //     rgba(8, 40, 67, 0.6),
@@ -203,15 +203,6 @@ h1 {
   background: linear-gradient(19deg, #21d5fdb0 0%, #2137ff9d 100%),
     url("@/assets/images/image-1.png") no-repeat center center/cover;
 
-=======
-  background: linear-gradient(
-      135deg,
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6)
-    ),
-    url("@/assets/images/header-cover.jpg") no-repeat center center/cover;
->>>>>>> de6d993 (erfwe)
   height: 50vh;
   display: flex;
   justify-content: center;
