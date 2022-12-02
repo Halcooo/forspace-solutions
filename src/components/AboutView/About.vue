@@ -144,7 +144,11 @@ export default {
 .about-flex-grid {
   width: 70%;
   margin: auto;
+<<<<<<< HEAD
   height: 56vh;
+=======
+  height: 70vh;
+>>>>>>> de6d993 (erfwe)
   display: flex;
   // gap: 10px;
   margin-top: 2%;
@@ -219,11 +223,18 @@ export default {
       position: relative;
       div {
         position: absolute;
+<<<<<<< HEAD
         transition: 1s;
         h1 {
           font-size: 30px;
         }
         top: 83.5%;
+=======
+        h1 {
+          font-size: 30px;
+        }
+        top: 87.5%;
+>>>>>>> de6d993 (erfwe)
       }
 
       &:hover {
