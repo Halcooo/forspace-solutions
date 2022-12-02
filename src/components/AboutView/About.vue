@@ -16,69 +16,29 @@
         <h1>{{ $t("about_us_news_heading") }}</h1>
       </div>
 
-      <router-link to="/erp-all-in-one">
-        <div class="div-2">
-          <p>
-            {{ $t("about_us_news_link_one") }}
-          </p>
-        </div>
-      </router-link>
-      <router-link to="/why-companies-need-dms">
-        <div class="div-3">
-          <p>{{ $t("about_us_news_link_heading_two") }}</p>
-          <p>
-            {{ $t("about_us_news_link_two") }}
-          </p>
-        </div>
-      </router-link>
-
-      <router-link to="/why-web-based">
-        <div class="div-4">
-          <p>
-            {{ $t("about_us_news_link_heading_three") }}
-          </p>
-        </div>
-      </router-link>
-
-      <!-- <div class="overlay"></div> -->
+      <div v-for="(card, index) in grid_1">
+        <router-link v-if="index == 1" :to="card.src">
+          <div :class="card.class">
+            <p>{{ $t(card.p) }}</p>
+            <p>
+              {{ $t(card.p2) }}
+            </p>
+          </div>
+        </router-link>
+        <router-link v-else :to="card.src">
+          <div :class="card.class">
+            <p>{{ $t(card.p) }}</p>
+          </div>
+        </router-link>
+      </div>
     </div>
     <div class="flex-second">
-      <router-link to="/what-type-of-entrepreneur-are-you">
-        <div class="card-1">
+      <router-link v-for="card in grid_2" :to="card.src">
+        <div :class="card.class">
           <div>
-            <h1>{{ $t("about_us_news_right_flex_one_heading") }}</h1>
-            <h3>{{ $t("about_us_news_right_flex_one") }}</h3>
-            <p>{{ $t("about_us_news_right_flex_one_text") }}</p>
-          </div>
-        </div>
-      </router-link>
-      <router-link to="/signs-your-business-needs-advanced-software-solution">
-        <div class="card-2">
-          <div>
-            <h1>{{ $t("about_us_news_right_flex_two_heading") }}</h1>
-
-            <h3>{{ $t("about_us_news_right_flex_two") }}</h3>
-            <p>{{ $t("about_us_news_right_flex_two_text") }}</p>
-          </div>
-        </div>
-      </router-link>
-      <router-link to="/how-erp-can-help-small-business-to-grow">
-        <div class="card-3">
-          <div>
-            <h1>{{ $t("about_us_news_right_flex_three_heading") }}</h1>
-
-            <h3>{{ $t("about_us_news_right_flex_three") }}</h3>
-            <p>{{ $t("about_us_news_right_flex_three_text") }}</p>
-          </div>
-        </div>
-      </router-link>
-      <router-link to="/how-digital-transformation-helps-accounting">
-        <div class="card-4">
-          <div>
-            <h1>{{ $t("about_us_news_right_flex_four_heading") }}</h1>
-
-            <h3>{{ $t("about_us_news_right_flex_four") }}</h3>
-            <p>{{ $t("about_us_news_right_flex_four_text") }}</p>
+            <h1>{{ $t(card.h1) }}</h1>
+            <h4>{{ $t(card.h4) }}</h4>
+            <p>{{ $t(card.p) }}</p>
           </div>
         </div>
       </router-link>
@@ -88,8 +48,54 @@
 <script>
 export default {
   name: "AboutUs",
-  about: false,
-  mounted() {},
+  data() {
+    return {
+      grid_1: [
+        { src: "/erp-all-in-one", class: "div-2", p: "about_us_news_link_one" },
+        {
+          src: "/why-companies-need-dms",
+          class: "div-3",
+          p: "about_us_news_link_one",
+          p2: "about_us_news_link_heading_two",
+        },
+        {
+          src: "/why-web-based",
+          class: "div-4",
+          p: "about_us_news_link_heading_three",
+        },
+      ],
+      grid_2: [
+        {
+          src: "/what-type-of-entrepreneur-are-you",
+          h1: "about_us_news_right_flex_one_heading",
+          h4: "about_us_news_right_flex_one",
+          p: "about_us_news_right_flex_one_text",
+          class: "card-1",
+        },
+        {
+          src: "/signs-your-business-needs-advanced-software-solution",
+          h1: "about_us_news_right_flex_two_heading",
+          h4: "about_us_news_right_flex_two",
+          p: "about_us_news_right_flex_two_text",
+          class: "card-2",
+        },
+        {
+          src: "/how-erp-can-help-small-business-to-grow",
+          h1: "about_us_news_right_flex_three_heading",
+          h4: "about_us_news_right_flex_three",
+          p: "about_us_news_right_flex_three_text",
+          class: "card-3",
+        },
+        {
+          src: "/how-digital-transformation-helps-accounting",
+          h1: "about_us_news_right_flex_four_heading",
+          h4: "about_us_news_right_flex_four",
+          p: "about_us_news_right_flex_four_text",
+          class: "card-4",
+        },
+      ],
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>

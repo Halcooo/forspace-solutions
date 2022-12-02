@@ -6,52 +6,24 @@
       <h3 class="text-secondary mt-2">
         {{ $t("about_us_next_additional_paragraph") }}
       </h3>
-      <!-- <small>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
-					consequatur veniam amet voluptatum totam beatae.
-				</small> -->
     </div>
 
     <div class="the_next_content">
       <div
-        class="item_one text-light d-flex justify-content-center align-items-center text-center"
+        v-for="next in for_next"
+        :class="next.class"
+        class="text-light d-flex justify-content-center align-items-center text-center"
       >
         <div>
-          <h3>{{ $t("about_us_next_overlay_left_heading") }}</h3>
+          <h3>{{ $t(next.h3) }}</h3>
           <p>
-            {{ $t("about_us_next_overlay_left_paragraph") }}
+            {{ $t(next.p) }}
           </p>
           <div class="read-more d-flex justify-content-center">
             <router-link
-              to="/digital-transformation-advantages"
+              :to="next.src"
               class="border pt-2 ps-5 px-5 pb-2 text-light mt-5"
-              >Saznaj Vise</router-link
-            >
-          </div>
-        </div>
-        <!-- <div class="overlay">
-          <h3>{{ $t("about_us_next_overlay_left_heading") }}</h3>
-          <p>
-            {{ $t("about_us_next_overlay_left_paragraph") }}
-          </p>
-          <div class="read-more">
-            <router-link to="/">Saznaj Vise</router-link>
-          </div>
-        </div> -->
-      </div>
-      <div
-        class="item_two text-light d-flex justify-content-center align-items-center text-center"
-      >
-        <div>
-          <h3>{{ $t("about_us_next_overlay_right_heading") }}</h3>
-          <p>
-            {{ $t("about_us_next_overlay_right_paragraph") }}
-          </p>
-          <div class="read-more d-flex justify-content-center">
-            <router-link
-              to="/whats-an-api"
-              class="border pt-2 ps-5 px-5 pb-2 text-light mt-5"
-              >Saznaj Vise</router-link
+              >{{ $t(next.read_more) }}</router-link
             >
           </div>
         </div>
@@ -64,6 +36,26 @@ import Line from "@/particles/Line.vue";
 export default {
   name: "AboutUsNext",
   components: { Line },
+  data() {
+    return {
+      for_next: [
+        {
+          src: "/digital-transformation-advantages",
+          class: "item_one",
+          h3: "about_us_next_overlay_left_heading",
+          p: "about_us_next_overlay_left_paragraph",
+          read_more: "read_more",
+        },
+        {
+          src: "/whats-an-api",
+          class: "item_two",
+          h3: "about_us_next_overlay_right_heading",
+          p: "about_us_next_overlay_right_paragraph",
+          read_more: "read_more",
+        },
+      ],
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>
@@ -91,9 +83,9 @@ export default {
 
       background: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.452),
-          rgba(0, 0, 0, 0.397),
-          rgba(0, 0, 0, 0.445)
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6)
         ),
         url("@/assets/images/product_item_1.jpg") no-repeat center center/cover;
       position: relative;
@@ -103,9 +95,9 @@ export default {
       height: 100%;
       background: linear-gradient(
           to right,
-          rgba(0, 0, 0, 0.452),
-          rgba(0, 0, 0, 0.397),
-          rgba(0, 0, 0, 0.445)
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6)
         ),
         url("@/assets/images/product_item_2.jpg") no-repeat center center/cover;
       position: relative;

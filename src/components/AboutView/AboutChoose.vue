@@ -10,21 +10,11 @@
           {{ $t("about_us_paragraph") }}
         </p>
         <div class="checkmarks">
-          <div class="checkmark-tab">
-            <p>{{ $t("about_check_one") }}</p>
+          <div v-for="check in checkmarks" class="checkmark-tab">
+            <p>{{ $t(check.p) }}</p>
             <p>
               <font-awesome-icon icon="fa-solid fa-check" />
             </p>
-          </div>
-          <div class="checkmark-tab">
-            <p>{{ $t("about_check_two") }}</p>
-            <p>
-              <font-awesome-icon icon="fa-solid fa-check" />
-            </p>
-          </div>
-          <div class="checkmark-tab">
-            <p>{{ $t("about_check_three") }}</p>
-            <p><font-awesome-icon icon="fa-solid fa-check" /></p>
           </div>
         </div>
       </div>
@@ -45,6 +35,11 @@ export default {
   data() {
     return {
       routes: { route: "/", name: "read" },
+      checkmarks: [
+        { p: "about_check_one" },
+        { p: "about_check_two" },
+        { p: "about_check_three" },
+      ],
     };
   },
 };
@@ -94,7 +89,7 @@ export default {
         position: absolute;
         width: 52%;
         height: 100%;
-        border: 23px solid rgb(55, 165, 255);
+        border: 23px solid rgba(8, 40, 67, 0.6);
         // border: 23px solid rgb(255, 97, 0);
         top: 0;
         right: 5%;
@@ -103,8 +98,13 @@ export default {
       .widget-photo {
         width: 70%;
         height: 60%;
-        background: url("@/assets/images/widget.png") no-repeat center
-          center/cover;
+        background: linear-gradient(
+            to right,
+            rgba(8, 40, 67, 0.4),
+            rgba(8, 40, 67, 0.4),
+            rgba(8, 40, 67, 0.4)
+          ),
+          url("@/assets/images/widget.png") no-repeat center center/cover;
         position: absolute;
         top: 8%;
         left: 20%;
@@ -112,8 +112,14 @@ export default {
       .widget-video {
         width: 70%;
         height: 50%;
-        background: url("@/assets/images/product_item_1.jpg") no-repeat center
-          center/cover;
+        background: linear-gradient(
+            to right,
+            rgba(8, 40, 67, 0.4),
+            rgba(8, 40, 67, 0.4),
+            rgba(8, 40, 67, 0.4)
+          ),
+          url("@/assets/images/product_item_1.jpg") no-repeat center
+            center/cover;
         position: absolute;
         top: 32%;
         left: 10%;

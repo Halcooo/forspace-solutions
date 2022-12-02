@@ -15,20 +15,17 @@
       <p>{{ $t("widget_phone_number") }}</p>
 
       <div class="d-flex gap-2 mt-5">
-        <div class="w-100 bg-light text-center p-3">
-          <font-awesome-icon icon="fa-solid fa-rocket " />
-          <small> 30+ </small>
-          <p>{{ $t("widget_icon_one_p") }}</p>
-        </div>
-        <div class="w-100 bg-light text-center p-3">
-          <font-awesome-icon icon="fa-solid fa-gem " />
-          <small> 10+ </small>
-          <p>{{ $t("widget_icon_two_p") }}</p>
-        </div>
-        <div class="w-100 bg-light text-center p-3">
-          <font-awesome-icon icon="fa-solid fa-check" />
-          <small> 199+ </small>
-          <p>{{ $t("widget_icon_three_p") }}</p>
+        <div
+          v-for="(widget, index) in widgets"
+          class="w-100 bg-light text-center p-3"
+        >
+          <font-awesome-icon icon="fa-solid fa-rocket " v-if="index == 0" />
+          <font-awesome-icon icon="fa-solid fa-gem " v-if="index == 1" />
+          <font-awesome-icon icon="fa-solid fa-check " v-if="index == 2" />
+          <small>
+            {{ $t(widget.small) }}
+          </small>
+          <p>{{ $t(widget.p) }}</p>
         </div>
       </div>
     </div>
@@ -37,6 +34,15 @@
 <script>
 export default {
   name: "Widget",
+  data() {
+    return {
+      widgets: [
+        { small: "30", p: "widget_icon_one_p" },
+        { small: "10", p: "widget_icon_two_p" },
+        { small: "130", p: "widget_icon_three_p" },
+      ],
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>

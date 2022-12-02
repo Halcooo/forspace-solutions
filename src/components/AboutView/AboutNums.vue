@@ -48,7 +48,7 @@ export default {
     const roundedValcli = ref(0);
     const roundedValEmp = ref(0);
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 3800) {
+      if (window.scrollY > 3000) {
         setInterval(() => {
           if (years.value < year.value) {
             years.value += year.value / speed.value;

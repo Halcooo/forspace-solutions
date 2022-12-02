@@ -6,37 +6,10 @@
       </div>
       <div class="square-2"></div>
       <div class="items-container">
-        <div
-          class="item bg-light p-5"
-          style="
-            border-bottom: 1px solid gainsboro;
-            border-right: 1px solid gainsboro;
-          "
-        >
-          <img src="@/assets/images/companies.png" alt="companies" />
-          <h4>{{ $t("home_icon_companies") }}</h4>
-          <p>{{ $t("home_icon_companies_p") }}</p>
-        </div>
-        <div
-          class="item bg-light p-5"
-          style="border-bottom: 1px solid gainsboro"
-        >
-          <img src="@/assets/images/cloud.png" alt="cloud" />
-          <h4>{{ $t("home_icon_cloud") }}</h4>
-          <p>{{ $t("home_icon_cloud_p") }}</p>
-        </div>
-        <div
-          class="item bg-light p-5"
-          style="border-right: 1px solid gainsboro"
-        >
-          <img src="@/assets/images/config.png" alt="config" />
-          <h4>{{ $t("home_icon_config") }}</h4>
-          <p>{{ $t("home_icon_config_p") }}</p>
-        </div>
-        <div class="item bg-light p-5">
-          <img src="@/assets/images/circle.png" alt="circle" />
-          <h4>{{ $t("home_icon_circle") }}</h4>
-          <p>{{ $t("home_icon_circle_p") }}</p>
+        <div class="item bg-light border p-5" v-for="icon in icons" :key="icon">
+          <img :src="icon.src" alt="companies" />
+          <h4>{{ $t(icon.h4) }}</h4>
+          <p>{{ $t(icon.p) }}</p>
         </div>
       </div>
     </div>
@@ -45,6 +18,32 @@
 <script>
 export default {
   name: "CompanyIcons",
+  data() {
+    return {
+      icons: [
+        {
+          src: require("../../../assets/images/companies.png"),
+          h4: "home_icon_companies",
+          p: "home_icon_companies_p",
+        },
+        {
+          src: require("../../../assets/images/cloud.png"),
+          h4: "home_icon_cloud",
+          p: "home_icon_cloud_p",
+        },
+        {
+          src: require("../../../assets/images/config.png"),
+          h4: "home_icon_config",
+          p: "home_icon_config_p",
+        },
+        {
+          src: require("../../../assets/images/circle.png"),
+          h4: "home_icon_circle",
+          p: "home_icon_circle_p",
+        },
+      ],
+    };
+  },
 };
 </script>
 <style lang="scss" scoped>

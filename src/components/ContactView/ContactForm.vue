@@ -65,14 +65,14 @@
           <div class="flex-item">
             <div class="warning" v-if="nameInvalid">
               <small style="color: orangered">{{
-                $t("contact_form_text")
+                $t("contact_form_nameInvalid")
               }}</small>
             </div>
           </div>
           <div class="flex-item">
             <div class="warning" v-if="emailInvalid">
               <small style="color: orangered">{{
-                $t("contact_form_nameInvalid")
+                $t("contact_form_emailInvalid")
               }}</small>
             </div>
           </div>
@@ -200,13 +200,9 @@ export default {
     transform-origin: 0% 100%;
     color: darkgray;
     transform: translate(7px, 20px);
-
     transition: transform 0.2s ease-out, color 0.2s ease-out;
   }
   h3 {
-    // margin-bottom: 5%;
-    // padding: 10px;
-
     color: gray;
     border-radius: 5px;
   }
@@ -232,8 +228,6 @@ export default {
       padding: 10px 2px 10px 2px;
       border: none;
       border-radius: 2px;
-
-      // border-bottom: 2px solid rgb(189, 189, 189);
     }
 
     input,
