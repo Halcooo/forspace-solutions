@@ -256,7 +256,6 @@
   "why_companies_need_dms_h7": "Značajne uštede",
   "why_companies_need_dms_p8": "Korištenjem sistema za upravljanje dokumentima štedite i mnogo novca. U početku može izgledati kao investicija jer biste trebali kupiti softver, ali povrat ulaganja je također značajan. Prvo, možete mnogo uštediti na papiru i srodnim proizvodima. Osim toga, kako zaposleni postaju produktivniji eliminacijom tradicionalnog sistema za upravljanje datotekama, to rezultira poboljšanom efikasnošću i većom zaradom.",
   "why_companies_need_dms_h8": "Uz Forspace ERP dolazi integrisan i sistem za upravljanje dokumentima DMS, čime je omogućeno pohranjivanje, arhiviranje i procesiranje svih vrsta dokumenta.  Forspace DMS omogućava povezivanje između korisnika, potpuno usklađene podatke i pregled nad cjelokupnim poslovanjem.",
-<<<<<<< HEAD
   "why_companies_need_dms_h8_additional": "Za besplatnu prezentaciju Forspace DMS-a kontaktirajte nas putem telefona 033/774-873 ili e-maila",
 
   "why_web_based_p1": " Cloud bazirane aplikacije značajno su napredovale u posljednjih nekoliko godina i koriste se sve više jer omogućavaju kompanijama u različitim industrijama da kreiraju, uređuju, pristupaju i dijele ključne poslovne podatke. Kako kompanije napreduju, poslovanje u oblaku postaje dominantan igrač za poslovne podatke u smislu veće sigurnosti, brže implementacije i nadogradnje te smanjenja ukupnih troškova. Sve više i više kompanija svoj ERP sistem prebacuju u cloud, a u nastavku saznajte zašto je to tako.",
@@ -342,7 +341,4 @@
 
   "digital_trans_p4": "Svaka promjena u sistemu je skupa i predstavlja dugotrajan proces. Dobavljač softvera ne pruža vam nadogradnje softvera koje su vam neophodne. Također, održavanja softvera su isuviše skupa za takav zastario softver koji ne donosi nikakve novitete, a što bi vas moglo koštati gubitka konkurentske prednosti. Zaglavljeni ste između nefunkcionalnog softvera koji ne donosi poboljšanja i vrtoglavih troškova.",
   "read_more": "Saznaj više"
-=======
-  "why_companies_need_dms_h8_additional": "Za besplatnu prezentaciju Forspace DMS-a kontaktirajte nas putem telefona 033/774-873 ili e-maila"
->>>>>>> de6d993 (erfwe)
 }
