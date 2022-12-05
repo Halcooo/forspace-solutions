@@ -7,7 +7,7 @@
           {{ $t("about_us_reserve_p") }}
         </p>
       </div>
-      <div>
+      <div class="d-flex justify-content-center align-items-center">
         <router-link to="/contact" class="termin">{{
           $t("about_us_reserve_heading")
         }}</router-link>
@@ -46,14 +46,13 @@ export default {};
       padding-left: 0%;
     }
     .termin {
-      display: flex;
+      display: inline-flex;
       justify-content: center;
       align-items: center;
-      width: 300px;
-      height: 70px;
+
       border-radius: 50px;
-      margin-left: auto;
-      margin-right: 10%;
+      margin: auto;
+      padding: 10px 20px;
       font-size: 30px;
       color: #26498a;
       background-color: white;
@@ -61,7 +60,7 @@ export default {};
   }
   @media screen and (max-width: 567px) {
     height: 100%;
-    // padding: 30px;
+
     .reserve-content {
       width: 90%;
       flex-direction: column;

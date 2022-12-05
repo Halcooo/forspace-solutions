@@ -212,7 +212,7 @@
   "contact_form_nameInvalid": "Molimo unesite Vaše ime",
   "contact_form_emailInvalid": "Molimo unesite Vaš email",
   "contact_form_messageInvalid": "Molimo unesite poruku",
-  "contact_form_google_map": " Google Karta ",
+  "contact_form_google_map": "Karta",
   "footer_forspace_products": "FORSPACE Proizvodi",
   "footer_accounting": "računovodstvo",
   "footer_controlling": "kontroling",
@@ -236,7 +236,7 @@
   "finance": "Finansije",
   "hr": "HR",
 
-  "services-_icon_text_1": "Podržane na OS platformama Linux, Unix, macOS, Windows",
+  "services-_icon_text_1": "Linux, Unix, macOS, Windows",
   "services-_icon_text_2": "Podržanih na Android i iOS operativnim sistemima",
   "services-_icon_text_3": "Na serveru",
 

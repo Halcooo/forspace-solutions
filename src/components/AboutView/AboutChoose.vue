@@ -51,7 +51,7 @@ export default {
   height: 60vh;
   margin-top: 10%;
   padding: 20px;
-  background-color: rgb(231, 231, 231);
+  background-color: rgb(238, 238, 238);
 
   .choose-flex {
     display: flex;

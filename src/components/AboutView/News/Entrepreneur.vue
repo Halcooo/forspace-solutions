@@ -5,6 +5,9 @@
     </div>
   </div>
   <div class="content-news">
+    <div v-for="chip in chips" class="chip">
+      {{ chip.chip }}
+    </div>
     <div v-for="(c, index) in content" :key="c">
       <div v-if="index == 5">
         <p>
@@ -25,6 +28,7 @@ export default {
   name: "Entreprenuor",
   data() {
     return {
+      chips: [{ chip: "#preduzetnistvo" }],
       content: [
         { p: "entrepeneur_p1", h: "entrepeneur_h1" },
         { p: "entrepeneur_p2", h: "entrepeneur_h2" },

@@ -5,6 +5,9 @@
     </div>
   </div>
   <div class="content-news">
+    <div v-for="chip in chips" class="chip">
+      {{ chip.chip }}
+    </div>
     <div v-for="(c, index) in content" :key="c">
       <div v-if="index == 0" v-for="x in c">
         <p>
@@ -32,6 +35,7 @@ export default {
   name: "WhatsAnApi",
   data() {
     return {
+      chips: [{ chip: "#api" }, { chip: "#web-services" }],
       content: [
         [
           { p: "what_is_api_p1" },

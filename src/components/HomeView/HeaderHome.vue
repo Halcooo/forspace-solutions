@@ -19,7 +19,7 @@
             korisnika</small
           >
         </div>
-        <!-- <div
+        <div
           class="d-inline-flex justify-content-center align-items-center"
           style="
             padding: 20px;
@@ -33,7 +33,7 @@
           @click="scrollDown()"
         >
           <font-awesome-icon icon="fa-solid fa-chevron-down" />
-        </div> -->
+        </div>
       </div>
     </div>
   </div>
@@ -78,7 +78,9 @@ export default {
   width: 100%;
   height: 80vh;
   @media screen and (max-width: 567px) {
-    height: 50vh;
+    padding-top: 5%;
+    height: 85vh;
+    text-align: left;
   }
   background: linear-gradient(
       to right,
@@ -133,17 +135,28 @@ export default {
     @media screen and (max-width: 567px) {
       width: 100%;
       justify-content: center;
+
+      padding-left: 4%;
+      padding-top: 25%;
+
+      .head-1,
+      .head-2 {
+        text-align: left;
+      }
+      .head-2 {
+        small {
+          width: 100%;
+        }
+      }
+      .head-3 {
+        text-align: center;
+      }
       h1 {
         font-size: 50px;
       }
       .background {
         display: none;
       }
-    }
-  }
-  @media screen and (max-width: 567px) {
-    .div {
-      text-align: center;
     }
   }
 }
