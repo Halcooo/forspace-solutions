@@ -181,7 +181,8 @@ export default {
       width: 100%;
     }
     .logo {
-      width: 30%;
+      padding: 15px;
+      width: 50%;
     }
   }
 }
