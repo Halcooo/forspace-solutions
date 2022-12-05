@@ -307,7 +307,7 @@ export default {
           top: 75%;
           h1 {
             width: 100%;
-            font-size: 22px;
+            font-size: 25px;
             margin-bottom: 10%;
           }
           h4 {
