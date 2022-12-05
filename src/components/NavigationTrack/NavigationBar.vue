@@ -114,8 +114,8 @@ export default {
       }
     },
     currentEmit(index) {
-      this.classes.forEach((item) => {
-        item.active = item.id == index ? true : false;
+      this.routes.forEach((item) => {
+        item.isActive = item.id == index ? true : false;
       });
     },
   },
