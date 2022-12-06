@@ -231,6 +231,7 @@ h1 {
   }
 }
 
+
 .chip {
   padding: 5px 20px;
   margin-right: 5px;
@@ -241,4 +242,5 @@ h1 {
   margin-bottom: 5%;
   cursor: pointer;
 }
+
 </style>

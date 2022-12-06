@@ -19,7 +19,9 @@
             korisnika</small
           >
         </div>
+
         <div
+
           class="d-inline-flex justify-content-center align-items-center"
           style="
             padding: 20px;
@@ -33,7 +35,9 @@
           @click="scrollDown()"
         >
           <font-awesome-icon icon="fa-solid fa-chevron-down" />
+
         </div>
+
       </div>
     </div>
   </div>

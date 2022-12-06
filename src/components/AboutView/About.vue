@@ -23,6 +23,7 @@
             <p>
               {{ $t(card.p2) }}
             </p>
+
           </div>
         </router-link>
         <router-link v-else :to="card.src">
@@ -30,6 +31,7 @@
             <p>{{ $t(card.p) }}</p>
           </div>
         </router-link>
+
       </div>
     </div>
     <div class="flex-second">
@@ -38,7 +40,9 @@
           <div>
             <h1>{{ $t(card.h1) }}</h1>
             <h4>{{ $t(card.h4) }}</h4>
+
             <p class="mobile">{{ $t(card.p) }}</p>
+
           </div>
         </div>
       </router-link>
@@ -55,8 +59,10 @@ export default {
         {
           src: "/why-companies-need-dms",
           class: "div-3",
+
           p: "about_us_news_link_heading_two",
           p2: "about_us_news_link_one",
+
         },
         {
           src: "/why-web-based",
@@ -156,7 +162,6 @@ export default {
     height: 100%;
     // background: rgb(188, 66, 66);
     // padding: 10px;
-
     .div-1,
     .div-2,
     .div-3,
@@ -164,6 +169,7 @@ export default {
       width: 80%;
       margin: auto;
       margin-bottom: 4%;
+
       padding: 15px 0px;
     }
 
@@ -224,10 +230,12 @@ export default {
           font-size: 30px;
         }
         top: 83.5%;
+
         h1 {
           font-size: 30px;
         }
         top: 83.5%;
+
       }
 
       &:hover {

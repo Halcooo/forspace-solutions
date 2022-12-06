@@ -5,6 +5,7 @@
     </div>
   </div>
   <div class="content-news">
+
     <div v-for="ch in chips" class="chip">
       {{ ch.chip }}
     </div>
@@ -23,11 +24,13 @@ export default {
   name: "SoftwareSolutions",
   data() {
     return {
+
       chips: [
         { chip: "#software-development" },
         { chip: "#erp" },
         { chip: "#design" },
       ],
+
       content: [
         { p: "software_solutions_p1" },
         { p: "software_solutions_p2" },

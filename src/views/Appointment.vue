@@ -1,4 +1,5 @@
 <template>
+
   <div class="appointment">
     <div>
       <h1>{{ $t("appointment_schedule") }}</h1>
@@ -77,3 +78,4 @@ export default {
   }
 }
 </style>
+
