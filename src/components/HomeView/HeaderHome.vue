@@ -136,8 +136,8 @@ export default {
       width: 100%;
       justify-content: center;
 
-      padding-left: 4%;
-      padding-top: 25%;
+      padding-left: 1%;
+      padding-top: 30%;
 
       .head-1,
       .head-2 {
@@ -150,6 +150,7 @@ export default {
       }
       .head-3 {
         text-align: center;
+        padding-top: 2%;
       }
       h1 {
         font-size: 50px;

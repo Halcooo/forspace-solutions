@@ -1,18 +1,31 @@
 <template>
   <div class="appointment">
     <div>
-      <h1>Dogovorite sastanak</h1>
-      <p>
+      <h1>{{ $t("appointment_schedule") }}</h1>
+      <!-- <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quasi
         autem quod quo obcaecati iure dolorem amet nihil distinctio vitae soluta
         ipsum rerum ab odit sunt voluptate, sequi aspernatur consequuntur?
-      </p>
+      </p> -->
     </div>
   </div>
-  <div class="appointment-content"></div>
+  <div class="appointment-content">
+    <h1>{{ $t("appointment_heading") }}</h1>
+    <p class="mt-5 mb-5">{{ $t("appointment_text") }}</p>
+    <BaseButton :to="routes.route" :name="routes.name" />
+  </div>
 </template>
 <script>
-export default {};
+import BaseButton from "@/components/Forms/buttons/BaseButton.vue";
+export default {
+  name: "Appointment",
+  components: { BaseButton },
+  data() {
+    return {
+      routes: { route: "/contact", name: "termin" },
+    };
+  },
+};
 </script>
 <style lang="scss" scoped>
 .appointment {
@@ -45,6 +58,22 @@ export default {};
   width: 70%;
   margin: 1% auto;
   padding: 2%;
-  border: 1px solid black;
+
+  h1 {
+    color: rgba(8, 40, 67, 0.6);
+  }
+}
+
+@media screen and (max-width: 567px) {
+  .appointment {
+    div {
+      width: 95%;
+      padding-left: 0;
+    }
+  }
+  .appointment-content {
+    width: 95%;
+    padding: 5% 0%;
+  }
 }
 </style>
