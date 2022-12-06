@@ -166,7 +166,7 @@ export default {
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 40px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
   }
   @media screen and (max-width: 567px) {
     .nav-wrapper {
@@ -351,7 +351,6 @@ export default {
 
 .white_wrapper {
   background-color: white;
-  padding: 12px 0px;
   top: 0%;
 }
 </style>

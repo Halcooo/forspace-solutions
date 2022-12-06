@@ -234,8 +234,6 @@ export default {
     textarea {
       &:focus {
         outline: none;
-
-        // border-bottom: 2px solid gray;
       }
     }
 
