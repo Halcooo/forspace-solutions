@@ -24,7 +24,7 @@ export default {
       rgba(8, 40, 67, 0.6),
       rgba(8, 40, 67, 0.6)
     ),
-    url("@/assets/images/contact.jpg") no-repeat center center/cover;
+    url("@/assets/images/office.jpg") no-repeat center center/cover;
   height: 50vh;
   display: flex;
   justify-content: center;

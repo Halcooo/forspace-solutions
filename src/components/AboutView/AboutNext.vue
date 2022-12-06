@@ -19,7 +19,7 @@
           <p>
             {{ $t(next.p) }}
           </p>
-          <div class="read-more d-flex justify-content-center">
+          <div class="read-more d-inline-flex justify-content-center">
             <router-link
               :to="next.src"
               class="border pt-2 ps-5 px-5 pb-2 text-light mt-5"

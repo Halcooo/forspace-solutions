@@ -117,4 +117,17 @@ a {
     border: 2px solid black;
   }
 }
+.termin {
+  border: 2px solid rgba(8, 40, 67, 0.6);
+  color: rgba(8, 40, 67, 0.6);
+
+  padding: 20px 40px;
+
+  transition: 0.3s ease-out;
+  &:hover {
+    background: white;
+    color: rgb(0, 119, 128);
+    border: 2px solid rgb(0, 119, 128);
+  }
+}
 </style>

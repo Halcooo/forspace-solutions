@@ -230,4 +230,17 @@ h1 {
     color: rgb(0, 55, 77);
   }
 }
+
+
+.chip {
+  padding: 5px 20px;
+  margin-right: 5px;
+  background-color: rgb(224, 224, 224);
+  display: inline-block;
+  border-radius: 50px;
+  color: #333;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
 </style>

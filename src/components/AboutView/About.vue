@@ -23,6 +23,7 @@
             <p>
               {{ $t(card.p2) }}
             </p>
+
           </div>
         </router-link>
         <router-link v-else :to="card.src">
@@ -30,6 +31,7 @@
             <p>{{ $t(card.p) }}</p>
           </div>
         </router-link>
+
       </div>
     </div>
     <div class="flex-second">
@@ -38,7 +40,9 @@
           <div>
             <h1>{{ $t(card.h1) }}</h1>
             <h4>{{ $t(card.h4) }}</h4>
-            <p>{{ $t(card.p) }}</p>
+
+            <p class="mobile">{{ $t(card.p) }}</p>
+
           </div>
         </div>
       </router-link>
@@ -55,8 +59,10 @@ export default {
         {
           src: "/why-companies-need-dms",
           class: "div-3",
-          p: "about_us_news_link_one",
-          p2: "about_us_news_link_heading_two",
+
+          p: "about_us_news_link_heading_two",
+          p2: "about_us_news_link_one",
+
         },
         {
           src: "/why-web-based",
@@ -155,15 +161,15 @@ export default {
     width: 45%;
     height: 100%;
     // background: rgb(188, 66, 66);
-    padding: 10px;
-
+    // padding: 10px;
     .div-1,
     .div-2,
     .div-3,
     .div-4 {
       width: 80%;
       margin: auto;
-      margin-bottom: 2%;
+      margin-bottom: 4%;
+
       padding: 15px 0px;
     }
 
@@ -224,6 +230,12 @@ export default {
           font-size: 30px;
         }
         top: 83.5%;
+
+        h1 {
+          font-size: 30px;
+        }
+        top: 83.5%;
+
       }
 
       &:hover {
@@ -276,10 +288,18 @@ export default {
     flex-direction: column;
     width: 100%;
     height: 100%;
+
     .flex-first {
-      width: 90%;
+      width: 100%;
       margin: auto;
       margin-top: 5%;
+
+      .div-1,
+      .div-2,
+      .div-3,
+      .div-4 {
+        width: 90%;
+      }
     }
     .flex-second {
       width: 90%;
@@ -289,6 +309,22 @@ export default {
       .card-3,
       .card-4 {
         height: 200px;
+
+        div {
+          width: 100%;
+          top: 75%;
+          h1 {
+            width: 100%;
+            font-size: 25px;
+            margin-bottom: 10%;
+          }
+          h4 {
+            font-size: 20px;
+          }
+          .mobile {
+            display: none;
+          }
+        }
       }
     }
   }

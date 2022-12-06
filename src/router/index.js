@@ -9,7 +9,6 @@ import ProductsView from "../views/ProductsView.vue";
 import ServicesView from "../views/ServicesView.vue";
 import ForspacePreview from "../views/ForspacePreview.vue";
 import ContactView from "../views/ContactView.vue";
-import PromoView from "../views/PromoView.vue";
 import AboutView from "../views/AboutView.vue";
 import Appointment from "../views/Appointment.vue";
 import TheSales from "../components/ProductsViews/TheSales.vue";
