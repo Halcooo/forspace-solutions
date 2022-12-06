@@ -55,8 +55,8 @@ export default {
         {
           src: "/why-companies-need-dms",
           class: "div-3",
-          p: "about_us_news_link_one",
-          p2: "about_us_news_link_heading_two",
+          p: "about_us_news_link_heading_two",
+          p2: "about_us_news_link_one",
         },
         {
           src: "/why-web-based",
@@ -163,7 +163,7 @@ export default {
     .div-4 {
       width: 80%;
       margin: auto;
-      margin-bottom: 2%;
+      margin-bottom: 4%;
       padding: 15px 0px;
     }
 

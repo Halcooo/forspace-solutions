@@ -217,45 +217,45 @@ export default {
     .erp {
       background: linear-gradient(
           to top,
-          rgba(0, 0, 0, 0.493),
-          rgba(0, 0, 0, 0.336),
-          rgba(0, 0, 0, 0.253)
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6)
         ),
         url("@/assets/images/mockup2-1.png") no-repeat center center/cover;
     }
     .dms {
       background: linear-gradient(
           to top,
-          rgba(0, 0, 0, 0.493),
-          rgba(0, 0, 0, 0.336),
-          rgba(0, 0, 0, 0.253)
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6)
         ),
         url("@/assets/images/mockup3-1.png") no-repeat center center/cover;
     }
     .wms {
       background: linear-gradient(
           to top,
-          rgba(0, 0, 0, 0.493),
-          rgba(0, 0, 0, 0.336),
-          rgba(0, 0, 0, 0.253)
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6)
         ),
         url("@/assets/images/erp-sistemi.png") no-repeat center center/cover;
     }
     .systemp {
       background: linear-gradient(
           to top,
-          rgba(0, 0, 0, 0.493),
-          rgba(0, 0, 0, 0.336),
-          rgba(0, 0, 0, 0.253)
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6)
         ),
         url("@/assets/images/product_item_2.jpg") no-repeat center center/cover;
     }
     .solution {
       background: linear-gradient(
           to top,
-          rgba(0, 0, 0, 0.493),
-          rgba(0, 0, 0, 0.336),
-          rgba(0, 0, 0, 0.253)
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6),
+          rgba(8, 40, 67, 0.6)
         ),
         url("@/assets/images/payments.jpg") no-repeat center center/cover;
     }
