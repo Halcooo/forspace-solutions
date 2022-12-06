@@ -158,7 +158,7 @@ const routes = [
   {
     path: "/promo",
     name: "promo",
-    component: PromoView,
+    component: Appointment,
   },
 
   {
