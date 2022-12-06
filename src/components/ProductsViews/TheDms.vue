@@ -9,11 +9,6 @@
       {{ $t("products_dms_text_two") }}
     </p>
 
-    <!-- <div class="container">
-      <img src="@/assets/images/DOCUMENT-MANAGEMENT.png" alt="image" />
-      <img src="@/assets/images/dms-pic.png" alt="img" />
-    </div> -->
-
     <div class="col-12">
       <div v-for="product in products" :key="product" class="d-flex">
         <div><img src="@/assets/images/check.png" alt="check" /></div>

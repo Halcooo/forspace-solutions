@@ -78,6 +78,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 .paydesk-items {
+  
   @media screen and (max-width: 567px) {
     flex-direction: column;
     justify-content: center;
