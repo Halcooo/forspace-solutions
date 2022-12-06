@@ -216,7 +216,19 @@ h1 {
     color: rgb(0, 55, 77);
   }
 }
-
+@media screen and (max-width: 567px) {
+  .header {
+    div {
+      width: 95%;
+    }
+    h1 {
+      font-size: 45px;
+    }
+  }
+  .content-news {
+    width: 95%;
+  }
+}
 .chip {
   padding: 5px 20px;
   margin-right: 5px;

@@ -249,12 +249,17 @@ export default {
 }
 
 .circle-1 {
-  width: 500px;
+  width: 450px;
   height: 500px;
-  border: 30px solid rgba(255, 255, 255, 0.107);
+  border: 20px solid rgba(255, 255, 255, 0.107);
   // border-radius: 50%;
   position: absolute;
   top: 20%;
   left: 23%;
+  @media screen and (max-width: 567px) {
+    width: 480px;
+    left: 0%;
+    // border: none;
+  }
 }
 </style>

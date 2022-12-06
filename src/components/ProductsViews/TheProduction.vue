@@ -25,9 +25,9 @@ export default {
 
     background: linear-gradient(
         to right,
-        rgba(123, 39, 39, 0.7),
-        rgba(123, 39, 39, 0.7),
-        rgba(123, 39, 39, 0.7)
+        rgba(123, 39, 39, 0.6),
+        rgba(123, 39, 39, 0.6),
+        rgba(123, 39, 39, 0.6)
       ),
       url("@/assets/images/purchase.jpg") no-repeat center center/cover;
 
