@@ -146,6 +146,11 @@ const routes = [
     component: ServicesView,
   },
   {
+    path: "/appointment",
+    name: "appointment",
+    component: Appointment,
+  },
+  {
     path: "/forspace-preview",
     name: "forspace-preview",
     component: ForspacePreview,
