@@ -5,7 +5,6 @@
     </div>
   </div>
   <div class="content-news">
-
     <div v-for="chip in chips" class="chip">
       {{ chip.chip }}
     </div>
@@ -22,14 +21,12 @@
         </p>
         <h3>{{ $t(c.h) }}</h3>
       </div>
-
     </div>
     <div class="mt-5 mb-5 ps-2">
       <router-link to="/about">
         <font-awesome-icon icon="fa-solid fa-chevron-left" />
         <span> Nazad</span>
       </router-link>
-
     </div>
   </div>
 </template>
@@ -38,7 +35,6 @@ export default {
   name: "ErpAllInOne",
   data() {
     return {
-
       chips: [{ chip: "#cloud-based" }, { chip: "#erp" }],
 
       content: [

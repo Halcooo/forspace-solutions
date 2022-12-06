@@ -23,7 +23,6 @@
             <p>
               {{ $t(card.p2) }}
             </p>
-
           </div>
         </router-link>
         <router-link v-else :to="card.src">
@@ -31,7 +30,6 @@
             <p>{{ $t(card.p) }}</p>
           </div>
         </router-link>
-
       </div>
     </div>
     <div class="flex-second">
@@ -42,7 +40,6 @@
             <h4>{{ $t(card.h4) }}</h4>
 
             <p class="mobile">{{ $t(card.p) }}</p>
-
           </div>
         </div>
       </router-link>
@@ -62,7 +59,6 @@ export default {
 
           p: "about_us_news_link_heading_two",
           p2: "about_us_news_link_one",
-
         },
         {
           src: "/why-web-based",
@@ -235,7 +231,6 @@ export default {
           font-size: 30px;
         }
         top: 83.5%;
-
       }
 
       &:hover {
