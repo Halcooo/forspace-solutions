@@ -105,6 +105,7 @@ export default {
     .testimonial-top-item-two {
       width: 100%;
       padding-left: 5%;
+      text-align: right;
       h1 {
         font-size: 60px;
       }
@@ -137,6 +138,7 @@ export default {
         margin-left: 5%;
         width: 100%;
         font-size: 60px;
+        text-align: right;
       }
 
       .button-group {
@@ -145,6 +147,16 @@ export default {
         align-items: center;
         padding-top: 15%;
         padding-left: 15%;
+      }
+      @media screen and (max-width: 567px) {
+        gap: 20px;
+        h1 {
+          margin-top: 10%;
+          margin-left: 2%;
+        }
+        .button-group {
+          padding-top: 5%;
+        }
       }
     }
   }

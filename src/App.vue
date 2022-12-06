@@ -192,6 +192,10 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 567px) {
+    background: linear-gradient(19deg, #21d5fdb0 0%, #2137ff9d 100%),
+      url("@/assets/images/image-1.png") no-repeat center center/cover;
+  }
   div {
     width: 70%;
     padding-left: 2%;

@@ -32,25 +32,17 @@
                   {{ $t("footer_forspace_products") }}
                 </h6>
               </RouterLink>
-              <p>
-                <a href="#" class="text-reset">
-                  {{ $t("footer_accounting") }}
-                </a>
+              <p class="text-reset">
+                {{ $t("footer_accounting") }}
               </p>
-              <p>
-                <a href="#" class="text-reset"
-                  >{{ $t("footer_controlling") }}
-                </a>
+              <p class="text-reset">
+                {{ $t("footer_controlling") }}
               </p>
-              <p>
-                <a href="#" class="text-reset"
-                  >{{ $t("footer_all_in_one") }}
-                </a>
+              <p class="text-reset">
+                {{ $t("footer_all_in_one") }}
               </p>
-              <p>
-                <a href="#" class="text-reset"
-                  >{{ $t("footer_mobile_app") }}
-                </a>
+              <p class="text-reset">
+                {{ $t("footer_mobile_app") }}
               </p>
             </div>
             <div class="col-md-3 mx-auto mb-md-0 mb-4 uppercase text-center">
@@ -186,7 +178,7 @@ img {
     left: 42%;
   }
   h6,
-  a {
+  .text-reset {
     text-transform: capitalize;
   }
 }
