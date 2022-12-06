@@ -187,15 +187,11 @@
   "services_slider_text_3": "API integracija",
   "services_container_header": "Programerske usluge i razvoj",
   "services_icon_1": "Web i desktop aplikacije",
-
   "services_icon_2": "Mobilne aplikacije",
   "services_icon_3": "Api integracija",
-
   "services_grid_div4_text": "Payment Provider aplikacije za platne sisteme u eCommerce sektoru i integracija u cjelokupan lanac procesa.",
-
   "services_grid_div5_header": "Rješenja po mjeri",
   "services_grid_div5_text": "Stručnjaci smo u pretvaranju različitih poslovnih potreba/ideja naših klijenata u digitalne proizvode namijenjene unapređenju njihovih poslovnih procesa, razvoju i digitalnoj transformaciji.",
-
   "contact_header": "Pošaljite nam poruku",
   "contact_form_name": "Vaše ime",
   "contact_form_email": "Vaš email",
@@ -226,12 +222,9 @@
   "dms": "DMS",
   "finance": "Finansije",
   "hr": "HR",
-
   "services-_icon_text_1": "Linux, Unix, macOS, Windows",
-
   "services-_icon_text_2": "Podržanih na Android i iOS operativnim sistemima",
   "services-_icon_text_3": "Na serveru",
-
   "why_companies_need_dms_p1": " Vođenje biznisa može biti stresno na mnogo načina a poseban izazov u ovom pogledu je i način na koji kompanija upravlja dokumentima. Srećom, danas postoje softverska rješenja koja vode brigu o dokumentaciji kompanije.",
   "why_companies_need_dms_h1": "Šta je DMS sistem za upravljanje dokumentima?",
   "why_companies_need_dms_p2": "Sistem za upravljanje dokumentima (DMS) je softver koji omogućava kompanijama da kreiraju, skladište, modifikuju, upravljaju i preuzimaju digitalne dokumente potrebne za poslovanje. Najveći broj ovakvih softvera baziran je na cloud-u što znači da zaposlenici kompanije dokumente mogu imati dostupne, kreirati ih i mijenjati u bilo koje vrijeme i na bilo kojem mjestu. Sistem za upravljanje dokumentima olakšava protok kritičnih informacija kroz organizaciju jer se dokumenti mogu dijeliti digitalno sa svim zaposlenicima u kompaniji.",
@@ -249,7 +242,6 @@
   "why_companies_need_dms_p8": "Korištenjem sistema za upravljanje dokumentima štedite i mnogo novca. U početku može izgledati kao investicija jer biste trebali kupiti softver, ali povrat ulaganja je također značajan. Prvo, možete mnogo uštediti na papiru i srodnim proizvodima. Osim toga, kako zaposleni postaju produktivniji eliminacijom tradicionalnog sistema za upravljanje datotekama, to rezultira poboljšanom efikasnošću i većom zaradom.",
   "why_companies_need_dms_h8": "Uz Forspace ERP dolazi integrisan i sistem za upravljanje dokumentima DMS, čime je omogućeno pohranjivanje, arhiviranje i procesiranje svih vrsta dokumenta.  Forspace DMS omogućava povezivanje između korisnika, potpuno usklađene podatke i pregled nad cjelokupnim poslovanjem.",
   "why_companies_need_dms_h8_additional": "Za besplatnu prezentaciju Forspace DMS-a kontaktirajte nas putem telefona 033/774-873 ili e-maila",
-
   "why_web_based_p1": " Cloud bazirane aplikacije značajno su napredovale u posljednjih nekoliko godina i koriste se sve više jer omogućavaju kompanijama u različitim industrijama da kreiraju, uređuju, pristupaju i dijele ključne poslovne podatke. Kako kompanije napreduju, poslovanje u oblaku postaje dominantan igrač za poslovne podatke u smislu veće sigurnosti, brže implementacije i nadogradnje te smanjenja ukupnih troškova. Sve više i više kompanija svoj ERP sistem prebacuju u cloud, a u nastavku saznajte zašto je to tako.",
   "why_web_based_h1": "Niži troškovi postavljanja i implementacije",
   "why_web_based_p2": "ERP sistemi bazirani na cloud-u imaju niske troškove implementacije za razliku od tradicionalnog, hostovanog modela. Lokalna implementacija obično zahtijeva značajna ulaganja u hardver i stručno osoblje. Uz softver baziran na cloud-u, hosting van lokacije i stručnost provajdera eliminišu potrebu za dodatnim hardverom ili osobljem. Smanjenje ukupnog troška je prvi i ključni razlog zašto kompanije prelaze na cloud baziran ERP.",
@@ -261,7 +253,6 @@
   "why_web_based_p5": "Lokalna okruženja su obično manje bezbijedna i zahtjevaju skupo dodatno praćenje i namjenskog IT administratora. Data centri u vlasništvu Forspace-a su sigurni, certifikovani i usklađeni s međunarodnim standardima. Skalabilnost je najveći problem sa lokalnim ERP sistemima jer su povezani sa postojećim hardverskim mogućnostima preduzeća. ERP sistemi bazirani na cloud-u nude opcije skalabilnosti, kao što je dodavanje novih licenci i više korisnika kada kompanija zapošljava nove zaposlenike. Osim toga, oni pružaju dodatni prostor za skladištenje i pružaju mogućnosti za smještaj novih proizvodnih procesa i postrojenja.",
   "why_web_based_h5": "Zajednička platforma podataka",
   "why_web_based_p6": "ERP sistemi u cloud-u pružaju zajedničku platformu na kojoj različiti odjeli, uključujući proizvodnju, prodaju, marketing, finansije i računovodstvo, upravljanje odnosima s kupcima i odjele za odnose s dobavljačima, mogu dijeliti ključne podatke bilo gdje, bilo kada i na bilo kojem uređaju. Osim toga, lokalna rješenja je obično teže integrisati s drugim aplikacijama nego rješenja bazirana na cloud-u.",
-
   "what_is_api_p1": "Izraz “API” je često korišten u web razvoju. Ažuriranja operativnog sistema, web pretraživača i aplikacija često najavljuju nove API-je za programere. Stoga, šta je API i kako ga programeri koriste ?",
   "what_is_api_h1": "Poboljšanu saradnju",
   "what_is_api_p2": "API je akronim za Application Programming Interface - softverski posrednik koji omogućava dvjema aplikacijama da razgovaraju jedna s drugom. Svaki put kada koristite aplikaciju kao što je Facebook, pošaljete poruku ili provjerite vremensku prognozu na svom telefonu, koristite API. Cilj API specifikacija je standardizacija razmjene podataka između web servisa. U ovom slučaju, standardizacija znači sposobnost različitih sistema, napisanih na različitim programskim jezicima i koji rade na različitim operativnim sistemima, ili koristeći različite tehnologije, da neprimjetno međusobno komuniciraju.",
@@ -280,7 +271,6 @@
   "what_is_api_p11": "API-ji nude fleksibilnost, omogućavajući kompanijama da se povežu s novim poslovnim partnerima, ponude nove usluge na postojećem tržištu i, na kraju, pristupe novim tržištima koja mogu generisati ogromne povrate i pokrenuti digitalnu transformaciju.",
   "what_is_api_p12": "Mnoge kompanije odlučuju ponuditi API-je besplatno, barem u početku, tako da mogu izgraditi publiku programera oko svog brenda i uspostaviti odnose s potencijalnim poslovnim partnerima. Međutim, ako API odobri pristup vrijednim digitalnim sredstvima, moguće ga je unovčiti prodajom pristupa (ovo se naziva API ekonomija).",
   "what_is_api_p13": "Kao što je ranije navedeno, API-ji stvaraju dodatni sloj zaštite između vaših podataka i servera. Programeri mogu dodatno ojačati sigurnost API-ja korištenjem tokena, potpisa i enkripcije Transport Layer Security (TLS) implementacijom API gateway-a za upravljanje i provjeru autentičnosti prometa i praktikovanjem efikasnog upravljanja API-jem.",
-
   "digita_trans_adv_p1": "Koncept digitalne transformacije podrazumijeva korištenje digitalnih tehnologija na strateški način koji pojednostavljuje i ubrzava vaše poslovanje, od vašeg poslovnog modela do vaših internih procesa. Digitalizacijom vaše kompanije, vaš cilj je da steknete prednosti digitalne transformacije, što može uključivati povećanje vašeg prihoda, poboljšanje korisničkog iskustva i sticanje konkurentske prednosti.",
   "digita_trans_adv_h1": "Poboljšana efikasnost",
   "digita_trans_adv_p2": "Jedna od najvećih prednosti implementacije ERP sistema u vaše poslovanje je dramatično poboljšanje efikasnosti. Način na koji vaši zaposlenici komuniciraju od odjela do odjela, kontinuirani protok podataka u cijeloj organizaciji, neometani prijelaz iz faze u fazu tokom životnog vijeka korisnika – sve ove prednosti doprinose efikasnijem poslovnom procesu koji može uštediti vrijeme, novac i sredstva.",
@@ -321,18 +311,13 @@
   "software_solutions_p6": "Ne možete pristupiti svom poslovnom softveru dok putujete na poslovni sastanak? To znači da vaš poslovni softver ne omogućava pristup podacima u pokretu. Isuviše je očigledno da posao ne staje dok putujete. Pametni telefoni pomažu vam da ostanete u kontaktu, ali ako vaš ERP softver nema pristup putem mobilne aplikacije, nemate sreće. Bežična povezivanja su posvuda, ali ipak ste ograničeni jer ne možete ostati u kontaktu s poslovnim aktivnostima. Vaši klijenti nisu svi na jednom mjestu, a to znači da ni vi niste uvijek na jednom mjestu. Imperativ je da možete pristupiti podacima pritiskom na dugme tokom putovanja. Pametni telefoni polovica su rješenja, ali ako vaš ERP dobavljač ne nudi povezanu aplikaciju koja vam omogućuje da vidite sve svoje podatke u stvarnom vremenu, nećete dobiti potpunu sliku o svom poslu kada vam zatreba.",
   "software_solutions_p7": "Novim zaposlenicima je potrebno previše vremena da se nauče koristiti sistem jer je isuviše komplikovan. Mnoge starije ERP sisteme je teško naučiti, a radnicima se lahko digne pritisak kada im se kaže da „pritisnu F1 da se raspitaju“ ili „pritisnu Enter da prihvate“. Ako ste često u potrazi za zaposlenima a vaše poslovanje trpi zbog spore adaptacije, gubite novac dok novi ljudi uče prečice za pokretanje i zatvaranje sistema.",
   "software_solutions_p8": "Forspace ERP softver sveobuhvatno je poslovno rješenje koje je svoju primjenu našlo u različitim industrijama i poslovnim djelatnostima. Odatle i potreba da se Forspace stalno ažurira, nadograđuje i unaprijeđuje, kako bi svojim korisnicima omogućio zadovoljstvo korištenja i kvalitetnu pomoć pri rješavanju poslovnih zadataka. Kako bi osigurali nesmetano i uspješno obavljanje poslovnih aktivnosti, birajte Forspace. U svakoj smo fazi sa svojim klijentima, i naš posao ne prestaje sve dok koristite naše usluge. Poboljšanje Vašeg poslovanja je ono čemu svakodnevno težimo, jer: Mi ne radimo za Vas. Mi radimo sa Vama!",
-
   "digital_trans_p1": "Većina kompanija implementacijom ERP softvera nastoji poboljšati ukupne performanse. U mnogim slučajevima, izvorni pokretač koji dovodi do kupovine ERP softvera, odnosno, zamjene starog za novi, jeste cilj pojednostavljenja poslovnih procesa radi održive konkurentske prednosti. Nerijetko, implementacije ERP softvera bivaju neuspješne. Umjesto da donesu smanjenje troškova, poslovnu agilnost i poboljšanje performansi, loši ERP sistemi stvaraju složenost, udvostručavanje napora, a u najgorem slučaju loš kvalitet i korisničku uslugu, te opasan nedostatak uvida u poslovanje koji može kompaniju odvesti u propast.",
   "digital_trans_h1": "Tehnologija će podržati, a ne zamijeniti, računovođe",
-
   "digital_trans_p2": "Dešava se da implementirani ERP sistemi ne idu u korak s promjenama. Proizvodni sektor suočava se s konstantno promjenjivim poslovnim procesima, podacima i zahtjevima koji čine gotovo nemogućim tipičan, nefleksibilan ERP sistem da bude u korak sa onim što je poslovanju zaista potrebno. U nastavku donosimo nekoliko znakova upozorenja koji vam govore da je poslovanje vaše kompanije ugroženo jer ERP softver ne funkcioniše kako bi zaista trebao ili jer mu nedostaju pravovremene nadogradnje.",
   "digital_trans_h2": "Prednosti softvera za planiranje resursa kompanije (ERP), poslovanja u cloudu i automatizacije",
-
   "digital_trans_p3": "Vaš ERP sistem ne integriše poslovne podatke važne za ostvarenje definisane misije. Vaši podaci su „zaključani“ u vašem zastarjelom ERP sistemu i teško im je pristupiti. Zbog toga, ne možete analizirati podatke potrebne za donošenje odluka. Informacije i podaci u sistemu „ne cirkulišu“ kroz odjele, već su u njima zarobljeni i postoje neovisno jedni o drugima. To povećava složenost i udvostručava napore s različitim verzijama istine, što ugrožava kvalitet, pouzdanost i dostupnost vitalnih informacija. Bez transparentnosti cijelog vašeg poslovnog softvera i besprijekorne strukture koja povezuje sve funkcije izvještavanja i odjele vašeg softvera, ne možete prikupiti sve ključne informacije koje su vašem poslu potrebne za uspjeh.",
   "digital_trans_h3": "Buduće računovođe: Relevantniji, produktivniji i kreativniji više nego ikad",
-
   "digital_trans_p4": "Svaka promjena u sistemu je skupa i predstavlja dugotrajan proces. Dobavljač softvera ne pruža vam nadogradnje softvera koje su vam neophodne. Također, održavanja softvera su isuviše skupa za takav zastario softver koji ne donosi nikakve novitete, a što bi vas moglo koštati gubitka konkurentske prednosti. Zaglavljeni ste između nefunkcionalnog softvera koji ne donosi poboljšanja i vrtoglavih troškova.",
-
   "read_more": "Saznaj više",
   "appointment_schedule": "Dogovorite sastanak",
   "appointment_heading": "Ukoliko želite prezentaciju softvera ostavite podatke i kontaktirat ćemo vas.",
