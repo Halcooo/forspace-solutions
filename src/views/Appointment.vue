@@ -1,13 +1,7 @@
 <template>
-
   <div class="appointment">
     <div>
       <h1>{{ $t("appointment_schedule") }}</h1>
-      <!-- <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quasi
-        autem quod quo obcaecati iure dolorem amet nihil distinctio vitae soluta
-        ipsum rerum ab odit sunt voluptate, sequi aspernatur consequuntur?
-      </p> -->
     </div>
   </div>
   <div class="appointment-content">
@@ -78,4 +72,3 @@ export default {
   }
 }
 </style>
-

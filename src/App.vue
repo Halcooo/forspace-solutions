@@ -184,20 +184,6 @@ h1 {
   }
 }
 .header {
-  // background: url("@/assets/images/product-cover.png") no-repeat center
-  //   center/cover;
-  // background-color: rgb(255, 210, 61);
-  // background-color: #8bc6ec;
-  // background-image: linear-gradient(135deg, #8bc5ec7c 0%, #9599e293 100%);
-  // background: linear-gradient(135deg, #8bc5ecbe 0%, #9599e2c2 100%),
-  //   url("@/assets/images/header-cover.jpg") no-repeat center center/cover;
-  // background: linear-gradient(
-  //     135deg,
-  //     rgba(8, 40, 67, 0.6),
-  //     rgba(8, 40, 67, 0.6),
-  //     rgba(8, 40, 67, 0.6)
-  //   ),
-  //   url("@/assets/images/image-1.png") no-repeat center center/cover;
   background-color: #21d4fd;
   background: linear-gradient(19deg, #21d5fdb0 0%, #2137ff9d 100%),
     url("@/assets/images/image-1.png") no-repeat center center/cover;
@@ -231,7 +217,6 @@ h1 {
   }
 }
 
-
 .chip {
   padding: 5px 20px;
   margin-right: 5px;
@@ -242,5 +227,4 @@ h1 {
   margin-bottom: 5%;
   cursor: pointer;
 }
-
 </style>

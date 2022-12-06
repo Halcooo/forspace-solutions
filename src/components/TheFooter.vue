@@ -77,7 +77,6 @@
               <h6 class="text-uppercase fw-bold text-light mb-4">Prevedi</h6>
 
               <div class="">
-
                 <p
                   class="cursor-pointer"
                   v-for="lang in languages"

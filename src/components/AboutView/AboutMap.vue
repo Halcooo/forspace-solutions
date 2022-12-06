@@ -24,9 +24,9 @@ export default {
   methods: {
     showMap() {
       if (this.$store.getters.getMapState) {
-        this.$store.commit('setMapState',false) // vuex store must be used like this with getters and mutations and separate modules!!
+        this.$store.commit("setMapState", false); // vuex store must be used like this with getters and mutations and separate modules!!
       } else {
-        this.$store.commit('setMapState',true)
+        this.$store.commit("setMapState", true);
       }
     },
   },

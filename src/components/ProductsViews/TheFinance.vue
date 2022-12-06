@@ -17,9 +17,6 @@
         </div>
         <img class="image-box" v-for="img in planned" :src="img.url" alt="" />
       </div>
-      <!-- <div class="w-100 d-flex justify-content-center">
-        <img style="width: 50%" v-for="img in img_box" :src="img.url" alt="" />
-      </div> -->
     </div>
 
     <div

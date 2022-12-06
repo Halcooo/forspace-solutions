@@ -5,8 +5,6 @@
   <AboutVideo />
   <AboutNums />
   <AboutReserv />
-
-
 </template>
 <script>
 import AboutVue from "@/components/AboutView/About.vue";
@@ -22,9 +20,7 @@ export default {
     AboutNext,
     AboutChoose,
     AboutVideo,
-
     AboutReserv,
-
     AboutNums,
     AboutMap,
   },

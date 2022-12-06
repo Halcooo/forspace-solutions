@@ -60,6 +60,7 @@ export default {
   @media screen and (max-width: 567px) {
     flex-direction: column;
     .col-7,
+    
     .col-6 {
       width: 90%;
       margin: auto;

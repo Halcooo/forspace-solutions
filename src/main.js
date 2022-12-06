@@ -28,7 +28,6 @@ import {
   faPlay,
   faSearch,
   faChevronLeft,
-
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebook,
@@ -66,7 +65,6 @@ library.add(
 
   faSearch,
   faChevronLeft
-
 );
 
 createApp(App)

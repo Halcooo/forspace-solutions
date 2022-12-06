@@ -5,7 +5,6 @@
     </div>
   </div>
   <div class="content-news">
-
     <div v-for="chip in chips" class="chip">
       {{ chip.chip }}
     </div>
@@ -32,7 +31,6 @@ export default {
   name: "ErpAllInOne",
   data() {
     return {
-
       chips: [{ chip: "#dms" }, { chip: "#skladiste" }, { chip: "#erp" }],
 
       content: [
