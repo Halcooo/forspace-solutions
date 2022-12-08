@@ -114,9 +114,9 @@
       </div>
       <div class="form-group d-flex gap-3">
         <BaseButton :to="routes.route" :name="routes.name" />
-        <a type="button" class="button" @click="showMap()">{{
-          $t("contact_form_google_map")
-        }}</a>
+        <button type="button" @click="showMap()">
+          {{ $t("contact_form_google_map") }}
+        </button>
       </div>
     </form>
     <TheLocationMap :showMap="showMap" />
@@ -261,16 +261,17 @@ export default {
     }
   }
 }
-.button {
-  color: black;
-  border: 2px solid black;
+button {
+  border: 2px solid rgba(8, 40, 67, 0.6);
+  color: rgba(8, 40, 67, 0.6);
+  background: transparent;
   padding: 20px 40px;
-  font-size: 16px;
+
   transition: 0.3s ease-out;
   &:hover {
-    background: rgb(255, 102, 0);
-    border: 2px solid rgb(255, 102, 0);
-    color: white;
+    background: white;
+    color: rgb(0, 119, 128);
+    border: 2px solid rgb(0, 119, 128);
   }
 }
 </style>

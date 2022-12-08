@@ -24,8 +24,9 @@
           class="d-inline-flex justify-content-center align-items-center"
           style="
             padding: 20px;
-            background-color: rgba(255, 255, 255, 0.3);
-            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0);
+            border: 1px solid white;
+            /* border-radius: 50%; */
             transform: translate(0%, 150%);
             cursor: pointer;
             font-size: 30px;
@@ -249,12 +250,17 @@ export default {
 }
 
 .circle-1 {
-  width: 500px;
+  width: 450px;
   height: 500px;
-  border: 30px solid rgba(255, 255, 255, 0.107);
+  border: 20px solid rgba(255, 255, 255, 0.107);
   // border-radius: 50%;
   position: absolute;
   top: 20%;
   left: 23%;
+  @media screen and (max-width: 567px) {
+    width: 480px;
+    left: 0%;
+    // border: none;
+  }
 }
 </style>

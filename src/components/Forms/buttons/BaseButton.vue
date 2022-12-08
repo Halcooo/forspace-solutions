@@ -14,113 +14,9 @@ export default {
 <style lang="scss" scoped>
 a {
   display: inline-block;
-}
-.read {
-  color: white;
-  background-color: cornflowerblue;
-
-  border-radius: 50px;
-  padding: 20px 50px;
-  transition: 0.3s ease-out;
-}
-.about_presentation {
-  border-radius: 50px;
-  padding: 40px 50px;
-  background: rgb(255, 102, 0);
-  color: white;
-}
-.about,
-.presentation,
-.product_btn {
-  color: white;
-  border: 2px solid rgb(255, 255, 255);
-
-  border-radius: 50px;
-  padding: 20px 50px;
-  transition: 0.3s ease-out;
-
-  &:hover {
-    background: rgb(255, 102, 0);
-    border: 2px solid rgb(255, 102, 0);
-  }
-}
-
-.form,
-.erp,
-.contact {
-  color: black;
-  border: 2px solid black;
-  padding: 20px 40px;
-
-  transition: 0.3s ease-out;
-  &:hover {
-    background: rgb(255, 102, 0);
-    border: 2px solid rgb(255, 102, 0);
-    color: white;
-  }
-}
-
-.faq {
-  color: #333;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 62px;
-  transition: 0.3s ease-out;
-  margin-bottom: 5%;
-  &:hover {
-    background: rgba(8, 40, 67, 0.8);
-
-    color: white;
-  }
-}
-.faq-2 {
-  color: #333;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  height: 62px;
-
-  transition: 0.3s ease-out;
-  &:hover {
-    background: rgba(8, 40, 67, 0.8);
-
-    color: white;
-  }
-}
-
-.product_middle {
-  color: white;
-  border: 2px solid white;
-  padding: 20px 40px;
-
-  transition: 0.3s ease-out;
-  &:hover {
-    background: rgb(255, 102, 0);
-    border: 2px solid rgb(255, 102, 0);
-  }
-}
-.product {
-  border: 2px solid rgb(255, 102, 0);
-  color: rgb(255, 102, 0);
-
-  padding: 20px 40px;
-
-  transition: 0.3s ease-out;
-  &:hover {
-    background: white;
-    color: black;
-    border: 2px solid black;
-  }
-}
-.termin {
   border: 2px solid rgba(8, 40, 67, 0.6);
   color: rgba(8, 40, 67, 0.6);
-
+  background: transparent;
   padding: 20px 40px;
 
   transition: 0.3s ease-out;
@@ -128,6 +24,25 @@ a {
     background: white;
     color: rgb(0, 119, 128);
     border: 2px solid rgb(0, 119, 128);
+  }
+}
+
+.faq,
+.faq-2 {
+  color: #333;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  border: none;
+  height: 62px;
+  margin-bottom: 1%;
+  transition: 0.3s ease-out;
+  &:hover {
+    background: rgba(8, 40, 67, 0.8);
+    border: none;
+    color: white;
   }
 }
 </style>

@@ -83,6 +83,12 @@ export default {
   .text {
     width: 100%;
     padding: 30px 60px;
+    text-align: right;
+    @media screen and (max-width: 567px) {
+      width: 95%;
+      margin: auto;
+      padding: 30px 0px;
+    }
     .d-flex {
       svg {
         display: block;
