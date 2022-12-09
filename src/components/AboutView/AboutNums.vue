@@ -41,7 +41,7 @@ export default {
     const clients = ref(0);
     const employees = ref(0);
     const year = ref(2020);
-    const client = ref(10);
+    const client = ref(70);
     const employee = ref(30);
     const speed = ref(100);
     const roundedValyear = ref(0);
