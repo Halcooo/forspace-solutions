@@ -3,7 +3,7 @@
   <div class="form-div">
     <h3>{{ $t("contact_header") }}</h3>
 
-    <form>
+    <form ref="form">
       <div class="form-group">
         <div class="form-group-flex">
           <div class="flex-item">
@@ -30,6 +30,7 @@
               v-model="name"
               id="name"
               class="form-control-custom"
+              name="from_name"
             />
           </div>
           <div class="flex-item">
@@ -56,6 +57,7 @@
               v-model="email"
               id="email"
               class="form-control-custom"
+              name="from_email"
             />
           </div>
         </div>
@@ -98,7 +100,7 @@
               }
             }
           "
-          name=""
+          name="user_message"
           id="text"
           cols="30"
           max-cols="50"
@@ -113,7 +115,8 @@
         </div>
       </div>
       <div class="form-group d-flex gap-3">
-        <BaseButton :to="routes.route" :name="routes.name" />
+        <button type="submit"  @click.prevent="submitForm">{{ $t('submit')}}</button>
+        <!-- <BaseButton :to="routes.route" :name="routes.name" /> -->
         <button type="button" @click="showMap()">
           {{ $t("contact_form_google_map") }}
         </button>
@@ -125,6 +128,7 @@
 <script>
 import BaseButton from "../Forms/buttons/BaseButton.vue";
 import TheLocationMap from "../TheLocationMap.vue";
+import emailjs from "@emailjs/browser";
 
 export default {
   name: "ContactForm",
@@ -145,9 +149,34 @@ export default {
   },
   methods: {
     submitForm(event) {
+    console.log(this.$refs.form);  
       this.validateMessage();
       this.validateName();
       this.validateEmail();
+      if(!this.emailInvalid && !this.nameInvalid && !this.messageInvalid){
+        this.sendEmail();
+       }
+       else{
+        console.log('Email data not ok');
+       }
+    },
+    sendEmail() {
+      emailjs
+        .sendForm(
+          "service_59dlwku",
+          "template_8x1dw07",
+          this.$refs.form,
+          "bS_JQ-oO8aZ_UBccV",
+        )
+        .then(
+          (result) => {
+            console.log("SUCCESS!", result.text);
+            alert('poslali smo mail');
+          },
+          (error) => {
+            console.log("FAILED...", error.text);
+          }
+        );
     },
     validateName() {
       this.name.trim() === ""
