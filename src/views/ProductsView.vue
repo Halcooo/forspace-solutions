@@ -1,13 +1,7 @@
 <template lang="">
   <div class="wrapper">
     <div>
-      <h1>Proizvodi</h1>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil eum
-        assumenda reiciendis, autem necessitatibus eos veniam iure, soluta
-        voluptate iste id sunt dolorum illum eligendi odit et mollitia ratione
-        fuga?
-      </p>
+      <h2>Proizvodi</h2>
     </div>
   </div>
   <div class="content">

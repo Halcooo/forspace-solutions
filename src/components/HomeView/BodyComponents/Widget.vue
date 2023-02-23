@@ -128,7 +128,7 @@ export default {
 }
 @media screen and (max-width: 900px) {
   .widget-container {
-    width: 100%;
+    width: 90%;
     flex-direction: column;
     height: 100%;
     margin-bottom: 0%;

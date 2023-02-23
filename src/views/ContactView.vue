@@ -1,7 +1,7 @@
 <template lang="">
   <div class="wrapper">
     <div class="wrapper-div">
-      <h1>{{ $t("contact") }}</h1>
+      <h2>{{ $t("contact") }}</h2>
     </div>
   </div>
   <ContactForm />
@@ -32,9 +32,8 @@ export default {
   .wrapper-div {
     text-align: center;
   }
-  h1 {
+  h2 {
     color: white;
-    font-size: 70px;
   }
 }
 </style>
