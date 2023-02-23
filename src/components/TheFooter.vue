@@ -1,11 +1,8 @@
 @author Halid Lihovac
 <template>
   <div class="footer">
-    <!-- <div class="square"></div>
-    <div class="circle"></div>
-    <div class="round"></div> -->
     <footer class="text-center text-dark text-lg-start text-muted">
-      <section class="d-flex justify-content-between">
+      <section class="d-flex justify-content-around">
         <div class="d-none d-md-block">
           <span>Get connected with us on social networks</span>
         </div>

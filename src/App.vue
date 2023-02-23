@@ -1,27 +1,5 @@
 //@author Halid Lihovac
 <template>
-  <!-- <div class="cookie">
-     <div class="cookie-flex">
-      <a href="">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit Lorem ipsum
-        dolor sit amet. Lorem ipsum dolor sit.
-      </a>
-    </div> 
-  </div> -->
-  <!-- <div class="nav-contact">
-    <div class="track">
-      <ul>
-        <li>
-          <font-awesome-icon icon="fa-solid fa-phone" size="1x" /> 123-456-789
-        </li>
-        <li>
-          <font-awesome-icon icon="fa-solid fa-mail-bulk" size="1x" />
-          info@forspace.ba
-        </li>
-      </ul>
-      </div>
-      </div> -->
-
   <NavigationBar />
   <router-view />
   <BaseScrollToTop />
@@ -50,19 +28,12 @@ export default {
       this.$router.push({ path: "/" });
     },
   },
-  mounted() {},
 };
 </script>
 <style lang="scss">
 @import "./styles/variables.scss";
-// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
-// @font-face {
-// 	font-family: 'Raleway';
-// 	src: local('Raleway'),
-// 		url('@/assets/fonts/Raleway-Medium.ttf') format('truetype');
-// }
 .show {
   display: block;
   background-color: red;
@@ -78,9 +49,8 @@ body {
   padding: 0;
 }
 #app {
-  //font-family: "Oswald", sans-serif;
   font-family: "Poppins", sans-serif;
-
+  overflow-x: hidden !important;
   color: $primary-color;
 }
 a {
@@ -96,6 +66,9 @@ h1 {
   color: $primary-color;
 }
 @media screen and (max-width: 560px) {
+  .logo{
+      transform:scale(.8)
+    }
 }
 .carousel__pagination-button::after {
   display: block;
@@ -126,14 +99,12 @@ h1 {
 
   @media screen and (max-width: 567px) {
     font-size: 12px;
-    // padding: 0px 5px;
     height: 50px;
   }
 }
 
 .nav-contact {
   background-color: rgb(70, 70, 70);
-  // background-color: rgb(55, 165, 255);
   color: white;
   .track {
     width: 70%;
@@ -187,7 +158,6 @@ h1 {
   background-color: #21d4fd;
   background: linear-gradient(19deg, #21d5fdb0 0%, #2137ff9d 100%),
     url("@/assets/images/image-1.png") no-repeat center center/cover;
-
   height: 50vh;
   display: flex;
   justify-content: center;

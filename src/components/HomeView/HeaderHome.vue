@@ -6,10 +6,10 @@
     <div class="div">
       <div>
         <div class="head-1">
-          <h1>Odluke zasnovane na činjenicama, a ne na pretpostavkama!</h1>
+          <h2>Odluke zasnovane na činjenicama, a ne na pretpostavkama!</h2>
         </div>
         <div class="head-2">
-          <p class="text-warning">Forspace ERP & Računovodstvo</p>
+          <p >Forspace ERP & Računovodstvo</p>
 
           <small
             >Mi smo prvi domaći brend na tržištu ERP softvera sa predznakom
@@ -21,17 +21,7 @@
         </div>
 
         <div
-          class="d-inline-flex justify-content-center align-items-center"
-          style="
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0);
-            border: 1px solid white;
-            /* border-radius: 50%; */
-            transform: translate(0%, 150%);
-            cursor: pointer;
-            font-size: 30px;
-            color: white;
-          "
+          class="d-inline-flex justify-content-center align-items-center down-button"
           @click="scrollDown()"
         >
           <font-awesome-icon icon="fa-solid fa-chevron-down" />
@@ -73,18 +63,38 @@ export default {
     opacity: 1;
   }
 }
+.down-button {
+  z-index: 5;
+  position: relative;
+  margin-top: 30px;
+  padding: 11px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  border-radius: 50%;
+  transform: translate();
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  transition: 1s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+    border: 2px solid orange;
+    color:orange;
+    transform: scale(1.1);
+  }
+}
 
 .landing-page {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   @media screen and (max-width: 567px) {
     padding-top: 5%;
-    height: 85vh;
+    height: 100vh;
     text-align: left;
   }
   background: linear-gradient(
       to right,
-      rgba(8, 40, 67, 0.6),
+      rgba(8, 40, 67, 0.416),
       rgba(8, 40, 67, 0.6),
       rgba(8, 40, 67, 0.6)
     ),
@@ -97,6 +107,29 @@ export default {
     margin-top: 0%;
     border-radius: 2px;
   }
+  h2{
+    color:white;
+  }
+  .down-button {
+  z-index: 5;
+  position: relative;
+  margin-top: 30px;
+  padding: 11px;
+  background-color: rgba(255, 255, 255, 0);
+  border: 2px solid white;
+  border-radius: 50%;
+  transform: translate();
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+  transition: 1s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+    border: 2px solid orange;
+    color:orange;
+    transform: scale(1.1);
+  }
+}
   .div {
     display: flex;
     justify-content: center;
@@ -186,11 +219,9 @@ export default {
         height: 100%;
         li {
           padding: 20px 40px;
-          // border-radius: 2px;
           color: rgb(117, 117, 117);
           transition: 0.2s;
           &:hover {
-            // background-color: gray;
             color: white;
             cursor: pointer;
           }
@@ -253,14 +284,12 @@ export default {
   width: 450px;
   height: 500px;
   border: 20px solid rgba(255, 255, 255, 0.107);
-  // border-radius: 50%;
   position: absolute;
   top: 20%;
   left: 23%;
   @media screen and (max-width: 567px) {
-    width: 480px;
+    width: 90vw;
     left: 0%;
-    // border: none;
   }
 }
 </style>

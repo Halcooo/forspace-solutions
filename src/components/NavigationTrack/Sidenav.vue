@@ -8,13 +8,13 @@
         <div class="img">
           <img alt="Forspace Solutions" src="@/assets/svg/logo.svg" />
         </div>
-
         <ul class="nav-links-vertical">
           <Links
             :routes="routes"
             :sidenav_class="true"
             :showSideNav="showSideNav"
           />
+          <li><LanguageBar class="mt-4" @click="showSideNav"></LanguageBar></li>
         </ul>
         <div class="sidenav_times">
           <ClosingButton @click="showSideNav" />
@@ -29,6 +29,7 @@ import { mapGetters, mapMutations } from "vuex";
 import Links from "./NavigationLinks.vue";
 
 import ClosingButton from "../Forms/buttons/ClosingButton.vue";
+import LanguageBar from "../LanguageBar.vue";
 
 export default {
   name: "Sidenav",
@@ -36,6 +37,7 @@ export default {
   components: {
     Links,
     ClosingButton,
+    LanguageBar,
   },
   props: {
     routes: { type: Array },
@@ -60,14 +62,6 @@ export default {
           name: "about",
           isActive: false,
           id: 1,
-
-          classname: "sidenav",
-        },
-        {
-          to: "/",
-          name: "products",
-          isActive: false,
-          id: 2,
 
           classname: "sidenav",
         },
@@ -101,16 +95,13 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
+
 .sidenav {
   .sidenav-content {
     position: fixed;
     display: flex;
-
     justify-content: center;
     text-align: center;
-    // align-items: center;
-
-    // margin: auto;
     top: 0;
     padding-top: 25%;
     right: -28%;
@@ -127,22 +118,7 @@ export default {
     }
   }
 
-  // .grid {
-  //   position: fixed;
-  //   z-index: 1;
-  //   background-color: white;
-  //   top: 0;
-  //   left: -83%;
-  //   width: 83%;
-  //   height: 100vh;
-  // }
-
-  // .active {
-  //   animation: toLeft 0.2s forwards;
-  // }
   .nav-links-vertical {
-    // width: 100%;
-
     display: inline-flex;
     flex-direction: column;
     line-height: 4rem;
@@ -177,30 +153,36 @@ export default {
   @media screen and (max-width: 1450px) {
     .sidenav_content_visible {
       width: 22.5%;
+      right: 0%;
     }
   }
   @media screen and (max-width: 1400px) {
     .sidenav_content_visible {
+      right: 0%;
       width: 27.5%;
     }
   }
   @media screen and (max-width: 1024px) {
     .sidenav_content_visible {
+      right: 0%;
       width: 32.5%;
     }
   }
   @media screen and (max-width: 900px) {
     .sidenav_content_visible {
+      right: 0%;
       width: 35.5%;
     }
   }
   @media screen and (max-width: 768px) {
     .sidenav_content_visible {
+      right: 0%;
       width: 40.5%;
     }
   }
   @media screen and (max-width: 600px) {
     .sidenav_content_visible {
+      right: 0%;
       width: 50.5%;
     }
   }
@@ -222,7 +204,7 @@ export default {
     z-index: 3;
     .sidenav-content {
       .button_device {
-        left: 88%;
+        left: 50%;
       }
     }
   }

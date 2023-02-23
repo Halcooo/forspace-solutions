@@ -7,7 +7,7 @@
       @click="showSideNav"
       @mouseover="giveindex(index)"
     >
-      <div>
+      <div class="link-title">
         {{ $t(navItem.name) }}
       </div>
       <div class="underline"></div>
@@ -47,7 +47,6 @@ export default {
     },
     translatePage(lang) {
       this.selected = lang.abr;
-      console.log(this.selected);
       this.language = lang.language;
 
       return (this.$i18n.locale = this.selected);
@@ -77,7 +76,6 @@ export default {
     },
   },
   mounted() {
-    console.log(this.translatePage);
     window.addEventListener("scroll", () => {
       if (window.scrollY > 40) {
         this.navy = true;
@@ -91,6 +89,9 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
+.link-title {
+  white-space: nowrap;
+}
 
 li {
   list-style: none;
@@ -114,7 +115,7 @@ li {
     &:hover {
       opacity: 0.8;
       .underline {
-        background-color: rgb(166, 166, 166);
+        background-color: white;
         width: 100%;
         transition: width 0.3s ease-out;
       }
@@ -135,7 +136,6 @@ li {
   }
 
   .router-link-active {
-    // color: rgb(55, 165, 255);
     color: orange;
   }
   .router-link {
@@ -157,7 +157,6 @@ li {
   overflow: hidden;
   color: white;
   font-size: 20px;
-  // background-color: rgba(255, 255, 255, 0.442);
   padding: 0px 10px;
 
   &:hover {
@@ -171,7 +170,6 @@ li {
     position: absolute;
     transform: translate(0%, 5%);
     p {
-      // margin: 2px;
       padding-right: 30px;
       font-size: 17px;
       &:hover {

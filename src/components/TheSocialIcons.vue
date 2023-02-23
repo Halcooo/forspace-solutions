@@ -1,24 +1,24 @@
 @author Halid Lihovac
-<template lang="">
-  <div class="social-icons">
+<template >
+  <div class="social-icons d-flex justify-center">
     <a
       href="https://www.facebook.com/Forspace-Solutions-104570971684748"
       target="blank"
-      class="me-4 text-reset"
+      class="me-2 ms-2 text-reset d-flex justify-content-center align-center"
     >
       <font-awesome-icon icon="fa-brands fa-facebook" size="2x" />
     </a>
     <a
       href="https://www.instagram.com/forspace.ba/"
       target="blank"
-      class="me-4 text-reset"
+      class="me-2 ms-2 text-reset d-flex justify-content-center align-center"
     >
       <font-awesome-icon icon="fa-brands fa-instagram" size="2x" />
     </a>
     <a
       href="https://www.linkedin.com/company/forspace-solutions/"
       target="blank"
-      class="me-4 text-reset"
+      class="me-2 ms-2 text-reset d-flex justify-content-center align-center"
     >
       <font-awesome-icon icon="fa-brands fa-linkedin" size="2x" />
     </a>
@@ -39,7 +39,7 @@ a {
     width: 20px;
 
     &:hover {
-      color: rgb(36, 64, 139);
+      color: orange;
       opacity: 0.9;
     }
   }

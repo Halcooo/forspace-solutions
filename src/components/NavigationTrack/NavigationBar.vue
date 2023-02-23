@@ -4,11 +4,6 @@
     <div class="nav-wrapper-flex" style="position: relative">
       <div class="logo" :class="{ none: none }">
         <router-link to="/">
-          <!-- <img
-            src="../../assets/images/logo-background.png"
-            class="logo-back"
-            alt=""
-            style="" /> -->
           <img alt="Forspace Solutions" src="@/assets/svg/logo_white.svg"
         /></router-link>
       </div>
@@ -55,7 +50,6 @@ export default {
           name: "home",
           isActive: true,
           id: 0,
-
           classname: "nav",
         },
         {
@@ -63,7 +57,6 @@ export default {
           name: "about",
           isActive: false,
           id: 1,
-
           classname: "nav",
         },
         {
@@ -71,7 +64,6 @@ export default {
           name: "products",
           isActive: false,
           id: 2,
-
           classname: "nav",
         },
         {
@@ -79,24 +71,13 @@ export default {
           name: "services",
           isActive: false,
           id: 3,
-
           classname: "nav",
         },
-        {
-          to: "/appointment",
-          name: "appointment",
-          isActive: false,
-          id: 4,
-
-          classname: "nav",
-        },
-
         {
           to: "/contact",
           name: "contact",
           isActive: false,
           id: 5,
-
           classname: "nav",
         },
       ],
