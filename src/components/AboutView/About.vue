@@ -3,10 +3,6 @@
     <div class="about-heading text-center">
       <div>
         <h1 class="text-light">{{ $t("about_us_heading") }}</h1>
-
-        <p class="text-light">
-          {{ $t("about_us_additional_paragraph") }}
-        </p>
       </div>
     </div>
   </div>
@@ -38,7 +34,6 @@
           <div>
             <h1>{{ $t(card.h1) }}</h1>
             <h4>{{ $t(card.h4) }}</h4>
-
             <p class="mobile">{{ $t(card.p) }}</p>
           </div>
         </div>

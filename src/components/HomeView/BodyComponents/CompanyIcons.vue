@@ -1,10 +1,6 @@
 <template>
   <div class="body bg-light text-center pt-5">
     <div class="items container text-center pb-5">
-      <div class="square">
-        <h1>{{ $t("home_icon_square") }}</h1>
-      </div>
-      <div class="square-2"></div>
       <div class="items-container">
         <div class="item bg-light border p-5" v-for="icon in icons" :key="icon">
           <img :src="icon.src" alt="companies" />
@@ -58,13 +54,10 @@ export default {
     padding: 50px 0px;
 
     .items-container {
-      width: 75%;
       height: 100%;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      // gap: 10px;
-      // margin-left: 2%;
-      // margin-right: auto;
+  
     }
     .square {
       width: 370px;
@@ -82,7 +75,6 @@ export default {
       text-align: right;
       h1 {
         color: white;
-        width: 70%;
         font-size: 45px;
       }
     }
@@ -104,7 +96,7 @@ export default {
       color: gray;
     }
   }
-  @media screen and (max-width: 567px) {
+  @media screen and (max-width: 700px) {
     .items {
       .items-container {
         grid-template-columns: repeat(1, 1fr);

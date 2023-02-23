@@ -2,9 +2,11 @@
 <template>
   <div class="nav-wrapper" :class="{ white_wrapper: white_wrapper }">
     <div class="nav-wrapper-flex" style="position: relative">
-      <div class="logo" :class="{ none: none }">
+      <div class="logo" :class="{none:none}">
         <router-link to="/">
-          <img alt="Forspace Solutions" src="@/assets/svg/logo_white.svg"
+          <img
+            alt="Forspace Solutions"
+            src="@/assets/svg/logo_white.svg"
         /></router-link>
       </div>
       <div class="logo" v-if="white_wrapper" :class="{ mobile: white_wrapper }">
@@ -14,7 +16,8 @@
       </div>
       <div class="navigation">
         <ul class="nav-links">
-          <Links :routes="routes" @index="currentEmit" />
+          <Links :routes="routes" />
+          <li class="language"><LanguageBar></LanguageBar></li>
         </ul>
         <div class="group">
           <MenuButton :showSideNav="showSideNav" />
@@ -30,12 +33,13 @@ import { mapMutations, mapGetters } from "vuex";
 
 import Sidenav from "../../components/NavigationTrack/Sidenav.vue";
 import BaseButton from "../Forms/buttons/BaseButton.vue";
+import LanguageBar from "../LanguageBar.vue";
 import MenuButton from "./MenuButton.vue";
 import NavLink from "./NavLinks/NavLink.vue";
 export default {
   name: "Nav",
 
-  components: { Links, Sidenav, BaseButton, MenuButton, NavLink },
+  components: { Links, Sidenav, BaseButton, MenuButton, NavLink, LanguageBar },
   data() {
     return {
       route: { route: "/contact", name: "about_presentation" },
@@ -43,6 +47,8 @@ export default {
       mobile: false,
       none: false,
       navy: false,
+      whiteLogo: true,
+      currentRoute: "",
 
       routes: [
         {
@@ -50,6 +56,13 @@ export default {
           name: "home",
           isActive: true,
           id: 0,
+          classname: "nav",
+        },
+        {
+          to: "/services",
+          name: "services",
+          isActive: false,
+          id: 3,
           classname: "nav",
         },
         {
@@ -63,14 +76,7 @@ export default {
           to: "/products/purchase",
           name: "products",
           isActive: false,
-          id: 2,
-          classname: "nav",
-        },
-        {
-          to: "/services",
-          name: "services",
-          isActive: false,
-          id: 3,
+          id: 6,
           classname: "nav",
         },
         {
@@ -94,12 +100,13 @@ export default {
         this.setSideNav(true);
       }
     },
-    currentEmit(index) {
-      this.routes.forEach((item) => {
-        item.isActive = item.id == index ? true : false;
-      });
+  },
+  computed: {
+    isHome() {
+      return this.$route.name == "home" ? true : false;
     },
   },
+
   mounted() {
     window.addEventListener("scroll", (e) => {
       if (window.scrollY > 30) {
@@ -119,6 +126,25 @@ export default {
 </script>
 <style lang="scss">
 @import "../../styles/variables.scss";
+.logo{
+  width: 200px;
+}
+.language {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+.white_image {
+  filter: brightness(0) invert(1);
+  -webkit-transition: filter 0.5s ease-out;
+  -moz-transition: filter 0.5s ease-out;
+  -o-transition: filter 0.5s ease-out;
+  transition: filter 0.7s ease-out;
+  &:hover {
+    filter: none;
+  }
+}
 
 .nav-wrapper {
   position: fixed;
@@ -129,27 +155,25 @@ export default {
 
   width: 100%;
   .logo {
-    // position: absolute;
     .logo-back {
       position: absolute;
       top: 0%;
       left: -5%;
       z-index: -1;
     }
-    width: 20%;
     &:hover {
       cursor: pointer;
     }
   }
   .nav-wrapper-flex {
     display: flex;
-    width: 70%;
+    width: 84%;
     margin: auto;
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px 20px 20px;
   }
-  @media screen and (max-width: 567px) {
+  @media screen and (max-width: 1050px) {
     .nav-wrapper {
       background-color: rgba(255, 255, 255, 0.349);
     }
@@ -160,10 +184,6 @@ export default {
     .nav-wrapper-flex {
       padding: 0px 10px;
       width: 100%;
-    }
-    .logo {
-      padding: 15px;
-      width: 50%;
     }
   }
 }
@@ -185,7 +205,6 @@ export default {
   background: url("@/assets/images/product_item_2.jpg") no-repeat center
     center/cover;
 }
-
 .navigation {
   display: flex;
   justify-content: center;
@@ -198,7 +217,6 @@ export default {
       position: absolute;
       bottom: -30;
       display: none;
-
       a {
         padding: 10px 20px;
         color: black;
@@ -206,7 +224,6 @@ export default {
     }
     .first {
       display: flex;
-      // grid-template-columns: repeat(1, 1fr);
       width: 500px;
       height: 400px;
       transform: translate(-20%, 10%);
@@ -225,13 +242,11 @@ export default {
 
         width: 100%;
       }
-
       .nav_btn {
         display: flex;
         justify-content: right;
         align-items: center;
         width: 100%;
-
         a {
           color: gray;
         }
@@ -241,7 +256,6 @@ export default {
       display: flex;
       justify-content: center;
       width: 900px;
-      // height: 400px;
       transform: translate(-20%, 10%);
       background-color: rgb(255, 255, 255);
       border-radius: 2px;
@@ -260,7 +274,6 @@ export default {
         justify-content: center;
         align-items: center;
         transition: 0.5s ease-out;
-        // padding: 5px;
         small {
           display: block;
           width: 100%;
@@ -280,7 +293,7 @@ export default {
   }
   .group {
     display: none;
-    @media screen and (max-width: 567px) {
+    @media screen and (max-width: 1050px) {
       display: block;
     }
   }
@@ -318,7 +331,6 @@ export default {
 
   @media screen and (max-width: 567px) {
     font-size: 12px;
-    // padding: 0px 5px;
     height: 50px;
   }
 }
@@ -329,9 +341,16 @@ export default {
 .mobile {
   display: block;
 }
-
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .white_wrapper {
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.924);
   top: 0%;
 }
 </style>

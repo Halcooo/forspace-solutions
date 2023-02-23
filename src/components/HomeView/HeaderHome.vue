@@ -1,31 +1,28 @@
 @author Halid Lihovac
 <template>
   <div class="landing-page" style="position: relative; z-index: 1">
-    <div class="circle-1"></div>
-    <div class="circle-2"></div>
     <div class="div">
-      <div>
+      <div class="header-text">
         <div class="head-1">
-          <h2>Odluke zasnovane na činjenicama, a ne na pretpostavkama!</h2>
+          <h3>
+            {{ $t("header_text") }}
+          </h3>
         </div>
         <div class="head-2">
-          <p >Forspace ERP & Računovodstvo</p>
-
-          <small
-            >Mi smo prvi domaći brend na tržištu ERP softvera sa predznakom
-            njemačke tehnologije koji omogućava smanjenje korištenja pisane
-            dokumentacije, uštedu vremena i novca, te predstavlja potpuno
-            prilagođeno i razumljivo softversko rješenje za krajnjeg
-            korisnika</small
-          >
+          <p class="text-warning">Forspace Solutions</p>
+          <small>
+            {{ $t("header_secondary_text") }}
+          </small>
         </div>
-
         <div
           class="d-inline-flex justify-content-center align-items-center down-button"
           @click="scrollDown()"
         >
           <font-awesome-icon icon="fa-solid fa-chevron-down" />
         </div>
+        <!-- <div class="head-3">
+           <BaseButton :to="routes.route" :name="routes.name" /> 
+        </div> -->
       </div>
     </div>
   </div>
@@ -55,6 +52,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.header-text{
+  margin-top:10vh;
+}
 @keyframes backgroundFade {
   from {
     opacity: 0;
@@ -83,7 +83,6 @@ export default {
     transform: scale(1.1);
   }
 }
-
 .landing-page {
   width: 100%;
   height: 100vh;
@@ -100,49 +99,26 @@ export default {
     ),
     url("@/assets/images/office.jpg") no-repeat center center/cover;
 
-  animation: backgroundFade 0.5s ease-in;
+    animation: backgroundFade 0.5s ease-in;
   .background {
-    width: 700px;
     height: 500px;
     margin-top: 0%;
     border-radius: 2px;
   }
-  h2{
-    color:white;
-  }
-  .down-button {
-  z-index: 5;
-  position: relative;
-  margin-top: 30px;
-  padding: 11px;
-  background-color: rgba(255, 255, 255, 0);
-  border: 2px solid white;
-  border-radius: 50%;
-  transform: translate();
-  cursor: pointer;
-  font-size: 20px;
-  color: white;
-  transition: 1s ease-in-out;
-  &:hover {
-    opacity: 0.7;
-    border: 2px solid orange;
-    color:orange;
-    transform: scale(1.1);
-  }
-}
   .div {
     display: flex;
     justify-content: center;
-    width: 70%;
+    width: 60%;
     text-align: center;
     gap: 200px;
     height: 100%;
     margin: auto;
     padding-top: 15%;
 
-    h1 {
-      font-size: 60px;
+    h3 {
+      font-size: 30px;
       color: white;
+      margin-top:5vh;
       margin: 0;
       padding: 0;
     }
@@ -161,11 +137,11 @@ export default {
         margin: auto;
       }
     }
-
     .head-3 {
       padding-top: 10%;
     }
     @media screen and (max-width: 567px) {
+ 
       width: 100%;
       justify-content: center;
 

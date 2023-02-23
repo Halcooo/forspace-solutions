@@ -50,15 +50,20 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.video{
+  width:80%;
+}
 .video-frame {
-  width: 100%;
+  text-align: center;
+  margin: auto;
+  width: 90%;
   display: flex;
-  //   justify-content: center;
   align-items: center;
   height: 50vh;
   position: relative;
   margin-top: 15%;
   .outer {
+    z-index: 1;
     width: 115px;
     height: 115px;
     position: absolute;
@@ -86,6 +91,9 @@ export default {
       svg {
         margin-left: 5px;
       }
+      &:hover {
+        color: orange;
+      }
     }
   }
   .frame-text {
@@ -100,6 +108,7 @@ export default {
       margin-right: 5%;
       color: white;
       h1 {
+        color: white;
         font-size: 50px;
       }
       p {
@@ -140,6 +149,25 @@ export default {
   }
   .video {
     display: flex;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .outer {
+    top: 18% !important;
+    left: 10% !important;
+    transform: translate(0, 0) !important;
+  }
+  .video-frame {
+    flex-direction: column;
+    height: 70vh;
+  }
+  .frame-text {
+    width: 100% !important;
+    height: 30vh !important;
+  }
+  .frame-video {
+    width: 100% !important;
+    height: 300px;
   }
 }
 </style>

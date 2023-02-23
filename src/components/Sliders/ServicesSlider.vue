@@ -5,7 +5,7 @@
       <div class="carousel__item">
         <div class="overlay">
           <div>
-            <h1>{{ $t(slide.name) }}</h1>
+            <h3>{{ $t(slide.name) }}</h3>
             <p>{{ $t(slide.text) }}</p>
           </div>
         </div>
@@ -64,13 +64,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 h1 {
-  // padding: 7px;
   font-size: 60px;
   color: white;
   margin-bottom: 5%;
-  // background-color: rgba(255, 253, 253, 0.8);
-  // border-radius: 5px;
-  // box-shadow: rgba(255, 253, 253, 1) 0px 40px 100px 4px;
 }
 .carousel__pagination {
   position: absolute;
@@ -93,7 +89,6 @@ h1 {
   height: 50vh;
   width: 100%;
   color: white;
-  // font-size: 20px;
   border-radius: 8px;
   position: relative;
   display: flex;

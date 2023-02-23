@@ -5,9 +5,9 @@
   <div class="content">
     <div class="services-container mt-5">
       <div class="heading">
-        <h1 class="mb-5 text-center text-secondary">
+        <h3 class="mb-5 text-center text-secondary">
           {{ $t("services_container_header") }}
-        </h1>
+        </h3>
         <Line />
         <div
           class="d-flex gap-5 col-12 justify-content-center align-items-center m-auto mt-5"
@@ -25,22 +25,14 @@
       </div>
       <div class="grid mb-5">
         <div v-for="div in divs" :key="div" class="first" :class="div.class">
-          <div>
-            <h1 class="text-center">{{ $t(div.text) }}</h1>
-            <p
-              style="
-                width: 100px;
-                padding: 3px;
-                background-color: tomato;
-                margin: auto;
-                margin-top: 10%;
-              "
-            ></p>
+          <div class="box">
+            <h3 class="text-center">{{ $t(div.text) }}</h3>
+            <p class="red-line"></p>
             <p class="text-center">
               {{ $t(div.p) }}
             </p>
             <div class="flex">
-              <router-link :to="div.to">Read More</router-link>
+              <router-link class="read-more" :to="div.to">Read More</router-link>
             </div>
           </div>
         </div>
@@ -113,7 +105,7 @@ export default {
         {
           name: "services_slider_heading_2",
           url: require("@/assets/images/product_item_1.jpg"),
-          text: "services_slider_heading_2",
+          text: "services_slider_text_2",
         },
         {
           name: "services_slider_heading_3",
@@ -137,6 +129,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.red-line {
+  width: 100px;
+  padding: 3px;
+  background-color: tomato;
+  margin: 5px auto 5px auto;
+}
 
 .nav-text {
   position: absolute;
@@ -150,7 +148,6 @@ export default {
 }
 
 .heading {
-  // text-align: center;
   .w-100 {
     color: rgb(117, 117, 117);
     svg {
@@ -158,7 +155,6 @@ export default {
       height: 60px;
       margin-top: 15%;
       margin-bottom: 5%;
-      // background-color: red;
       color: rgb(42, 95, 131);
       path {
         width: 50px;
@@ -183,8 +179,8 @@ export default {
       justify-content: center;
       align-items: center;
 
-      h1 {
-        font-size: 60px;
+      h3 {
+        font-size: 1.6em;
         color: white;
       }
       p {
@@ -261,7 +257,46 @@ export default {
     }
   }
 }
-@media screen and (max-width: 567px) {
+.read-more {
+  position: relative;
+  transition: all 0.5s;
+}
+.read-more::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+.read-more:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.read-more::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+.read-more:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+@media screen and (max-width: 700px) {
+  .box {
+    padding: 10% 20px 10% 20px;
+  }
   .heading {
     width: 75%;
     margin: auto;
@@ -278,7 +313,6 @@ export default {
         height: 100%;
         padding: 15px;
         p {
-          margin: 70px 0px;
         }
       }
     }
