@@ -97,6 +97,7 @@ export default {
       justify-content: center;
       align-items: center;
       width: 100%;
+      white-space: nowrap;
     }
   }
   .heading-flex {

@@ -20,9 +20,9 @@
         >
           <font-awesome-icon icon="fa-solid fa-chevron-down" />
         </div>
-        <!-- <div class="head-3">
+       <div class="head-3">
            <BaseButton :to="routes.route" :name="routes.name" /> 
-        </div> -->
+        </div> 
       </div>
     </div>
   </div>
@@ -139,6 +139,9 @@ export default {
     }
     .head-3 {
       padding-top: 10%;
+      position: absolute;
+      bottom: 5%;
+      right:5%;
     }
     @media screen and (max-width: 567px) {
  

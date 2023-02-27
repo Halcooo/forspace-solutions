@@ -7,9 +7,20 @@
     </div>
   </div>
   <div class="about-flex-grid">
+    <div class="flex-second">
+      <router-link v-for="card in grid_2" :to="card.src">
+        <div :class="card.class">
+          <div>
+            <h2>{{ $t(card.h1) }}</h2>
+            <h4>{{ $t(card.h4) }}</h4>
+            <p class="mobile">{{ $t(card.p) }}</p>
+          </div>
+        </div>
+      </router-link>
+    </div>
     <div class="flex-first">
       <div class="div-1">
-        <h2>{{ $t("about_us_news_heading") }}</h2>
+        <h2 class="news-title">{{ $t("about_us_news_heading") }}</h2>
       </div>
 
       <div v-for="(card, index) in grid_1">
@@ -27,17 +38,6 @@
           </div>
         </router-link>
       </div>
-    </div>
-    <div class="flex-second">
-      <router-link v-for="card in grid_2" :to="card.src">
-        <div :class="card.class">
-          <div>
-            <h2>{{ $t(card.h1) }}</h2>
-            <h4>{{ $t(card.h4) }}</h4>
-            <p class="mobile">{{ $t(card.p) }}</p>
-          </div>
-        </div>
-      </router-link>
     </div>
   </div>
 </template>
@@ -97,10 +97,13 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../../styles/variables.scss";
+.news-title {
+  color: gray;
+}
 
 .about-nav {
   width: 100%;
-  height: 50vh;
+  height: 20vh;
   background: linear-gradient(
       to right,
       rgba(8, 40, 67, 0.6),
@@ -114,10 +117,6 @@ export default {
   p {
     color: white;
   }
-  h2 {
-    color: white;
-  }
-
   .circle {
     width: 300px;
     height: 300px;
@@ -138,11 +137,10 @@ export default {
   }
 }
 .about-flex-grid {
-  width: 70%;
+  width: 93%;
   margin: auto;
-  height: 56vh;
   display: flex;
-  // gap: 10px;
+  min-height: 56vh;
   margin-top: 2%;
   margin-bottom: 5%;
   border-radius: 5px;
@@ -150,8 +148,6 @@ export default {
   .flex-first {
     width: 45%;
     height: 100%;
-    // background: rgb(188, 66, 66);
-    // padding: 10px;
     .div-1,
     .div-2,
     .div-3,
@@ -193,7 +189,6 @@ export default {
     width: 60%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    // gap: 10px;
     .card-1,
     .card-2,
     .card-3,
@@ -273,6 +268,11 @@ export default {
         url("@/assets/images/forspace_info_2.jpg") no-repeat center center/cover;
     }
   }
+  @media screen and (max-width: 1050px) {
+    .about-flex-grid {
+      flex-direction: column;
+    }
+  }
   @media screen and (max-width: 567px) {
     flex-direction: column;
     width: 100%;
@@ -318,4 +318,12 @@ export default {
     }
   }
 }
+// @media screen and (max-width: 1050px) {
+//   .about-flex-grid {
+//     flex-direction: column;
+//   }
+//   .flex-second {
+//     width: 93%;
+//   }
+// }
 </style>

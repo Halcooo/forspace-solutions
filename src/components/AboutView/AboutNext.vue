@@ -22,7 +22,7 @@
           <div class="read-more d-inline-flex justify-content-center">
             <router-link
               :to="next.src"
-              class="border pt-2 ps-5 px-5 pb-2 text-light mt-5"
+              class="border pt-2 ps-5 px-5 pb-2 text-light mt-5 read-more"
               >{{ $t(next.read_more) }}</router-link
             >
           </div>
@@ -60,6 +60,7 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+
 .the_next {
   width: 100%;
 

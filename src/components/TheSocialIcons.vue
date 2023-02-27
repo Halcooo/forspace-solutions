@@ -1,6 +1,6 @@
 @author Halid Lihovac
-<template >
-  <div class="social-icons d-flex justify-center">
+<template>
+  <div class="social-icons justify-center">
     <a
       href="https://www.facebook.com/Forspace-Solutions-104570971684748"
       target="blank"
@@ -31,6 +31,9 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "../styles/variables.scss";
+.social-icons {
+  display: flex;
+}
 a {
   text-decoration: none;
   margin: 0;

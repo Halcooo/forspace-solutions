@@ -32,7 +32,9 @@
               {{ $t(div.p) }}
             </p>
             <div class="flex">
-              <router-link class="read-more" :to="div.to">Read More</router-link>
+              <router-link class="read-more" :to="div.to"
+                >Read More</router-link
+              >
             </div>
           </div>
         </div>
@@ -312,8 +314,6 @@ export default {
       .first {
         height: 100%;
         padding: 15px;
-        p {
-        }
       }
     }
   }

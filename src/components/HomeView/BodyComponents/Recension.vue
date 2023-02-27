@@ -1,14 +1,14 @@
 <template>
   <div class="testimonial">
     <div class="testimonial-top">
-      <div class="testimonial-top-item-one">
-      </div>
+      <div class="testimonial-top-item-one"></div>
     </div>
     <div class="testimonial-bottom">
       <div class="bottom-flex">
         <div>
           <h2 class="text-light">
-            {{ $t("recension_question") }} <br> {{ $t("recension_contact") }}
+            {{ $t("recension_question") }} <br />
+            {{ $t("recension_contact") }}
           </h2>
         </div>
         <BaseButton :to="routes_1.route_1" :name="routes_1.name_1" />
@@ -34,20 +34,24 @@ export default {
 </script>
 <style lang="scss" scoped>
 .testimonial-top-item-two {
-  width: 100%;
-  padding-left: 5%;
-  text-align: left;
+  margin: auto;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.text-light {
+  margin-bottom: 25px;
+}
 .testimonial-bottom {
   width: 100%;
   height: 60vh;
   margin-bottom: 5%;
   background: linear-gradient(
       to right,
-      rgb(0, 0, 0, 0.7),
-      rgb(0, 0, 0, 0.7),
-      rgb(0, 0, 0, 0.7)
+      rgb(0, 0, 0, 0.6),
+      rgb(0, 0, 0, 0.5),
+      rgb(0, 0, 0, 0.4)
     ),
     url("@/assets/images/dms-header.jpg") no-repeat center center/cover;
   display: flex;
