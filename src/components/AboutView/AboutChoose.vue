@@ -3,7 +3,7 @@
     <div class="choose-flex">
       <div class="choose-text">
         <small>{{ $t("about_us_choose_small_heading") }}</small>
-        <h1 class="text-dark">{{ $t("about_us_choose_heading") }}</h1>
+        <h2 class="text-dark">{{ $t("about_us_choose_heading") }}</h2>
         <p>{{ $t("about_us_aditional") }}</p>
         <p class="line"></p>
         <p>

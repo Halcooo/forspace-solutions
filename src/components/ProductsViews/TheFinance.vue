@@ -2,7 +2,7 @@
   <div class="container purchase">
     <div class="purchase d-flex justify-content-center orange-text-main">
       <div class="">
-        <h1 class="text-secondary">{{ $t("products_finance_heading_one") }}</h1>
+        <h2 class="text-secondary">{{ $t("products_finance_heading_one") }}</h2>
         <h4>{{ $t("products_finance_heading_two") }}</h4>
         <p>
           {{ $t("products_finance_text_one") }}
@@ -23,9 +23,9 @@
       class="workflow-cover d-flex justify-content-center align-items-center gap-5 p-5 mt-5 mb-5"
     >
       <div class="workflow text-light w-100">
-        <h1 class="text-light">
+        <h2 class="text-light">
           {{ $t("products_finance_workflow_text_1") }}
-        </h1>
+        </h2>
         <p>{{ $t("products_finance_workflow_text_2") }}</p>
       </div>
       <div class="w-100">
@@ -40,7 +40,7 @@
 
     <div class="fixed-assets text-center">
       <div class="fixed-assets-header orange-text-main">
-        <h1>{{ $t("products_finance_assets_text_1") }}</h1>
+        <h2>{{ $t("products_finance_assets_text_1") }}</h2>
         <p>{{ $t("products_finance_assets_text_2") }}</p>
       </div>
     </div>
@@ -106,7 +106,7 @@ export default {
   height: 100%;
 }
 
-h1 {
+h2 {
   color: white;
 }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div>
-      <h1>{{ $t("about_us_next_overlay_left_heading") }}</h1>
+      <h2>{{ $t("about_us_next_overlay_left_heading") }}</h2>
     </div>
   </div>
   <div class="content-news">

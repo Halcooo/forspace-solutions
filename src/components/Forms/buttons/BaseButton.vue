@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="to" :class="name">
+  <router-link :to="to" class="read-more">
     {{ $t(name) }}
   </router-link>
 </template>
@@ -12,37 +12,43 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-a {
-  display: inline-block;
-  border: 2px solid rgba(8, 40, 67, 0.6);
-  color: rgba(8, 40, 67, 0.6);
-  background: transparent;
-  padding: 20px 40px;
-
-  transition: 0.3s ease-out;
-  &:hover {
-    background: white;
-    color: rgb(0, 119, 128);
-    border: 2px solid rgb(0, 119, 128);
-  }
+.read-more {
+  position: relative;
+  transition: all 0.5s;
+  padding: 12px 40px;
+  color: white;
+  border: 1px solid white;
 }
-
-.faq,
-.faq-2 {
-  color: #333;
-  background: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  border: none;
-  height: 62px;
-  margin-bottom: 1%;
-  transition: 0.3s ease-out;
-  &:hover {
-    background: rgba(8, 40, 67, 0.8);
-    border: none;
-    color: white;
-  }
+.read-more::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+.read-more:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+.read-more::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+.read-more:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
 }
 </style>

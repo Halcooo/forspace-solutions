@@ -38,7 +38,8 @@ export default {
   background-color: blue !important;
 }
 .carousel__item {
-  min-height: 200px;
+  max-height: 200px;
+  min-height: 100px;
   width: 100%;
   color: white;
   font-size: 20px;
@@ -54,10 +55,18 @@ export default {
   }
 }
 
+
+@media only screen and (max-width: 1000px) {
+  .carousel__item {
+    img {
+      width: 80px;
+    }
+  }
+}
 @media only screen and (max-width: 600px) {
   .carousel__item {
     img {
-      max-width: 100px;
+      width: 70px;
     }
   }
 }

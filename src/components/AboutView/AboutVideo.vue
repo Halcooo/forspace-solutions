@@ -7,7 +7,7 @@
     </div>
     <div class="frame-text">
       <div>
-        <h1>{{ $t("about_us_video_heading") }}</h1>
+        <h2>{{ $t("about_us_video_heading") }}</h2>
         <p>
           {{ $t("about_us_video_paragraph") }}
         </p>
@@ -107,9 +107,8 @@ export default {
       width: 50%;
       margin-right: 5%;
       color: white;
-      h1 {
+      h2 {
         color: white;
-        font-size: 50px;
       }
       p {
         width: 85%;

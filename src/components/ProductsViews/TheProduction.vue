@@ -1,7 +1,7 @@
 <template lang="">
   <div class="purchase">
     <div class="purchase-img">
-      <h1>{{ $t("products_production_header_one") }}</h1>
+      <h2>{{ $t("products_production_header_one") }}</h2>
       <h3>{{ $t("products_production_header_two") }}</h3>
       <p class="">{{ $t("products_production_text") }}</p>
     </div>
@@ -31,8 +31,7 @@ export default {
       ),
       url("@/assets/images/purchase.jpg") no-repeat center center/cover;
 
-    h1 {
-      font-size: 60px;
+    h2 {
 
       margin-bottom: 2%;
     }

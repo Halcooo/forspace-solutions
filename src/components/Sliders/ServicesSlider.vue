@@ -63,8 +63,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-h1 {
-  font-size: 60px;
+h2 {
   color: white;
   margin-bottom: 5%;
 }

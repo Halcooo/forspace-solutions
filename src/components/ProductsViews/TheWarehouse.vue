@@ -1,6 +1,6 @@
 <template lang="">
   <div class="container purchase">
-    <h1 class="text-secondary">{{ $t("products_warehouse_heading") }}</h1>
+    <h2 class="text-secondary">{{ $t("products_warehouse_heading") }}</h2>
     <h4>{{ $t("products_warehouse_heading_two") }}</h4>
     <p>
       {{ $t("products_warehouse_text_one") }}
@@ -35,7 +35,7 @@ export default {
 };
 </script>
 <style lang="scss" scooped>
-h1 {
+h2 {
   color: white;
 }
 </style>

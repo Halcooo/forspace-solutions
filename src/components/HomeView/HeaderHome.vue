@@ -161,9 +161,8 @@ export default {
         text-align: center;
         padding-top: 2%;
       }
-      h1 {
-        font-size: 50px;
-      }
+      h2 {
+        font-size: 50px;      }
       .background {
         display: none;
       }

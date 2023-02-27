@@ -26,14 +26,19 @@ export default {
         { id: 5, url: require("@/assets/images/dresscode-logo.png") },
         { id: 6, url: require("@/assets/images/tkt-logo.png") },
         { id: 7, url: require("@/assets/images/Savent.png") },
-        // { id: 9, url: require("@/assets/images/Maxuz.png") },
-        // { id: 10, url: require("@/assets/images/Itrade.png") },
-        // { id: 11, url: require("@/assets/images/Gradiz.jpg") },
-        // { id: 12, url: require("@/assets/images/Putovaobih.png") },
-        // { id: 13, url: require("@/assets/images/ApDigital.jpg") },
+        { id: 9, url: require("@/assets/images/Maxuz.png") },
+        { id: 10, url: require("@/assets/images/Itrade.png") },
+        { id: 11, url: require("@/assets/images/Gradiz.jpg") },
+        { id: 13, url: require("@/assets/images/ApDigital.jpg") },
       ],
     };
   },
 };
 </script>
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@media only screen and (max-width: 700px) {
+  .container {
+    width: 100% !important;
+  }
+}
+</style>

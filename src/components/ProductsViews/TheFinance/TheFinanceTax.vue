@@ -10,7 +10,7 @@
       />
     </div>
     <div class="col-6">
-      <h1 class="segeo-bold text-secondary"><b>PDV</b></h1>
+      <h2 class="segeo-bold text-secondary"><b>PDV</b></h2>
       <h4><b>Automatska</b> obrada i knjiženje</h4>
       <div class="col-12">
         <div class="d-flex" v-for="p in pdv">

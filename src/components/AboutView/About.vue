@@ -2,14 +2,14 @@
   <div class="about-nav d-flex justify-content-center align-items-center">
     <div class="about-heading text-center">
       <div>
-        <h1 class="text-light">{{ $t("about_us_heading") }}</h1>
+        <h2 class="text-light">{{ $t("about_us_heading") }}</h2>
       </div>
     </div>
   </div>
   <div class="about-flex-grid">
     <div class="flex-first">
       <div class="div-1">
-        <h1>{{ $t("about_us_news_heading") }}</h1>
+        <h2>{{ $t("about_us_news_heading") }}</h2>
       </div>
 
       <div v-for="(card, index) in grid_1">
@@ -32,7 +32,7 @@
       <router-link v-for="card in grid_2" :to="card.src">
         <div :class="card.class">
           <div>
-            <h1>{{ $t(card.h1) }}</h1>
+            <h2>{{ $t(card.h1) }}</h2>
             <h4>{{ $t(card.h4) }}</h4>
             <p class="mobile">{{ $t(card.p) }}</p>
           </div>
@@ -114,8 +114,7 @@ export default {
   p {
     color: white;
   }
-  h1 {
-    font-size: 70px;
+  h2 {
     color: white;
   }
 
@@ -217,12 +216,12 @@ export default {
       div {
         position: absolute;
         transition: 1s;
-        h1 {
+        h2 {
           font-size: 30px;
         }
         top: 83.5%;
 
-        h1 {
+        h2 {
           font-size: 30px;
         }
         top: 83.5%;
@@ -303,7 +302,7 @@ export default {
         div {
           width: 100%;
           top: 75%;
-          h1 {
+          h2 {
             width: 100%;
             font-size: 25px;
             margin-bottom: 10%;

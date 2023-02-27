@@ -1,7 +1,7 @@
 <template>
   <div class="the_next">
     <div class="the_next_heading">
-      <h1 class="text-secondary mb-4">{{ $t("about_us_next_heading") }}</h1>
+      <h2 class="text-secondary mb-4">{{ $t("about_us_next_heading") }}</h2>
       <Line />
       <h3 class="text-secondary mt-2">
         {{ $t("about_us_next_additional_paragraph") }}

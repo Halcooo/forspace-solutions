@@ -4,7 +4,7 @@
       <div class="paydesk">
         <div class="paydesk white-text-main">
           <div class="paydesk-header text-center">
-            <h1>{{ $t("products_paydesk_header_1") }}</h1>
+            <h2>{{ $t("products_paydesk_header_1") }}</h2>
             <h4>{{ $t("products_paydesk_header_2") }}</h4>
 
             <p>
@@ -18,7 +18,7 @@
                 v-for="pay in paydesk_1"
                 :key="pay"
               >
-                <h1 class="text-secondary">{{ pay.num }}</h1>
+                <HowErp_p2 class="text-secondary">{{ pay.num }}</HowErp_p2>
                 <p class="segeo-semi-bold">
                   {{ $t(pay.text) }}
                 </p>
@@ -30,7 +30,7 @@
                 v-for="pay in paydesk_2"
                 :key="pay"
               >
-                <h1 class="text-secondary">{{ pay.num }}</h1>
+                <h2 class="text-secondary">{{ pay.num }}</h2>
                 <p class="segeo-semi-bold">
                   {{ $t(pay.text) }}
                 </p>

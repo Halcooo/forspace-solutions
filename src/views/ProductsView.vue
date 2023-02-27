@@ -44,8 +44,7 @@ export default {};
   justify-content: center;
   align-items: center;
   text-align: center;
-  h1 {
-    font-size: 70px;
+  h2 {
     color: white;
   }
 }

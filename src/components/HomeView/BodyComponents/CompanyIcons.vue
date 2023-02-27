@@ -73,9 +73,8 @@ export default {
       padding-right: 7%;
       align-items: center;
       text-align: right;
-      h1 {
+      h2 {
         color: white;
-        font-size: 45px;
       }
     }
     .square-2 {
@@ -89,7 +88,7 @@ export default {
     }
   }
   .container {
-    h1 {
+    h2 {
       color: gray;
     }
     p {

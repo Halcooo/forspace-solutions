@@ -1,11 +1,11 @@
 <template>
   <div class="appointment">
     <div>
-      <h1>{{ $t("appointment_schedule") }}</h1>
+      <h2>{{ $t("appointment_schedule") }}</h2>
     </div>
   </div>
   <div class="appointment-content">
-    <h1>{{ $t("appointment_heading") }}</h1>
+    <h2>{{ $t("appointment_heading") }}</h2>
     <p class="mt-5 mb-5">{{ $t("appointment_text") }}</p>
     <BaseButton :to="routes.route" :name="routes.name" />
   </div>
@@ -40,9 +40,6 @@ export default {
     margin: auto;
     padding-left: 2%;
   }
-  h1 {
-    font-size: 70px;
-  }
   p {
     color: white;
   }
@@ -54,7 +51,7 @@ export default {
   margin: 1% auto;
   padding: 2%;
 
-  h1 {
+  h2 {
     color: rgba(8, 40, 67, 0.6);
   }
 }

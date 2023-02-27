@@ -6,7 +6,7 @@
     </div>
     <div class="text">
       <small class="">{{ $t("widget_heading") }}</small>
-      <h1 class="mb-5 text-secondary">{{ $t("widget_company") }}</h1>
+      <h2 class="mb-5 text-secondary">{{ $t("widget_company") }}</h2>
       <p class="mb-5 text-secondary">
         {{ $t("widget_text") }}
       </p>
@@ -111,9 +111,7 @@ export default {
       color: rgb(55, 165, 255);
       margin-bottom: 4%;
     }
-    h1 {
-      font-size: 50px;
-      letter-spacing: 0.1rem;
+    h2 {
       color: rgb(37, 37, 37);
     }
     p {

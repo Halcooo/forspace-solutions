@@ -2,7 +2,7 @@
   <div class="purchase">
     <!-- <img src="@/assets/images/nabava_animacija.gif" alt="" /> -->
     <div class="purchase-img">
-      <h1 class="text-light">{{ $t("products_purchase_header") }}</h1>
+      <h2 class="text-light">{{ $t("products_purchase_header") }}</h2>
       <p class="text-light">
         {{ $t("products_purchase_text") }}
       </p>
@@ -31,7 +31,7 @@ export default {
       ),
       url("@/assets/images/purchase.jpg") no-repeat center center/cover;
 
-    h1 {
+    h2 {
       font-size: 60px;
       color: white;
       margin-bottom: 4%;

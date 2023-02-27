@@ -61,21 +61,6 @@
                 +387 33 774 873
               </p>
             </div>
-
-            <div class="col-md-3 mx-auto mb-md-0 mb-4 uppercase text-center">
-              <h6 class="text-uppercase fw-bold text-light mb-4">Prevedi</h6>
-
-              <div class="">
-                <p
-                  class="cursor-pointer"
-                  v-for="lang in languages"
-                  :key="lang"
-                  @click="translatePage(lang)"
-                >
-                  {{ lang.language }}
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>

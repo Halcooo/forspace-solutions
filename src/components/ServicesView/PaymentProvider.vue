@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div>
-      <h1>{{ $t("about_us_news_link_one") }}</h1>
+      <h2>{{ $t("about_us_news_link_one") }}</h2>
     </div>
   </div>
   <div class="content"></div>
@@ -25,9 +25,7 @@ export default {
     margin: auto;
     padding-top: 7%;
   }
-  h1 {
-    font-size: 60px;
-  }
+
 }
 .content {
   min-height: 50vh;

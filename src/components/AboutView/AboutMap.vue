@@ -3,7 +3,7 @@
     <div class="about_map">
       <div class="inner">
         <div style="position: relative; z-index: 1">
-          <h1>Pronadjite nas na karti</h1>
+          <h2>Pronadjite nas na karti</h2>
         </div>
         <button type="button" class="button" @click="showMap()">
           Google Maps
@@ -53,9 +53,8 @@ export default {
     justify-content: space-between;
     align-items: center;
   }
-  h1 {
+  h2 {
     color: white;
-    font-size: 50px;
   }
   .under {
     width: 100%;
@@ -80,7 +79,7 @@ export default {
   }
   @media screen and (max-width: 567px) {
     .inner {
-      h1 {
+      h2 {
         font-size: 40px;
       }
       width: 90%;
