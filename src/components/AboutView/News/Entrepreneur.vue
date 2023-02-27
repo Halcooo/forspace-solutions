@@ -5,7 +5,6 @@
     </div>
   </div>
   <div class="content-news">
-
     <div v-for="(c, index) in content" :key="c">
       <div v-if="index == 5">
         <p>
@@ -22,7 +21,7 @@
     <div class="mt-5 mb-5 ps-2">
       <router-link to="/about">
         <font-awesome-icon icon="fa-solid fa-chevron-left" />
-        <span> {{ $t('back') }}</span>
+        <span> {{ $t("back") }}</span>
       </router-link>
     </div>
   </div>

@@ -1,6 +1,11 @@
 <template>
   <div class="choose">
     <div class="choose-flex">
+      <div class="choose-widget-frame">
+        <div class="widget-frame"></div>
+        <div class="widget-photo"></div>
+        <div class="widget-video"></div>
+      </div>
       <div class="choose-text">
         <small>{{ $t("about_us_choose_small_heading") }}</small>
         <h2 class="text-dark">{{ $t("about_us_choose_heading") }}</h2>
@@ -11,17 +16,12 @@
         </p>
         <div class="checkmarks">
           <div v-for="check in checkmarks" class="checkmark-tab">
-            <p>{{ $t(check.p) }}</p>
             <p>
               <font-awesome-icon icon="fa-solid fa-check" />
             </p>
+            <p>{{ $t(check.p) }}</p>
           </div>
         </div>
-      </div>
-      <div class="choose-widget-frame">
-        <div class="widget-frame"></div>
-        <div class="widget-photo"></div>
-        <div class="widget-video"></div>
       </div>
     </div>
   </div>
@@ -57,7 +57,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 93%;
     margin: auto;
     height: 100%;
     gap: 5px;
@@ -66,7 +66,7 @@ export default {
       width: 70%;
       height: 100%;
       // border: 1px solid black;
-      text-align: right;
+      text-align: left;
       padding-top: 5%;
       padding-right: 15px;
 
@@ -75,7 +75,7 @@ export default {
         height: 2px;
         background-color: cornflowerblue;
         display: inline-flex;
-        justify-content: right;
+        justify-content: left;
       }
     }
     .choose-widget-frame {
@@ -134,7 +134,6 @@ export default {
       .checkmark-tab {
         display: flex;
         gap: 10px;
-        justify-content: right;
         align-items: center;
         svg {
           color: white;

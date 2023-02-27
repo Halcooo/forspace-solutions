@@ -20,11 +20,12 @@
             {{ $t(next.p) }}
           </p>
           <div class="read-more d-inline-flex justify-content-center">
-            <router-link
+            <BaseButton class="button-read" :to="next.src" :name="$t(next.read_more)"/>
+            <!-- <router-link
               :to="next.src"
               class="border pt-2 ps-5 px-5 pb-2 text-light mt-5 read-more"
               >{{ $t(next.read_more) }}</router-link
-            >
+            > -->
           </div>
         </div>
       </div>
@@ -33,9 +34,10 @@
 </template>
 <script>
 import Line from "@/particles/Line.vue";
+import BaseButton from "../Forms/buttons/BaseButton.vue";
 export default {
   name: "AboutUsNext",
-  components: { Line },
+  components: { Line, BaseButton },
   data() {
     return {
       for_next: [
@@ -60,6 +62,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.button-read{
+  position: absolute;
+  bottom:3%
+}
 
 .the_next {
   width: 100%;

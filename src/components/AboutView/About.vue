@@ -189,6 +189,7 @@ export default {
     width: 60%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
     .card-1,
     .card-2,
     .card-3,
@@ -318,12 +319,18 @@ export default {
     }
   }
 }
-// @media screen and (max-width: 1050px) {
-//   .about-flex-grid {
-//     flex-direction: column;
-//   }
-//   .flex-second {
-//     width: 93%;
-//   }
-// }
+@media screen and (max-width: 1000px) {
+  .about-flex-grid {
+    flex-direction: column;
+  }
+  .flex-second {
+    min-height: 56vh;
+    width: 100% !important;
+    margin-bottom: 2%;
+  }
+  .flex-first {
+    min-height: 56vh;
+    width: 100% !important;
+  }
+}
 </style>
