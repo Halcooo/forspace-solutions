@@ -145,14 +145,14 @@ export default {
       }
     }
   }
-  @media screen and (max-width: 567px) {
+  @media screen and (max-width: 800px) {
     height: 100%;
     padding: 10px;
 
     .choose-flex {
       width: 100%;
       flex-direction: column;
-      gap: 100px;
+      gap: 15px;
       .choose-widget-frame {
         width: 100%;
         height: 50vh;
@@ -164,8 +164,6 @@ export default {
           position: absolute;
           width: 52%;
           height: 400px;
-          border: 23px solid rgb(55, 165, 255);
-          // border: 23px solid rgb(255, 97, 0);
           top: 0;
           right: 5%;
         }

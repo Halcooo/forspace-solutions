@@ -329,7 +329,6 @@ export default {
     margin-bottom: 2%;
   }
   .flex-first {
-    min-height: 56vh;
     width: 100% !important;
   }
 }

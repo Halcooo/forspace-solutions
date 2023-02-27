@@ -1,6 +1,6 @@
 @author Halid Lihovac
 <template>
-  <div class="social-icons justify-center">
+  <div class="social-icons justify-content-center">
     <a
       href="https://www.facebook.com/Forspace-Solutions-104570971684748"
       target="blank"

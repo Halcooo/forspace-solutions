@@ -105,7 +105,7 @@ export default {
     align-items: center;
     div {
       width: 50%;
-      margin-right: 5%;
+      margin-right: 25%;
       color: white;
       h2 {
         color: white;
