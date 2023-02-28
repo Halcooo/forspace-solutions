@@ -23,7 +23,7 @@
         <h2 class="news-title">{{ $t("about_us_news_heading") }}</h2>
       </div>
       <div v-for="(card, index) in grid_1">
-        <router-link  :to="card.src">
+        <router-link :to="card.src">
           <div class="div-3">
             <p>{{ $t(card.p) }}</p>
           </div>
@@ -90,7 +90,7 @@ export default {
 .about-nav {
   width: 100%;
   height: 20vh;
-  background:linear-gradient(19deg,#00063adb  0%,  #0fbce763 100%),
+  background: linear-gradient(19deg, #00063adb 0%, #0fbce763 100%),
     url("@/assets/images/purchase-cover-image.png") no-repeat center
       center/cover;
 

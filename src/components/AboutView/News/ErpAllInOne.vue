@@ -40,6 +40,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.title{
-  color:black;
-}</style>
+.title {
+  color: black;
+}
+h2 {
+  color: white;
+}
+</style>

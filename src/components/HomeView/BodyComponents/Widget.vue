@@ -64,7 +64,7 @@ export default {
       position: absolute;
       width: 52%;
       height: 100%;
-      border: 23px solid rgba(8, 40, 67, 0.8);
+      border: 23px solid rgba(8, 40, 67, 0.87);
       // border: 23px solid rgb(255, 97, 0);
       top: 0;
       left: 7%;

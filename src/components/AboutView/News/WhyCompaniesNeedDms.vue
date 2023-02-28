@@ -60,4 +60,7 @@ export default {
   text-align: center;
   font-weight: 600;
 }
+h2{
+  color:white;
+}
 </style>

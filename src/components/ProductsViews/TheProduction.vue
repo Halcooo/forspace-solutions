@@ -1,9 +1,9 @@
 <template lang="">
-  <div class="purchase">
-    <div class="purchase-img">
-      <h2>{{ $t("products_production_header_one") }}</h2>
-      <h3>{{ $t("products_production_header_two") }}</h3>
-      <p class="">{{ $t("products_production_text") }}</p>
+  <div class="container">
+    <div class="purchase-img mb-4">
+      <h2 class="mb-4">{{ $t("products_production_header_one") }}</h2>
+      <h3 class="mb-4">{{ $t("products_production_header_two") }}</h3>
+      <p class="spacing">{{ $t("products_production_text") }}</p>
     </div>
   </div>
 </template>
@@ -13,38 +13,10 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-.purchase {
-  width: 70%;
-  margin: auto;
-  .purchase-img {
-    width: 100%;
-    height: 500px;
-    margin-bottom: 4%;
-    padding: 20px;
-    color: white;
-
-    background: linear-gradient(
-        to right,
-        rgba(123, 39, 39, 0.6),
-        rgba(123, 39, 39, 0.6),
-        rgba(123, 39, 39, 0.6)
-      ),
-      url("@/assets/images/purchase.jpg") no-repeat center center/cover;
-
-    h2 {
-
-      margin-bottom: 2%;
-    }
-    h3 {
-      font-size: 35px;
-      margin-bottom: 4%;
-    }
-    p {
-      font-size: 20px;
-    }
-    @media screen and (max-width: 567px) {
-      height: 100%;
-    }
-  }
-}
+ h2{
+  color: #25435b;
+ }
+ .spacing{
+  margin-bottom:200px;
+ }
 </style>

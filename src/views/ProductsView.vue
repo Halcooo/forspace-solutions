@@ -31,9 +31,9 @@ export default {};
 .wrapper {
   background: linear-gradient(
       to right,
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6)
+      rgba(2, 21, 37, 0.8),
+      rgba(8, 40, 67, 0.776),
+      rgba(50, 138, 210, 0.6)
     ),
     url("@/assets/images/product_item_2.jpg") no-repeat center center/cover;
   color: white;
@@ -51,25 +51,29 @@ export default {};
   background-color: rgb(247, 247, 247);
   height: 80px;
   margin-bottom: 5%;
+  background: linear-gradient(
+      to right,
+      rgb(2, 21, 37),
+      rgba(8, 40, 67, 0.776),
+      rgba(50, 138, 210, 0.806)
+    );
 }
 .items {
-  width: 70%;
+  width: 90%;
   height: 100%;
   margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  gap: 10px;
   padding: 0px 40px;
   border-radius: 5px;
   a {
-    padding: 20px 45px;
-
-    color: gray;
+    padding: 10px 15px;
+    color:white;
   }
 
   .router-link-active {
-    background-color: rgb(172, 172, 172);
+    background-color: rgba(191, 189, 189, 0.666);
     color: white;
   }
 }
@@ -84,7 +88,6 @@ export default {};
     padding: 10px;
     a {
       text-align: center;
-      border-radius: 50px;
       padding: 10px;
     }
   }

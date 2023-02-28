@@ -1,8 +1,7 @@
 <template lang="">
   <div class="container purchase">
     <div class="col-12">
-      <h2 class="text-secondary">{{ $t("products_hr_heading") }}</h2>
-
+      <h2>{{ $t("products_hr_heading") }}</h2>
       <p>
         {{ $t("products_hr_text") }}
       </p>
@@ -71,7 +70,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-h2 {
-  color: white;
-}
+ h2{
+  color: #25435b;
+ }
 </style>

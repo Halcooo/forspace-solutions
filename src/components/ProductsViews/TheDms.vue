@@ -1,6 +1,6 @@
 <template lang="">
   <div class="container purchase">
-    <h2 class="text-secondary">{{ $t("products_dms_heading_one") }}</h2>
+    <h2>{{ $t("products_dms_heading_one") }}</h2>
     <h3>{{ $t("products_dms_heading_two") }}</h3>
     <p>
       {{ $t("products_dms_text_one") }}

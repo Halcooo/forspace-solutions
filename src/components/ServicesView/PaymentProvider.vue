@@ -25,9 +25,11 @@ export default {
     margin: auto;
     padding-top: 7%;
   }
-
 }
 .content {
   min-height: 50vh;
+}
+h2 {
+  color:white;
 }
 </style>

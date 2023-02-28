@@ -1,6 +1,6 @@
 <template lang="">
   <div class="container purchase">
-    <h2 class="text-secondary">{{ $t("products_warehouse_heading") }}</h2>
+    <h2>{{ $t("products_warehouse_heading") }}</h2>
     <h4>{{ $t("products_warehouse_heading_two") }}</h4>
     <p>
       {{ $t("products_warehouse_text_one") }}
@@ -34,8 +34,8 @@ export default {
   name: "TheWarehouse",
 };
 </script>
-<style lang="scss" scooped>
-h2 {
-  color: white;
-}
+<style lang="scss" scoped>
+ h2{
+  color: #25435b;
+ }
 </style>

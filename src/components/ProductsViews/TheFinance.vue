@@ -2,7 +2,7 @@
   <div class="container purchase">
     <div class="purchase d-flex justify-content-center orange-text-main">
       <div class="">
-        <h2 class="text-secondary">{{ $t("products_finance_heading_one") }}</h2>
+        <h2 >{{ $t("products_finance_heading_one") }}</h2>
         <h4>{{ $t("products_finance_heading_two") }}</h4>
         <p>
           {{ $t("products_finance_text_one") }}
@@ -93,7 +93,7 @@ export default {
   },
 };
 </script>
-<style lang="scss" scooped>
+<style lang="scss" scoped>
 @import "@/styles/variables.scss";
 .workflow-cover {
   width: 100%;
@@ -106,7 +106,7 @@ export default {
   height: 100%;
 }
 
-h2 {
-  color: white;
-}
+h2{
+  color: #25435b;
+ }
 </style>

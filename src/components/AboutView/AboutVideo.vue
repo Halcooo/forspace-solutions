@@ -56,7 +56,7 @@ export default {
 .video-frame {
   text-align: center;
   margin: auto;
-  width: 90%;
+  width: 100%;
   display: flex;
   align-items: center;
   height: 50vh;
@@ -79,7 +79,7 @@ export default {
     .play-button {
       width: 100%;
       height: 100%;
-      color: rgb(37, 98, 117);
+      color: rgba(8, 40, 67, 0.87);
       background-color: white;
       display: flex;
       justify-content: center;
@@ -99,7 +99,7 @@ export default {
   .frame-text {
     width: 36.5%;
     height: 100%;
-    background-color: rgb(37, 98, 117);
+    background-color:rgba(8, 40, 67, 0.87);
     display: flex;
     justify-content: right;
     align-items: center;
