@@ -21,11 +21,6 @@
           </p>
           <div class="read-more d-inline-flex justify-content-center">
             <BaseButton class="button-read" :to="next.src" :name="$t(next.read_more)"/>
-            <!-- <router-link
-              :to="next.src"
-              class="border pt-2 ps-5 px-5 pb-2 text-light mt-5 read-more"
-              >{{ $t(next.read_more) }}</router-link
-            > -->
           </div>
         </div>
       </div>

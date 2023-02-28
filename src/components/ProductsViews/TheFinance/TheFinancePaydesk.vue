@@ -6,7 +6,6 @@
           <div class="paydesk-header text-center">
             <h2>{{ $t("products_paydesk_header_1") }}</h2>
             <h4>{{ $t("products_paydesk_header_2") }}</h4>
-
             <p>
               {{ $t("products_paydesk_header_text") }}
             </p>
@@ -18,7 +17,7 @@
                 v-for="pay in paydesk_1"
                 :key="pay"
               >
-                <HowErp_p2 class="text-secondary">{{ pay.num }}</HowErp_p2>
+                <h2 class="text-secondary me-2">{{ pay.num }}</h2>
                 <p class="segeo-semi-bold">
                   {{ $t(pay.text) }}
                 </p>
@@ -30,7 +29,7 @@
                 v-for="pay in paydesk_2"
                 :key="pay"
               >
-                <h2 class="text-secondary">{{ pay.num }}</h2>
+                <h2 class="text-secondary me-2">{{ pay.num }}</h2>
                 <p class="segeo-semi-bold">
                   {{ $t(pay.text) }}
                 </p>
@@ -78,7 +77,6 @@ export default {
 </script>
 <style lang="scss" scoped>
 .paydesk-items {
-  
   @media screen and (max-width: 567px) {
     flex-direction: column;
     justify-content: center;

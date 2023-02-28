@@ -156,14 +156,14 @@ h1 {
 }
 .header {
   background-color: #21d4fd;
-  background: linear-gradient(19deg, #21d5fdb0 0%, #2137ff9d 100%),
-    url("@/assets/images/image-1.png") no-repeat center center/cover;
-  height: 50vh;
+  background: linear-gradient(19deg, #00677eb0 0%, #0319e3a9 100%),
+      url("@/assets/images/image-1.png") no-repeat center center/cover;
+  height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 567px) {
-    background: linear-gradient(19deg, #21d5fdb0 0%, #2137ff9d 100%),
+    background: linear-gradient(19deg, #00677eb0 0%, #031ae372 100%),
       url("@/assets/images/image-1.png") no-repeat center center/cover;
   }
   div {

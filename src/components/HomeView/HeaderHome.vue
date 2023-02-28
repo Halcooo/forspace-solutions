@@ -9,14 +9,16 @@
           </h3>
         </div>
         <div class="head-2">
-          <p class="text-warning">Forspace Solutions</p>
+          <p class="company-title">Forspace Solutions</p>
+          <span></span>
+          <img class="mb-3 small-logo" src="@/assets/svg/logo-short.svg" alt="logo-shoer">
           <small>
             {{ $t("header_secondary_text") }}
           </small>
         </div>
         <div
           class="d-inline-flex justify-content-center align-items-center down-button"
-          @click="scrollDown()"
+          @click="scrollDown"
         >
           <font-awesome-icon icon="fa-solid fa-chevron-down" />
         </div>
@@ -52,6 +54,21 @@ export default {
 </script>
 <style lang="scss" scoped>
 @import "@/styles/variables.scss";
+.small-logo{
+  width: 60px;
+}
+.rotate {
+  animation: rotation 13s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
 .header-text{
   margin-top:10vh;
 }
@@ -62,6 +79,9 @@ export default {
   to {
     opacity: 1;
   }
+}
+.company-title{
+  color:orange;
 }
 .down-button {
   z-index: 5;
@@ -92,10 +112,10 @@ export default {
     text-align: left;
   }
   background: linear-gradient(
-      to right,
+      to left,
       rgba(8, 40, 67, 0.416),
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6)
+      rgba(27, 85, 133, 0.668),
+      rgba(0, 53, 97, 0.467)
     ),
     url("@/assets/images/office.jpg") no-repeat center center/cover;
 

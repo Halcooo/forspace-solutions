@@ -36,11 +36,9 @@ export default {};
       rgba(8, 40, 67, 0.6)
     ),
     url("@/assets/images/product_item_2.jpg") no-repeat center center/cover;
-  // background-color: rgb(182, 182, 169);
   color: white;
-  height: 50vh;
+  height: 20vh;
   display: flex;
-
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -48,12 +46,10 @@ export default {};
     color: white;
   }
 }
-
 .content {
   width: 100%;
   background-color: rgb(247, 247, 247);
   height: 80px;
-  // background-color: rgb(231, 231, 231);
   margin-bottom: 5%;
 }
 .items {
@@ -75,7 +71,6 @@ export default {};
   .router-link-active {
     background-color: rgb(172, 172, 172);
     color: white;
-    // border-radius: 50px;
   }
 }
 @media only screen and (max-width: 567px) {
@@ -89,9 +84,7 @@ export default {};
     padding: 10px;
     a {
       text-align: center;
-      // border-bottom: 1px solid #25435b;
       border-radius: 50px;
-      // background-color: rgb(238, 238, 238);
       padding: 10px;
     }
   }

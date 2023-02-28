@@ -85,7 +85,7 @@ h2 {
   cursor: grabbing !important;
 }
 .carousel__item {
-  height: 50vh;
+  max-height: 30vh;
   width: 100%;
   color: white;
   border-radius: 8px;

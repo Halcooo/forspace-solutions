@@ -2,7 +2,7 @@
   <div class="about-nav d-flex justify-content-center align-items-center">
     <div class="about-heading text-center">
       <div>
-        <h2 class="text-light">{{ $t("about_us_heading") }}</h2>
+        <h2 class="text-light mt-5">{{ $t("about_us_heading") }}</h2>
       </div>
     </div>
   </div>
@@ -22,18 +22,9 @@
       <div class="div-1">
         <h2 class="news-title">{{ $t("about_us_news_heading") }}</h2>
       </div>
-
       <div v-for="(card, index) in grid_1">
-        <router-link v-if="index == 1" :to="card.src">
-          <div :class="card.class">
-            <p>{{ $t(card.p) }}</p>
-            <p>
-              {{ $t(card.p2) }}
-            </p>
-          </div>
-        </router-link>
-        <router-link v-else :to="card.src">
-          <div :class="card.class">
+        <router-link  :to="card.src">
+          <div class="div-3">
             <p>{{ $t(card.p) }}</p>
           </div>
         </router-link>
@@ -47,17 +38,12 @@ export default {
   data() {
     return {
       grid_1: [
-        { src: "/erp-all-in-one", class: "div-2", p: "about_us_news_link_one" },
         {
           src: "/why-companies-need-dms",
-          class: "div-3",
-
           p: "about_us_news_link_heading_two",
-          p2: "about_us_news_link_one",
         },
         {
           src: "/why-web-based",
-          class: "div-4",
           p: "about_us_news_link_heading_three",
         },
       ],
@@ -104,12 +90,7 @@ export default {
 .about-nav {
   width: 100%;
   height: 20vh;
-  background: linear-gradient(
-      to right,
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6),
-      rgba(8, 40, 67, 0.6)
-    ),
+  background:linear-gradient(19deg,#00063adb  0%,  #0fbce763 100%),
     url("@/assets/images/purchase-cover-image.png") no-repeat center
       center/cover;
 

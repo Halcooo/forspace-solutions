@@ -2,11 +2,9 @@
 <template>
   <div class="nav-wrapper" :class="{ white_wrapper: white_wrapper }">
     <div class="nav-wrapper-flex" style="position: relative">
-      <div class="logo" :class="{none:none}">
+      <div class="logo" :class="{ none: none }">
         <router-link to="/">
-          <img
-            alt="Forspace Solutions"
-            src="@/assets/svg/logo_white.svg"
+          <img alt="Forspace Solutions" src="@/assets/svg/logo_white.svg"
         /></router-link>
       </div>
       <div class="logo" v-if="white_wrapper" :class="{ mobile: white_wrapper }">
@@ -126,7 +124,7 @@ export default {
 </script>
 <style lang="scss">
 @import "../../styles/variables.scss";
-.logo{
+.logo {
   width: 200px;
 }
 .language {
@@ -350,7 +348,7 @@ export default {
   }
 }
 .white_wrapper {
-  background-color: rgba(255, 255, 255, 0.924);
+  background-color: rgba(255, 255, 255, 0.948);
   top: 0%;
 }
 </style>

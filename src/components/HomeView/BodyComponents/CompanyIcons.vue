@@ -56,6 +56,7 @@ export default {
     .items-container {
       height: 100%;
       display: grid;
+      gap:15px;
       grid-template-columns: repeat(2, 1fr);
   
     }
