@@ -1,5 +1,5 @@
 <template>
-  <div class="w-100 text-center bg-light">
+  <div class="w-100 text-center bg-light" data-aos="fade-right" data-aos-duration="500">
     <!-- <h1>Kompanije koje su već optimizirale svoje procese sa Forspace</h1> -->
     <div class="container">
       <BaseSlider :images="images" />

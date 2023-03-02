@@ -1,5 +1,5 @@
 <template>
-  <div class="cube-background">
+  <div class="cube-background" data-aos="flip-left" data-aos-duration="500">
     <div class="cube-content">
       <div class="erp-text mt-5">
         <h2 class="erp-main-text text-secondary mt-2">

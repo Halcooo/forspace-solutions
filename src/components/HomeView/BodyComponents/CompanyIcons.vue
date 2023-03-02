@@ -2,7 +2,9 @@
   <div class="body bg-light text-center pt-5">
     <div class="items container text-center pb-5">
       <div class="items-container">
-        <div class="item bg-light border p-5" v-for="icon in icons" :key="icon">
+        <div class="item bg-light border p-5"  v-for="icon in icons" :key="icon" :data-aos="icon.dataAos"
+        data-aos-duration="600"
+        data-aos-easing="ease-in">
           <img :src="icon.src" alt="companies" />
           <h4>{{ $t(icon.h4) }}</h4>
           <p>{{ $t(icon.p) }}</p>
@@ -21,21 +23,26 @@ export default {
           src: require("../../../assets/images/companies.png"),
           h4: "home_icon_companies",
           p: "home_icon_companies_p",
+          dataAos:"fade-down-right",
+
         },
         {
           src: require("../../../assets/images/cloud.png"),
           h4: "home_icon_cloud",
           p: "home_icon_cloud_p",
+          dataAos:"fade-down-left",
         },
         {
           src: require("../../../assets/images/config.png"),
           h4: "home_icon_config",
           p: "home_icon_config_p",
+          dataAos:"fade-up-right",
         },
         {
           src: require("../../../assets/images/circle.png"),
           h4: "home_icon_circle",
           p: "home_icon_circle_p",
+          dataAos:"fade-up-left",
         },
       ],
     };

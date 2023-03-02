@@ -1,6 +1,6 @@
 @author Halid Lihovac
 <template>
-  <div class="footer">
+  <div class="footer" data-aos="fade-in" data-aos-duration="500"  data-aos-easing="ease-in" data-aos-anchor-placement="center">
     <footer class="text-center text-dark text-lg-start text-muted">
       <section class="d-flex justify-content-around">
         <div class="d-none d-md-block">

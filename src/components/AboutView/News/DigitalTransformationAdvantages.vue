@@ -3,12 +3,6 @@
     <div>
       <h2>{{ $t("about_us_next_overlay_left_heading") }}</h2>
     </div>
-    <div class="mt-5 mb-5 ps-2">
-      <router-link to="/about">
-        <font-awesome-icon icon="fa-solid fa-chevron-left" />
-        <span> {{ $t("back") }}</span>
-      </router-link>
-    </div>
   </div>
   <div class="content-news">
     <div v-for="(c, index) in content" :key="c">

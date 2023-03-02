@@ -1,5 +1,5 @@
 <template>
-  <div class="testimonial">
+  <div class="testimonial" data-aos="fade-in" data-aos-duration="500" data-aos-delay="200">
     <div class="testimonial-top">
       <div class="testimonial-top-item-one"></div>
     </div>
@@ -76,5 +76,4 @@ export default {
     }
   }
 }
-
 </style>

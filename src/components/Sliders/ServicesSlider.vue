@@ -9,7 +9,6 @@
             <p>{{ $t(slide.text) }}</p>
           </div>
         </div>
-
         <img
           @mousedown="pressedMouse = true"
           @mouseup="pressedMouse = false"

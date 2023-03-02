@@ -1,10 +1,20 @@
 <template>
   <div class="widget-container mt-5">
-    <div class="widget-box">
+    <div
+      class="widget-box"
+      data-aos="fade-down-right"
+      data-aos-easing="ease-in"
+      data-aos-duration="500"
+    >
       <div class="widget-frame"></div>
       <div class="widget-pic"></div>
     </div>
-    <div class="text">
+    <div
+      class="text"
+      data-aos="fade-down-left"
+      data-aos-easing="ease-in"
+      data-aos-duration="500"
+    >
       <small class="">{{ $t("widget_heading") }}</small>
       <h2 class="mb-5 text-secondary">{{ $t("widget_company") }}</h2>
       <p class="mb-5 text-secondary">
