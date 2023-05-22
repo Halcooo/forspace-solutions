@@ -77,19 +77,19 @@ export default {
           class: "dms",
           text: "services_grid_div2_header",
           p: "services_grid_div2_text",
-          to: "/why-companies-need-dms",
+          to: "/products/dms",
         },
         {
           class: "wms",
           text: "services_grid_div3_header",
           p: "services_grid_div3_text",
-          to: "/why-web-based",
+          to: "/products/warehouse",
         },
         {
           class: "systemp",
           text: "services_grid_div4_header",
           p: "services_grid_div4_text",
-          to: "/payment-provider",
+          to: "/products/finance",
         },
         {
           class: "solution",
@@ -101,17 +101,17 @@ export default {
       images: [
         {
           name: "services_slider_heading_1",
-          url: require("@/assets/images/purchase-cover-image.png"),
+          url: require("@/assets/images/product_item_1.jpg"),
           text: "services_slider_text_1",
         },
         {
           name: "services_slider_heading_2",
-          url: require("@/assets/images/product_item_1.jpg"),
+          url: require("@/assets/images/product_item_2.jpg"),
           text: "services_slider_text_2",
         },
         {
           name: "services_slider_heading_3",
-          url: require("@/assets/images/product_item_2.jpg"),
+          url: require("@/assets/images/purchase-cover-image.png"),
           text: "services_slider_text_3",
         },
       ],

@@ -1,26 +1,15 @@
 <template lang="">
-  <div
-    class="map d-flex justify-content-center align-items-center"
-    v-if="this.$store.getters.getMapState"
-  >
-    <div>
-      <div style="text-align: center" class="mb-5"></div>
-      <iframe
-        width="1080"
-        height="480"
-        id="gmap_canvas"
-        src="https://maps.google.com/maps?q=ForspaceSolutions&t=&z=13&ie=UTF8&iwloc=&output=embed"
-        frameborder="0"
-        scrolling="yes"
-        marginheight="0"
-        marginwidth="0"
-      ></iframe>
-    </div>
-    <div
-      style="position: absolute; top: 3%; right: 3%; width: 40px; height: 40px"
-    >
-      <ClosingButton @click="showMap" />
-    </div>
+  <div class="container">
+    <iframe
+      width="1080"
+      height="480"
+      id="gmap_canvas"
+      src="https://maps.google.com/maps?q=ForspaceSolutions&t=&z=13&ie=UTF8&iwloc=&output=embed"
+      frameborder="0"
+      scrolling="yes"
+      marginheight="0"
+      marginwidth="0"
+    ></iframe>
   </div>
 </template>
 <script>

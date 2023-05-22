@@ -181,9 +181,9 @@
   "hr_heading_7_3": "Dokumenti o elektronskom plaćanju",
   "services_slider_heading_1": "Razvijanje Web i desktop aplikacija",
   "services_slider_text_1": "Web i desktop aplikacije",
-  "services_slider_heading_2": "Olaksavanje poslovnih procesa uz mobilne aplikacije",
+  "services_slider_heading_2": "Olakšavanje poslovnih procesa uz mobilne aplikacije",
   "services_slider_text_2": "Mobilne aplikacije",
-  "services_slider_heading_3": "Poboljsavanje poslovnih rjesenja pomocu API integracije",
+  "services_slider_heading_3": "Poboljšavanje poslovnih rjesenja pomocu API integracije",
   "services_slider_text_3": "API integracija",
   "services_container_header": "Programerske usluge i razvoj",
   "services_icon_1": "Web i desktop aplikacije",
@@ -334,6 +334,7 @@
   "services_grid_div3_text": "WMS (Warehouse Management System) je poslovni program za upravljanje skladištem koji ima za cilj da automatizuje, pojednostavi i racionalizuje radne zadatke i aktivnosti unutar skladišta, čime se povećava produktivnost i smanjuje mogućnost greške na minimum.",
   "header_secondary_text": "Mi smo prvi domaći brend na tržištu ERP softvera sa predznakom njemačke tehnologije koji omogućava smanjenje korištenja pisane dokumentacije, uštedu vremena i novca, te predstavlja potpuno prilagođeno i razumljivo softversko rješenje za krajnjeg korisnika",
   "header_text": "Odluke zasnovane na činjenicama, a ne na pretpostavkama!",
-  "slogan_1":"Mi ne radimo za vas!",
-  "slogan_2":"Mi radimo sa vama!"
+  "slogan_1": "Mi ne radimo za vas!",
+  "slogan_2": "Mi radimo sa vama!",
+  "submit":"Pošalji"
 }

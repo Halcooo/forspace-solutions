@@ -1,9 +1,6 @@
 @author Halid Lihovac
 <template>
   <div class="form-div">
-    <div class="mt-5 mb-5" data-aos="fade" data-aos-duration="1000">
-      <h3>{{ $t("find_us_on_map") }}</h3>
-    </div>
     <h3>{{ $t("contact_header") }}</h3>
     <form ref="form">
       <div class="form-group">
@@ -254,8 +251,8 @@ h2 {
   vertical-align: middle;
 }
 .form-div {
+  align-items: center;
   width: 50%;
-
   margin: auto;
   padding: 25px;
   form {

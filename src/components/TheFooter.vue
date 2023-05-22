@@ -5,7 +5,7 @@
     data-aos="fade-in"
     data-aos-duration="500"
     data-aos-easing="ease-in"
-    data-aos-anchor-placement="bottom"
+    data-aos-anchor-placement="top-bottom"
   >
     <footer class="text-center text-dark text-lg-start text-muted">
       <section class="d-flex justify-content-around">

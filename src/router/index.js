@@ -9,7 +9,6 @@ import ProductsView from "../views/ProductsView.vue";
 import ServicesView from "../views/ServicesView.vue";
 import ContactView from "../views/ContactView.vue";
 import AboutView from "../views/AboutView.vue";
-import Appointment from "../views/Appointment.vue";
 import TheSales from "../components/ProductsViews/TheSales.vue";
 import ThePurchase from "../components/ProductsViews/ThePurchase.vue";
 import TheProduction from "../components/ProductsViews/TheProduction.vue";
@@ -17,10 +16,6 @@ import TheWarehouse from "../components/ProductsViews/TheWarehouse.vue";
 import TheFinance from "../components/ProductsViews/TheFinance.vue";
 import TheHumanRescources from "../components/ProductsViews/TheHumanRescources.vue";
 import TheDms from "../components/ProductsViews/TheDms.vue";
-
-import Wms from "../components/ServicesView/Wms.vue";
-import PaymentProvider from "../components/ServicesView/PaymentProvider.vue";
-
 import ErpAllInOne from "../components/ServicesView/ErpAllInOne";
 import WhyCompaniesNeedDms from "../components/AboutView/News/WhyCompaniesNeedDms";
 import WhyWebBased from "../components/AboutView/News/WhyWebBased";
@@ -145,30 +140,9 @@ const routes = [
     component: ServicesView,
   },
   {
-    path: "/appointment",
-    name: "appointment",
-    component: Appointment,
-  },
-  {
     path: "/contact",
     name: "contact",
     component: ContactView,
-  },
-  {
-    path: "/promo",
-    name: "promo",
-    component: Appointment,
-  },
-
-  {
-    path: "/wms",
-    name: "wms",
-    component: Wms,
-  },
-  {
-    path: "/payment-provider",
-    name: "payment-provider",
-    component: PaymentProvider,
   },
 ];
 
