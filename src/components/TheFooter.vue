@@ -1,6 +1,12 @@
 @author Halid Lihovac
 <template>
-  <div class="footer" data-aos="fade-in" data-aos-duration="500"  data-aos-easing="ease-in" data-aos-anchor-placement="center">
+  <div
+    class="footer"
+    data-aos="fade-in"
+    data-aos-duration="500"
+    data-aos-easing="ease-in"
+    data-aos-anchor-placement="bottom"
+  >
     <footer class="text-center text-dark text-lg-start text-muted">
       <section class="d-flex justify-content-around">
         <div class="d-none d-md-block">
@@ -18,9 +24,9 @@
 
               <h6 class="text-uppercase fw-bold mb-4"></h6>
               <p class="ms-2">
-                Mi ne radimo sa vama!
+                {{ $t("slogan_1") }}
                 <br />
-                Mi radimo za vas!
+                {{ $t("slogan_2") }}
               </p>
             </div>
             <div class="col-md-3 mx-auto mb-4 text-center">

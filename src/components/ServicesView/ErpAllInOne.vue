@@ -27,7 +27,7 @@
       izvršiti uspješnu implementaciju ERP-a zajedno sa vama!
     </p>
     <div class="mt-5 mb-5 ps-2">
-      <router-link to="/about">
+      <router-link to="/services">
         <font-awesome-icon icon="fa-solid fa-chevron-left" />
         <span> {{ $t("back") }}</span>
       </router-link>

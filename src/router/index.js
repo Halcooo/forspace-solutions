@@ -21,7 +21,7 @@ import TheDms from "../components/ProductsViews/TheDms.vue";
 import Wms from "../components/ServicesView/Wms.vue";
 import PaymentProvider from "../components/ServicesView/PaymentProvider.vue";
 
-import ErpAllInOne from "../components/AboutView/News/ErpAllInOne";
+import ErpAllInOne from "../components/ServicesView/ErpAllInOne";
 import WhyCompaniesNeedDms from "../components/AboutView/News/WhyCompaniesNeedDms";
 import WhyWebBased from "../components/AboutView/News/WhyWebBased";
 import Entrepreneur from "../components/AboutView/News/Entrepreneur";
